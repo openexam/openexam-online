@@ -21,6 +21,11 @@ if (!file_exists("../conf/config.inc")) {
 }
 
 // 
+// Append root directory to include path:
+// 
+set_include_path(get_include_path() . PATH_SEPARATOR . realpath('..'));
+
+// 
 // If logon is true, then CAS logon is enforced for this page.
 // 
 // $GLOBALS['logon'] = true;

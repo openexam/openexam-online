@@ -37,6 +37,11 @@ if (!file_exists("../../conf/config.inc")) {
         header("location: ../admin/setup.php?reason=config");
 }
 
+// 
+// Append root directory to include path:
+// 
+set_include_path(get_include_path() . PATH_SEPARATOR . realpath('../..'));
+
 //
 // Include external libraries:
 //

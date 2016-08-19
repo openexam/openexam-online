@@ -11,6 +11,14 @@
 // Show about info for this system.
 // 
 
+// 
+// Append root directory to include path:
+// 
+set_include_path(get_include_path() . PATH_SEPARATOR . realpath('..'));
+
+//
+// Include CAS auth:
+// 
 include "CAS.php";
 
 // 

@@ -39,6 +39,11 @@
 // by this script.
 // 
 
+// 
+// Append root directory to include path:
+// 
+set_include_path(get_include_path() . PATH_SEPARATOR . realpath('../..'));
+
 include "conf/config.inc";
 include "include/handler/handler.inc";
 

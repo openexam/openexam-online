@@ -32,6 +32,11 @@ if (!file_exists("../../conf/config.inc")) {
 }
 
 // 
+// Append root directory to include path:
+// 
+set_include_path(get_include_path() . PATH_SEPARATOR . realpath('../..'));
+
+// 
 // Include external libraries:
 // 
 include "MDB2.php";
