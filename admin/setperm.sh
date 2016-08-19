@@ -8,8 +8,9 @@
 confdir=conf
 mediadir=source/media
 
-chmod 640 $confdir/config.inc $confdir/database.conf
-setfacl -m u:apache:r $confdir/config.inc $confdir/database.conf
+chmod 640 $confdir/config.inc $confdir/database.conf $confdir/catalog.def
+setfacl -m u:apache:r $confdir/config.inc $confdir/database.conf $confdir/catalog.def
+setfacl -m u:sysrep:r $confdir/config.inc $confdir/database.conf $confdir/catalog.def
 
 if [ -d $mediadir/files ]; then
   # Must be writable when using automatic detection of file type.
