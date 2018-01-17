@@ -29,6 +29,8 @@ For production its recommended to use some cache method (Redis/Xcache) and setti
 to run behind a load-balancer (IPVS/Keepalive) using fastCGI (PHP-FPM). See INSTALL and docs in 
 the source code for more information.
 
+The current release of openexam-online requires Phalcon MVC 2.0.x installed under either PHP 5.6.
+
 ## Features
 
 The system comes with many features that can be turned on/off or customized by editing the 
