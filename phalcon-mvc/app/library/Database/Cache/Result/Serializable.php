@@ -22,7 +22,7 @@
 // File:    Serializable.php
 // Created: 2017-02-09 14:50:13
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 /**
@@ -48,7 +48,7 @@ use Phalcon\Db\ResultInterface;
  * Some methods might show odd behavior compared to the real result set due
  * to absent of real PDO statement.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Serializable implements ResultInterface
 {

@@ -22,7 +22,7 @@
 // File:    ImportData.php
 // Created: 2015-04-14 23:49:59
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import;
@@ -50,7 +50,7 @@ use stdClass;
  * This really shows how sucky OOP in PHP is. It's not possible to define the
  * map as property as it interfers with SimpleXMLElement.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  * @see schemas/project/openexam-v1-6073.xsd
  */
 class ImportData extends SimpleXMLElement

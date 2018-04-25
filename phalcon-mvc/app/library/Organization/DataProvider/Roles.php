@@ -22,7 +22,7 @@
 // File:    Roles.php
 // Created: 2016-05-16 14:11:34
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization\DataProvider;
@@ -34,7 +34,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * The roles data provider.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Roles extends Component
 {

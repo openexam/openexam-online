@@ -22,7 +22,7 @@
 // File:    loader.php
 // Created: 2014-08-20 01:56:59
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 $loader = new Phalcon\Loader();

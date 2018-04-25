@@ -49,7 +49,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * @property Answer[] $answers Answers related to this student.
  * @property Exam $exam The related exam.
  * @property Lock[] $locks Active computer/exam locks for this student.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Student extends Role
 {

@@ -22,7 +22,7 @@
 // File:    Cache.php
 // Created: 2015-04-02 00:30:02
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core;
@@ -55,7 +55,7 @@ use Phalcon\Version as PhalconVersion;
  * instances running on the same server. Another options is to override the
  * default prefix name per cache backend.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Cache extends Multiple
 {

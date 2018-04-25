@@ -22,7 +22,7 @@
 // File:    Cleanup.php
 // Created: 2016-06-09 04:07:05
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Trigger;
@@ -49,7 +49,7 @@ use OpenExam\Models\Performance;
  * $trigger->process($performance);     // Process performance model object.
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Cleanup implements Trigger
 {

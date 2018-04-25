@@ -22,7 +22,7 @@
 // File:    DocumentLiteral.php
 // Created: 2014-10-16 03:13:46
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\WebService\Soap\Wrapper;
@@ -57,7 +57,7 @@ use OpenExam\Library\WebService\Soap\SoapHandler;
  * }
  * </code>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class DocumentLiteral implements SoapHandler
 {

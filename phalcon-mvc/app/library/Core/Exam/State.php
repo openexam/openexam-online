@@ -22,7 +22,7 @@
 // File:    State.php
 // Created: 2014-09-30 21:58:54
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Exam;

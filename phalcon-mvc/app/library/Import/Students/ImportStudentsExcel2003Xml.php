@@ -22,7 +22,7 @@
 // File:    ImportStudentExcel2003Xml.php
 // Created: 2015-04-15 00:25:22
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Students;
@@ -32,7 +32,7 @@ use PHPExcel_Reader_Excel2003XML;
 /**
  * Import students from Excel 2003 XML file.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportStudentsExcel2003Xml extends ImportStudents
 {

@@ -22,7 +22,7 @@
 // File:    Proxy.php
 // Created: 2017-01-16 00:04:25
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Cache;
@@ -44,7 +44,7 @@ use Phalcon\Db\ReferenceInterface;
  * correct calls on wrapped database adapter, the interface has to have concrete
  * methods. It's not sufficient to just declare magic methods.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class Proxy implements AdapterInterface
 {

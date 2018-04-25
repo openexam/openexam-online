@@ -22,7 +22,7 @@
 // File:    Lockdown.php
 // Created: 2014-12-17 03:22:09
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Exam\Student;
@@ -40,7 +40,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Handle client lockdown on student exam access.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Lockdown extends Component
 {

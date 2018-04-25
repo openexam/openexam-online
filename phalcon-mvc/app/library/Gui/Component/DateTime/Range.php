@@ -22,7 +22,7 @@
 // File:    Range.php
 // Created: 2017-10-25 04:27:44
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Gui\Component\DateTime;
@@ -42,7 +42,7 @@ use OpenExam\Library\Gui\Component\DateTime;
  * $datetime->render();         // 2017-10-24 11:45 -> 2017-10-25 14:00
  * </code>
  * 
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Range extends DateTime
 {

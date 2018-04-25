@@ -22,7 +22,7 @@
 // File:    RenderQueue.php
 // Created: 2017-12-07 01:04:11
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render\Queue;
@@ -39,7 +39,7 @@ use Phalcon\Mvc\User\Component;
  * as a producer it's responsible for configure render URL (if required) and
  * preparing disk storage before saving the render model.
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class RenderQueue extends Component
 {

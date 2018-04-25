@@ -22,7 +22,7 @@
 // File:    Profile.php
 // Created: 2016-06-15 22:30:20
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Models;
@@ -44,7 +44,7 @@ namespace OpenExam\Models;
  * each other that get its value from gethostname() that is mapped against the
  * system name from /etc/hosts
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Profile extends ModelBase
 {

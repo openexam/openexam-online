@@ -49,7 +49,7 @@ use Phalcon\Validation\Validator\InclusionIn;
  * is dynamic defined by users primary group (e.g. from LDAP).
  * 
  * @property Exam $exam The related exam.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Resource extends ModelBase
 {

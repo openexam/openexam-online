@@ -39,7 +39,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * Represent an file uploaded as part of an question answer.
  * 
  * @property Answer $answer The related answer.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class File extends ModelBase
 {

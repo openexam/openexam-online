@@ -22,7 +22,7 @@
 // File:    GettextTask.php
 // Created: 2014-09-19 05:14:31
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -32,7 +32,7 @@ use OpenExam\Library\Globalization\Translate\Gettext\Setup;
 /**
  * GNU gettext task.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class GettextTask extends MainTask implements TaskInterface
 {

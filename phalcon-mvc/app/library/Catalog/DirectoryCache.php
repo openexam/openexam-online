@@ -22,7 +22,7 @@
 // File:    DirectoryCache.php
 // Created: 2017-01-09 05:18:23
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog;
@@ -33,7 +33,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Cache for the directory service.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class DirectoryCache extends Component implements DirectoryQuery
 {

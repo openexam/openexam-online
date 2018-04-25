@@ -22,7 +22,7 @@
 // File:    Collector.php
 // Created: 2016-05-23 22:59:57
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance;
@@ -30,7 +30,7 @@ namespace OpenExam\Library\Monitor\Performance;
 /**
  * Interface for performance collectors.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Collector
 {

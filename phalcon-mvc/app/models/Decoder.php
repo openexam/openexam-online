@@ -35,7 +35,7 @@ use OpenExam\Library\Model\Guard\Exam as ExamModelGuard;
  * Represents a user having the decoder role.
  * 
  * @property Exam $exam The related exam.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Decoder extends Role
 {

@@ -55,7 +55,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * 
  * @property Question[] $questions Questions related to this topic.
  * @property Exam $exam The related exam.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Topic extends ModelBase
 {

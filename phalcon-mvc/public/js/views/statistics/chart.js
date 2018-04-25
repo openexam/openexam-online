@@ -22,7 +22,7 @@
 // File:    chart.js
 // Created: 2016-04-28 19:08:24
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 $(document).ready(function () {

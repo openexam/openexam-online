@@ -22,7 +22,7 @@
 // File:    Server.php
 // Created: 2016-05-24 02:23:31
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -33,7 +33,7 @@ use OpenExam\Library\Monitor\Performance\Counter;
 /**
  * Server performance counter.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Server extends CounterBase implements Counter
 {

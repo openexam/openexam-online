@@ -22,7 +22,7 @@
 // File:    HelpTask.php
 // Created: 2014-09-09 05:44:47
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -30,7 +30,7 @@ namespace OpenExam\Console\Tasks;
 /**
  * Description of HelpTask
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class HelpTask extends MainTask implements TaskInterface
 {

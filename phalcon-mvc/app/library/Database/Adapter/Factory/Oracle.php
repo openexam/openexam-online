@@ -22,7 +22,7 @@
 // File:    Oracle.php
 // Created: 2017-01-16 02:22:01
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Adapter\Factory;
@@ -35,7 +35,7 @@ use Phalcon\Db\AdapterInterface;
 /**
  * Oracle database adapter factory.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Oracle implements AdapterFactory
 {

@@ -22,7 +22,7 @@
 // File:    Profile.php
 // Created: 2016-11-13 22:33:01
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Attribute;
@@ -38,7 +38,7 @@ use OpenExam\Models\User;
  * for a clean separation between generic SAML authenticators and the user
  * attributes returned from them.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Profile
 {

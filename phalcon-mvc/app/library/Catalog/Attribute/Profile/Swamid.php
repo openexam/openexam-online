@@ -22,7 +22,7 @@
 // File:    Swamid.php
 // Created: 2016-11-13 21:21:25
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Attribute\Profile;
@@ -34,7 +34,7 @@ use OpenExam\Models\User;
 /**
  * The SWAMID attribute profile.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Swamid implements Profile
 {

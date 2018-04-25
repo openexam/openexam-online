@@ -22,7 +22,7 @@
 // File:    DirectorySearch.php
 // Created: 2017-04-11 22:17:16
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog;
@@ -37,7 +37,7 @@ use OpenExam\Library\Catalog\Manager\Search\Principals as ManagerSearchPrincipal
 /**
  * Directory manager search.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class DirectorySearch implements DirectoryQuery
 {

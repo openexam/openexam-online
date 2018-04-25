@@ -20,7 +20,7 @@
 // File:    supermenu.js
 // Created: 2015-02-17 02:22:48
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 $(document).ready(function () {

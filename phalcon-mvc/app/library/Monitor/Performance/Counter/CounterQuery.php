@@ -22,7 +22,7 @@
 // File:    CounterQuery.php
 // Created: 2016-05-30 04:38:14
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -33,7 +33,7 @@ use OpenExam\Models\Performance;
 /**
  * Performance counter query.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CounterQuery
 {

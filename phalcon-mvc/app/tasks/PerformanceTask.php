@@ -22,7 +22,7 @@
 // File:    DiagnosticsTask.php
 // Created: 2016-05-22 23:18:04
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -187,7 +187,7 @@ class ExportFormatterPHP extends ExportFormatter
 /**
  * System performance task.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class PerformanceTask extends MainTask implements TaskInterface
 {

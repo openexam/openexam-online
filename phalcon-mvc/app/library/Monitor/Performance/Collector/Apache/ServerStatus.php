@@ -22,7 +22,7 @@
 // File:    ServerStatus.php
 // Created: 2016-05-29 18:28:00
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector\Apache;
@@ -32,7 +32,7 @@ use OpenExam\Library\Monitor\Exception;
 /**
  * Server status.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ServerStatus
 {

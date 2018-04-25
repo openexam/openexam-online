@@ -22,7 +22,7 @@
 // File:    Exam.php
 // Created: 2014-11-13 02:50:40
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Behavior;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\ModelInterface;
 
 /**
  * Behavior for exam model.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Exam extends ModelBehavior
 {

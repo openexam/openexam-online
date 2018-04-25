@@ -22,7 +22,7 @@
 // File:    MySQL.php
 // Created: 2016-05-30 18:25:31
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -32,7 +32,7 @@ use OpenExam\Models\Performance;
 /**
  * MySQL performance collector.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class MySQL extends CollectorBase
 {

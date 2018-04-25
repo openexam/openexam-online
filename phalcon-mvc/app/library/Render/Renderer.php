@@ -22,14 +22,14 @@
 // File:    Renderer.php
 // Created: 2014-10-27 21:34:30
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render;
 
 /**
  * Page render interface.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Renderer
 {

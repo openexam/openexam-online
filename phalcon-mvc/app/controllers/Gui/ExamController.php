@@ -23,7 +23,7 @@
 // Created: 2014-09-18 18:11:50
 // 
 // Author:  Ahsan Shahzad (MedfarmDoIT)
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Gui;

@@ -22,7 +22,7 @@
 // File:    Course.php
 // Created: 2017-01-04 03:23:28
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service\Adapter\Uppdok;
@@ -41,7 +41,7 @@ if (!defined('INFO_CGI_FIELD_SEPARATOR')) {
 /**
  * Represent an UPPDOK course.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Course
 {

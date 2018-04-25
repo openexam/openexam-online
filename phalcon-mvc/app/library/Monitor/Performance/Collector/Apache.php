@@ -22,7 +22,7 @@
 // File:    Apache.php
 // Created: 2016-05-30 07:37:01
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -35,7 +35,7 @@ use OpenExam\Models\Performance;
 /**
  * Apache performance collector.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Apache extends CollectorBase
 {

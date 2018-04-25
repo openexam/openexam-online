@@ -22,14 +22,14 @@
 // File:    Connection.php
 // Created: 2014-11-05 20:18:44
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service;
 
 /**
  * The service backend connection.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Connection
 {

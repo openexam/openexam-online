@@ -22,7 +22,7 @@
 // File:    ImportPingPong.php
 // Created: 2015-04-15 00:12:15
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Questions;
@@ -32,7 +32,7 @@ use OpenExam\Library\Import\ImportData;
 
 /**
  * Base class for import from Ping-Pong.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class ImportPingPong extends ImportBase
 {

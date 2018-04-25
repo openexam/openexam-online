@@ -22,7 +22,7 @@
 // File:    PersonalNumber.php
 // Created: 2017-04-06 13:13:08
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Attribute\Normalizer;
@@ -43,7 +43,7 @@ use OpenExam\Library\Core\Pattern;
  * @property-read boolean $male Is person of male sex?
  * @property-read boolean $foreign Is person from a foreign country?
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class PersonalNumber
 {

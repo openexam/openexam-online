@@ -76,7 +76,7 @@ use Phalcon\Cache\BackendInterface;
  * @property-read int $retry The number of retries.
  * @property-read boolean $locked This mutex is locked.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Mutex
 {

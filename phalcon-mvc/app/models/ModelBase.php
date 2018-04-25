@@ -43,7 +43,7 @@ use const MODEL_ALWAYS_USE_MASTER_CONNECTION;
 
 /**
  * Base class for all models.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ModelBase extends Model
 {

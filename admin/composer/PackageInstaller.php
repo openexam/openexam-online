@@ -22,7 +22,7 @@
 // File:    PackageInstaller.php
 // Created: 2014-09-13 01:57:30
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Composer;
@@ -32,7 +32,7 @@ use Composer\Package\CompletePackageInterface;
 /**
  * Composer package installer.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class PackageInstaller
 {

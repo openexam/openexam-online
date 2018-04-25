@@ -22,7 +22,7 @@
 // File:    Substitute.php
 // Created: 2014-11-04 01:02:43
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 if (!function_exists('_')) {

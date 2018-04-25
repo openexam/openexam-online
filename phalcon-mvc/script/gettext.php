@@ -22,7 +22,7 @@
 // File:    gettext.php
 // Created: 2014-09-19 06:12:25
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 

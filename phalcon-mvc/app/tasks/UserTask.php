@@ -22,7 +22,7 @@
 // File:    UserTask.php
 // Created: 2017-04-06 11:00:37
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -37,7 +37,7 @@ use OpenExam\Models\User;
  * system itself don't provide a user database with stored password, instead 
  * these accounts is used together with anonymous logon.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class UserTask extends MainTask implements TaskInterface
 {

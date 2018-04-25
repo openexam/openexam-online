@@ -22,7 +22,7 @@
 // File:    Unique.php
 // Created: 2017-04-21 01:46:33
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Behavior\Generate;
@@ -33,7 +33,7 @@ use Phalcon\Mvc\ModelInterface;
 /**
  * Unique field value generator.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Unique extends ModelBehavior
 {

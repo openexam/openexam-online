@@ -22,7 +22,7 @@
 // File:    ImportStudentsHtml.php
 // Created: 2015-04-15 23:07:01
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Students;
@@ -32,7 +32,7 @@ use PHPExcel_Reader_HTML;
 /**
  * Import students from HTML document.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportStudentsHtml extends ImportStudents
 {

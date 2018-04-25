@@ -22,7 +22,7 @@
 // File:    TaskController.php
 // Created: 2017-02-13 22:39:10
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Gui;
@@ -34,7 +34,7 @@ use OpenExam\Library\Security\Roles;
 /**
  * Task controller.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class TaskController extends GuiController
 {

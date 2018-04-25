@@ -22,7 +22,7 @@
 // File:    ObjectAccess.php
 // Created: 2014-09-30 04:55:06
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Plugins\Security\Model;
@@ -36,7 +36,7 @@ use Phalcon\Mvc\User\Plugin;
 
 /**
  * Abstract base class for object access control.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class ObjectAccess extends Plugin
 {

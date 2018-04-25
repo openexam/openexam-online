@@ -80,7 +80,7 @@ use Phalcon\Validation\Validator\Regex as RegexValidator;
  * @property Access[] $access The access definitions associated with this exam.
  * @property Render[] $render The render jobs associated with this exam.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Exam extends ModelBase
 {

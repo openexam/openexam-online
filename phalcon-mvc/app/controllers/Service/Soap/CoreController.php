@@ -22,7 +22,7 @@
 // File:    CoreController.php
 // Created: 2014-08-20 11:36:22
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Service\Soap;
@@ -44,7 +44,7 @@ use OpenExam\Library\WebService\Soap\Wrapper\DocumentLiteral as DocumentLiteralW
 /**
  * SOAP controller for the core service.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CoreController extends SoapController
 {

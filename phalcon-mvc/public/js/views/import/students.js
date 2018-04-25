@@ -20,7 +20,7 @@
 // File:    students.js
 // Created: 2015-04-15 03:55:24
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 $(document).ready(function () {

@@ -22,7 +22,7 @@
 // File:    InvalidFormat.php
 // Created: 2017-10-25 00:47:23
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Validation;
@@ -38,7 +38,7 @@ use Phalcon\Validation\ValidatorInterface;
  * Use this class to validate that input data is not invalid. Could i.e. be 
  * used to prevent empty JSON object from being stored as score. 
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class InvalidFormat extends Validator implements ValidatorInterface
 {

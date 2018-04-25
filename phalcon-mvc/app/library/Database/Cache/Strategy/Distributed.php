@@ -22,7 +22,7 @@
 // File:    Distributed.php
 // Created: 2017-01-31 23:31:26
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Cache\Strategy;
@@ -41,7 +41,7 @@ use Phalcon\Cache\BackendInterface;
  * The lower cache is system local cache (i.e. apc). A bad analogous to this 
  * class is the RAM cache in a SMP computer system.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Distributed extends Backend implements BackendInterface
 {

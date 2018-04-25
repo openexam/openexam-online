@@ -22,7 +22,7 @@
 // File:    Maximum.php
 // Created: 2017-04-21 00:44:45
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Behavior\Generate;
@@ -33,7 +33,7 @@ use Phalcon\Mvc\ModelInterface;
 /**
  * Maximum unique value generator.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Maximum extends ModelBehavior
 {

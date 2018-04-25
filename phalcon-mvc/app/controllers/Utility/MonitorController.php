@@ -22,7 +22,7 @@
 // File:    MonitorController.php
 // Created: 2016-04-19 01:55:38
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Utility;
@@ -46,7 +46,7 @@ use OpenExam\Library\Monitor\Performance;
  * curl -XGET ${BASEURL}/utility/monitor/counter/server?limit=1
  * curl -XGET ${BASEURL}/utility/monitor/counter/server/cpu?limit=1
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class MonitorController extends GuiController
 {

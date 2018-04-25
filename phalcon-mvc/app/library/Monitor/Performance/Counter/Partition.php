@@ -22,7 +22,7 @@
 // File:    Partition.php
 // Created: 2016-05-24 02:40:04
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -33,7 +33,7 @@ use OpenExam\Library\Monitor\Performance\Counter;
 /**
  * Partition performance counter.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Partition extends CounterBase implements Counter
 {

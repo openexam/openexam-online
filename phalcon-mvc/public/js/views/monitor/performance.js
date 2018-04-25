@@ -21,7 +21,7 @@
 // File:    performance.js
 // Created: 2016-05-27 22:04:45
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 // 

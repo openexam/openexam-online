@@ -22,7 +22,7 @@
 // File:    FileImport.php
 // Created: 2015-04-15 00:34:50
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import;
@@ -47,7 +47,7 @@ use function _;
 /**
  * File upload support class.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class FileImport extends Component
 {

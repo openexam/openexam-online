@@ -22,7 +22,7 @@
 // File:    Orgnanization.php
 // Created: 2016-05-16 06:12:44
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization;
@@ -37,7 +37,7 @@ use OpenExam\Library\Organization\DataProvider\Users as UsersDataProvider;
  * This class represent an organization. Currently an organization is the
  * topmost level in the organization hierarchy.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Organization extends OrganizationUnit
 {

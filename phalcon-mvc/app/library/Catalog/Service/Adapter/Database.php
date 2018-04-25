@@ -22,7 +22,7 @@
 // File:    Database.php
 // Created: 2016-11-14 03:13:10
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service\Adapter;
@@ -39,7 +39,7 @@ use Phalcon\Mvc\Model\Criteria;
  * mapped against the authenticator (the attribute provider). In most cases
  * its of zero interest to know though.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Database extends AttributeService
 {

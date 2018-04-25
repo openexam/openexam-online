@@ -22,7 +22,7 @@
 // File:    Employees.php
 // Created: 2016-05-18 22:25:00
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization\DataProvider;
@@ -32,7 +32,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Employees data provider.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Employees extends Component
 {

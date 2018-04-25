@@ -22,7 +22,7 @@
 // File:    Network.php
 // Created: 2016-05-31 21:30:45
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -33,7 +33,7 @@ use OpenExam\Library\Monitor\Performance\Counter;
 /**
  * Network performance counter.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Network extends CounterBase implements Counter
 {

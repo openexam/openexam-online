@@ -22,7 +22,7 @@
 // File:    CollectorProcess.php
 // Created: 2016-05-29 23:54:33
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -35,7 +35,7 @@ use OpenExam\Library\Console\Process;
  * Abstract base class for performance collectors based on commands that
  * periodical output data for capture.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class CollectorProcess extends CollectorBase
 {

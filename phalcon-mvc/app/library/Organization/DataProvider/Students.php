@@ -22,7 +22,7 @@
 // File:    Students.php
 // Created: 2016-05-18 22:24:24
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization\DataProvider;
@@ -32,7 +32,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Students data provider.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Students extends Component
 {

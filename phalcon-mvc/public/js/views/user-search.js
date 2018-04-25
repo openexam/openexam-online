@@ -22,7 +22,7 @@
 // File:    user-search.js
 // Created: 2017-02-23 04:16:57
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 // 

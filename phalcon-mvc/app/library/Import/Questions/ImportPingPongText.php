@@ -22,7 +22,7 @@
 // File:    ImportPingPongText.php
 // Created: 2015-04-15 00:19:13
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Questions;
@@ -37,7 +37,7 @@ use function _;
  * This class supports import of question bank from PING-PONG in plain text
  * file format.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportPingPongText extends ImportPingPong
 {

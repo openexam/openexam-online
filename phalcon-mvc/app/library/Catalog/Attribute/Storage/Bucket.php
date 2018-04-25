@@ -22,7 +22,7 @@
 // File:    Bucket.php
 // Created: 2016-11-14 02:09:53
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Attribute\Storage;
@@ -30,7 +30,7 @@ namespace OpenExam\Library\Catalog\Attribute\Storage;
 /**
  * The bit bucket storage backend.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Bucket implements Backend
 {

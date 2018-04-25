@@ -53,7 +53,7 @@ use OpenExam\Library\Console\Command;
  * );
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class RenderBase
 {

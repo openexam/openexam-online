@@ -22,7 +22,7 @@
 // File:    Backend.php
 // Created: 2017-01-16 22:26:35
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Cache\Backend;
@@ -47,7 +47,7 @@ use Phalcon\Cache\BackendInterface;
  * insert(), update() or delete() because they are missing in the table index
  * but still found by hashed queries.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Indexed implements CacheBackend
 {

@@ -22,7 +22,7 @@
 // File:    Diagnostics.php
 // Created: 2016-06-02 02:28:58
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor;
@@ -53,7 +53,7 @@ use OpenExam\Library\Monitor\Diagnostics\WebServer as WebServerCheck;
  * }
  * </code>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Diagnostics implements ServiceCheck
 {

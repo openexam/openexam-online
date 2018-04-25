@@ -22,7 +22,7 @@
 // File:    RenderService.php
 // Created: 2014-10-27 23:27:25
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render;
@@ -35,7 +35,7 @@ use Phalcon\Mvc\User\Component;
 
 /**
  * The render service.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class RenderService extends Component
 {

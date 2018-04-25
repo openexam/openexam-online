@@ -22,7 +22,7 @@
 // File:    Connection.php
 // Created: 2014-10-22 04:21:36
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service\Adapter\Ldap;
@@ -34,7 +34,7 @@ use OpenExam\Library\Catalog\Service\Connection as ServiceConnection;
  * LDAP server connection class.
  * 
  * @property-read resource $handle The LDAP server connection.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Connection implements ServiceConnection
 {

@@ -22,7 +22,7 @@
 // File:    CoreController.php
 // Created: 2014-08-20 11:36:22
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Service\Ajax;
@@ -151,7 +151,7 @@ use OpenExam\Library\WebService\Handler\CoreHandler;
  * input: {"params":{"flags":["upcoming"]}}     // filter on multiple flags
  * 
  * @see http://docs.phalconphp.com/en/latest/api/Phalcon_Mvc_Model_Query_Builder.html
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CoreController extends AjaxController
 {

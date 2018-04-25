@@ -25,7 +25,7 @@ use Phalcon\Logger;
 // File:    config.php
 // Created: 2014-08-20 01:44:49
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 if (!defined('CONFIG_SYS')) {

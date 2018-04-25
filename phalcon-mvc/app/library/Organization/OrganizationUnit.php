@@ -22,7 +22,7 @@
 // File:    OrganizationUnit.php
 // Created: 2016-05-13 02:40:44
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization;
@@ -36,7 +36,7 @@ use Phalcon\Mvc\User\Component;
  * Abstract base class for all kind of organization units (divisions, 
  * departments or groups).
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class OrganizationUnit extends Component
 {

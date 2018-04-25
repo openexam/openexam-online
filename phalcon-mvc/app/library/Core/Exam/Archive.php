@@ -22,7 +22,7 @@
 // File:    Archive.php
 // Created: 2017-09-19 04:48:51
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Exam;
@@ -39,7 +39,7 @@ use RuntimeException;
  * Use this class for create exam archives. Currently its only use case is for
  * rendering exams to PDF to be used for backup/archive or paper exams.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Archive extends Component
 {

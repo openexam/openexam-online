@@ -22,7 +22,7 @@
 // File:    Trim.php
 // Created: 2017-11-16 04:05:33
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Behavior\Transform;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\ModelInterface;
  * the field result in an empty string, then replace the field value. The value
  * to replace with is optional and defaults to null.
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Trim extends ModelBehavior
 {

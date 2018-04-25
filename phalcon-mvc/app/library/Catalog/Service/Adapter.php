@@ -22,7 +22,7 @@
 // File:    Adapter.php
 // Created: 2014-10-22 04:17:43
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\User\Component;
  * this class and override any methods from this class to provide required 
  * functionality. This class provides dummy fallback methods.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class Adapter extends Component implements DirectoryService
 {

@@ -22,7 +22,7 @@
 // File:    Flash.php
 // Created: 2014-09-11 01:51:40
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Console;
@@ -32,7 +32,7 @@ use Phalcon\Flash\Direct;
 /**
  * Custom flash message service for console.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Flash extends Direct
 {

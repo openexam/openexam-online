@@ -22,7 +22,7 @@
 // File:    CounterSubType.php
 // Created: 2016-05-30 03:58:01
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -32,7 +32,7 @@ use OpenExam\Library\Monitor\Performance\Counter;
 /**
  * Sub type of an performance counter.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CounterSubType implements Counter
 {

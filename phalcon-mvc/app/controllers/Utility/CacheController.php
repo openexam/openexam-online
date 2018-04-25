@@ -22,7 +22,7 @@
  * Created: 2018-01-24 01:15:40
  * File:    CacheController.php
  * 
- * Author:  Anders Lövgren (QNET)
+ * Author:  Anders Lövgren (Nowise Systems)
  */
 
 namespace OpenExam\Controllers\Utility;
@@ -36,7 +36,7 @@ use UUP\Authentication\Restrictor\AddressRestrictor;
 /**
  * Web and application cache controller.
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CacheController extends GuiController
 {

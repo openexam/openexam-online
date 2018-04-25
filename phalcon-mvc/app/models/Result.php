@@ -42,7 +42,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * @property Answer $answer The related answer.
  * @property Question $question The related question.
  * @property Corrector $corrector The related corrector.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Result extends ModelBase
 {

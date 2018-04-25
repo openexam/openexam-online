@@ -22,7 +22,7 @@
 // File:    ImportBase.php
 // Created: 2015-04-15 00:05:42
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import;
@@ -35,7 +35,7 @@ use function _;
 
 /**
  * The base class for all importers.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class ImportBase extends Component implements Import
 {

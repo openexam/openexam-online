@@ -22,7 +22,7 @@
 // File:    RenderTask.php
 // Created: 2014-10-28 03:07:09
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -38,7 +38,7 @@ use OpenExam\Models\Render;
 
 /**
  * Render service task.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class RenderTask extends MainTask implements TaskInterface
 {

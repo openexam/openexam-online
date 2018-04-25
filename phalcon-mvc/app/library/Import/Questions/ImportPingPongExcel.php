@@ -22,7 +22,7 @@
 // File:    ImportPingPongExcel.php
 // Created: 2015-04-15 00:15:06
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Questions;
@@ -38,7 +38,7 @@ use function _;
  * This class supports import of question bank from PING-PONG in Excel
  * file format.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportPingPongExcel extends ImportPingPong
 {

@@ -23,7 +23,7 @@
 // Created: 2015-02-17 02:22:48
 // 
 // Author:  Ahsan Shahzad (Medfarm DoIT)
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 // 

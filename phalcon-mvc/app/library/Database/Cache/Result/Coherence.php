@@ -22,7 +22,7 @@
 // File:    Coherence.php
 // Created: 2017-03-27 22:34:23
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Cache\Result;
@@ -33,7 +33,7 @@ use Phalcon\Cache\BackendInterface;
 /**
  * Coherence for result set cache entries.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Coherence
 {

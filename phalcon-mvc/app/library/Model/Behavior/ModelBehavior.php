@@ -22,7 +22,7 @@
 // File:    ModelBehavior.php
 // Created: 2014-11-13 01:41:59
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Behavior;
@@ -38,7 +38,7 @@ use Phalcon\Mvc\Model\BehaviorInterface;
 /**
  * Base class for model behavior.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ModelBehavior extends Behavior implements BehaviorInterface
 {

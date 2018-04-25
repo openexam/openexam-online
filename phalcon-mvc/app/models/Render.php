@@ -22,7 +22,7 @@
 // File:    Render.php
 // Created: 2017-12-07 00:44:35
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Models;
@@ -35,7 +35,7 @@ use Phalcon\Validation\Validator\InclusionIn;
  * The render queue model.
  *
  * @property Exam $exam The related exam.
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Render extends ModelBase
 {

@@ -22,7 +22,7 @@
 // File:    Database.php
 // Created: 2016-05-31 02:28:24
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Diagnostics;
@@ -43,7 +43,7 @@ use Phalcon\Mvc\User\Component;
  * performing an count query. If query fails, then it means that dbaudit
  * is missing or improperly configured.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Database extends Component implements ServiceCheck
 {

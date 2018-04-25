@@ -22,7 +22,7 @@
 // File:    Service.php
 // Created: 2016-04-21 04:04:50
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Audit;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * The model audit service.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Service extends Component
 {

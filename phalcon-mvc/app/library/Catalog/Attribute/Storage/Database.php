@@ -22,7 +22,7 @@
 // File:    Database.php
 // Created: 2016-11-13 23:41:55
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Attribute\Storage;
@@ -34,7 +34,7 @@ use OpenExam\Models\User;
 /**
  * Database storage backend.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Database implements Backend
 {

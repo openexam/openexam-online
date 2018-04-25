@@ -22,7 +22,7 @@
 // File:    SocketState.php
 // Created: 2016-05-29 19:42:51
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance;
@@ -30,7 +30,7 @@ namespace OpenExam\Library\Monitor\Performance;
 /**
  * Socket state class.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class SocketState
 {

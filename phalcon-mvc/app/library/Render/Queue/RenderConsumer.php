@@ -22,7 +22,7 @@
 // File:    RenderConsumer.php
 // Created: 2017-12-07 01:22:47
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render\Queue;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\User\Component;
  * Provides an abstration of the render queue (model) for render workers. The 
  * message passed between them is using render jobs.
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class RenderConsumer extends Component
 {

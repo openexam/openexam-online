@@ -22,7 +22,7 @@
 // File:    services.php
 // Created: 2014-08-20 02:07:10
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 /**

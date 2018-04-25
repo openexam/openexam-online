@@ -22,7 +22,7 @@
 // File:    Disk.php
 // Created: 2016-05-24 02:35:16
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -33,7 +33,7 @@ use OpenExam\Library\Monitor\Performance\Counter;
 /**
  * Disk performance counter.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Disk extends CounterBase implements Counter
 {

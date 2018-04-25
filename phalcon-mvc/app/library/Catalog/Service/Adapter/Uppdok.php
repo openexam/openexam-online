@@ -22,7 +22,7 @@
 // File:    Uppdok.php
 // Created: 2014-10-22 04:20:31
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service\Adapter;
@@ -36,7 +36,7 @@ use OpenExam\Library\Catalog\ServiceConnection;
 /**
  * UPPDOK directory service.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Uppdok extends Adapter
 {

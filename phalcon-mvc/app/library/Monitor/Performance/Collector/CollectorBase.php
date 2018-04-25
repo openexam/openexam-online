@@ -22,7 +22,7 @@
 // File:    CollectorBase.php
 // Created: 2016-05-23 23:08:00
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -34,7 +34,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Abstract base class for performance collectors.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class CollectorBase extends Component implements Collector
 {

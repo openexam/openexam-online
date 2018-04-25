@@ -22,7 +22,7 @@
 // File:    Location.php
 // Created: 2015-04-09 01:52:38
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core;
@@ -35,7 +35,7 @@ use UUP\Authentication\Restrictor\AddressRestrictor;
 /**
  * Location information class.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Location extends Component
 {

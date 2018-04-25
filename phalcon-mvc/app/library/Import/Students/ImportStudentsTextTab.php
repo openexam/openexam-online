@@ -22,7 +22,7 @@
 // File:    ImportStudentsTextTab.php
 // Created: 2015-04-15 00:33:07
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Students;
@@ -32,7 +32,7 @@ use PHPExcel_Reader_CSV;
 /**
  * Import students from TAB-separated values file.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportStudentsTextTab extends ImportStudents
 {

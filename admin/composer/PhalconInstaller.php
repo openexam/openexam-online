@@ -22,7 +22,7 @@
 // File:    PhalconInstaller.php
 // Created: 2014-09-13 02:04:08
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Composer;
@@ -30,7 +30,7 @@ namespace OpenExam\Composer;
 /**
  * Handle installation of Phalcon.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class PhalconInstaller extends PackageInstaller
 {

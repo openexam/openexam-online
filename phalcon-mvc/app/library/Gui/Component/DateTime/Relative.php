@@ -22,7 +22,7 @@
 // File:    Relative.php
 // Created: 2017-10-25 04:27:56
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Gui\Component\DateTime;
@@ -40,7 +40,7 @@ use OpenExam\Library\Gui\Component\DateTime;
  * $datetime->render();         // 2017-10-25 14:00
  * </code>
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Relative extends DateTime
 {

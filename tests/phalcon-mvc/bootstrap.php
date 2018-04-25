@@ -22,7 +22,7 @@
 // File:    bootstrap.php
 // Created: 2014-08-26 11:45:13
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 /**

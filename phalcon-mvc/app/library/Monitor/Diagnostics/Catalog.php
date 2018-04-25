@@ -22,7 +22,7 @@
 // File:    Catalog.php
 // Created: 2016-05-31 02:28:11
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Diagnostics;
@@ -36,7 +36,7 @@ use Phalcon\Mvc\User\Component;
  * is missing, then all domains are used. The default user domain is set
  * by system config.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Catalog extends Component implements ServiceCheck
 {

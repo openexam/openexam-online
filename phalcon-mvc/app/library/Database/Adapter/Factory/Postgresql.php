@@ -22,7 +22,7 @@
 // File:    Postgresql.php
 // Created: 2017-01-16 02:19:36
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Adapter\Factory;
@@ -35,7 +35,7 @@ use Phalcon\Db\AdapterInterface;
 /**
  * PostgreSQL database adapter factory.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Postgresql implements AdapterFactory
 {

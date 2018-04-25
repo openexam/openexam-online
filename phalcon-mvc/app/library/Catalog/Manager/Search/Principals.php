@@ -22,7 +22,7 @@
 // File:    Principals.php
 // Created: 2017-04-12 00:10:14
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Manager\Search;
@@ -36,7 +36,7 @@ use OpenExam\Library\Catalog\Principal as UserPrincipal;
 /**
  * Directory principals search.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Principals implements Search
 {

@@ -22,7 +22,7 @@
 // File:    Test.php
 // Created: 2016-06-04 15:53:57
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -39,7 +39,7 @@ use OpenExam\Models\Performance;
  * values (constant, linear and exponential growing). The data can then be
  * used to test the performance counter interface.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Test extends CollectorBase
 {

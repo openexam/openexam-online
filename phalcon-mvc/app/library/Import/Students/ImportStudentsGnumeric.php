@@ -22,7 +22,7 @@
 // File:    ImportStudentsGnumeric.php
 // Created: 2015-04-15 00:29:58
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Students;
@@ -32,7 +32,7 @@ use PHPExcel_Reader_Gnumeric;
 /**
  * Import students from Gnumeric spreadsheet.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportStudentsGnumeric extends ImportStudents
 {

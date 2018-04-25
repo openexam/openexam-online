@@ -22,7 +22,7 @@
 // File:    Access.php
 // Created: 2017-09-23 00:39:27
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Exam;
@@ -40,7 +40,7 @@ use UUP\Authentication\Restrictor\AddressRestrictor;
  * the exam based on its access list. Typical used for checking that student 
  * computer are permitted.
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Access
 {

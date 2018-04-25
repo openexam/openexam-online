@@ -22,7 +22,7 @@
 // File:    Polyfill.php
 // Created: 2017-12-09 22:34:27
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Gui\Browser;
@@ -70,7 +70,7 @@ use RuntimeException;
  * }
  * </code>
  * 
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Polyfill extends Component
 {

@@ -22,7 +22,7 @@
 // File:    ImportOpenExam.php
 // Created: 2015-04-15 00:07:40
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Project;
@@ -34,7 +34,7 @@ use function _;
 
 /**
  * Import OpenExam project.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportOpenExamXml extends ImportBase
 {

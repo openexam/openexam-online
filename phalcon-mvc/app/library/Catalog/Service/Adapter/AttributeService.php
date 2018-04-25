@@ -22,7 +22,7 @@
 // File:    AttributeService.php
 // Created: 2016-11-14 23:20:32
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service\Adapter;
@@ -32,7 +32,7 @@ use OpenExam\Library\Catalog\Service\Adapter;
 /**
  * Abstract base class for attribute services.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class AttributeService extends Adapter
 {

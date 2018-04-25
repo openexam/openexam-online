@@ -22,7 +22,7 @@
 // File:    Command.php
 // Created: 2016-05-22 21:30:36
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Console;
@@ -41,7 +41,7 @@ use Exception;
  * Process class,
  * 
  * @see Process
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Command
 {

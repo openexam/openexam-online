@@ -22,7 +22,7 @@
 // File:    Users.php
 // Created: 2016-05-13 03:52:15
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization\DataProvider;
@@ -34,7 +34,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * The users data provider.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Users extends Component
 {

@@ -22,7 +22,7 @@
 // File:    Server.php
 // Created: 2016-05-23 01:35:44
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -33,7 +33,7 @@ use OpenExam\Models\Performance;
 /**
  * Server performance collector. 
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Server extends CollectorProcess
 {

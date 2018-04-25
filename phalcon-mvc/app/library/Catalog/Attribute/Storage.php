@@ -22,7 +22,7 @@
 // File:    Storage.php
 // Created: 2016-11-13 14:08:10
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Attribute;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\User\Component;
  * Provides a service for storing users into different storage backend using
  * the domain as selector.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Storage extends Component
 {

@@ -22,7 +22,7 @@
 // File:    ImportStudentsExcel97.php
 // Created: 2015-04-15 00:26:32
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Students;
@@ -32,7 +32,7 @@ use PHPExcel_Reader_Excel5;
 /**
  * Import students from Excel 97-2003 (BIFF 5) file.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportStudentsExcel97 extends ImportStudents
 {

@@ -22,7 +22,7 @@
 // File:    RenderBase.php
 // Created: 2014-10-27 22:50:22
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render\Extension;
@@ -49,7 +49,7 @@ use OpenExam\Library\Render\Exception;
  * );
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class RenderBase
 {

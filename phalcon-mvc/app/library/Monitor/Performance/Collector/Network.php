@@ -22,7 +22,7 @@
 // File:    Network.php
 // Created: 2016-05-31 19:27:21
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -36,7 +36,7 @@ use OpenExam\Models\Performance;
  * to ifconfig, but without making additional ioctl(). This implementation is
  * Linux specific, possibly between kernel versions too.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Network extends CollectorBase
 {

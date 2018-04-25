@@ -22,14 +22,14 @@
 // File:    AuditTarget.php
 // Created: 2016-04-26 22:27:45
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Audit\Target;
 
 /**
  * Audit target interface.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface AuditTarget
 {

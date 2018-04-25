@@ -22,7 +22,7 @@
 // File:    RenderSource.php
 // Created: 2017-12-08 05:39:09
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render\Queue;
@@ -34,7 +34,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * The render source handler.
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class RenderSource extends Component
 {

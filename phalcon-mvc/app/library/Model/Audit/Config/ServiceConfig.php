@@ -22,7 +22,7 @@
 // File:    ServiceConfig.php
 // Created: 2016-04-20 20:26:13
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Audit\Config;
@@ -51,7 +51,7 @@ use Phalcon\Mvc\User\Component;
   Ä       );
  * </pre>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ServiceConfig extends Component
 {

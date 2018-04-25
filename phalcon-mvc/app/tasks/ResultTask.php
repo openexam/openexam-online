@@ -22,7 +22,7 @@
 // File:    ResultTask.php
 // Created: 2016-04-19 22:00:41
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -43,7 +43,7 @@ use Phalcon\Mvc\Model\Resultset\Simple as SimpleResultSet;
  * o) Remove files older than 4 weeks.
  * o) Pre-generate for last 2 weeks.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ResultTask extends MainTask implements TaskInterface
 {

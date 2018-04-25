@@ -22,7 +22,7 @@
 // File:    Audit.php
 // Created: 2015-02-17 23:25:15
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Audit;
@@ -96,7 +96,7 @@ use Phalcon\Mvc\ModelInterface;
  * @see AuditFileTarget
  * @see AuditDataTarget
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Audit extends ModelBehavior
 {

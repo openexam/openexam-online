@@ -22,7 +22,7 @@
 // File:    Affilation.php
 // Created: 2015-03-16 00:31:09
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog;
@@ -38,7 +38,7 @@ use Phalcon\Mvc\User\Component;
  * The class uses lazy loading. The user affiliation is loaded on demand from
  * the catalog whenever one of the member functions is called.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Affiliation extends Component
 {

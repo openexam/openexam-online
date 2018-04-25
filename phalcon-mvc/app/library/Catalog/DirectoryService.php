@@ -22,7 +22,7 @@
 // File:    DirectoryService.php
 // Created: 2014-10-22 03:35:53
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog;
@@ -31,7 +31,7 @@ use OpenExam\Library\Catalog\Service\Connection;
 
 /**
  * Interface for directory services.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface DirectoryService extends DirectoryQuery
 {

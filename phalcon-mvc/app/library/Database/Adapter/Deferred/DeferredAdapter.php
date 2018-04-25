@@ -22,7 +22,7 @@
 // File:    DeferredAdapter.php
 // Created: 2017-01-16 04:05:44
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Adapter\Deferred;
@@ -35,7 +35,7 @@ use Phalcon\Db\AdapterInterface;
 /**
  * Abstract base class for deferred database adapters.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class DeferredAdapter implements AdapterFactory
 {

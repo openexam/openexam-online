@@ -22,7 +22,7 @@
 // File:    ImportController.php
 // Created: 2015-04-15 02:26:49
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Utility;
@@ -36,7 +36,7 @@ use Phalcon\Mvc\View;
 /**
  * Import GUI controller.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportController extends GuiController
 {

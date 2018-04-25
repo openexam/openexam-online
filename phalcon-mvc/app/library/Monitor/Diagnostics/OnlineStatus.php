@@ -22,7 +22,7 @@
 // File:    OnlineStatus.php
 // Created: 2016-06-01 23:48:00
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Diagnostics;
@@ -50,7 +50,7 @@ use OpenExam\Library\Monitor\Exception;
  * }
  * </code>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class OnlineStatus
 {

@@ -35,7 +35,7 @@ use OpenExam\Library\Model\Guard\Question as QuestionModelGuard;
  * Represents a user having the corrector role on the related questiton.
  * @property Question $question The related question.
  * @property Result[] $results The related results.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Corrector extends Role
 {

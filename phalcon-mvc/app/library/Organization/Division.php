@@ -22,7 +22,7 @@
 // File:    Division.php
 // Created: 2016-05-13 02:34:32
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization;
@@ -38,7 +38,7 @@ use OpenExam\Models\Exam;
  * Represents an organization unit at the division level. This level is 
  * currently the highest within an organization..
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Division extends OrganizationUnit
 {

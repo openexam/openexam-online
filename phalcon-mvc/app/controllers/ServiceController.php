@@ -22,7 +22,7 @@
 // File:    ServiceController.php
 // Created: 2014-08-25 00:15:47
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers;
@@ -41,7 +41,7 @@ use OpenExam\Library\WebService\Common\ServiceResponse;
  * The deriving class should implement exceptionAction() to send error
  * response to client in service dependent encoding format.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class ServiceController extends ControllerBase
 {

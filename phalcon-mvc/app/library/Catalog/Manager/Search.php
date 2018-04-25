@@ -22,7 +22,7 @@
 // File:    Search.php
 // Created: 2017-04-11 23:04:00
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Manager;
@@ -31,7 +31,7 @@ use OpenExam\Library\Catalog\DirectoryManager;
 
 /**
  * The directory search interface.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Search
 {

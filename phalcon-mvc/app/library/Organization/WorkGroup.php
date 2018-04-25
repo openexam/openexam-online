@@ -22,7 +22,7 @@
 // File:    WorkGroup.php
 // Created: 2016-05-13 04:34:03
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization;
@@ -39,7 +39,7 @@ use OpenExam\Models\Exam;
  * currently lowest in the organization hierarchy having department as its
  * parent.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class WorkGroup extends OrganizationUnit
 {

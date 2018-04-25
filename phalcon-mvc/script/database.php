@@ -22,7 +22,7 @@
 // File:    database.php
 // Created: 2014-09-09 03:27:04
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 define('TASKS_PHP', __DIR__ . '/../app/config/system/tasks.php');

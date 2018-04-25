@@ -22,14 +22,14 @@
 // File:    ServiceDescription.php
 // Created: 2014-10-10 03:38:57
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\WebService\Wsdl;
 
 /**
  * SOAP service description (WSDL).
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ServiceDescription
 {

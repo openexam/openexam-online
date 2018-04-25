@@ -22,7 +22,7 @@
 // File:    StatisticsTask.php
 // Created: 2016-05-12 14:17:08
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -37,7 +37,7 @@ use OpenExam\Models\Exam;
 /**
  * System usage (statistics) task.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class StatisticsTask extends MainTask implements TaskInterface
 {

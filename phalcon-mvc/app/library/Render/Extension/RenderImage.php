@@ -22,7 +22,7 @@
 // File:    RenderImage.php
 // Created: 2014-10-27 21:42:58
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render\Extension;
@@ -53,7 +53,7 @@ use OpenExam\Library\Render\Renderer;
  * $render->send('file.jpeg', $settings);
  * </code>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  * @see http://wkhtmltopdf.org/libwkhtmltox/pagesettings.html
  */
 class RenderImage extends RenderBase implements Renderer

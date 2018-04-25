@@ -22,7 +22,7 @@
 // File:    ArchiveTask.php
 // Created: 2017-09-19 19:03:34
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -35,7 +35,7 @@ use Phalcon\Mvc\Model\Resultset\Simple as SimpleResultSet;
 /**
  * Use this task to archive exams.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ArchiveTask extends MainTask implements TaskInterface
 {

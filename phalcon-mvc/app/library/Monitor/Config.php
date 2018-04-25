@@ -22,7 +22,7 @@
 // File:    Config.php
 // Created: 2016-06-10 00:39:34
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\User\Component;
  * The counter names are the same as the MODE_XXX constants defined by the performance
  * model.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Config extends Component
 {

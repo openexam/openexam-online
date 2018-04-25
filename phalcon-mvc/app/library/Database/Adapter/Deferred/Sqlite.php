@@ -22,7 +22,7 @@
 // File:    Sqlite.php
 // Created: 2017-01-10 02:13:20
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Adapter\Deferred;
@@ -37,7 +37,7 @@ use Phalcon\Db\DialectInterface;
 /**
  * Caching SQLite database adapter with deferred connection.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Sqlite extends DeferredAdapter implements AdapterFactory
 {

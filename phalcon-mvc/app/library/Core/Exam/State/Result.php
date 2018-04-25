@@ -22,7 +22,7 @@
 // File:    Result.php
 // Created: 2017-10-29 21:00:47
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Exam\State;
@@ -37,7 +37,7 @@ use Phalcon\Cache\BackendInterface;
  * This class is for internal use by the state class only. Used to cache the 
  * correction state on an exam.
  * 
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Result
 {

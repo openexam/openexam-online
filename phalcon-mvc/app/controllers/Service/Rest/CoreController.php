@@ -22,7 +22,7 @@
 // File:    CoreController.php
 // Created: 2014-08-20 11:35:41
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Service\Rest;
@@ -143,7 +143,7 @@ use OpenExam\Plugins\Security\Model\ObjectAccess;
  * // Get all capabilities grouped by role (same):
  * curl -XPOST ${BASEURL}/rest/core/creator/capability -d {"params":{}}
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CoreController extends RestController
 {

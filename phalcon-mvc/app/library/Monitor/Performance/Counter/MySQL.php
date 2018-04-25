@@ -22,7 +22,7 @@
 // File:    MySQL.php
 // Created: 2016-05-30 18:39:27
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -33,7 +33,7 @@ use OpenExam\Library\Monitor\Performance\Counter;
 /**
  * MySQL performance counter.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class MySQL extends CounterBase implements Counter
 {

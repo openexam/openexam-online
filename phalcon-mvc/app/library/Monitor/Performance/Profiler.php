@@ -22,7 +22,7 @@
 // File:    Profiler.php
 // Created: 2016-06-13 01:53:32
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance;
@@ -63,7 +63,7 @@ use Phalcon\Mvc\User\Component;
  * <li>shutdown:   Profiler shutdown.</li>
  * </ol>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Profiler extends Component
 {

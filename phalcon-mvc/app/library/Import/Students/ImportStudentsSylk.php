@@ -22,7 +22,7 @@
 // File:    ImportStudentsSylk.php
 // Created: 2015-04-15 23:09:38
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Students;
@@ -32,7 +32,7 @@ use PHPExcel_Reader_SYLK;
 /**
  * Import students from spreadsheet interchange (SYLK) document.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportStudentsSylk extends ImportStudents
 {

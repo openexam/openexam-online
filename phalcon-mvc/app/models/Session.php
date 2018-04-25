@@ -22,7 +22,7 @@
 // File:    Session.php
 // Created: 2014-09-20 13:00:59
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Models;
@@ -36,7 +36,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * 
  * This model represents logon sessions.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Session extends ModelBase
 {

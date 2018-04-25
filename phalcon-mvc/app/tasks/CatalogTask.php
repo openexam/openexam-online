@@ -22,7 +22,7 @@
 // File:    CatalogTask.php
 // Created: 2016-11-14 07:22:00
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -33,7 +33,7 @@ use OpenExam\Library\Catalog\Principal;
 /**
  * Catalog service task.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CatalogTask extends MainTask implements TaskInterface
 {

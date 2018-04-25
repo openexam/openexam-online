@@ -32,7 +32,7 @@ namespace OpenExam\Models;
  * 
  * Represents a user having the admin role.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Admin extends Role
 {

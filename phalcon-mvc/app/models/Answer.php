@@ -41,7 +41,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * @property Question $question The related question.
  * @property Student $student The related student.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Answer extends ModelBase
 {

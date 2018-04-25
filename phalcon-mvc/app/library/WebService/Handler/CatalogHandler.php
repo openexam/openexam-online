@@ -22,7 +22,7 @@
 // File:    CatalogHandler.php
 // Created: 2015-04-03 14:31:38
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\WebService\Handler;
@@ -36,7 +36,7 @@ use OpenExam\Library\WebService\Common\ServiceResponse;
 
 /**
  * Catalog service handler.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CatalogHandler extends ServiceHandler
 {

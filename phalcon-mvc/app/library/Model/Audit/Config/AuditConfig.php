@@ -22,7 +22,7 @@
 // File:    AuditConfig.php
 // Created: 2016-04-21 03:50:32
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Audit\Config;
@@ -34,7 +34,7 @@ use OpenExam\Library\Model\Audit\Audit;
  * 
  * This class represents the audit configuration for a single model.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class AuditConfig
 {

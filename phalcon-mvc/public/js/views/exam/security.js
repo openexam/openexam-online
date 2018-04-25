@@ -22,7 +22,7 @@
 // File:    security.js
 // Created: 2015-04-07 22:56:58
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 // 

@@ -22,7 +22,7 @@
 // File:    Mediator.php
 // Created: 2017-01-10 01:38:15
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Cache;
@@ -58,7 +58,7 @@ use Phalcon\Db\ResultInterface;
  * it gets passed as a parameter to some model methods whos method signature
  * requires this.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Mediator extends Proxy implements AdapterInterface
 {

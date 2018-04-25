@@ -22,7 +22,7 @@
 // File:    DispatchListener.php
 // Created: 2014-11-07 00:48:02
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Plugins\Security;
@@ -40,7 +40,7 @@ use Phalcon\Mvc\User\Plugin;
  * This class listen for dispatch event from the event manager and uses ACL
  * to enforce authentication for non-public controller/actions.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class DispatchListener extends Plugin
 {

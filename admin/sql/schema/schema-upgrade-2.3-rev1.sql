@@ -6,7 +6,7 @@
  ****************************************************************/
 
 /**
- * Author:  Anders Lövgren (QNET)
+ * Author:  Anders Lövgren (Nowise Systems)
  * Created: 2018-jan-30
  */
 

@@ -22,7 +22,7 @@
 // File:    Ldap.php
 // Created: 2014-10-22 04:21:36
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service\Adapter;
@@ -39,7 +39,7 @@ use OpenExam\Library\Catalog\Service\Adapter\Ldap\Result;
  * 
  * This class provides directory service using LDAP as the service backend.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Ldap extends AttributeService
 {

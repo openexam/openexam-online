@@ -40,7 +40,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * 
  * @property Lock[] $locks The related lock (if any).
  * @property Room $room The related room (if any).
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Computer extends ModelBase
 {

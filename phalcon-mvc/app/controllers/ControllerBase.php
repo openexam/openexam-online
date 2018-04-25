@@ -22,7 +22,7 @@
 // File:    ControllerBase.php
 // Created: 2015-03-13 02:30:25
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // Author:  Ahsan Shahzad (MedfarmDoIT)
 // 
 

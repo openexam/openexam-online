@@ -22,7 +22,7 @@
 // File:    Setting.php
 // Created: 2014-11-29 23:54:14
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Models;

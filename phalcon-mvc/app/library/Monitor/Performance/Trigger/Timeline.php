@@ -22,7 +22,7 @@
 // File:    Timeline.php
 // Created: 2016-06-09 03:48:44
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Trigger;
@@ -49,7 +49,7 @@ use Phalcon\Mvc\Model\ResultInterface;
  * $trigger->process($performance);     // Process performance model object.
  * </code>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Timeline implements Trigger
 {

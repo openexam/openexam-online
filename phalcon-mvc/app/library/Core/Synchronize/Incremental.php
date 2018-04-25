@@ -58,7 +58,7 @@ use Phalcon\Cache\BackendInterface;
  * @property-read int $retry The number of retries.
  * @property-read array $locks All acquired resource locks.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Incremental
 {

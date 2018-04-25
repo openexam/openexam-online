@@ -22,7 +22,7 @@
 // File:    routes.php
 // Created: 2014-08-20 11:30:56
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 $router = new Phalcon\Mvc\Router();

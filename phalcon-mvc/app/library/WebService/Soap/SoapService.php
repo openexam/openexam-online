@@ -22,7 +22,7 @@
 // File:    SoapService.php
 // Created: 2014-08-21 01:05:58
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\WebService\Soap;
@@ -71,7 +71,7 @@ use SoapServer;
  * }
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class SoapService extends Component
 {

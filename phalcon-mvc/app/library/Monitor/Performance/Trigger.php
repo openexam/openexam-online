@@ -22,7 +22,7 @@
 // File:    Trigger.php
 // Created: 2016-06-09 03:54:14
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance;
@@ -31,7 +31,7 @@ use OpenExam\Models\Performance;
 
 /**
  * The triggers interface.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Trigger
 {

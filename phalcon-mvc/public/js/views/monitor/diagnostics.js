@@ -23,7 +23,7 @@
 // File:    diagnostics.js
 // Created: 2016-06-08 22:14:06
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 var diagnostics = (function () {

@@ -36,7 +36,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * The room model.
  * 
  * @property Computer[] $computers Computers that belongs to this room.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Room extends ModelBase
 {

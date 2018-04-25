@@ -22,7 +22,7 @@
 // File:    SoapController.php
 // Created: 2015-03-13 00:18:24
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Service;
@@ -35,7 +35,7 @@ use SoapServer;
 /**
  * Common base class for SOAP controllers.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class SoapController extends ServiceController
 {

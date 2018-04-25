@@ -22,7 +22,7 @@
 // File:    Role.php
 // Created: 2014-11-10 23:20:49
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Models;
@@ -39,7 +39,7 @@ use Phalcon\Validation\Validator\Uniqueness;
 /**
  * Base class for all role models.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Role extends ModelBase
 {

@@ -22,7 +22,7 @@
 // File:    ModelTask.php
 // Created: 2014-09-10 02:59:31
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -53,7 +53,7 @@ use OpenExam\Library\Model\ModelSetup;
  *   *) Remember to format the source after update.
  *   *) Use --backup action before --sync to be safe.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ModelTask extends MainTask implements TaskInterface
 {

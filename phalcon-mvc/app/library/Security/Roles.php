@@ -22,7 +22,7 @@
 // File:    Roles.php
 // Created: 2014-08-25 09:34:37
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Security;
@@ -92,7 +92,7 @@ use ReflectionClass;
  * $roles->hasRole(Roles::corrector, 456);      // true (on question)
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Roles extends Component
 {

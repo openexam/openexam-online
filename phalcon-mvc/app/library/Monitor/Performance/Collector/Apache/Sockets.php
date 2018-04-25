@@ -22,7 +22,7 @@
 // File:    Sockets.php
 // Created: 2016-05-29 16:33:25
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector\Apache;
@@ -34,7 +34,7 @@ use OpenExam\Library\Monitor\Exception;
 /**
  * Sockets used by Apache.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Sockets
 {

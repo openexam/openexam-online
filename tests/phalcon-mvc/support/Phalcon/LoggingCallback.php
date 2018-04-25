@@ -22,7 +22,7 @@
 // File:    LoggingCallback.php
 // Created: 2014-09-17 00:52:14
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Tests\Phalcon;

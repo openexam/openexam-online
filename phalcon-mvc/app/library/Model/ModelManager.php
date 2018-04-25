@@ -22,7 +22,7 @@
 // File:    ModelManager.php
 // Created: 2016-01-28 01:03:41
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model;
@@ -33,7 +33,7 @@ use Phalcon\Mvc\ModelInterface;
 /**
  * Custom model manager.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ModelManager extends Manager
 {

@@ -22,14 +22,14 @@
 // File:    Import.php
 // Created: 2015-04-14 23:48:19
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import;
 
 /**
  * The interface for concrete import classes. 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Import
 {

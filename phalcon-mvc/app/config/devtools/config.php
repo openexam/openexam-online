@@ -22,7 +22,7 @@
 // File:    config.php
 // Created: 2014-09-09 23:41:57
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 $config = include(__DIR__ . '/../system/config.php');

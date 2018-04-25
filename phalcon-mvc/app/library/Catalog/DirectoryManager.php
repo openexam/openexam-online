@@ -22,7 +22,7 @@
 // File:    DirectoryManager.php
 // Created: 2014-10-22 03:44:35
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog;
@@ -58,7 +58,7 @@ use Phalcon\Mvc\User\Component;
  *
  * @property-read AttributeEnumerator $attrib Get attribute enumerator.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class DirectoryManager extends Component implements DirectoryService
 {

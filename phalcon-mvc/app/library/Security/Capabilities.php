@@ -20,7 +20,7 @@ use Phalcon\Mvc\User\Component;
 
 /**
  * Capability check for resource.
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Capability extends Component
 {

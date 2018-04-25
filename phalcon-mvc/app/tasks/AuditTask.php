@@ -22,7 +22,7 @@
 // File:    AuditTask.php
 // Created: 2016-04-27 05:17:08
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -33,7 +33,7 @@ use Phalcon\Db;
 /**
  * Audit trails task.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class AuditTask extends MainTask implements TaskInterface
 {

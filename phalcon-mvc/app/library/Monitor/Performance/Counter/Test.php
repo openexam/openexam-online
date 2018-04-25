@@ -22,7 +22,7 @@
 // File:    Test.php
 // Created: 2016-06-04 16:43:56
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Counter;
@@ -34,7 +34,7 @@ use OpenExam\Library\Monitor\Performance\Counter;
  * Test performance counter.
  *
  * @see Test
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Test extends CounterBase implements Counter
 {

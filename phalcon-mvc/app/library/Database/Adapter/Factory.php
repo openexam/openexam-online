@@ -22,7 +22,7 @@
 // File:    DatabaseAdapter.php
 // Created: 2014-08-25 07:27:15
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Database\Adapter;
@@ -41,7 +41,7 @@ use Phalcon\DiInterface;
 /**
  * Database adapter factory.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Factory implements InjectionAwareInterface
 {

@@ -22,7 +22,7 @@
 // File:    History.php
 // Created: 2016-04-27 20:08:18
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Audit;
@@ -52,7 +52,7 @@ use Phalcon\Mvc\User\Component;
  * $history->revert($id);
  * </code>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class History extends Component
 {

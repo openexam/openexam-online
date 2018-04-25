@@ -37,7 +37,7 @@ use Phalcon\Validation\Validator\InclusionIn;
  * Represents data collected from an performance counter (e.g. vmstat(8) or 
  * equivalent).
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Performance extends ModelBase
 {

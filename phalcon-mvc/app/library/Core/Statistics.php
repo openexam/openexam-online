@@ -22,7 +22,7 @@
 // File:    Statistics.php
 // Created: 2016-04-28 19:38:36
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core;
@@ -39,7 +39,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * System statistics.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Statistics extends Component
 {

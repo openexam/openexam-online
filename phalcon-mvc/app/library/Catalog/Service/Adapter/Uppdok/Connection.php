@@ -22,7 +22,7 @@
 // File:    Connection.php
 // Created: 2016-06-02 01:42:45
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Service\Adapter\Uppdok;

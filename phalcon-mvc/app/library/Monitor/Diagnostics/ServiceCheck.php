@@ -22,14 +22,14 @@
 // File:    ServiceCheck.php
 // Created: 2016-06-02 02:43:42
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Diagnostics;
 
 /**
  * Interface for service checks.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface ServiceCheck
 {

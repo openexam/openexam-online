@@ -22,7 +22,7 @@
 // File:    ImportInsert.php
 // Created: 2015-04-15 00:01:09
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import;
@@ -38,7 +38,7 @@ use RuntimeException;
 
 /**
  * Insert import data.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ImportInsert extends Component
 {

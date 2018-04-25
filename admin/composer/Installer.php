@@ -22,7 +22,7 @@
  * Created: 2014-09-13 00:39:37
  * File:    Composer.php
  * 
- * Author:  Anders Lövgren (QNET/BMC CompDept)
+ * Author:  Anders Lövgren (Nowise Systems)
  */
 
 namespace OpenExam\Composer;
@@ -32,7 +32,7 @@ use Composer\Installer\PackageEvent;
 /**
  * Handles install/update hooks for Composer.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Installer
 {

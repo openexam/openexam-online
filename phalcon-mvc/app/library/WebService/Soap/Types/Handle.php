@@ -22,14 +22,14 @@
 // File:    Handle.php
 // Created: 2014-10-16 04:50:01
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\WebService\Soap\Types;
 
 /**
  * SOAP call handle class.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Handle
 {

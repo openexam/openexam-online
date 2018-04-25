@@ -37,7 +37,7 @@ use Phalcon\Validation\Validator\Regex as RegexValidator;
  * Represents a system user. This model should not be external exposed. It's 
  * meant to be used internal as catalog source or in authentication. 
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class User extends ModelBase
 {

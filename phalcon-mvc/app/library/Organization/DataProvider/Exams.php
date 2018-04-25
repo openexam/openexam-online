@@ -22,7 +22,7 @@
 // File:    Exams.php
 // Created: 2016-05-13 03:19:11
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization\DataProvider;
@@ -45,7 +45,7 @@ use Phalcon\Mvc\User\Component;
  * )
  * </code>
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Exams extends Component
 {

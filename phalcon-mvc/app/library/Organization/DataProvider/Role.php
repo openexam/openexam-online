@@ -22,7 +22,7 @@
 // File:    Role.php
 // Created: 2016-05-16 21:36:56
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization\DataProvider;
@@ -36,7 +36,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * The role data provider.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Role extends Component
 {
@@ -142,7 +142,7 @@ class Role extends Component
 
 /**
  * @internal Abstract base class for role data.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class RoleData extends Component
 {
@@ -309,7 +309,7 @@ abstract class RoleData extends Component
 
 /**
  * @internal Global role data (e.g. admin or teacher).
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class GlobalRole extends RoleData
 {
@@ -336,7 +336,7 @@ class GlobalRole extends RoleData
 
 /**
  * @internal Exam role data.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ExamRole extends RoleData
 {
@@ -363,7 +363,7 @@ class ExamRole extends RoleData
 
 /**
  * @internal Corrector role data.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CorrectorRole extends RoleData
 {
@@ -390,7 +390,7 @@ class CorrectorRole extends RoleData
 
 /**
  * @internal Creator role data.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CreatorRole extends RoleData
 {
@@ -417,7 +417,7 @@ class CreatorRole extends RoleData
 
 /**
  * @internal Employee user data.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class EmployeeRole extends RoleData
 {
@@ -458,7 +458,7 @@ class EmployeeRole extends RoleData
 
 /**
  * @internal System user data (any user with login).
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class SystemUserRole extends RoleData
 {

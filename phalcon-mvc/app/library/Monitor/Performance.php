@@ -22,7 +22,7 @@
 // File:    Performance.php
 // Created: 2016-05-22 20:23:31
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor;
@@ -68,7 +68,7 @@ use Phalcon\Mvc\User\Component;
  * $counter = $performance->getCounter('disk');
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Performance extends Component
 {

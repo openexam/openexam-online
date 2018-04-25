@@ -22,7 +22,7 @@
 // File:    Department.php
 // Created: 2016-05-13 04:08:48
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Organization;
@@ -38,7 +38,7 @@ use OpenExam\Models\Exam;
  * Represents an organization unit at the department level. This level is 
  * a child of the division.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Department extends OrganizationUnit
 {

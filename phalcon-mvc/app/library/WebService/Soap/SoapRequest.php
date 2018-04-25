@@ -22,7 +22,7 @@
 // File:    SoapRequest.php
 // Created: 2014-10-30 03:17:52
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\WebService\Soap;
@@ -31,7 +31,7 @@ use Phalcon\Http\RequestInterface;
 
 /**
  * SOAP request to handler class/object mapper.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class SoapRequest
 {

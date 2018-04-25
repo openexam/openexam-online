@@ -22,13 +22,13 @@
 // File:    Exception.php
 // Created: 2014-10-27 23:36:40
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render;
 
 /**
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Exception extends \Exception
 {

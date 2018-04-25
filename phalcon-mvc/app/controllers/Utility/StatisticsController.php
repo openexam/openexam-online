@@ -22,7 +22,7 @@
 // File:    StatisticsController.php
 // Created: 2016-04-28 17:57:32
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Utility;
@@ -35,7 +35,7 @@ use OpenExam\Library\Security\Exception as SecurityException;
 /**
  * Statistics (system usage) controller.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class StatisticsController extends GuiController
 {

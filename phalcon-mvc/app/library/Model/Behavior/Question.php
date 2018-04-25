@@ -22,7 +22,7 @@
 // File:    Question.php
 // Created: 2014-11-13 01:09:36
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Behavior;
@@ -34,7 +34,7 @@ use Phalcon\Mvc\ModelInterface;
 
 /**
  * Behavior for question model.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Question extends ModelBehavior
 {

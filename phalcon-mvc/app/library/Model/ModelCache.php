@@ -22,7 +22,7 @@
 // File:    ModelCache.php
 // Created: 2016-01-28 17:54:05
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model;
@@ -37,7 +37,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Handle cache of resusable models.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class ModelCache extends Component
 {

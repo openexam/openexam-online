@@ -22,7 +22,7 @@
 // File:    Ownership.php
 // Created: 2014-11-12 23:30:50
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Model\Behavior\Generate;
@@ -49,7 +49,7 @@ use Phalcon\Mvc\ModelInterface;
  *      )
  * )));
  * </code>
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Ownership extends ModelBehavior
 {

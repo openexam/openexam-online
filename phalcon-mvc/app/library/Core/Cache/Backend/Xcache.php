@@ -22,7 +22,7 @@
 // File:    Xcache.php
 // Created: 2017-01-02 07:33:08
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Cache\Backend;
@@ -38,7 +38,7 @@ use Phalcon\Cache\Exception;
  * The XCache backend in Phalcon caused memory limit exhausted errors in some
  * cases. This class can be used as a replacement for that class.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Xcache extends Backend implements BackendInterface
 {

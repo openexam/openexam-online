@@ -22,7 +22,7 @@
 // File:    RenderPdfDocument.php
 // Created: 2014-10-27 21:43:16
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render\Extension;
@@ -54,7 +54,7 @@ use OpenExam\Library\Render\Renderer;
  * $render->send('file.pdf', $pages);
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  * @see http://wkhtmltopdf.org/libwkhtmltox/pagesettings.html
  */
 class RenderPdfDocument extends RenderBase implements Renderer

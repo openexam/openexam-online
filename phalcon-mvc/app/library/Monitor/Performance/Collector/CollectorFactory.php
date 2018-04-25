@@ -22,7 +22,7 @@
 // File:    CollectorFactory.php
 // Created: 2016-06-10 17:46:29
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -36,7 +36,7 @@ use OpenExam\Models\Performance;
 /**
  * Factory class creating collectors.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class CollectorFactory
 {

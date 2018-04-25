@@ -22,7 +22,7 @@
  * Created: 2018-01-18 02:30:42
  * File:    config.inc
  * 
- * Author:  Anders Lövgren (QNET)
+ * Author:  Anders Lövgren (Nowise Systems)
  */
 
 // 

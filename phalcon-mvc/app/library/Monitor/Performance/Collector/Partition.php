@@ -22,7 +22,7 @@
 // File:    Partition.php
 // Created: 2016-05-23 23:44:08
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -33,7 +33,7 @@ use OpenExam\Models\Performance;
 /**
  * Partition performance collector.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Partition extends CollectorProcess
 {

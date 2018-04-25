@@ -22,7 +22,7 @@
 // File:    Authenticator.php
 // Created: 2016-05-31 02:28:39
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Diagnostics;
@@ -33,7 +33,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Diagnostics of authentication.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Authenticator extends Component implements ServiceCheck
 {

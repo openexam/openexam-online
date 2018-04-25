@@ -22,7 +22,7 @@
 // File:    Silent.php
 // Created: 2015-03-16 05:39:55
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Security\Signup;
@@ -32,7 +32,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Unattended user signup.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Unattended extends Component
 {

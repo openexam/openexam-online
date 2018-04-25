@@ -35,7 +35,7 @@ use Phalcon\Logger;
 
 /**
  * Test output handler.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class TestLogger
 {

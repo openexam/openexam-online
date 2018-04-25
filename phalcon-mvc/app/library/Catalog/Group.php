@@ -22,7 +22,7 @@
 // File:    Group.php
 // Created: 2014-11-05 23:09:23
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog;
@@ -30,7 +30,7 @@ namespace OpenExam\Library\Catalog;
 /**
  * The group entity class.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Group
 {

@@ -43,7 +43,7 @@ use Phalcon\Validation\Validator\Uniqueness;
  * @property Student $student The student this lock was acquired for.
  * @property Computer $computer The computer that acquired the lock.
  * @property Exam $exam The related exam.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Lock extends ModelBase
 {

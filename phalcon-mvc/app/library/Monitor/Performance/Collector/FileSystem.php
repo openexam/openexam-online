@@ -22,7 +22,7 @@
 // File:    FileSystem.php
 // Created: 2016-06-01 15:02:06
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance\Collector;
@@ -46,7 +46,7 @@ use OpenExam\Models\Performance;
  * $collector->start();
  * </code>
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class FileSystem extends CollectorBase
 {

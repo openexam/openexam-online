@@ -22,7 +22,7 @@
 // File:    Setup.php
 // Created: 2014-12-17 02:51:48
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Exam\Student;
@@ -34,7 +34,7 @@ use Phalcon\Mvc\User\Component;
 /**
  * Prepare exam for student on first access.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Setup extends Component
 {

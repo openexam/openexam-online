@@ -22,7 +22,7 @@
 // File:    SettingAccess.php
 // Created: 2014-11-29 23:13:30
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Plugins\Security\Model;
@@ -34,7 +34,7 @@ use OpenExam\Models\Setting;
 /**
  * Access control for the Setting model.
  *
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class SettingAccess extends ObjectAccess
 {

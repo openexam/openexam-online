@@ -22,7 +22,7 @@
 // File:    Provider.php
 // Created: 2016-11-13 14:05:18
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Catalog\Attribute;
@@ -32,7 +32,7 @@ use OpenExam\Models\User;
 
 /**
  * User attribute provider.
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Provider
 {

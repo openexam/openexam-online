@@ -22,7 +22,7 @@
 // File:    RenderWorker.php
 // Created: 2017-12-07 01:04:39
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Render\Queue;
@@ -57,7 +57,7 @@ use Phalcon\Mvc\User\Component;
  * waiting for a signal, pass the BLOCK_INFINITE constant as sleep value. Don't 
  * use LOG_XXX when started as a daemon process.
  * 
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class RenderWorker extends Component
 {

@@ -22,7 +22,7 @@
 // File:    Counter.php
 // Created: 2016-05-24 02:16:19
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Monitor\Performance;
@@ -30,7 +30,7 @@ namespace OpenExam\Library\Monitor\Performance;
 /**
  * Interface for performance counters.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 interface Counter
 {

@@ -22,7 +22,7 @@
 // File:    Staff.php
 // Created: 2016-04-29 02:30:30
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Core\Exam;
@@ -53,7 +53,7 @@ use Phalcon\Mvc\User\Component;
  * @property-read array $users Get all users.
  * @property-read array $roles Get all roles.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class Staff extends Component
 {

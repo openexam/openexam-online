@@ -22,7 +22,7 @@
 // File:    ImportStudents.php
 // Created: 2015-04-15 00:21:13
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Library\Import\Students;
@@ -39,7 +39,7 @@ use PHPExcel_Worksheet;
 /**
  * Base class for student import classes.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  */
 abstract class ImportStudents extends ImportBase
 {

@@ -22,7 +22,7 @@
 // File:    RenderController.php
 // Created: 2017-10-30 05:22:32
 // 
-// Author:  Anders Lövgren (QNET)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Controllers\Utility;
@@ -42,7 +42,7 @@ use OpenExam\Models\Render;
  * This controller can be called to render an URL as a PDF document or
  * image file using the render service.
  *
- * @author Anders Lövgren (QNET)
+ * @author Anders Lövgren (Nowise Systems)
  */
 class RenderController extends GuiController
 {

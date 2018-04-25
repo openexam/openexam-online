@@ -22,7 +22,7 @@
 // File:    CacheTask.php
 // Created: 2016-01-25 20:13:51
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 namespace OpenExam\Console\Tasks;
@@ -35,7 +35,7 @@ use OpenExam\Models\Exam;
  * Notice that APC cache for web server is not available for CLI tasks. Other
  * cache backends should work though.
  * 
- * @author Anders Lövgren (QNET/BMC CompDept)
+ * @author Anders Lövgren (Nowise Systems)
  * @see https://forum.phalconphp.com/discussion/4529/access-to-cache-in-cli-task-not-working-with-apc
  */
 class CacheTask extends MainTask implements TaskInterface

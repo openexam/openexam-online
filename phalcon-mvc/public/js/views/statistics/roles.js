@@ -22,7 +22,7 @@
 // File:    roles.js
 // Created: 2016-04-28 19:18:16
 // 
-// Author:  Anders Lövgren (QNET/BMC CompDept)
+// Author:  Anders Lövgren (Nowise Systems)
 // 
 
 $(document).ready(function () {
