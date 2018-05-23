@@ -81,8 +81,7 @@ used by end-users for their custom tasks.
 The logotype is owned by the OpenExam project that also claims the rights to restrict its 
 usage. 
 
-In general the logotype can be freely used without permission, except for your own 
-projects including projects forked from https://github.com/openexam. 
+In general the [OpenExam logotype](http://openexam.io/assets/img/logo-medium-normal.png) can be freely used without permission, except for your own projects including projects forked from https://github.com/openexam. 
 
 Usage as the <u>site logotype</u> is restrained to the official project page or sites managed by 
 the OpenExam project.
