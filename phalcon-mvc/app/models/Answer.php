@@ -32,6 +32,7 @@ use OpenExam\Library\Model\Guard\Question as QuestionModelGuard;
 use OpenExam\Library\Model\Guard\Student as StudentModelGuard;
 use Phalcon\Validation;
 use Phalcon\Validation\Validator\Uniqueness;
+use \OpenExam\Library\Model\Validation\Newer as NewerValidator;
 
 /**
  * The answer model.
@@ -82,6 +83,11 @@ class Answer extends ModelBase
          * @var string
          */
         public $comment;
+        /**
+         * The modified datetime.
+         * @var string 
+         */
+        public $modified;
 
         public function initialize()
         {
@@ -137,7 +143,8 @@ class Answer extends ModelBase
                         'student_id'  => 'student_id',
                         'answered'    => 'answered',
                         'answer'      => 'answer',
-                        'comment'     => 'comment'
+                        'comment'     => 'comment',
+                        'modified'    => 'modified'
                 );
         }
 
@@ -155,10 +162,17 @@ class Answer extends ModelBase
                         'message' => "Student answer has already been inserted"
                     )
                 ));
+                $validator->add(
+                    "modified", new NewerValidator(
+                    array(
+                        "message" => "The modified datetime is older than current",
+                        "current" => $this->getSnapshotData()
+                    )
+                ));
 
                 return $this->validate($validator);
         }
-        
+
         /**
          * Called before model is created.
          */

@@ -139,7 +139,8 @@ function syncAnswers(async, redirectToAfterSync)
             data: {
                 id: ansId,
                 answer: JSON.stringify(ansJson),
-                answered: 1
+                answered: 1,
+                modified: (new Date()).toLocaleString("sv-se")  // The timezone is irrelevant
             },
             async: async,
             dataType: "json",
