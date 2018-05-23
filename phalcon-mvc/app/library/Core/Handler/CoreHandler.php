@@ -85,7 +85,7 @@ class CoreHandler extends Component
                         throw new SecurityException("The trusted role is not permitted here.", SecurityException::ACTION);
                 }
 
-                $this->user->setPrimaryRole($role);
+                $this->user->setEffectiveRole($role);
         }
 
         /**

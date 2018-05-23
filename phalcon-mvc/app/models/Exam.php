@@ -893,6 +893,9 @@ class Exam extends ModelBase
                 $user = $this->getDI()->get('user');
                 $role = $user->setPrimaryRole(Roles::SYSTEM);
 
+                if ($role == Roles::TRUSTED) {
+                        $role = $user->getEffectiveRole();
+                }
                 if ($role == Roles::STUDENT) {
                         if (($student = Student::findFirst(array(
                                     'conditions' => 'user = :user: AND exam_id = :exam:',

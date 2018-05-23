@@ -27,6 +27,7 @@
 
 namespace OpenExam\Plugins\Security\Model;
 
+use OpenExam\Library\Core\Exam\State;
 use OpenExam\Library\Security\Exception;
 use OpenExam\Library\Security\Roles;
 use OpenExam\Library\Security\User;
@@ -118,6 +119,14 @@ class AnswerAccess extends ObjectAccess
                                     if ($action != self::CREATE) {
                                             if ($model->student->user != $user->getPrincipalName()) {
                                                     throw new Exception("Only the owner can access this object", Exception::OWNER);
+                                            }
+                                    }
+                                    if ($action != self::READ) {
+                                            if (!($state = $model->student->exam->getState())) {
+                                                    throw new Exception("Failed get exam state", Exception::ACCESS);
+                                            }
+                                            if (!($state->has(State::RUNNING))) {
+                                                    throw new Exception("Answer $action has been prohibited because the exam is not ongoing", Exception::ACCESS);
                                             }
                                     }
                             }

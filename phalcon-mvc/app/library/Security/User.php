@@ -78,6 +78,11 @@ class User extends Component
          */
         private $_role;
         /**
+         * The effective role.
+         * @var string 
+         */
+        private $_effr;
+        /**
          * The primary group.
          * @var string 
          */
@@ -221,6 +226,34 @@ class User extends Component
         public function hasPrimaryRole()
         {
                 return isset($this->_role);
+        }
+
+        /**
+         * Get effective role.
+         * 
+         * The effective role is the first assigned primary role. Required 
+         * because the primary role is forged inside trusted context.
+         * 
+         * @return string
+         */
+        public function getEffectiveRole()
+        {
+                return $this->_effr;
+        }
+
+        /**
+         * Set effective role.
+         * @param string $role The effective role.
+         * @throws Exception
+         */
+        public function setEffectiveRole($role)
+        {
+                if (isset($this->_effr)) {
+                        throw new Exception("The effective role can't be altered");
+                }
+
+                $this->_role = $role;
+                $this->_effr = $role;
         }
 
         /**
