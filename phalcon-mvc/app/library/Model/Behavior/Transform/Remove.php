@@ -28,12 +28,13 @@
 namespace OpenExam\Library\Model\Behavior\Transform;
 
 use OpenExam\Library\Model\Behavior\ModelBehavior;
+use OpenExam\Library\Model\Exception;
 use Phalcon\Mvc\ModelInterface;
 
 /**
  * String replace on field.
  * 
- * This behavior performs a search and replace of substring on requested 
+ * This behavior performs a search and truncate of substring on requested 
  * model property.
  *
  * @author Anders Lövgren (Computing Department at BMC, Uppsala University)
@@ -45,11 +46,29 @@ class Remove extends ModelBehavior
         {
                 if (($options = $this->getOptions($type))) {
 
-                        $field = $options['field'];
-                        $input = $model->$field;
+                        if (!isset($options['search'])) {
+                                throw new Exception("Missing required behavior option search");
+                        }
+                        if (!isset($options['field'])) {
+                                throw new Exception("Missing required behavior option field");
+                        }
 
-                        if (isset($options['search'])) {
-                                $model->$field = str_replace($options['search'], '', $input);
+                        if (is_string($options['field'])) {
+                                $fields = array($options['field']);
+                        }
+                        if (is_array($options['field'])) {
+                                $fields = $options['field'];
+                        }
+
+                        if (is_array($options['search'])) {
+                                $options['replace'] = array_fill(0, count($options['search']), '');
+                        }
+                        if (is_string($options['search'])) {
+                                $options['replace'] = '';
+                        }
+
+                        foreach ($fields as $field) {
+                                $model->$field = str_replace($options['search'], $options['replace'], $model->$field);
                         }
 
                         return true;

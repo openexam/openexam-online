@@ -28,6 +28,7 @@
 namespace OpenExam\Library\Model\Behavior\Transform;
 
 use OpenExam\Library\Model\Behavior\ModelBehavior;
+use OpenExam\Library\Model\Exception;
 use Phalcon\Mvc\ModelInterface;
 
 /**
@@ -45,11 +46,25 @@ class Replace extends ModelBehavior
         {
                 if (($options = $this->getOptions($type))) {
 
-                        $field = $options['field'];
-                        $input = $model->$field;
+                        if (!isset($options['search'])) {
+                                throw new Exception("Missing required behavior option search");
+                        }
+                        if (!isset($options['replace'])) {
+                                throw new Exception("Missing required behavior option replace");
+                        }
+                        if (!isset($options['field'])) {
+                                throw new Exception("Missing required behavior option field");
+                        }
 
-                        if (isset($options['search']) && isset($options['replace'])) {
-                                $model->$field = str_replace($options['search'], $options['replace'], $input);
+                        if (is_string($options['field'])) {
+                                $fields = array($options['field']);
+                        }
+                        if (is_array($options['field'])) {
+                                $fields = $options['field'];
+                        }
+
+                        foreach ($fields as $field) {
+                                $model->$field = str_replace($options['search'], $options['replace'], $model->$field);
                         }
 
                         return true;
