@@ -87,15 +87,15 @@ class GettextTask extends MainTask implements TaskInterface
                         ),
                         'examples' => array(
                                 array(
-                                        'descr'   => 'Force update, merge and compile in one step:',
+                                        'descr'   => 'Force update, merge and compile in one step',
                                         'command' => '--all --force'
                                 ),
                                 array(
-                                        'descr'   => 'Same as above:',
+                                        'descr'   => 'Same as above',
                                         'command' => '--update --merge --compile --force'
                                 ),
                                 array(
-                                        'descr'   => 'Initialize swedish locale for the student module:',
+                                        'descr'   => 'Initialize swedish locale for the student module',
                                         'command' => '--initialize --module=student --locale=sv_SE.UTF-8'
                                 )
                         )
