@@ -19,11 +19,11 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://it.bmc.uu.se/andlov/php/proj/bmc/uup-auth/"
+            "url": "https://it.bmc.uu.se/andlov/php/uup-auth/"
         },
         {
             "type": "composer",
-            "url": "https://it.bmc.uu.se/andlov/php/proj/bmc/uup-mail/"
+            "url": "https://it.bmc.uu.se/andlov/php/uup-mail/"
         }
     ],
     "authors": [
@@ -41,7 +41,7 @@
         },
         {
             "name": "Anders Lövgren",
-            "email": "ipv6nu@gmail.com",
+            "email": "andlov@nowise.se",
             "homepage": "http://nowise.se",
             "role": "Developer"
         }
