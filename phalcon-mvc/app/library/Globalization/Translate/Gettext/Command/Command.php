@@ -191,7 +191,7 @@ abstract class Command
          * Recursive find files in subdirectories.
          * @param array $directories An array of sub directories.
          * @param array $filter File extension filter.
-         * @return SourceFileFilter
+         * @return array
          */
         protected function findFiles($directories = array('.'), $filter = array('php', 'phtml'))
         {
@@ -205,7 +205,7 @@ abstract class Command
 
                         $filtered = new SourceFileFilter($iterator, $filter);
                         foreach ($filtered as $file) {
-                                $files[] = $file;
+                                $files[] = $file->getPathname();
                         }
                 }
 
