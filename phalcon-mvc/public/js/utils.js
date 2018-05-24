@@ -416,6 +416,14 @@ $(document).ready(function () {
     });
 
     // 
+    // Select locale and language:
+    // 
+    $(document).on('click', '.lang-select', function () {
+        setCookie($(this).data('request'), $(this).data('lang'), -1);
+        window.location.reload();
+    });
+
+    // 
     // Animate closing bootstrap alert:
     // 
     $('body').on('close.bs.alert', function (e) {

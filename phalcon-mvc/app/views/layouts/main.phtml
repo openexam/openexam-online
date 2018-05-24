@@ -97,6 +97,9 @@ if ($theme == 'high-contrast') {
         $theme_high_contrast = "";
 }
 
+$locales = $this->locale->getLocales();
+$request = $this->config->locale->request;
+
 ?>
 
 <!-- Header area -->
@@ -248,6 +251,22 @@ if ($theme == 'high-contrast') {
                                         <li>
                                             <a href="#" id="help-about">About</a>
                                         </li>
+                                    </ul>
+                                </li>
+                        <?php endif; ?>
+
+                        <!-- Locales and languages -->
+                        <?php if (($active = $link->active("locale"))) : ?>
+                                <li class="dropdown <?= $active ?>">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-flag"></i> Language
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <?php foreach ($locales as $lang => $name): ?>
+                                                <li>
+                                                    <a href="#" class="lang-select" data-lang="<?= $lang ?>" data-request="<?= $request ?>"><?= $name ?></a>
+                                                </li>
+                                        <?php endforeach; ?>
                                     </ul>
                                 </li>
                         <?php endif; ?>
