@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.38, for Linux (x86_64)
+-- MySQL dump 10.16  Distrib 10.1.31-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: openexam2prod
 -- ------------------------------------------------------
--- Server version	5.6.38-log
+-- Server version	10.1.31-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -62,6 +62,7 @@ CREATE TABLE `answers` (
   `answered` enum('Y','N') DEFAULT 'N',
   `answer` mediumblob,
   `comment` text,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `question_id` (`question_id`),
   KEY `student_id` (`student_id`),
@@ -569,4 +570,4 @@ CREATE TABLE `users` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-08  1:07:29
+-- Dump completed on 2018-05-24  1:05:59
