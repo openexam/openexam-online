@@ -120,10 +120,6 @@ class Compile extends Command
                 $program = $this->_config->gettext->program->msgcat;
                 $options = $this->_config->gettext->options->msgcat;
 
-                if ($this->_options['verbose']) {
-                        $options .= " --verbose";
-                }
-
                 $catfile = sprintf("%s.cat", $pofile);
 
                 $cmdopts = $this->substitute($options, array('output' => $catfile));
