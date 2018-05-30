@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
 "POT-Creation-Date: 2018-05-31 01:05+0200\n"
-"PO-Revision-Date: 2018-05-31 01:06+0200\n"
+"PO-Revision-Date: 2018-05-31 01:40+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -155,7 +155,7 @@ msgstr "Färgkoder använda i poängtabellen:"
 #
 # File: phalcon-mvc/app/views/question/correction.phtml, line: 692
 msgid "Answer has been corrected."
-msgstr "Svaret har rättats."
+msgstr "Detta svar har rättats klart."
 #
 # File: phalcon-mvc/app/views/question/correction.phtml, line: 697
 msgid "This answer should be corrected by another person."
@@ -163,11 +163,11 @@ msgstr "Detta svar ska rättas av en annan person."
 #
 # File: phalcon-mvc/app/views/question/correction.phtml, line: 702
 msgid "No answer was given for this question."
-msgstr "Inget svar har givits för denna fråga."
+msgstr "Svar saknas för denna fråga."
 #
 # File: phalcon-mvc/app/views/question/correction.phtml, line: 706
 msgid "The answer is uncorrected or partially corrected."
-msgstr "Svaret har inte rättats eller är delvis rättat."
+msgstr "Svaret har inte rättats eller är delvis färdigrättat."
 #
 # File: phalcon-mvc/app/views/question/correction.phtml, line: 710
 msgid "Student can pass with some grace marks."
