@@ -9,8 +9,8 @@ msgstr ""
 "#-#-#-#-#  exam.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-31 00:27+0200\n"
-"PO-Revision-Date: 2018-05-30 04:10+0200\n"
+"POT-Creation-Date: 2018-05-31 00:31+0200\n"
+"PO-Revision-Date: 2018-05-31 00:32+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en_GB\n"
@@ -788,6 +788,10 @@ msgstr "Notice:"
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 90
 msgid "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
 msgstr "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
+#
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 100
+msgid "Enable lockdown"
+msgstr "Enable lockdown"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 106
 msgid "This exam should only be accessable from these locations:"
