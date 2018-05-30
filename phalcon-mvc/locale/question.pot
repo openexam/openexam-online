@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-31 00:34+0200\n"
+"POT-Creation-Date: 2018-05-31 01:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,6 +216,10 @@ msgstr ""
 
 #: phalcon-mvc/app/views/question/form.phtml:357
 msgid "Select background image"
+msgstr ""
+
+#: phalcon-mvc/app/views/question/form.phtml:380
+msgid "Points"
 msgstr ""
 
 #: phalcon-mvc/app/views/question/form.phtml:383

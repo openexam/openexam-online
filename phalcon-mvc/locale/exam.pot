@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-31 00:34+0200\n"
+"POT-Creation-Date: 2018-05-31 01:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgid "Your exam has now been decoded. Click on the close button to finish this 
 msgstr ""
 
 #: phalcon-mvc/app/views/exam/decode.phtml:110
-#: phalcon-mvc/app/views/exam/security.phtml:188
+#: phalcon-mvc/app/views/exam/security.phtml:190
 msgid "Cancel"
 msgstr ""
 
@@ -757,75 +757,75 @@ msgstr ""
 msgid "Show Progress"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:62
+#: phalcon-mvc/app/views/exam/security.phtml:64
 msgid "Add"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:86
+#: phalcon-mvc/app/views/exam/security.phtml:88
 msgid "Use this view for defining exam security and access restrictions."
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:88
+#: phalcon-mvc/app/views/exam/security.phtml:90
 msgid "Notice:"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:90
+#: phalcon-mvc/app/views/exam/security.phtml:92
 msgid "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:100
+#: phalcon-mvc/app/views/exam/security.phtml:102
 msgid "Enable lockdown"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:106
+#: phalcon-mvc/app/views/exam/security.phtml:108
 msgid "This exam should only be accessable from these locations:"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:111
+#: phalcon-mvc/app/views/exam/security.phtml:113
 msgid "Location"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:112
+#: phalcon-mvc/app/views/exam/security.phtml:114
 msgid "Address"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:124
+#: phalcon-mvc/app/views/exam/security.phtml:126
 msgid "Remove"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:134
+#: phalcon-mvc/app/views/exam/security.phtml:136
 msgid "Select locations from recent used, system pre-defined or current action locations."
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:139
+#: phalcon-mvc/app/views/exam/security.phtml:141
 msgid "Details"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:143
+#: phalcon-mvc/app/views/exam/security.phtml:145
 msgid "Recent used locations"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:145
+#: phalcon-mvc/app/views/exam/security.phtml:147
 msgid "Pre-defined locations"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:147
+#: phalcon-mvc/app/views/exam/security.phtml:149
 msgid "Currently active locations"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:155
+#: phalcon-mvc/app/views/exam/security.phtml:157
 msgid "New"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:161
+#: phalcon-mvc/app/views/exam/security.phtml:163
 msgid "Insert..."
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:168
+#: phalcon-mvc/app/views/exam/security.phtml:170
 msgid "Use this method for client side locking:"
 msgstr ""
 
-#: phalcon-mvc/app/views/exam/security.phtml:182
+#: phalcon-mvc/app/views/exam/security.phtml:184
 msgid "OK"
 msgstr ""
 

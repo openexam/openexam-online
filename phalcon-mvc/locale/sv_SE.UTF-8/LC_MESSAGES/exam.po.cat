@@ -10,7 +10,7 @@ msgstr ""
 "#-#-#-#-#  exam.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-31 00:31+0200\n"
+"POT-Creation-Date: 2018-05-31 01:05+0200\n"
 "PO-Revision-Date: 2018-05-31 00:32+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -111,7 +111,7 @@ msgid "Your exam has now been decoded. Click on the close button to finish this 
 msgstr "Din tenta är nu avkodad. Klicka på stäng-knappen för att avsluta guiden."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 110
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 188
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 190
 msgid "Cancel"
 msgstr "Avbryt"
 #
@@ -774,76 +774,76 @@ msgstr "Öppna hanterare"
 msgid "Show Progress"
 msgstr "Visa utveckling"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 62
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 64
 # File: phalcon-mvc/app/views/partials/user-search.phtml, line: 53
 msgid "Add"
 msgstr "Lägg till"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 86
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 88
 msgid "Use this view for defining exam security and access restrictions."
 msgstr "Använd denna vy för att definiera tentasäkerhet och accessbegränsningar."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 88
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 90
 msgid "Notice:"
 msgstr "Notera:"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 90
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 92
 msgid "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
 msgstr "For att hålla tentan publik (inga accessbegränsningar), avmarkera 'Aktivera nerlåsning'."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 100
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 102
 msgid "Enable lockdown"
 msgstr "Aktivera nerlåsning"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 106
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 108
 msgid "This exam should only be accessable from these locations:"
 msgstr "Denna tenta ska finnas tillgänglig från dessa platser:"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 111
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 113
 msgid "Location"
 msgstr "Plats"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 112
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 114
 msgid "Address"
 msgstr "Adress"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 124
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 126
 msgid "Remove"
 msgstr "Ta bort"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 134
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 136
 msgid "Select locations from recent used, system pre-defined or current action locations."
 msgstr "Välj platser från nyligen använda, fördefinierade i systemet eller nuvarande plats."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 139
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 141
 msgid "Details"
 msgstr "Detaljer"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 143
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 145
 msgid "Recent used locations"
 msgstr "Nyligen använda platser"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 145
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 147
 msgid "Pre-defined locations"
 msgstr "Fördefinierade platser"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 147
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 149
 msgid "Currently active locations"
 msgstr "Nuvarande plats"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 155
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 157
 msgid "New"
 msgstr "Ny"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 161
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 163
 msgid "Insert..."
 msgstr "Infoga..."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 168
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 170
 msgid "Use this method for client side locking:"
 msgstr "Använd denna metod för nerlåsning av klienter:"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 182
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 184
 msgid "OK"
 msgstr "OK"
 #

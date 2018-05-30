@@ -10,8 +10,8 @@ msgstr ""
 "#-#-#-#-#  question.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-31 00:34+0200\n"
+"POT-Creation-Date: 2018-05-31 01:05+0200\n"
+"PO-Revision-Date: 2018-05-31 01:06+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -199,7 +199,7 @@ msgstr "Del"
 #
 # File: phalcon-mvc/app/views/question/form.phtml, line: 172
 msgid "Write question"
-msgstr "Skriv fråga"
+msgstr "Skriv frågan"
 #
 # File: phalcon-mvc/app/views/question/form.phtml, line: 182
 msgid "Write your question here"
@@ -211,7 +211,7 @@ msgstr "Lägg till extramaterial"
 #
 # File: phalcon-mvc/app/views/question/form.phtml, line: 213
 msgid "Answer options"
-msgstr "Svarsinställningar"
+msgstr "Svarsalternativ"
 #
 # File: phalcon-mvc/app/views/question/form.phtml, line: 224
 msgid "Single line text box"
@@ -248,6 +248,10 @@ msgstr "Rityta"
 # File: phalcon-mvc/app/views/question/form.phtml, line: 357
 msgid "Select background image"
 msgstr "Välj bakgrundsbild"
+#
+# File: phalcon-mvc/app/views/question/form.phtml, line: 380
+msgid "Points"
+msgstr "Poäng"
 #
 # File: phalcon-mvc/app/views/question/form.phtml, line: 383
 msgid "Maximum points:"

@@ -9,7 +9,7 @@ msgstr ""
 "#-#-#-#-#  exam.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-31 00:31+0200\n"
+"POT-Creation-Date: 2018-05-31 01:05+0200\n"
 "PO-Revision-Date: 2018-05-31 00:32+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -109,7 +109,7 @@ msgid "Your exam has now been decoded. Click on the close button to finish this 
 msgstr "Your exam has now been decoded. Click on the close button to finish this wizard."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 110
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 188
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 190
 msgid "Cancel"
 msgstr "Cancel"
 #
@@ -772,76 +772,76 @@ msgstr "Open Manager"
 msgid "Show Progress"
 msgstr "Show Progress"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 62
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 64
 # File: phalcon-mvc/app/views/partials/user-search.phtml, line: 53
 msgid "Add"
 msgstr "Add"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 86
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 88
 msgid "Use this view for defining exam security and access restrictions."
 msgstr "Use this view for defining exam security and access restrictions."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 88
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 90
 msgid "Notice:"
 msgstr "Notice:"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 90
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 92
 msgid "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
 msgstr "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 100
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 102
 msgid "Enable lockdown"
 msgstr "Enable lockdown"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 106
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 108
 msgid "This exam should only be accessable from these locations:"
 msgstr "This exam should only be accessable from these locations:"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 111
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 113
 msgid "Location"
 msgstr "Location"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 112
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 114
 msgid "Address"
 msgstr "Address"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 124
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 126
 msgid "Remove"
 msgstr "Remove"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 134
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 136
 msgid "Select locations from recent used, system pre-defined or current action locations."
 msgstr "Select locations from recent used, system pre-defined or current action locations."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 139
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 141
 msgid "Details"
 msgstr "Details"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 143
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 145
 msgid "Recent used locations"
 msgstr "Recent used locations"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 145
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 147
 msgid "Pre-defined locations"
 msgstr "Pre-defined locations"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 147
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 149
 msgid "Currently active locations"
 msgstr "Currently active locations"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 155
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 157
 msgid "New"
 msgstr "New"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 161
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 163
 msgid "Insert..."
 msgstr "Insert..."
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 168
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 170
 msgid "Use this method for client side locking:"
 msgstr "Use this method for client side locking:"
 #
-# File: phalcon-mvc/app/views/exam/security.phtml, line: 182
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 184
 msgid "OK"
 msgstr "OK"
 #
