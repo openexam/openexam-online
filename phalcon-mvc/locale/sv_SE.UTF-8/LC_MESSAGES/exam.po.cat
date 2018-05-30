@@ -10,8 +10,8 @@ msgstr ""
 "#-#-#-#-#  exam.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-30 02:36+0200\n"
+"POT-Creation-Date: 2018-05-30 04:08+0200\n"
+"PO-Revision-Date: 2018-05-30 04:14+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -197,7 +197,7 @@ msgstr "Titel på tentan:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 145
 msgid "The exam name"
-msgstr "Tentanamn"
+msgstr "Namn på tenta"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 159
 msgid "Course code:"
@@ -339,7 +339,7 @@ msgstr "Kontrollera tentan"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 99
 msgid "State"
-msgstr "Tillstång"
+msgstr "Tillstånd"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 104
 msgid "Grade"
@@ -480,217 +480,217 @@ msgstr "Använd knapparna i sidhuvudet för att minimera vänstra sidan eller f�
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 59
 msgid "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
-msgstr ""
+msgstr "Zooma in på innehåll (extramaterial) genom att hålla muspekaren över bilder eller klicka på media-filen för att visa dessa i full storlek."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 60
 msgid "During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done."
-msgstr ""
+msgstr "Under tentan kan du hela tiden komma åt instruktionerna igen. Kom ihåg att förhandsgranska dina svar innan du loggar ut då du är klar."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 66
 msgid "Important to know:"
-msgstr ""
+msgstr "Viktigt att veta:"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 71
 msgid "All your answers are automatically saved every 10 seconds."
-msgstr ""
+msgstr "Alla dina svar sparas automatiskt var tionde sekund."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 74
 msgid "It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation."
-msgstr ""
+msgstr "Det rekommenderas starkt att du <u>inte</u> använder webbläsarens \"tillbaks\" och \"framåt\" knappar för att navigera."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 75
 msgid "Always use buttons and/or links in the web interface."
-msgstr ""
+msgstr "Använd alltid knappar och/eller länkar i webbgränssnittet."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 76
 msgid "To open a specific question, you can always click on desired question number appearing in left side menu."
-msgstr ""
+msgstr "För att öppna en specifik fråga så kan du alltid klicka på önskat frågenummer som visas i menyn på vänster sida."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 79
 msgid "Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes."
-msgstr ""
+msgstr "Rapportera alla felmeddelanden direkt till tentavakten. I dessa fall, stäng inte webbläsaren eller uppdatera sida. Om du gör det så förlorar du dina senaste ändringar."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 86
 msgid "Exam instructions:"
-msgstr ""
+msgstr "Tentainstruktioner:"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 99
 msgid "While waiting:"
-msgstr ""
+msgstr "Medans du väntar:"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 103
 msgid "Why not spend the time waiting for the exam to start with some reading?"
-msgstr ""
+msgstr "Varför inte spendera tiden medans du väntar på att tentan ska starta med lite läsning?"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 104
 msgid "The student manual will give you a brief introduction to examination part of the system."
-msgstr ""
+msgstr "Studentmanualen ger dig en kortfattad introduktion till tenta-delen i systemet."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 106
 msgid "Press current location to see information specific to %location%."
-msgstr ""
+msgstr "Tryck på nuvarande plats för att se information specifik för %location%."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 114
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 115
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 129
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 130
 msgid "Open student manual"
-msgstr ""
+msgstr "Öppna studentmanualen"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 121
 msgid "Show current location"
-msgstr ""
+msgstr "Visa nuvarande plats"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 139
 msgid "Ready to start?"
-msgstr ""
+msgstr "Redo att starta?"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 143
 msgid "You have not yet opened the exam, this page is only for showing some information."
-msgstr ""
+msgstr "Du har ännu inte öppnat tentan, denna sida är bara till för att visa lite information."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 145
 msgid "Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions."
-msgstr ""
+msgstr "Så snart du klickar på knappen nedan så kommer tentan att låsas till ditt konto och den dator du använder vilket ger dig tillgång till tentafrågorna."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 147
 msgid "This exam has no locking, so you will be able to open it again from another computer until it has finished."
-msgstr ""
+msgstr "Denna tenta har ingen låsning, så du kan alltså fritt öppna den från en annan dator fram tills dess tentan avslutas."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 156
 msgid "I am ready, start the exam in test mode"
-msgstr ""
+msgstr "Jag är redo, starta tentan i testläge"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 163
 msgid "I am ready, start the exam"
-msgstr ""
+msgstr "Jag är redo, starta tentan"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 231
 msgid "Add new question"
-msgstr ""
+msgstr "Lägg till ny fråga"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 244
 msgid "There are no questions in this exam yet."
-msgstr ""
+msgstr "Det finns inga frågor in denna tenta än."
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 256
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 276
 msgid "Preview question"
-msgstr ""
+msgstr "Förhandsgranska frågan"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 260
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 280
 msgid "Edit question"
-msgstr ""
+msgstr "Ändra frågan"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 266
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 286
 msgid "Flag question as removed from this exam"
-msgstr ""
+msgstr "Markera frågan som borttagen från tentan"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 271
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 291
 msgid "Re-add removed question on this exam"
-msgstr ""
+msgstr "Återställ borttagen fråga på denna tenta"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 295
 msgid "Delete question from this exam"
-msgstr ""
+msgstr "Radera frågan från denna tenta"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 324
 msgid "Preview student view"
-msgstr ""
+msgstr "Förhandsgranska studentvyn"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 338
 msgid "I am done with my questions. Notify exam creator."
-msgstr ""
+msgstr "Jag är färdig med mina frågor. Notifiera skaparen av tentan."
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 352
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 179
 msgid "Manage students for exam"
-msgstr ""
+msgstr "Hantera studenter på tentan"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 355
 msgid "Exam settings"
-msgstr ""
+msgstr "Tentainställningar"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 358
 msgid "Security and access control"
-msgstr ""
+msgstr "Säkerhet och accesskontroll"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 361
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 263
 msgid "Exam status check"
-msgstr ""
+msgstr "Status kontroll av tentan"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 364
 msgid "Offline tool for exam"
-msgstr ""
+msgstr "Offline verktyg för tentan"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 366
 msgid "Exam export and archive tool"
-msgstr ""
+msgstr "Tenta export och arkiveringsverktyg"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 369
 msgid "Use this tool to access exam content (i.e. questions) in format suitable for printing or archiving."
-msgstr ""
+msgstr "Använd detta verktyg för att visa innehållet (t.ex. frågor) i ett format lämpligt för utskrift eller arkivering."
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 370
 msgid "This is also the right tool to use if some students need to write this exam on paper."
-msgstr ""
+msgstr "Detta är också rätt verktyg att använda ifall några studenter behöver skriva tentan på papper."
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 379
 msgid "View Online"
-msgstr ""
+msgstr "Visa online"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 385
 msgid "Download Archive"
-msgstr ""
+msgstr "Ladda ner arkiv"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 392
 msgid "Display correct answers for questions"
-msgstr ""
+msgstr "Visa rätt svar på frågorna"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 396
 msgid "Remove existing PDF before rendering"
-msgstr ""
+msgstr "Ta bort existerande PDF innan rendering"
 #
 # File: phalcon-mvc/app/views/exam/update.phtml, line: 406
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 278
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 42
 msgid "This exam is ready"
-msgstr ""
+msgstr "Tentan är redo att användas"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 46
 msgid "Exam need attention"
-msgstr ""
+msgstr "Tentan behöver översyn"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 50
 msgid "Exam is not ready"
-msgstr ""
+msgstr "Tentan är inte färdig"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 55
 msgid "This dialog displays result from checking if exam is ready for use."
-msgstr ""
+msgstr "Denna dialog visar resultat från kontrollen av om tentan är färdig att använda."
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 56
 msgid "Control that all requirements are full-filled and press the 'Fix this problem' button to correct any issues."
-msgstr ""
+msgstr "Kontrollera att alla krav är uppfyllda och tryck på knappen 'Ordna detta problem' för att korrigera."
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 57
 msgid "Click on 'Show Progress' to monitor student answer progress during an exam."
-msgstr ""
+msgstr "Klicka på 'Visa utveckling' för att övervaka inkommande svar under pågående tenta."
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 64
 msgid "Exam has an name"
-msgstr ""
+msgstr "Tentan har ett namn"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 69
 msgid "Exam name is missing"
-msgstr ""
+msgstr "Tentanamn saknas"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 77
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 103
@@ -700,418 +700,472 @@ msgstr ""
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 230
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 255
 msgid "Fix this problem"
-msgstr ""
+msgstr "Ordna detta problem"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 90
 msgid "Questions has been added"
-msgstr ""
+msgstr "Frågor har lagts till"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 95
 msgid "Questions are missing"
-msgstr ""
+msgstr "Frågor saknas"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 116
 msgid "Students has been added"
-msgstr ""
+msgstr "Studenter har lagts till"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 121
 msgid "Students are missing"
-msgstr ""
+msgstr "Studenter saknas"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 142
 msgid "Exam has been scheduled (start time is set)"
-msgstr ""
+msgstr "Tentan har schemalagts (starttid är satt)"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 147
 msgid "Exam has not been scheduled (start time is missing)"
-msgstr ""
+msgstr "Tentan har inte schemalagts (starttid saknas)"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 176
 msgid "Unpublish exam"
-msgstr ""
+msgstr "Avpublicera tentan"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 185
 msgid "Exam is not yet published"
-msgstr ""
+msgstr "Tentan är ännu inte publicerad"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 203
 msgid "Security"
-msgstr ""
+msgstr "Säkerhet"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 209
 msgid "Exam is using all security settings"
-msgstr ""
+msgstr "Tentan använder alla säkerhetsinställningar"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 217
 msgid "Exam has lockdown enabled"
-msgstr ""
+msgstr "Tentan har nerlåsning aktiverad"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 222
 msgid "Exam lockdown is not set"
-msgstr ""
+msgstr "Tentan saknar nerlåsning"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 242
 msgid "Exam has allowed locations set"
-msgstr ""
+msgstr "Tentan har inställning av tillåtna platser"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 247
 msgid "Allowed exam locations are not set"
-msgstr ""
+msgstr "Tillåtna platser för tentan saknas"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 272
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 66
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 82
 msgid "Refresh"
-msgstr ""
+msgstr "Uppdatera"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 290
 msgid "Open Manager"
-msgstr ""
+msgstr "Öppna hanterare"
 #
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 296
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 308
 msgid "Show Progress"
-msgstr ""
+msgstr "Visa utveckling"
 #
+# File: phalcon-mvc/app/views/exam/security.phtml, line: 62
 # File: phalcon-mvc/app/views/partials/user-search.phtml, line: 53
 msgid "Add"
 msgstr "Lägg till"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 86
 msgid "Use this view for defining exam security and access restrictions."
-msgstr ""
+msgstr "Använd denna vy för att definiera tentasäkerhet och accessbegränsningar."
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 88
 msgid "Notice:"
-msgstr ""
+msgstr "Notera:"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 90
 msgid "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
-msgstr ""
+msgstr "For att hålla tentan publik (inga accessbegränsningar), avmarkera 'Aktivera nerlåsning'."
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 106
 msgid "This exam should only be accessable from these locations:"
-msgstr ""
+msgstr "Denna tenta ska finnas tillgänglig från dessa platser:"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 111
 msgid "Location"
-msgstr ""
+msgstr "Plats"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 112
 msgid "Address"
-msgstr ""
+msgstr "Adress"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 124
 msgid "Remove"
-msgstr ""
+msgstr "Ta bort"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 134
 msgid "Select locations from recent used, system pre-defined or current action locations."
-msgstr ""
+msgstr "Välj platser från nyligen använda, fördefinierade i systemet eller nuvarande plats."
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 139
 msgid "Details"
-msgstr ""
+msgstr "Detaljer"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 143
 msgid "Recent used locations"
-msgstr ""
+msgstr "Nyligen använda platser"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 145
 msgid "Pre-defined locations"
-msgstr ""
+msgstr "Fördefinierade platser"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 147
 msgid "Currently active locations"
-msgstr ""
+msgstr "Nuvarande plats"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 155
 msgid "New"
-msgstr ""
+msgstr "Ny"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 161
 msgid "Insert..."
-msgstr ""
+msgstr "Infoga..."
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 168
 msgid "Use this method for client side locking:"
-msgstr ""
+msgstr "Använd denna metod för nerlåsning av klienter:"
 #
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 182
 msgid "OK"
-msgstr ""
+msgstr "OK"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 115
 msgid "Possible browser problem!"
-msgstr ""
+msgstr "Möjligt problem med webbläsare!"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 118
 msgid "It looks like you are using a browser that is missing support for some web standards."
-msgstr ""
+msgstr "Det verkar som din webbläsare saknar stöd för vissa webbstandarder."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 119
 msgid "We have enabled some workarounds (polyfills) for increased compatibility."
-msgstr ""
+msgstr "Vi har aktiverat några 'workarounds' (polyfills) för att öka kompatibiliteten."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 120
 msgid "If you experience difficulties using the system, please try a modern web browser with native support for latest web standards (HTML5 and ES6)."
-msgstr ""
+msgstr "Om du upplever svårigheter att använda systemet, försök med en modern webbläsare med inbyggt stöd för dom senaste webbstandarderna (HTML5 och ES6)."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 126
 msgid "Hi %name%!"
-msgstr ""
+msgstr "Hej %name%!"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 129
 msgid "The content of this page depends on the different roles you have."
-msgstr ""
+msgstr "Innehållet på denna sida beror på dom olika rollerna som du kan ha."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 130
 msgid "Information about the different roles (creator, contributor, corrector, invigilator, student) can be found in the <a href=\"%manual%\">teacher manual</a>."
-msgstr ""
+msgstr "Information om dom olika rollerna (creator, contributor, corrector, invigilator, student) kan hittas i <a href=\"%manual%\">lärarmanualen</a>."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 153
 msgid "Quick search"
-msgstr ""
+msgstr "Snabbsökning"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 163
 msgid "Create new exam"
-msgstr ""
+msgstr "Skapa ny tenta"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 184
 msgid "Reuse exam"
-msgstr ""
+msgstr "Återanvänd tentan"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 186
 msgid "Along with <strong>Exam title, instructions and exam settings</strong>, please select if any of the following exam parts you would like to reuse:"
-msgstr ""
+msgstr "Tillsammans med <strong>Tentanamn, instruktioner och inställningar</strong>, välj ifall du vill återanvända någon av följande delar:"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 193
 msgid "Question sections"
-msgstr ""
+msgstr "Sektioner av frågor"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 199
 msgid "Questions and question correctors"
-msgstr ""
+msgstr "Frågor och rättande lärare"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 206
 msgid "Exam roles"
-msgstr ""
+msgstr "Roller på tentan"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 217
 msgid "Change exam schedule"
-msgstr ""
+msgstr "Ändra tentans schemaläggning"
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 219
 msgid "Input date/time manual or click on the calender icon to select from the datetime picker."
-msgstr ""
+msgstr "Skriv in datum/tid manuellt eller klicka på kalender-ikonen för att välja en tidpunkt."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 220
 msgid "Click on the clock icon at bottom of the picker to select the time."
-msgstr ""
+msgstr "Klicka på ikonen med klockan längst ner i väljaren för att välja en tid."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 221
 msgid "Either select time by scrolling or clicking on hour/minute to quickly select from a table."
-msgstr ""
+msgstr "Välj antingen tid genom att skrolla eller klicka på timme/minut för att snabbt välja från en tabell."
 #
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 265
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 266
 msgid "Download exam result"
-msgstr ""
+msgstr "Ladda ner tentaresultat"
 #
 # File: phalcon-mvc/app/views/exam/pending.phtml, line: 49
 msgid "Approval required"
-msgstr ""
+msgstr "Godkännande krävs"
 #
 # File: phalcon-mvc/app/views/exam/pending.phtml, line: 57
 msgid "Access to the exam '%name%' is pending approval by the exam invigilator."
-msgstr ""
+msgstr "Åtkomst till tentan '%name%' väntar på godkännande av tentavakten."
 #
 # File: phalcon-mvc/app/views/exam/pending.phtml, line: 58
 msgid "Please wait for a while before retrying again or wait for the automatic retry that occurs every 30 seconds."
-msgstr ""
+msgstr "Var god vänta ett tag innan du provar igen eller vänta på att nästa försök som sker automatiskt var 30:e sekund."
 #
 # File: phalcon-mvc/app/views/exam/pending.phtml, line: 63
 msgid "Click on this button to retry access to this exam."
-msgstr ""
+msgstr "Klicka på knappen för att försöka komma åt tentan igen."
 #
 # File: phalcon-mvc/app/views/exam/pending.phtml, line: 64
 msgid "Retry"
-msgstr ""
+msgstr "Försök igen"
 #
 # File: phalcon-mvc/app/views/exam/students.phtml, line: 83
 msgid "Add new students"
-msgstr ""
+msgstr "Lägg till nya studenter"
 #
 # File: phalcon-mvc/app/views/exam/students.phtml, line: 88
 msgid "Manage existing students"
-msgstr ""
+msgstr "Hantera existerande studenter"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 35
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 37
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 38
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 39
 msgid "Status"
-msgstr ""
+msgstr "Status"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 41
 msgid "Manage"
-msgstr ""
+msgstr "Hantera"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 42
 msgid "Preview"
-msgstr ""
+msgstr "Förhandsgranska"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 43
 msgid "Delete"
-msgstr ""
+msgstr "Radera"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 44
 msgid "Reuse"
-msgstr ""
+msgstr "Återanvänd"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 45
 msgid "Display"
-msgstr ""
+msgstr "Visa"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 46
 msgid "Add questions"
-msgstr ""
+msgstr "Lägg till frågor"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 47
 msgid "Answer correction"
-msgstr ""
+msgstr "Rättning av svar"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 48
 msgid "Exam not finished yet"
-msgstr ""
+msgstr "Tentan är inte klar än"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 49
 msgid "View results"
-msgstr ""
+msgstr "Visa resultat"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 50
 msgid "View Score board"
-msgstr ""
+msgstr "Visa poängtabell"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 51
 msgid "Download results"
-msgstr ""
+msgstr "Ladda ner resultat"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 52
 msgid "Decode this exam"
-msgstr ""
+msgstr "Avkoda denna tenta"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 53
 msgid "Not open for decoding yet"
-msgstr ""
+msgstr "Inte öppen för avkodning än"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 54
 msgid "Manage students"
-msgstr ""
+msgstr "Hantera studenter"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 55
 msgid "Change schedule"
-msgstr ""
+msgstr "Ändra schmaläggning"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 56
 msgid "Go to exam page"
-msgstr ""
+msgstr "Gå till tentasidan"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 57
 msgid "View exam"
-msgstr ""
+msgstr "Visa tentan"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 61
 msgid "Date created"
-msgstr ""
+msgstr "Datum skapad"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 62
 msgid "Exam name"
-msgstr ""
+msgstr "Tentanamn"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 63
 msgid "Exam code"
-msgstr ""
+msgstr "Tentakod"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 64
 msgid "Start date"
-msgstr ""
+msgstr "Startdatum"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 89
 msgid "Sort by:"
-msgstr ""
+msgstr "Sortera på:"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 136
 msgid "Click to display exam details"
-msgstr ""
+msgstr "Klicka för att visa tentadetaljer"
 #
 # File: phalcon-mvc/app/views/exam/section.phtml, line: 223
 msgid "No exams as %role% was found using current filtering."
-msgstr ""
+msgstr "Inga tentor som %role% hittades med nuvarande filtrering."
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 83
 msgid "Exam held on: %date% (%stime% &mdash; %etime%)"
-msgstr ""
+msgstr "Tenta genomförd: %date% (%stime% &mdash; %etime%)"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 97
 msgid "Name | Code:"
-msgstr ""
+msgstr "Namn | Kod:"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 111
 msgid "Exam description"
-msgstr ""
+msgstr "Tentabeskrivning"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 130
 msgid "Question %slot%"
-msgstr ""
+msgstr "Fråga %slot%"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 184
 msgid "Teacher's comments:"
-msgstr ""
+msgstr "Lärares kommentar:"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 194
 msgid "Max score: %score%"
-msgstr ""
+msgstr "Maxpoäng: %score%"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 214
 msgid "Reference"
-msgstr ""
+msgstr "Referens"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 218
 msgid "Responsable for examination:"
-msgstr ""
+msgstr "Ansvarig för tentan:"
 #
 # File: phalcon-mvc/app/views/exam/archive.phtml, line: 221
 msgid "Main responsible person for the examination is "
-msgstr ""
+msgstr "Huvudansvarig person för denna tenta är "
 #
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 39
 msgid "Connection"
-msgstr ""
+msgstr "Anslutning"
 #
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 42
 msgid "FQHN:  "
-msgstr ""
+msgstr "FQHN:  "
 #
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 43
 msgid "Place: "
-msgstr ""
+msgstr "Plats: "
 #
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 52
 msgid "Unlock"
-msgstr ""
+msgstr "Lås upp"
 #
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 59
 msgid "Approve"
-msgstr ""
+msgstr "Godkänn"
 #
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 73
 msgid "Unlocked"
-msgstr ""
+msgstr "Olåst"
 #
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 76
 msgid "This student has no computer lock established for this exam"
-msgstr ""
+msgstr "Denna student har ingen låsning etablerad för denna tenta"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 35
+msgid "Creator"
+msgstr "Creator"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 36
+msgid "create and manage an exam"
+msgstr "skapa och hantera tentor"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 79
+msgid "Contributor"
+msgstr "Contributor"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 80
+msgid "add questions to an exam"
+msgstr "lägg till frågor till en tenta"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 99
+msgid "Invigilator"
+msgstr "Invigilator"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 100
+msgid "register students or change schedule"
+msgstr "registrera studenter eller ändra schemaläggning"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 125
+msgid "Corrector"
+msgstr "Corrector"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 126
+msgid "correct the student's answers"
+msgstr "rätta svar från studenter"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 159
+msgid "Decoder"
+msgstr "Decoder"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 160
+msgid "view and decode results"
+msgstr "visa och avkoda resultat"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 193
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 207
+msgid "Student"
+msgstr "Student"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 194
+msgid "your upcoming/ongoing exams"
+msgstr "dina kommande/pågående tentor"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 208
+msgid "your finished exams"
+msgstr "dina avslutade tentor"
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"

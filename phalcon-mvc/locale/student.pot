@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:43+0200\n"
+"POT-Creation-Date: 2018-05-30 04:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,6 +165,7 @@ msgid "You can hover over images (in supplementary material) to zoom. You can se
 msgstr ""
 
 #: phalcon-mvc/app/views/question/view.phtml:395
+#: phalcon-mvc/app/views/exam/instruction.phtml:66
 msgid "Important to know:"
 msgstr ""
 
@@ -194,4 +195,95 @@ msgstr ""
 
 #: phalcon-mvc/app/views/question/view.phtml:429
 msgid "System will not be able to save your answer for this question. Please report this issue to exam invigilators immediately."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:54
+msgid "Welcome to OpenExam Online!"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:58
+msgid "Use the buttons in the heading to minimize the left pane or increase the text size."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:59
+msgid "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:60
+msgid "During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:71
+msgid "All your answers are automatically saved every 10 seconds."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:74
+msgid "It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:75
+msgid "Always use buttons and/or links in the web interface."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:76
+msgid "To open a specific question, you can always click on desired question number appearing in left side menu."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:79
+msgid "Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:86
+msgid "Exam instructions:"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:99
+msgid "While waiting:"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:103
+msgid "Why not spend the time waiting for the exam to start with some reading?"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:104
+msgid "The student manual will give you a brief introduction to examination part of the system."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:106
+msgid "Press current location to see information specific to %location%."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:114
+#: phalcon-mvc/app/views/exam/instruction.phtml:115
+#: phalcon-mvc/app/views/exam/instruction.phtml:129
+#: phalcon-mvc/app/views/exam/instruction.phtml:130
+msgid "Open student manual"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:121
+msgid "Show current location"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:139
+msgid "Ready to start?"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:143
+msgid "You have not yet opened the exam, this page is only for showing some information."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:145
+msgid "Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:147
+msgid "This exam has no locking, so you will be able to open it again from another computer until it has finished."
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:156
+msgid "I am ready, start the exam in test mode"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:163
+msgid "I am ready, start the exam"
 msgstr ""

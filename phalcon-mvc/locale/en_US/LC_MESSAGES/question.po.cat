@@ -3,8 +3,10 @@
 # This file is distributed under the same license as the openexam-online package.
 # Automatically generated, 2018.
 #
+#, fuzzy
 msgid ""
 msgstr ""
+"#-#-#-#-#  question.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
 "POT-Creation-Date: 2018-05-30 02:39+0200\n"
@@ -16,6 +18,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"#-#-#-#-#  student.po (openexam-online 2.0)  #-#-#-#-#\n"
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 04:01+0200\n"
+"PO-Revision-Date: 2018-05-30 04:15+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 #
 # File: phalcon-mvc/app/views/question/correction.phtml, line: 120
 msgid "Exam status"
@@ -343,6 +370,7 @@ msgid "You can hover over images (in supplementary material) to zoom. You can se
 msgstr "You can hover over images (in supplementary material) to zoom. You can see full size image by clicking on it."
 #
 # File: phalcon-mvc/app/views/question/view.phtml, line: 395
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 66
 msgid "Important to know:"
 msgstr "Important to know:"
 #
@@ -872,3 +900,94 @@ msgstr "Preview your answers and Quit"
 # File: phalcon-mvc/app/views/layouts/thin-layout.phtml, line: 284
 msgid "I have previewed my answers and I'm satisfied. Quit my exam."
 msgstr "I have previewed my answers and I'm satisfied. Quit my exam."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 54
+msgid "Welcome to OpenExam Online!"
+msgstr "Welcome to OpenExam Online!"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 58
+msgid "Use the buttons in the heading to minimize the left pane or increase the text size."
+msgstr "Use the buttons in the heading to minimize the left pane or increase the text size."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 59
+msgid "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
+msgstr "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 60
+msgid "During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done."
+msgstr "During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 71
+msgid "All your answers are automatically saved every 10 seconds."
+msgstr "All your answers are automatically saved every 10 seconds."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 74
+msgid "It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation."
+msgstr "It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 75
+msgid "Always use buttons and/or links in the web interface."
+msgstr "Always use buttons and/or links in the web interface."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 76
+msgid "To open a specific question, you can always click on desired question number appearing in left side menu."
+msgstr "To open a specific question, you can always click on desired question number appearing in left side menu."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 79
+msgid "Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes."
+msgstr "Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 86
+msgid "Exam instructions:"
+msgstr "Exam instructions:"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 99
+msgid "While waiting:"
+msgstr "While waiting:"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 103
+msgid "Why not spend the time waiting for the exam to start with some reading?"
+msgstr "Why not spend the time waiting for the exam to start with some reading?"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 104
+msgid "The student manual will give you a brief introduction to examination part of the system."
+msgstr "The student manual will give you a brief introduction to examination part of the system."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 106
+msgid "Press current location to see information specific to %location%."
+msgstr "Press current location to see information specific to %location%."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 114
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 115
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 129
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 130
+msgid "Open student manual"
+msgstr "Open student manual"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 121
+msgid "Show current location"
+msgstr "Show current location"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 139
+msgid "Ready to start?"
+msgstr "Ready to start?"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 143
+msgid "You have not yet opened the exam, this page is only for showing some information."
+msgstr "You have not yet opened the exam, this page is only for showing some information."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 145
+msgid "Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions."
+msgstr "Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 147
+msgid "This exam has no locking, so you will be able to open it again from another computer until it has finished."
+msgstr "This exam has no locking, so you will be able to open it again from another computer until it has finished."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 156
+msgid "I am ready, start the exam in test mode"
+msgstr "I am ready, start the exam in test mode"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 163
+msgid "I am ready, start the exam"
+msgstr "I am ready, start the exam"

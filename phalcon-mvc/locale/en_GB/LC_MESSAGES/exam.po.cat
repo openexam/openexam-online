@@ -3,8 +3,23 @@
 # This file is distributed under the same license as the openexam-online package.
 # Automatically generated, 2018.
 #
+#, fuzzy
 msgid ""
 msgstr ""
+"#-#-#-#-#  exam.po (openexam-online 2.0)  #-#-#-#-#\n"
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 04:08+0200\n"
+"PO-Revision-Date: 2018-05-30 04:10+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
 "POT-Creation-Date: 2018-05-30 02:39+0200\n"
@@ -430,9 +445,8 @@ msgid "Students: %students%"
 msgstr "Students: %students%"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 275
-#, fuzzy
 msgid "Locations: %locations%"
-msgstr "Locations: %locations"
+msgstr "Locations: %locations%"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 281
 msgid "Security: None"
@@ -1097,6 +1111,59 @@ msgstr "Unlocked"
 # File: phalcon-mvc/app/views/exam/lock.phtml, line: 76
 msgid "This student has no computer lock established for this exam"
 msgstr "This student has no computer lock established for this exam"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 35
+msgid "Creator"
+msgstr "Creator"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 36
+msgid "create and manage an exam"
+msgstr "create and manage an exam"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 79
+msgid "Contributor"
+msgstr "Contributor"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 80
+msgid "add questions to an exam"
+msgstr "add questions to an exam"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 99
+msgid "Invigilator"
+msgstr "Invigilator"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 100
+msgid "register students or change schedule"
+msgstr "register students or change schedule"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 125
+msgid "Corrector"
+msgstr "Corrector"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 126
+msgid "correct the student's answers"
+msgstr "correct the student's answers"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 159
+msgid "Decoder"
+msgstr "Decoder"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 160
+msgid "view and decode results"
+msgstr "view and decode results"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 193
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 207
+msgid "Student"
+msgstr "Student"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 194
+msgid "your upcoming/ongoing exams"
+msgstr "your upcoming/ongoing exams"
+#
+# File: phalcon-mvc/app/views/exam/sections.inc, line: 208
+msgid "your finished exams"
+msgstr "your finished exams"
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:43+0200\n"
+"POT-Creation-Date: 2018-05-30 04:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1094,4 +1094,57 @@ msgstr ""
 
 #: phalcon-mvc/app/views/exam/lock.phtml:76
 msgid "This student has no computer lock established for this exam"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:35
+msgid "Creator"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:36
+msgid "create and manage an exam"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:79
+msgid "Contributor"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:80
+msgid "add questions to an exam"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:99
+msgid "Invigilator"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:100
+msgid "register students or change schedule"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:125
+msgid "Corrector"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:126
+msgid "correct the student's answers"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:159
+msgid "Decoder"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:160
+msgid "view and decode results"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:193
+#: phalcon-mvc/app/views/exam/sections.inc:207
+msgid "Student"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:194
+msgid "your upcoming/ongoing exams"
+msgstr ""
+
+#: phalcon-mvc/app/views/exam/sections.inc:208
+msgid "your finished exams"
 msgstr ""

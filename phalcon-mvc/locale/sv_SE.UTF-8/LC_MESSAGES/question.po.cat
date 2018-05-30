@@ -36,8 +36,8 @@ msgstr ""
 "#-#-#-#-#  student.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-30 00:04+0200\n"
+"POT-Creation-Date: 2018-05-30 04:01+0200\n"
+"PO-Revision-Date: 2018-05-30 04:19+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -378,6 +378,7 @@ msgid "You can hover over images (in supplementary material) to zoom. You can se
 msgstr "Du kan hålla muspekaren över bilder (i extramaterial) för att zooma in. Du kan visa bilderna i full storlek genom att klicka på dom."
 #
 # File: phalcon-mvc/app/views/question/view.phtml, line: 395
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 66
 msgid "Important to know:"
 msgstr "Viktigt att veta:"
 #
@@ -912,3 +913,94 @@ msgstr "Förhandsgranska dina svar och avsluta"
 # File: phalcon-mvc/app/views/layouts/thin-layout.phtml, line: 284
 msgid "I have previewed my answers and I'm satisfied. Quit my exam."
 msgstr "Jag har förhandsgranskat mina svar och är nöjd. Avsluta tentan."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 54
+msgid "Welcome to OpenExam Online!"
+msgstr "Välkommen till OpenExam Online!"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 58
+msgid "Use the buttons in the heading to minimize the left pane or increase the text size."
+msgstr "Använd knapparna i sidhuvudet för att minimera vänstra sidan eller förstora textstorleken."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 59
+msgid "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
+msgstr "Zooma in på innehåll (extramaterial) genom att hålla muspekaren över bilder eller klicka på media-filen för att visa dessa i full storlek."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 60
+msgid "During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done."
+msgstr "Under tentan kan du hela tiden komma åt instruktionerna igen. Kom ihåg att förhandsgranska dina svar innan du loggar ut då du är klar."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 71
+msgid "All your answers are automatically saved every 10 seconds."
+msgstr "Alla dina svar sparas automatiskt var tionde sekund."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 74
+msgid "It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation."
+msgstr "Det rekommenderas starkt att du <u>inte</u> använder webbläsarens \"tillbaks\" och \"framåt\" knappar för att navigera."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 75
+msgid "Always use buttons and/or links in the web interface."
+msgstr "Använd alltid knappar och/eller länkar i webbgränssnittet."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 76
+msgid "To open a specific question, you can always click on desired question number appearing in left side menu."
+msgstr "För att öppna en specifik fråga så kan du alltid klicka på önskat frågenummer som visas i menyn på vänster sida."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 79
+msgid "Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes."
+msgstr "Rapportera alla felmeddelanden direkt till tentavakten. I dessa fall, stäng inte webbläsaren eller uppdatera sida. Om du gör det så förlorar du dina senaste ändringar."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 86
+msgid "Exam instructions:"
+msgstr "Tentainstruktioner:"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 99
+msgid "While waiting:"
+msgstr "Medans du väntar:"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 103
+msgid "Why not spend the time waiting for the exam to start with some reading?"
+msgstr "Varför inte spendera tiden medans du väntar på att tentan ska starta med lite läsning?"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 104
+msgid "The student manual will give you a brief introduction to examination part of the system."
+msgstr "Studentmanualen ger dig en kortfattad introduktion till tenta-delen i systemet."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 106
+msgid "Press current location to see information specific to %location%."
+msgstr "Tryck på nuvarande plats för att se information specifik för %location%."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 114
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 115
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 129
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 130
+msgid "Open student manual"
+msgstr "Öppna studentmanualen"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 121
+msgid "Show current location"
+msgstr "Visa nuvarande plats"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 139
+msgid "Ready to start?"
+msgstr "Redo att starta?"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 143
+msgid "You have not yet opened the exam, this page is only for showing some information."
+msgstr "Du har ännu inte öppnat tentan, denna sida är bara till för att visa lite information."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 145
+msgid "Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions."
+msgstr "Så snart du klickar på knappen nedan så kommer tentan att låsas till ditt konto och den dator du använder vilket ger dig tillgång till tentafrågorna."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 147
+msgid "This exam has no locking, so you will be able to open it again from another computer until it has finished."
+msgstr "Denna tenta har ingen låsning, så du kan alltså fritt öppna den från en annan dator fram tills dess tentan avslutas."
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 156
+msgid "I am ready, start the exam in test mode"
+msgstr "Jag är redo, starta tentan i testläge"
+#
+# File: phalcon-mvc/app/views/exam/instruction.phtml, line: 163
+msgid "I am ready, start the exam"
+msgstr "Jag är redo, starta tentan"

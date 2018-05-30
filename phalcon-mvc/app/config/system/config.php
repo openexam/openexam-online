@@ -177,7 +177,8 @@ $config = new Config(
                 'student'    => array(
                         'files' => array(
                                 'phalcon-mvc/app/views/layouts/thin-layout.phtml',
-                                'phalcon-mvc/app/views/question/view.phtml'
+                                'phalcon-mvc/app/views/question/view.phtml',
+                                'phalcon-mvc/app/views/exam/instruction.phtml',
                         )
                 ),
                 /**
@@ -193,6 +194,7 @@ $config = new Config(
                 ),
                 'exam'       => array(
                         'directories' => array('phalcon-mvc/app/views/exam'),
+                        'files'       => array('phalcon-mvc/app/views/exam/sections.inc'),
                         'merge'       => array('main')
                 ),
                 'help'       => array(

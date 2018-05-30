@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"POT-Creation-Date: 2018-05-30 04:08+0200\n"
+"PO-Revision-Date: 2018-05-30 04:10+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en_GB\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: phalcon-mvc/app/views/exam/decode.phtml:39
 msgid "Decode wizard for exam %name%"
@@ -430,9 +431,8 @@ msgid "Students: %students%"
 msgstr "Students: %students%"
 
 #: phalcon-mvc/app/views/exam/details.phtml:275
-#, fuzzy
 msgid "Locations: %locations%"
-msgstr "Locations: %locations"
+msgstr "Locations: %locations%"
 
 #: phalcon-mvc/app/views/exam/details.phtml:281
 msgid "Security: None"
@@ -1096,3 +1096,56 @@ msgstr "Unlocked"
 #: phalcon-mvc/app/views/exam/lock.phtml:76
 msgid "This student has no computer lock established for this exam"
 msgstr "This student has no computer lock established for this exam"
+
+#: phalcon-mvc/app/views/exam/sections.inc:35
+msgid "Creator"
+msgstr "Creator"
+
+#: phalcon-mvc/app/views/exam/sections.inc:36
+msgid "create and manage an exam"
+msgstr "create and manage an exam"
+
+#: phalcon-mvc/app/views/exam/sections.inc:79
+msgid "Contributor"
+msgstr "Contributor"
+
+#: phalcon-mvc/app/views/exam/sections.inc:80
+msgid "add questions to an exam"
+msgstr "add questions to an exam"
+
+#: phalcon-mvc/app/views/exam/sections.inc:99
+msgid "Invigilator"
+msgstr "Invigilator"
+
+#: phalcon-mvc/app/views/exam/sections.inc:100
+msgid "register students or change schedule"
+msgstr "register students or change schedule"
+
+#: phalcon-mvc/app/views/exam/sections.inc:125
+msgid "Corrector"
+msgstr "Corrector"
+
+#: phalcon-mvc/app/views/exam/sections.inc:126
+msgid "correct the student's answers"
+msgstr "correct the student's answers"
+
+#: phalcon-mvc/app/views/exam/sections.inc:159
+msgid "Decoder"
+msgstr "Decoder"
+
+#: phalcon-mvc/app/views/exam/sections.inc:160
+msgid "view and decode results"
+msgstr "view and decode results"
+
+#: phalcon-mvc/app/views/exam/sections.inc:193
+#: phalcon-mvc/app/views/exam/sections.inc:207
+msgid "Student"
+msgstr "Student"
+
+#: phalcon-mvc/app/views/exam/sections.inc:194
+msgid "your upcoming/ongoing exams"
+msgstr "your upcoming/ongoing exams"
+
+#: phalcon-mvc/app/views/exam/sections.inc:208
+msgid "your finished exams"
+msgstr "your finished exams"
