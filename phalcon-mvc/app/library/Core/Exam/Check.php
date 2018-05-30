@@ -31,6 +31,7 @@ use OpenExam\Models\Access;
 use OpenExam\Models\Exam;
 use OpenExam\Models\Question;
 use OpenExam\Models\Student;
+use Phalcon\Mvc\User\Component;
 
 /**
  * Check exam for readiness.
@@ -43,7 +44,7 @@ use OpenExam\Models\Student;
  * 
  * @author Anders Lövgren (Computing Department at BMC, Uppsala University)
  */
-class Check
+class Check extends Component
 {
 
         /**
