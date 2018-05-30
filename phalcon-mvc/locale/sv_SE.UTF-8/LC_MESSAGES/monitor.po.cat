@@ -23,8 +23,8 @@ msgstr ""
 "#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-30 01:19+0200\n"
+"POT-Creation-Date: 2018-05-31 01:26+0200\n"
+"PO-Revision-Date: 2018-05-31 01:28+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -207,73 +207,77 @@ msgstr "Importera från fil"
 msgid "Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag."
 msgstr "Ladda upp filen med studenter att importera. Studenter kan importeras via användarnamn eller personnummer, med valfritt angiven anonym kod och/eller märkning."
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 77
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 128
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 72
+msgid "Filetype"
+msgstr "Filtyp"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 78
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 129
 msgid "Auto Detect"
 msgstr "Känn igen automatiskt"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 82
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 83
 msgid "OpenDocument Format Spreadsheet (*.ods,*.ots)"
 msgstr "OpenDocument Format Kalkylblad (*.ods,*.ots)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 87
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 88
 msgid "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
 msgstr "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 92
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 93
 msgid "Microsoft Excel 2003 XML (*.xml)"
 msgstr "Microsoft Excel 2003 XML (*.xml)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 97
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 98
 msgid "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
 msgstr "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 102
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 103
 msgid "TAB Separated Values (*.tab,*.tsv,*.txt)"
 msgstr "TAB-Separerade Värden (*.tab,*.tsv,*.txt)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 107
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 108
 msgid "CSV File (*.csv)"
 msgstr "CSV-Fil (*.csv)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 112
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 113
 msgid "Gnumeric Spreadsheet (*.gnumeric)"
 msgstr "Gnumeric Kalkylblad (*.gnumeric)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 117
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 118
 msgid "HTML Document (*.htm,*.html)"
 msgstr "HTML Dokument (*.htm,*.html)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 122
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 123
 msgid "SYLK Document (*.slk,*.sylk)"
 msgstr "SYLK Dokument (*.slk,*.sylk)"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 139
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 181
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 140
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 182
 msgid "Import students"
 msgstr "Importera studenter"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 145
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 146
 msgid "Import from group"
 msgstr "Importera från grupp"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 150
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 151
 msgid "Supply the name of a group to import students from."
 msgstr "Ange namnet på grupper som studenter ska importeras ifrån."
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 151
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 152
 msgid "The name could e.g. be a course code or a domain group."
 msgstr "Namnet kan t.ex. vara en kurskod eller en domängrupp."
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 152
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 153
 msgid "The search can be restricted to a single domain."
 msgstr "Sökningen kan begränsas till en enstaka domän."
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 158
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 159
 msgid "Group name:"
 msgstr "Gruppnamn:"
 #
-# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 164
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 165
 msgid "Domain:"
 msgstr "Domän:"
 #

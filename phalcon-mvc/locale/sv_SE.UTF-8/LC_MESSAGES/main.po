@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-30 01:19+0200\n"
+"POT-Creation-Date: 2018-05-31 01:26+0200\n"
+"PO-Revision-Date: 2018-05-31 01:28+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -139,73 +139,77 @@ msgstr "Importera från fil"
 msgid "Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag."
 msgstr "Ladda upp filen med studenter att importera. Studenter kan importeras via användarnamn eller personnummer, med valfritt angiven anonym kod och/eller märkning."
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:77
-#: phalcon-mvc/app/views/partials/students-add.phtml:128
+#: phalcon-mvc/app/views/partials/students-add.phtml:72
+msgid "Filetype"
+msgstr "Filtyp"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:78
+#: phalcon-mvc/app/views/partials/students-add.phtml:129
 msgid "Auto Detect"
 msgstr "Känn igen automatiskt"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:82
+#: phalcon-mvc/app/views/partials/students-add.phtml:83
 msgid "OpenDocument Format Spreadsheet (*.ods,*.ots)"
 msgstr "OpenDocument Format Kalkylblad (*.ods,*.ots)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:87
+#: phalcon-mvc/app/views/partials/students-add.phtml:88
 msgid "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
 msgstr "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:92
+#: phalcon-mvc/app/views/partials/students-add.phtml:93
 msgid "Microsoft Excel 2003 XML (*.xml)"
 msgstr "Microsoft Excel 2003 XML (*.xml)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:97
+#: phalcon-mvc/app/views/partials/students-add.phtml:98
 msgid "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
 msgstr "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:102
+#: phalcon-mvc/app/views/partials/students-add.phtml:103
 msgid "TAB Separated Values (*.tab,*.tsv,*.txt)"
 msgstr "TAB-Separerade Värden (*.tab,*.tsv,*.txt)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:107
+#: phalcon-mvc/app/views/partials/students-add.phtml:108
 msgid "CSV File (*.csv)"
 msgstr "CSV-Fil (*.csv)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:112
+#: phalcon-mvc/app/views/partials/students-add.phtml:113
 msgid "Gnumeric Spreadsheet (*.gnumeric)"
 msgstr "Gnumeric Kalkylblad (*.gnumeric)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:117
+#: phalcon-mvc/app/views/partials/students-add.phtml:118
 msgid "HTML Document (*.htm,*.html)"
 msgstr "HTML Dokument (*.htm,*.html)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:122
+#: phalcon-mvc/app/views/partials/students-add.phtml:123
 msgid "SYLK Document (*.slk,*.sylk)"
 msgstr "SYLK Dokument (*.slk,*.sylk)"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:139
-#: phalcon-mvc/app/views/partials/students-add.phtml:181
+#: phalcon-mvc/app/views/partials/students-add.phtml:140
+#: phalcon-mvc/app/views/partials/students-add.phtml:182
 msgid "Import students"
 msgstr "Importera studenter"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:145
+#: phalcon-mvc/app/views/partials/students-add.phtml:146
 msgid "Import from group"
 msgstr "Importera från grupp"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:150
+#: phalcon-mvc/app/views/partials/students-add.phtml:151
 msgid "Supply the name of a group to import students from."
 msgstr "Ange namnet på grupper som studenter ska importeras ifrån."
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:151
+#: phalcon-mvc/app/views/partials/students-add.phtml:152
 msgid "The name could e.g. be a course code or a domain group."
 msgstr "Namnet kan t.ex. vara en kurskod eller en domängrupp."
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:152
+#: phalcon-mvc/app/views/partials/students-add.phtml:153
 msgid "The search can be restricted to a single domain."
 msgstr "Sökningen kan begränsas till en enstaka domän."
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:158
+#: phalcon-mvc/app/views/partials/students-add.phtml:159
 msgid "Group name:"
 msgstr "Gruppnamn:"
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:164
+#: phalcon-mvc/app/views/partials/students-add.phtml:165
 msgid "Domain:"
 msgstr "Domän:"
 

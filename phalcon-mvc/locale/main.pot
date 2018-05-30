@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-31 01:22+0200\n"
+"POT-Creation-Date: 2018-05-31 01:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,73 +137,77 @@ msgstr ""
 msgid "Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag."
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:77
-#: phalcon-mvc/app/views/partials/students-add.phtml:128
+#: phalcon-mvc/app/views/partials/students-add.phtml:72
+msgid "Filetype"
+msgstr ""
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:78
+#: phalcon-mvc/app/views/partials/students-add.phtml:129
 msgid "Auto Detect"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:82
+#: phalcon-mvc/app/views/partials/students-add.phtml:83
 msgid "OpenDocument Format Spreadsheet (*.ods,*.ots)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:87
+#: phalcon-mvc/app/views/partials/students-add.phtml:88
 msgid "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:92
+#: phalcon-mvc/app/views/partials/students-add.phtml:93
 msgid "Microsoft Excel 2003 XML (*.xml)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:97
+#: phalcon-mvc/app/views/partials/students-add.phtml:98
 msgid "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:102
+#: phalcon-mvc/app/views/partials/students-add.phtml:103
 msgid "TAB Separated Values (*.tab,*.tsv,*.txt)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:107
+#: phalcon-mvc/app/views/partials/students-add.phtml:108
 msgid "CSV File (*.csv)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:112
+#: phalcon-mvc/app/views/partials/students-add.phtml:113
 msgid "Gnumeric Spreadsheet (*.gnumeric)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:117
+#: phalcon-mvc/app/views/partials/students-add.phtml:118
 msgid "HTML Document (*.htm,*.html)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:122
+#: phalcon-mvc/app/views/partials/students-add.phtml:123
 msgid "SYLK Document (*.slk,*.sylk)"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:139
-#: phalcon-mvc/app/views/partials/students-add.phtml:181
+#: phalcon-mvc/app/views/partials/students-add.phtml:140
+#: phalcon-mvc/app/views/partials/students-add.phtml:182
 msgid "Import students"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:145
+#: phalcon-mvc/app/views/partials/students-add.phtml:146
 msgid "Import from group"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:150
+#: phalcon-mvc/app/views/partials/students-add.phtml:151
 msgid "Supply the name of a group to import students from."
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:151
+#: phalcon-mvc/app/views/partials/students-add.phtml:152
 msgid "The name could e.g. be a course code or a domain group."
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:152
+#: phalcon-mvc/app/views/partials/students-add.phtml:153
 msgid "The search can be restricted to a single domain."
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:158
+#: phalcon-mvc/app/views/partials/students-add.phtml:159
 msgid "Group name:"
 msgstr ""
 
-#: phalcon-mvc/app/views/partials/students-add.phtml:164
+#: phalcon-mvc/app/views/partials/students-add.phtml:165
 msgid "Domain:"
 msgstr ""
 
