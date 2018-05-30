@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
 "POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-28 05:33+0200\n"
+"PO-Revision-Date: 2018-05-31 00:16+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -76,7 +76,7 @@ msgstr "Försök igen"
 
 #: phalcon-mvc/app/views/error/showError.phtml:43
 msgid "There was an problem processing the last request."
-msgstr "Det var ett problem att behandla senaste förfrågan."
+msgstr "Det uppstod ett problem vid behandling av den senaste förfrågan."
 
 #: phalcon-mvc/app/views/error/showError.phtml:44
 msgid "The error message might give you an clue on what is wrong, but many kind of errors are permanent and can't be resolved without further assistance from the system manager."
