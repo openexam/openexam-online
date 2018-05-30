@@ -139,7 +139,7 @@ class Exams extends Component
                             'bind'       => $this->_filter,
                             'order'      => 'starttime DESC'
                     )))) {
-                        return $find->toArray();
+                        return $this->setLocalizedDate($find->toArray());
                 }
         }
 
@@ -171,6 +171,19 @@ class Exams extends Component
                         case 3:
                                 return "division = :division: AND department = :department: AND workgroup = :workgroup: AND published = 'Y'";
                 }
+        }
+
+        private function setLocalizedDate($data)
+        {
+                foreach ($data as &$d) {
+                        foreach (array('starttime', 'endtime') as $f) {
+                                if (isset($d[$f])) {
+                                        $d[$f] = strftime('%x %X', strtotime($d[$f]));
+                                }
+                        }
+                }
+
+                return $data;
         }
 
 }
