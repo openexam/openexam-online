@@ -369,6 +369,9 @@ class ExamController extends GuiController
                         'check' => $check,
                         'staff' => $staff
                 ));
+                
+                $translate = new Translate('exam');
+                $this->view->setVar('tr', $translate);
         }
 
         /**
