@@ -42,6 +42,8 @@ class DisplayLocation
 
         public function display()
         {
+                global $tr;
+                
                 if ($this->data) {
                         printf("<b><u>%s</u></b>\n", $this->name);
                         printf("<ul>\n");
@@ -113,7 +115,7 @@ class DisplayLocation
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($active as $key => $location) { ?>
+                <?php foreach ($active as $key => $location) : ?>
                         <tr entry="update" id="<?= $location['id'] ?>">
                             <td contenteditable="true"><?= $key ?></td>
                             <td contenteditable="true"><?= str_replace(';', '<br/>', $location['addr']) ?></td>
@@ -126,9 +128,9 @@ class DisplayLocation
                                 </span>
                             </td>
                         </tr>
-                <?php } ?>
+                <?php endforeach; ?>
             </tbody>
-        </table>
+        </table>            
         <div id="locations-list" style="display: none">
             <div class="alert alert-info">
                 <?= $tr->_("Select locations from recent used, system pre-defined or current action locations.") ?>
