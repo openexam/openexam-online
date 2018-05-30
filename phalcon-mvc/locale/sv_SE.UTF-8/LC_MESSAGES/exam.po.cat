@@ -10,8 +10,8 @@ msgstr ""
 "#-#-#-#-#  exam.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 04:08+0200\n"
-"PO-Revision-Date: 2018-05-30 04:14+0200\n"
+"POT-Creation-Date: 2018-05-31 00:27+0200\n"
+"PO-Revision-Date: 2018-05-31 00:26+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -132,8 +132,9 @@ msgid "Schedule"
 msgstr "Schemalägg"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 76
+# File: phalcon-mvc/app/views/exam/settings.phtml, line: 264
 msgid "Grades"
-msgstr "Gradering"
+msgstr "Betygsgränser"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 77
 msgid "Instructions"
