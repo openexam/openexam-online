@@ -32,36 +32,36 @@ use OpenExam\Library\Gui\Component\Exam\Progress;
 $sections = include('sections.inc');
 
 $buttons = array(
-        'check-exam'        => '<span class="toolbtn toolbtn-orange"><i class="fa fa-thumbs-o-up"></i> Status</span>',
+        'check-exam'        => '<span class="toolbtn toolbtn-orange"><i class="fa fa-thumbs-o-up"></i> ' . $tr->_("Status") . '</span>',
         'check-exam-status' => array(
-                1 => '<span class="toolbtn toolbtn-red-outline"><i class="fa fa-thumbs-o-up"></i> Status</span>',
-                2 => '<span class="toolbtn toolbtn-orange-outline"><i class="fa fa-thumbs-o-up"></i> Status</span>',
-                3 => '<span class="toolbtn toolbtn-green-outline"><i class="fa fa-thumbs-o-up"></i> Status</span>'
+                1 => '<span class="toolbtn toolbtn-red-outline"><i class="fa fa-thumbs-o-up"></i> ' . $tr->_("Status") . '</span>',
+                2 => '<span class="toolbtn toolbtn-orange-outline"><i class="fa fa-thumbs-o-up"></i> ' . $tr->_("Status") . '</span>',
+                3 => '<span class="toolbtn toolbtn-green-outline"><i class="fa fa-thumbs-o-up"></i> ' . $tr->_("Status") . '</span>'
         ),
-        'manage-exam'       => '<span class="toolbtn toolbtn-green"><i class="fa fa-gear"></i> Manage</span>',
-        'test-exam'         => '<span class="toolbtn toolbtn-blue"><i class="fa fa-thumbs-o-up"></i> Preview</span>',
-        'del-exam'          => '<span class="toolbtn toolbtn-red"><i class="fa fa-trash"></i> Delete</span>',
-        'reuse-exam'        => '<span class="toolbtn toolbtn-primary" style="background-color: #4285F4"><i class="fa fa-refresh"></i> Reuse</span>',
-        'view-exam'         => '<span class="toolbtn toolbtn-green"><i class="fa fa-question-circle"></i> Display</span>',
-        'add-q'             => '<span class="toolbtn toolbtn-blue"><i class="fa fa-pencil-square-o"></i> Add questions</span>',
-        'ans-correction'    => '<span class="toolbtn toolbtn-green"><i class="fa fa-check-square-o"></i> Answer correction</span>',
-        'exam-not-finished' => '<span class="toolbtn toolbtn-primary"><i class="fa fa-times"></i> Exam not finished yet</span>',
-        'view-results'      => '<span class="toolbtn toolbtn-orange"><i class="fa fa-line-chart"></i> View results</span>',
-        'view-scoreboard'   => '<span class="toolbtn toolbtn-orange"><i class="fa fa-trophy"></i> View Score board</span>',
-        'download-result'   => '<span class="toolbtn toolbtn-primary" style="background-color: #4285F4"><i class="fa fa-download"></i> Download results</span>',
-        'decode-exam'       => '<span class="toolbtn toolbtn-green"><i class="fa fa-code"></i> Decode this exam</span>',
-        'decode-closed'     => '<span class="toolbtn toolbtn-primary"><i class="fa fa-times"></i> Not open for decoding yet</span>',
-        'manage-student'    => '<span class="toolbtn toolbtn-green"><i class="fa fa-user"></i> Manage students</span>',
-        'change-time'       => '<span class="toolbtn toolbtn-blue"><i class="fa fa-clock-o"></i> Change schedule</span>',
-        'st-exam-page'      => '<span class="toolbtn toolbtn-green"><i class="fa fa-gear"></i> Go to exam page</span>',
-        'st-view-exam'      => '<span class="toolbtn toolbtn-green"><i class="fa fa-gear"></i> View exam</span>'
+        'manage-exam'       => '<span class="toolbtn toolbtn-green"><i class="fa fa-gear"></i> ' . $tr->_("Manage") . '</span>',
+        'test-exam'         => '<span class="toolbtn toolbtn-blue"><i class="fa fa-thumbs-o-up"></i> ' . $tr->_("Preview") . '</span>',
+        'del-exam'          => '<span class="toolbtn toolbtn-red"><i class="fa fa-trash"></i> ' . $tr->_("Delete") . '</span>',
+        'reuse-exam'        => '<span class="toolbtn toolbtn-primary" style="background-color: #4285F4"><i class="fa fa-refresh"></i> ' . $tr->_("Reuse") . '</span>',
+        'view-exam'         => '<span class="toolbtn toolbtn-green"><i class="fa fa-question-circle"></i> ' . $tr->_("Display") . '</span>',
+        'add-q'             => '<span class="toolbtn toolbtn-blue"><i class="fa fa-pencil-square-o"></i> ' . $tr->_("Add questions") . '</span>',
+        'ans-correction'    => '<span class="toolbtn toolbtn-green"><i class="fa fa-check-square-o"></i> ' . $tr->_("Answer correction") . '</span>',
+        'exam-not-finished' => '<span class="toolbtn toolbtn-primary"><i class="fa fa-times"></i> ' . $tr->_("Exam not finished yet") . '</span>',
+        'view-results'      => '<span class="toolbtn toolbtn-orange"><i class="fa fa-line-chart"></i> ' . $tr->_("View results") . '</span>',
+        'view-scoreboard'   => '<span class="toolbtn toolbtn-orange"><i class="fa fa-trophy"></i> ' . $tr->_("View Score board") . '</span>',
+        'download-result'   => '<span class="toolbtn toolbtn-primary" style="background-color: #4285F4"><i class="fa fa-download"></i> ' . $tr->_("Download results") . '</span>',
+        'decode-exam'       => '<span class="toolbtn toolbtn-green"><i class="fa fa-code"></i> ' . $tr->_("Decode this exam") . '</span>',
+        'decode-closed'     => '<span class="toolbtn toolbtn-primary"><i class="fa fa-times"></i> ' . $tr->_("Not open for decoding yet") . '</span>',
+        'manage-student'    => '<span class="toolbtn toolbtn-green"><i class="fa fa-user"></i> ' . $tr->_("Manage students") . '</span>',
+        'change-time'       => '<span class="toolbtn toolbtn-blue"><i class="fa fa-clock-o"></i> ' . $tr->_("Change schedule") . '</span>',
+        'st-exam-page'      => '<span class="toolbtn toolbtn-green"><i class="fa fa-gear"></i> ' . $tr->_("Go to exam page") . '</span>',
+        'st-view-exam'      => '<span class="toolbtn toolbtn-green"><i class="fa fa-gear"></i> ' . $tr->_("View exam") . '</span>'
 );
 
 $ordering = array(
-        "created"   => "Date created",
-        "name"      => "Exam name",
-        "code"      => "Exam code",
-        "starttime" => "Start date"
+        "created"   => $tr->_("Date created"),
+        "name"      => $tr->_("Exam name"),
+        "code"      => $tr->_("Exam code"),
+        "starttime" => $tr->_("Start date")
 );
 
 ?>
@@ -85,7 +85,9 @@ $ordering = array(
         <ul class="list-group exam-list">
             <li class="list-group-item" style="background-color: rgb(245, 245, 245); padding: 5px;">
                 <div class="form-inline">
-                    <span>Sort by: </span>
+                    <span>
+                        <?= $tr->_("Sort by:") ?>
+                    </span>
                     <select class="exam-order-by form-control" style="max-width: 200px">
                         <?php foreach ($ordering as $key => $val) : ?>
                                 <?php if ($order == $key) : ?>
@@ -131,7 +133,7 @@ $ordering = array(
                             ?>
                             <a href="#"
                                class="exam-state-show"
-                               title="Click to display exam details"
+                               title="<?= $tr->_("Click to display exam details") ?>"
                                style="cursor: pointer">
                                 <span class="exam-date toolbtn toolbtn-blue-outline">
                                     <i class="fa fa-clock-o"></i> 
@@ -217,6 +219,7 @@ $ordering = array(
         <?php endif; ?>
 <?php else: ?>
         <div class="exam-listing-default-msg"> 
-            <i class="fa fa-info-circle"></i> No exams as <?= $role ?> was found using current filtering.
+            <i class="fa fa-info-circle"></i> 
+            <?= $tr->_("No exams as %role% was found using current filtering.", array('role' => $role)) ?>
         </div>
 <?php endif; ?>

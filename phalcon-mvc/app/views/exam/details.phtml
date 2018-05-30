@@ -95,19 +95,29 @@ if ($this->user->roles->isStudent($exam->id)) {
 <div class="exam-details">
     <div class="header">
         <?php if ($exam->show_state) : ?>
-                <span class="toolbtn exam-state">State</span>
+                <span class="toolbtn exam-state">
+                    <?= $tr->_("State") ?>
+                </span>
         <?php endif; ?>
         <?php if ($exam->show_other) : ?>
-                <span class="toolbtn exam-grade">Grade</span>
+                <span class="toolbtn exam-grade">
+                    <?= $tr->_("Grade") ?>
+                </span>
         <?php endif; ?>
         <?php if ($exam->show_staff) : ?>
-                <span class="toolbtn exam-staff">Staff</span>
+                <span class="toolbtn exam-staff">
+                    <?= $tr->_("Staff") ?>
+                </span>
         <?php endif; ?>
         <?php if ($exam->show_roles) : ?>
-                <span class="toolbtn exam-roles">Roles</span>
+                <span class="toolbtn exam-roles">
+                    <?= $tr->_("Roles") ?>
+                </span>
         <?php endif; ?>
         <?php if ($exam->show_other) : ?>
-                <span class="toolbtn exam-other">Other</span>
+                <span class="toolbtn exam-other">
+                    <?= $tr->_("Other") ?>
+                </span>
         <?php endif; ?>
     </div>
     <div class="content">
@@ -127,60 +137,60 @@ if ($this->user->roles->isStudent($exam->id)) {
                         $state = $exam->getState();
 
                         if ($state->has(State::DRAFT)) {
-                                printf("<li>%s</li>\n", "This exam is an draft (not yet scheduled)");
+                                printf("<li>%s</li>\n", $tr->_("This exam is an draft (not yet scheduled)"));
                         }
 
                         if ($state->has(State::UPCOMING)) {
-                                printf("<li>%s</li>\n", "This exam is scheduled, but has not yet started");
+                                printf("<li>%s</li>\n", $tr->_("This exam is scheduled, but has not yet started"));
                         } elseif ($state->has(State::RUNNING)) {
-                                printf("<li>%s</li>\n", "This exam is currently ongoing");
+                                printf("<li>%s</li>\n", $tr->_("This exam is currently ongoing"));
                         } elseif ($state->has(State::FINISHED)) {
-                                printf("<li>%s</li>\n", "This exam has been finished");
+                                printf("<li>%s</li>\n", $tr->_("This exam has been finished"));
                         }
 
                         if ($state->has(State::ANSWERED)) {
-                                printf("<li>%s</li>\n", "This exam has answers from students");
+                                printf("<li>%s</li>\n", $tr->_("This exam has answers from students"));
                         }
                         if ($state->has(State::CONTRIBUTABLE)) {
-                                printf("<li>%s</li>\n", "Questions can still be contributed");
+                                printf("<li>%s</li>\n", $tr->_("Questions can still be contributed"));
                         }
                         if ($state->has(State::CORRECTABLE)) {
-                                printf("<li>%s</li>\n", "Answers can still be corrected on this exam");
+                                printf("<li>%s</li>\n", $tr->_("Answers can still be corrected on this exam"));
                         }
                         if ($state->has(State::CORRECTED)) {
-                                printf("<li>%s</li>\n", "All answers has been fully corrected");
+                                printf("<li>%s</li>\n", $tr->_("All answers has been fully corrected"));
                         }
 
                         if ($state->has(State::ENQUIRY)) {
-                                printf("<li>%s</li>\n", "This exam is under investigation");
+                                printf("<li>%s</li>\n", $tr->_("This exam is under investigation"));
                         }
 
                         if ($state->has(State::DECODED)) {
-                                printf("<li>%s</li>\n", "This exam has been decoded");
+                                printf("<li>%s</li>\n", $tr->_("This exam has been decoded"));
                         } elseif ($state->has(State::DECODABLE)) {
-                                printf("<li>%s</li>\n", "This exam can be decoded");
+                                printf("<li>%s</li>\n", $tr->_("This exam can be decoded"));
                         }
 
                         if ($state->has(State::DELETABLE)) {
-                                printf("<li>%s</li>\n", "Can be deleted (no answers exist or exam is flagged as testcase)");
+                                printf("<li>%s</li>\n", $tr->_("Can be deleted (no answers exist or exam is flagged as testcase)"));
                         }
                         if ($state->has(State::EDITABLE)) {
-                                printf("<li>%s</li>\n", "The exam can still be edited");
+                                printf("<li>%s</li>\n", $tr->_("The exam can still be edited"));
                         }
                         if ($state->has(State::EXAMINATABLE)) {
-                                printf("<li>%s</li>\n", "Student can be registered and start/endtime can be changed");
+                                printf("<li>%s</li>\n", $tr->_("Student can be registered and start/endtime can be changed"));
                         }
                         if ($state->has(State::LOCKDOWN)) {
-                                printf("<li>%s</li>\n", "Lockdown mode is enabled on this exam");
+                                printf("<li>%s</li>\n", $tr->_("Lockdown mode is enabled on this exam"));
                         }
                         if ($state->has(State::PUBLISHED)) {
-                                printf("<li>%s</li>\n", "Exam has been published");
+                                printf("<li>%s</li>\n", $tr->_("Exam has been published"));
                         }
                         if ($state->has(State::REUSABLE)) {
-                                printf("<li>%s</li>\n", "Can be reused as new exam");
+                                printf("<li>%s</li>\n", $tr->_("Can be reused as new exam"));
                         }
                         if ($state->has(State::TESTCASE)) {
-                                printf("<li>%s</li>\n", "Marked as testcase (always deletable)");
+                                printf("<li>%s</li>\n", $tr->_("Marked as testcase (always deletable)"));
                         }
 
                         ?>
@@ -191,23 +201,27 @@ if ($this->user->roles->isStudent($exam->id)) {
         <?php if ($exam->show_grade) : ?>
                 <div class="exam-properties grade" style="display: none">
                     <ul>
-                        <?php
-                        $grade = $exam->getGrade();
+                        <?php $grade = $exam->getGrade() ?>
+                        <?php if ($grade->useScores()) : ?>
+                                <li>
+                                    <?= $tr->_("This exam uses points instead of percent") ?>
+                                </li>
+                        <?php endif; ?>
+                        <?php if (($maximum = $grade->getMaximum())) : ?>
+                                <li>
+                                    <?=
+                                    $tr->_("Maximum score is %score%p on this exam", array(
+                                            'score' => floatval($maximum)
+                                    ))
 
-                        if ($grade->useScores()) {
-                                printf("<li>This exam uses points instead of percent</li>\n");
-                        }
-                        if (($maximum = $grade->getMaximum())) {
-                                printf("<li>Maximum score is " . floatval($maximum) . "p on this exam</li>\n");
-                        }
-                        foreach ($grade->getGrades() as $name => $limit) {
-                                printf("<li>$name >= " .
-                                    floatval($limit) . "%% (" .
-                                    floatval($grade->getPoints($limit)) .
-                                    "p)</li>\n");
-                        }
-
-                        ?>
+                                    ?>
+                                </li>
+                        <?php endif; ?>
+                        <?php foreach ($grade->getGrades() as $name => $limit) : ?>
+                                <li>
+                                    <?= $name ?> >= <?= floatval($limit) ?>%% (<?= floatval($grade->getPoints($limit)) ?>p)
+                                </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
         <?php endif; ?>
@@ -251,21 +265,37 @@ if ($this->user->roles->isStudent($exam->id)) {
                     <ul>
                         <?php $check = $exam->getCheck(); ?>
 
-                        <li>Questions: <?= $check->getQuestions() ?></li>
-                        <li>Students:  <?= $check->getStudents() ?></li>
-                        <li>Locations:  <?= $check->getLocations() ?></li>
+                        <li>
+                            <?= $tr->_("Questions: %questions%", array('questions' => $check->getQuestions())) ?>
+                        </li>
+                        <li>
+                            <?= $tr->_("Students: %students%", array('students' => $check->getStudents())) ?>
+                        </li>
+                        <li>
+                            <?= $tr->_("Locations: %locations%", array('locations' => $check->getLocations())) ?>
+                        </li>
 
                         <?php $security = $check->getSecurity(); ?>
                         <?php if ($security == Check::SECURITY_NONE) : ?>
-                                <li>Security: None</li>
+                                <li>
+                                    <?= $tr->_("Security: None") ?>
+                                </li>
                         <?php elseif ($security == Check::SECURITY_FULL) : ?>
-                                <li>Security: Full</li>
+                                <li>
+                                    <?= $tr->_("Security: Full") ?>
+                                </li>
                         <?php elseif (($security & Check::SECURITY_LOCKDOWN) == 0) : ?>
-                                <li>Security: Partial (lockdown missing)</li>
+                                <li>
+                                    <?= $tr->_("Security: Partial (lockdown missing)") ?>
+                                </li>
                         <?php elseif (($security & Check::SECURITY_LOCATION) == 0) : ?>
-                                <li>Security: Partial (no locations defined)</li>
+                                <li>
+                                    <?= $tr->_("Security: Partial (no locations defined)") ?>
+                                </li>
                         <?php else : ?>
-                                <li>Security: Partial</li>
+                                <li>
+                                    <?= $tr->_("Security: Partial") ?>
+                                </li>
                         <?php endif; ?>
                     </ul>
                 </div>

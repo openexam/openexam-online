@@ -117,27 +117,27 @@ if ($exam->decoded | $exam->enquiry) {
 
 if (!$exam->show_save) {
         $header = array(
-                'head' => "Exam status",
-                'text' => "Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>",
-                'note' => "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is not yet finished, so you can only monitor the answering progress for students on this exam."
+                'head' => $tr->_("Exam status"),
+                'text' => $tr->_("Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>"),
+                'note' => $tr->_("You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is not yet finished, so you can only monitor the answering progress for students on this exam.")
         );
 } elseif ($exam->enquiry) {
         $header = array(
-                'head' => "Exam investigation",
-                'text' => "Following table shows the final result of all students for the examination <strong>\"%s\"</strong>",
-                'note' => "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is in enquiry state (correction has finished, but decoding is on hold). In this phase its no longer possible to change student results."
+                'head' => $tr->_("Exam investigation"),
+                'text' => $tr->_("Following table shows the final result of all students for the examination <strong>\"%s\"</strong>"),
+                'note' => $tr->_("You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is in enquiry state (correction has finished, but decoding is on hold). In this phase its no longer possible to change student results.")
         );
 } elseif ($exam->decoded) {
         $header = array(
-                'head' => "Exam score board",
-                'text' => "Following table shows the final result of all students for the examination <strong>\"%s\"</strong>",
-                'note' => "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam has been decoded, so it's no longer possible to change student results."
+                'head' => $tr->_("Exam score board"),
+                'text' => $tr->_("Following table shows the final result of all students for the examination <strong>\"%s\"</strong>"),
+                'note' => $tr->_("You can view the student's answers by student (rows), by question (column) or individual (by index). This exam has been decoded, so it's no longer possible to change student results.")
         );
 } else {
         $header = array(
-                'head' => "Exam correction",
-                'text' => "Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>",
-                'note' => "Correct answers by student (rows), by question (column) or individual (by index). You can only correct answers for questions published by yourself or those you have been assigned the role as corrector for."
+                'head' => $tr->_("Exam correction"),
+                'text' => $tr->_("Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>"),
+                'note' => $tr->_("Correct answers by student (rows), by question (column) or individual (by index). You can only correct answers for questions published by yourself or those you have been assigned the role as corrector for.")
         );
 }
 
@@ -325,19 +325,19 @@ if ($exam->decoded || $exam->enquiry) {
         <?= $header['head'] ?>
         <div class="tool-icons">
             <?php if ($exam->show_decode): ?>
-                    <a href="#" id="decode-exam" class="prevent" title="Run wizard for enquiry or decoding this exam.">
+                    <a href="#" id="decode-exam" class="prevent" title="<?= $tr->_("Run wizard for enquiry or decoding this exam.") ?>">
                         <i class="fa fa-check-circle" style="float:right;padding:3px"></i>
                     </a> 
             <?php endif; ?>
 
             <?php if ($exam->show_download): ?>
-                    <a href="#" id="download-scoreboard" class="prevent" title="Download score board in spreadsheet format">
+                    <a href="#" id="download-scoreboard" class="prevent" title="<?= $tr->_("Download score board in spreadsheet format") ?>">
                         <i class="fa fa-file-excel-o" style="float:right;padding:3px"></i>
                     </a> 
             <?php endif; ?>
 
             <?php if ($exam->show_zipfile): ?>
-                    <a href="#" id="render-results" title="Open dialog for downloading all or selected students as zip-file">
+                    <a href="#" id="render-results" title="<?= $tr->_("Open dialog for downloading all or selected students as zip-file") ?>">
                         <i class="fa fa-file-pdf-o" style="float:right;padding:3px"></i>
                     </a> 
             <?php endif; ?>
@@ -360,7 +360,7 @@ if ($exam->decoded || $exam->enquiry) {
                         <?php foreach ($questions as $question): ?>
                                 <?php
                                 $href = $this->url->get('exam/' . $exam->id . '/correction/question/' . $question->id);
-                                $desc = "Correctors: ";
+                                $desc = $tr->_("Correctors: ");
 
                                 $correctors = array();
                                 foreach ($question->correctors as $corrector) {
@@ -383,27 +383,27 @@ if ($exam->decoded || $exam->enquiry) {
                         <?php endforeach; ?>
 
                         <th>
-                            Student
+                            <?= $tr->_("Student") ?>
                         </th>
                         <?php if ($exam->show_code): ?>
                                 <th>
-                                    Code
+                                    <?= $tr->_("Code") ?>
                                 </th>
                         <?php endif; ?>
                         <?php if ($exam->show_user): ?>
                                 <th>
-                                    F. name
+                                    <?= $tr->_("F. name") ?>
                                 </th>
                                 <th>
-                                    L. name
+                                    <?= $tr->_("L. name") ?>
                                 </th>
                                 <th>
-                                    P No.
+                                    <?= $tr->_("P No.") ?>
                                 </th>
                         <?php endif; ?>
                         <?php if ($exam->show_percent): ?>
                                 <th>
-                                    Total score
+                                    <?= $tr->_("Total score") ?>
                                     <div class="total-score">Max. <?= floatval($grades->getMaximum()) ?></div>
                                 </th> 
                                 <th>
@@ -412,7 +412,7 @@ if ($exam->decoded || $exam->enquiry) {
                         <?php endif; ?>
                         <?php if ($exam->show_grades): ?>
                                 <th>
-                                    Grade
+                                    <?= $tr->_("Grade") ?>
                                 </th>
                         <?php endif; ?>
                     </tr>
@@ -453,7 +453,7 @@ if ($exam->decoded || $exam->enquiry) {
                                                                         $result->save();
                                                                 }
                                                                 if (!($scores = json_decode($result->score, true))) {
-                                                                        die("Failed decode JSON data");
+                                                                        die($tr->_("Failed decode JSON data"));
                                                                 }
                                                         }
 
@@ -519,7 +519,7 @@ if ($exam->decoded || $exam->enquiry) {
                                 <td class="student">
                                     <?php if ($exam->show_user): ?>
                                             <a class="icon render-student prevent"
-                                               title="Download student result in PDF-file format" 
+                                               title="<?= $tr->_("Download student result in PDF-file format") ?>" 
                                                href="#"
                                                data-user="<?= $student->user ?>">
                                                 <i class="fa fa-file-pdf-o"></i>
@@ -527,7 +527,7 @@ if ($exam->decoded || $exam->enquiry) {
                                     <?php endif; ?> 
                                     <?php if ($exam->show_student_enquiry): ?>
                                             <a class="icon toggle-enquiry-student prevent"
-                                               title="Toggle enquiry flag on this student" 
+                                               title="<?= $tr->_("Toggle enquiry flag on this student") ?>"
                                                href="#">
                                                 <i class="fa fa-ban" aria-hidden="true"></i>
                                             </a>    
@@ -541,7 +541,7 @@ if ($exam->decoded || $exam->enquiry) {
                                        stud-id="<?= $student->id ?>">
                                         <i class="fa fa-graduation-cap"></i>
                                         <span class="student">
-                                            <?= $exam->show_user ? $student->code : Student . '(' . $student->id . ')' ?>
+                                            <?= $exam->show_user ? $student->code : $tr->_("Student") . '(' . $student->id . ')' ?>
                                         </span>
                                     </a>
                                 </td>
@@ -682,40 +682,42 @@ if ($exam->decoded || $exam->enquiry) {
     </div>  
     <br>
 
-    <h4>Color codes used in the score board:</h4>
+    <h4>
+        <?= $tr->_("Color codes used in the score board:") ?>
+    </h4>
     <table style="margin:0">
         <tbody>
             <tr class="colorcode">
                 <td class="cc ac">&nbsp;</td>
-                <td class="descr">Answer has been corrected.</td>
+                <td class="descr"><?= $tr->_("Answer has been corrected.") ?></td>
             </tr>
             <?php if (!$exam->decoded && $this->user->getPrincipalName() == $exam->creator): ?>
                     <tr class="colorcode">
                         <td class="cc no">&nbsp;</td>
-                        <td class="descr">This answer should be corrected by another person.</td>
+                        <td class="descr"><?= $tr->_("This answer should be corrected by another person.") ?></td>
                     </tr>
             <?php endif; ?>                                        
             <tr class="colorcode">
                 <td class="cc na">&nbsp;</td>
-                <td class="descr">No answer was given for this question.</td>
+                <td class="descr"><?= $tr->_("No answer was given for this question.") ?></td>
             </tr>
             <tr class="colorcode">
                 <td class="cc nc">&nbsp;</td>
-                <td class="descr">The answer is uncorrected or partially corrected.</td>
+                <td class="descr"><?= $tr->_("The answer is uncorrected or partially corrected.") ?></td>
             </tr>
             <tr class="colorcode">
                 <td class="cc gm">&nbsp;</td>
-                <td class="descr">Student can pass with some grace marks.</td>
+                <td class="descr"><?= $tr->_("Student can pass with some grace marks.") ?></td>
             </tr>
         </tbody>
     </table>
 </div>
 
 <!-------------- Hidden Divs --------------->
-<div id="exam-decode-box" title="Exam decode wizard" style="display: none"></div>
+<div id="exam-decode-box" title="<?= $tr->_("Exam decode wizard") ?>" style="display: none"></div>
 
-<div id="render-student-result" style="display:none" title="Download exam result" ></div>    
-<div id="render-decoder-result" style="display:none" title="Download exam result" ></div>    
+<div id="render-student-result" style="display:none" title="<?= $tr->_("Download exam result") ?>" ></div>    
+<div id="render-decoder-result" style="display:none" title="<?= $tr->_("Download exam result") ?>" ></div>    
 
 <?php
 // 

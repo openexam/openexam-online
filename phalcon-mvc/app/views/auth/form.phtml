@@ -52,34 +52,36 @@
 </style>
 
 <div class="oe-login">
-    <h2 class="identity">Login using <?= $form->getUserOption('description'); ?></h2>
+    <h2 class="identity">
+        <?= $tr->_("Login using %service%", array('service' => $form->getUserOption('description'))) ?>
+    </h2>
     <hr/>
     <div class="row">
         <div class="credentials col-sm-6">
             <form action="<?= $form->getAction(); ?>" method="POST">
                 <?php if ($form->has('fcode')) { ?>
                         <p>
-                            <label>Code:</label>
+                            <label><?= $tr->_("Code:") ?></label>
                             <?= $form->render('fpass'); ?>
                         </p>
                         <p>
-                            <label>Exam:</label>
+                            <label><?= $tr->_("Exam:") ?></label>
                             <?= $form->render('fexam'); ?>
                         </p>
                         <?= $form->render('fcode'); ?>
                 <?php } else { ?>
                         <p>
-                            <label>Username:</label>
+                            <label><?= $tr->_("Username:") ?></label>
                             <?= $form->render('fuser'); ?>
                         </p>
                         <p>
-                            <label>Password:</label>
+                            <label><?= $tr->_("Password:") ?></label>
                             <?= $form->render('fpass'); ?>
                         </p>
                 <?php } ?>
                 <p class="checkbox">
                     <label>
-                        <input type="checkbox" onclick="toggle_show_password('fpass')"> Show password
+                        <input type="checkbox" onclick="toggle_show_password('fpass')"> <?= $tr->_("Show password") ?>
                     </label>
                 </p>
                 <p>

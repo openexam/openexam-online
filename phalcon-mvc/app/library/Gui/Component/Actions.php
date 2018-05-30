@@ -124,7 +124,7 @@ class Actions extends PhalconComponent implements Component
                             $state->has(State::RUNNING)) {
                                 $this->append(array(
                                         'tag'    => 'st-exam-page',
-                                        'text'   => $this->tr('Open exam'),
+                                        'text'   => $this->tr->_('Open exam'),
                                         'icon'   => 'gear',
                                         'color'  => 'green',
                                         'target' => $this->url->get(
@@ -140,7 +140,7 @@ class Actions extends PhalconComponent implements Component
                         if ($state->has(State::CONTRIBUTABLE)) {
                                 $this->append(array(
                                         'tag'    => 'add-q',
-                                        'text'   => $this->tr('Add questions'),
+                                        'text'   => $this->tr->_('Add questions'),
                                         'icon'   => 'pencil-square-o',
                                         'color'  => 'blue',
                                         'target' => $this->url->get(
@@ -152,7 +152,7 @@ class Actions extends PhalconComponent implements Component
                         }
                         $this->append(array(
                                 'tag'    => 'view-exam',
-                                'text'   => $this->tr('View exam'),
+                                'text'   => $this->tr->_('View exam'),
                                 'icon'   => 'question-circle',
                                 'color'  => 'green',
                                 'target' => $this->url->get(

@@ -27,7 +27,6 @@
 
 namespace OpenExam\Library\Model\Validation;
 
-use OpenExam\Models\Answer;
 use Phalcon\Validation;
 use Phalcon\Validation\Message;
 use Phalcon\Validation\Validator;

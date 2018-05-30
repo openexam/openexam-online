@@ -36,14 +36,16 @@
 </style>
 
 <div class="signup">
-    <h1 class="signup">Removed!</h1>
+    <h1 class="signup">
+        <?= $tr->_("Removed!") ?>
+    </h1>
     <?php if ($employee) { ?>
             <p>
-                Your role as a teacher in the system have now been removed. You will still
-                have access to the exams you are or have been participating in, e.g. as a corrector.
+                <?= $tr->_("Your role as a teacher in the system have now been removed.") ?> 
+                <?= $tr->_("You will still have access to the exams you are or have been participating in, e.g. as a corrector.") ?>
             </p>
     <?php } else { ?>
-            You have now been removed as a student from the example examinations. You will
-            still have access to your real examinations.
+            <?= $tr->_("You have now been removed as a student from the example examinations.") ?> 
+            <?= $tr->_("You will still have access to your real examinations.") ?>
     <?php } ?>
 </div>

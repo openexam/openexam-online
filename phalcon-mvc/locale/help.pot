@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 05:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phalcon-mvc/app/views/help/about.phtml:31
+msgid "General"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:32
+msgid "Authors"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:33
+msgid "Contributors"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:34
+msgid "License"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:35
+msgid "Project"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:43
+msgid "OpenExam Online v%version%"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:61
+msgid "The following organizations has contributed to the project:"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:75
+msgid "Released under %license% license."
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:78
+msgid "Details"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:84
+msgid "More information is available on the <a href=\"%homepage%\">project homepage</a>."
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:85
+msgid "Source code can be downloaded from <a href=\"%projpage%\">GitHub</a>."
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:101
+msgid "Close"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/about.phtml:140
+msgid "Project license"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/index.phtml:30
+msgid "Help sections"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/index.phtml:36
+msgid "Click to display more manuals in various formats and translations"
+msgstr ""
+
+#: phalcon-mvc/app/views/help/index.phtml:51
+msgid "Other formats and translations..."
+msgstr ""
+
+#: phalcon-mvc/app/views/help/index.phtml:60
+#: phalcon-mvc/app/views/help/manual.phtml:59
+msgid "If you see this page, then you might have ended up on this page by misstake."
+msgstr ""
+
+#: phalcon-mvc/app/views/help/index.phtml:61
+#: phalcon-mvc/app/views/help/manual.phtml:60
+msgid "Please follow one of the links above to access desired content."
+msgstr ""

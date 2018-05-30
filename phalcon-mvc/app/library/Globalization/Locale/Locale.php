@@ -257,6 +257,8 @@ class Locale extends Component
                 if ($this->_sapi != "cli") {
                         if ($this->request->has($name)) {
                                 $locale = $this->request->get($name, "string");
+                        } elseif ($this->cookies->has($name)) {
+                                $locale = $this->cookies->get($name)->getValue();
                         } elseif ($this->session->has($name)) {
                                 $locale = $this->session->get($name);
                         } elseif ($this->persistent->has($name)) {

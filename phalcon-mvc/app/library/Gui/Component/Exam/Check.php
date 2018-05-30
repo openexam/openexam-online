@@ -91,12 +91,12 @@ class Check extends ExamStatusCheck implements Component
                                 $this->_text = false;
                                 break;
                         case self::STATUS_NEED_ATTENTION:
-                                $this->_text = 'Suggested task';
+                                $this->_text = $this->tr->_('Suggested task');
                                 $this->_icon = 'exclamation';
                                 $this->_color = 'blue';
                                 break;
                         case self::STATUS_NOT_READY:
-                                $this->_text = 'Remaining task';
+                                $this->_text = $this->tr->_('Remaining task');
                                 $this->_icon = 'exclamation';
                                 $this->_color = 'red';
                                 break;
@@ -104,33 +104,33 @@ class Check extends ExamStatusCheck implements Component
 
                 switch ($this->getRemainingTask()) {
                         case self::TASK_ADD_QUESTIONS:
-                                $this->_task = 'Add questions';
+                                $this->_task = $this->tr->_('Add questions');
                                 break;
                         case self::TASK_ADD_STUDENTS:
-                                $this->_task = 'Add students';
+                                $this->_task = $this->tr->_('Add students');
                                 break;
                         case self::TASK_ALL_COMPLETED:
-                                $this->_task = 'Exam is ready for use';
+                                $this->_task = $this->tr->_('Exam is ready for use');
                                 break;
                         case self::TASK_PUBLISH_EXAM:
-                                $this->_task = 'Publish exam';
+                                $this->_task = $this->tr->_('Publish exam');
                                 break;
                         case self::TASK_SET_NAME:
-                                $this->_task = 'Set exam name';
+                                $this->_task = $this->tr->_('Set exam name');
                                 break;
                         case self::TASK_SET_SECURITY:
                                 if (($security = $this->getSecurity())) {
                                         if ($security == self::SECURITY_NONE) {
-                                                $this->_task = 'Set exam security';
+                                                $this->_task = $this->tr->_('Set exam security');
                                         } elseif (($security & self::SECURITY_LOCKDOWN) == 0) {
-                                                $this->_task = 'Set exam lockdown';
+                                                $this->_task = $this->tr->_('Set exam lockdown');
                                         } elseif (($security & self::SECURITY_LOCATION) == 0) {
-                                                $this->_task = 'Set exam location';
+                                                $this->_task = $this->tr->_('Set exam location');
                                         }
                                 }
                                 break;
                         case self::TASK_SET_STARTTIME:
-                                $this->_task = 'Set exam start time';
+                                $this->_task = $this->tr->_('Set exam start time');
                                 break;
                 }
         }

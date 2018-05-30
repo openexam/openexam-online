@@ -187,7 +187,7 @@ class Connection extends Component implements ServiceConnection
 
                 if (!$content || $info['http_code'] != 200) {
                         $this->logger->system->error(sprintf("Failed fetch membership information from UPPDOK data: %s", $error));
-                        throw new Exception($this->tr->_("There was a problem talking to the directory service, course information is unavailable due to network or configuration problems"));
+                        throw new Exception("There was a problem talking to the directory service, course information is unavailable due to network or configuration problems");
                 }
 
                 $this->close();

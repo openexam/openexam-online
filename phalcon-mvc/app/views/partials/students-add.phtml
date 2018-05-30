@@ -30,14 +30,16 @@
 <div id="tabs-1">
 
     <div class="accordion">
-        <h3>Add single or multiple</h3>
+        <h3>
+            <?= $tr->_("Add single or multiple") ?>
+        </h3>
         <div>
             <p>
-                Write identities (username or personal number) and anonymous code (optional, system will generate one if missing) of single or multiple students. 
-                Separate identity and anonymous code by whitespace.
+                <?= $tr->_("Write identities (username or personal number) and anonymous code (optional, system will generate one if missing) of single or multiple students.") ?>
+                <?= $tr->_("Separate identity and anonymous code by whitespace.") ?>
             </p>
             <div class="alert alert-info">
-                Input multiple students at once by separating them with newline:
+                <?= $tr->_("Input multiple students at once by separating them with newline:") ?>
                 <br>
                 <small>
                     <strong>identity1 code1</strong><br />
@@ -49,15 +51,19 @@
             <div style="display: block; margin:10px 0px 30px 0px;">   
                 <span id="add_students_btn" class="btn btn-success">
                     <i class="fa fa-chevron-circle-right"></i>
-                    <span>Add students</span>
+                    <span>
+                        <?= $tr->_("Add students") ?>
+                    </span>
                 </span>
             </div>                                
         </div>
-        <h3>Import from file</h3>
+        <h3>
+            <?= $tr->_("Import from file") ?>
+        </h3>
         <div>
             <div id="student-file-import-content">
                 <p>
-                    Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag.
+                    <?= $tr->_("Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag.") ?>
                 </p>
                 <form id="student-file-import" name="student-file-import">
                     <input class="form-control" type="file" name="file[]" />                                
@@ -66,18 +72,62 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#" type='-1'>Auto Detect</a></li>
-                            <li><a href="#" type='oocalc'>OpenDocument Format Spreadsheet (*.ods,*.ots)</a></li>
-                            <li><a href="#" type='excel2007'>Microsoft Excel 2007/2010/2013 XML (*.xlsx)</a></li>
-                            <li><a href="#" type='excel2003'>Microsoft Excel 2003 XML (*.xml)</a></li>
-                            <li><a href="#" type='excel97'>Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)</a></li>
-                            <li><a href="#" type='tab'>TAB Separated Values (*.tab,*.tsv,*.txt)</a></li>
-                            <li><a href="#" type='csv'>CSV File (*.csv)</a></li>
-                            <li><a href="#" type='gnumeric'>Gnumeric Spreadsheet (*.gnumeric)</a></li>
-                            <li><a href="#" type='html'>HTML Document (*.htm,*.html)</a></li>
-                            <li><a href="#" type='sylk'>SYLK Document (*.slk,*.sylk)</a></li>
+                            <li>
+                                <a href="#" type='-1'>
+                                    <?= $tr->_("Auto Detect") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='oocalc'>
+                                    <?= $tr->_("OpenDocument Format Spreadsheet (*.ods,*.ots)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='excel2007'>
+                                    <?= $tr->_("Microsoft Excel 2007/2010/2013 XML (*.xlsx)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='excel2003'>
+                                    <?= $tr->_("Microsoft Excel 2003 XML (*.xml)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='excel97'>
+                                    <?= $tr->_("Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='tab'>
+                                    <?= $tr->_("TAB Separated Values (*.tab,*.tsv,*.txt)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='csv'>
+                                    <?= $tr->_("CSV File (*.csv)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='gnumeric'>
+                                    <?= $tr->_("Gnumeric Spreadsheet (*.gnumeric)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='html'>
+                                    <?= $tr->_("HTML Document (*.htm,*.html)") ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" type='sylk'>
+                                    <?= $tr->_("SYLK Document (*.slk,*.sylk)") ?>
+                                </a>
+                            </li>
                         </ul>
-                        <div id='file-type' type='-1' style="padding: 5px 0"><span style="margin-left: 10px">Auto Detect</span></div>
+                        <div id='file-type' type='-1' style="padding: 5px 0">
+                            <span style="margin-left: 10px">
+                                <?= $tr->_("Auto Detect") ?>
+                            </span>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -85,24 +135,34 @@
             <div style="display: block; margin:10px 0px 30px 0px;">        
                 <span id="import-students-by-file" class="btn btn-success">
                     <i class="fa fa-chevron-circle-right"></i>
-                    <span>Import students</span>
+                    <span>
+                        <?= $tr->_("Import students") ?>
+                    </span>
                 </span>
             </div>                                
         </div>
-        <h3>Import from group</h3>
+        <h3>
+            <?= $tr->_("Import from group") ?>
+        </h3>
         <div>
             <div id="student-group-import-content">
                 <p>
-                    Supply the name of a group to import students from. The name could e.g. be a course code or a domain group. The search can be restricted to a single domain.
+                    <?= $tr->_("Supply the name of a group to import students from.") ?>
+                    <?= $tr->_("The name could e.g. be a course code or a domain group.") ?>
+                    <?= $tr->_("The search can be restricted to a single domain.") ?>
                 </p>
                 <form id="student-file-import" name="student-group-import">
                     <div class="row">
                         <div class="col-sm-6">
-                            <label for="group">Group name:</label>
+                            <label for="group">
+                                <?= $tr->_("Group name:") ?>
+                            </label>
                             <input class="form-control" id="group-name" type="text" name="group" placeholder="3MK579" />
                         </div>
                         <div class="col-sm-6">
-                            <label for="domain">Domain:</label> 
+                            <label for="domain">
+                                <?= $tr->_("Domain:") ?>
+                            </label> 
                             <select class="form-control" id="domain-name" name="domain">
                                 <option></option>
                                 <?php foreach ($domains as $domain): ?>
@@ -117,7 +177,9 @@
             <div style="display: block; margin:10px 0px 30px 0px;">   
                 <span id="import-students-by-group" class="btn btn-success">
                     <i class="fa fa-chevron-circle-right"></i>
-                    <span>Import students</span>
+                    <span>
+                        <?= $tr->_("Import students") ?>
+                    </span>
                 </span>
             </div> 
         </div>

@@ -148,31 +148,41 @@ function set_resource_defaults($type, $resource, $url)
 
 <div class="alert alert-info alert-dismissable">
     <a class='close' data-dismiss='alert' href='#'>&times;</a>
-    Select resource files from the media library containing your personal files from previous uploads or files shared by other people. 
-    You can choose to share your personal files with others if you like or keep them private.
+    <?= $tr->_("Select resource files from the media library containing your personal files from previous uploads or files shared by other people.") ?>
+    <?= $tr->_("You can choose to share your personal files with others if you like or keep them private.") ?>
 </div>
 
 <div id="lib-item-edit" style="display: none;">
     <span id="lib-item-title"></span>
     <div class="lib-item-save" id="lib-item-name" style="display: none">
         <label>
-            Resource name
+            <?= $tr->_("Resource name") ?>
             <input type="text" class="form-control update-lib-item-name" value="">
         </label>
     </div>
     <div class="lib-item-save" id="lib-item-share" style="display: none">
         <label>
-            This resource can be used                
+            <?= $tr->_("This resource can be used") ?>
             <select class="form-control update-lib-item-shared">
-                <option value="private">Only by me</option>
-                <option value="exam">By co-workers on this exam</option>
-                <option value="group">For anyone in my department or group</option>
-                <option value="global">By everyone else</option>
+                <option value="private">
+                    <?= $tr->_("Only by me") ?>
+                </option>
+                <option value="exam">
+                    <?= $tr->_("By co-workers on this exam") ?>
+                </option>
+                <option value="group">
+                    <?= $tr->_("For anyone in my department or group") ?>
+                </option>
+                <option value="global">
+                    <?= $tr->_("By everyone else") ?>
+                </option>
             </select>
         </label>
     </div>
     <br>
-    <span class="btn btn-success update-lib-item-details" media-id=""> Save</span>
+    <span class="btn btn-success update-lib-item-details" media-id=""> 
+        <?= $tr->_("Save") ?>
+    </span>
 </div>
 
 <!-- Template for library item -->
@@ -207,7 +217,9 @@ function set_resource_defaults($type, $resource, $url)
 
     <div class="col-sm-9" id="lib-items-available">
         <div class="lib-header">
-            <h3>Media library</h3>
+            <h3>
+                <?= $tr->_("Media library") ?>
+            </h3>
         </div>
 
         <div id="media-types">
@@ -218,10 +230,10 @@ function set_resource_defaults($type, $resource, $url)
             </ul>
 
             <div class="lib-item-display">
-                <a href="#" id="lib-item-personal" title="Show personal files">
+                <a href="#" id="lib-item-personal" title="<?= $tr->_("Show personal files") ?>">
                     <i class="fa fa-2x fa-user" aria-hidden="true"></i>
                 </a>
-                <a href="#" id="lib-item-expand" title="Expand current display">
+                <a href="#" id="lib-item-expand" title="<?= $tr->_("Expand current display") ?>">
                     <i class="fa fa-2x fa-arrows-alt" aria-hidden="true"></i>
                 </a>
             </div>
@@ -232,7 +244,9 @@ function set_resource_defaults($type, $resource, $url)
                         <!-- Shared resources -->
                         <div class="lib-tab-area">
                             <?php if (!count($sres[$type])): ?>
-                                    <div class="lib-missing-msg">No shared <?= $type ?> resources was found. </div>
+                                    <div class="lib-missing-msg">
+                                        <?= $tr->_("No shared %type% resources was found.", array('type' => $type)) ?>
+                                    </div>
                             <?php endif; ?>
 
                             <?php foreach ($sres[$type] as $resource): ?>
@@ -270,7 +284,9 @@ function set_resource_defaults($type, $resource, $url)
                         <div class="lib-tab-area lib-personal" id="lib-personal-<?= $type ?>" style="display:none">
                             <h4>Personal files:</h4>
                             <?php if (!count($pres[$type])) : ?>
-                                    <div class="lib-missing-msg">No personal <?= $type ?> resources was found. </div>
+                                    <div class="lib-missing-msg">
+                                        <?= $tr->_("No personal %type% resources was found.", array('type' => $type)) ?> 
+                                    </div>
                             <?php endif; ?>
 
                             <?php foreach ($pres[$type] as $resource): ?>
@@ -311,19 +327,27 @@ function set_resource_defaults($type, $resource, $url)
 
     <div class="col-sm-3" id="lib-items-selected">
         <div class="lib-header">
-            <h3>Selected files</h3>
+            <h3>
+                <?= $tr->_("Selected files") ?>
+            </h3>
         </div>
 
         <div class="btn btn-success fileinput-button">
             <i class="fa fa-plus-square fa-2x"></i>
-            <span style="white-space: normal"><p>Drag and drop or click to upload files from your computer</p></span> 
+            <span style="white-space: normal">
+                <p>
+                    <?= $tr->_("Drag and drop or click to upload files from your computer") ?>
+                </p>
+            </span> 
             <!-- The file input field used as target for the file upload widget -->
             <input class="form-control" type="file" multiple="" name="files[]" id="fileupload">
         </div> 
 
         <div id="lib-selected-list">
             <div id="lib-default-msg">
-                <div> No files have been uploaded or selected yet. </div>
+                <div>
+                    <?= $tr->_("No files have been uploaded or selected yet.") ?>
+                </div>
             </div>
         </div>
 

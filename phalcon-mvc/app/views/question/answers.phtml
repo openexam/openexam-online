@@ -143,7 +143,12 @@ if ($exam->decoded | $exam->enquiry) {
 </h2>
 
 <div id="mainview">
-    <h3><?= ($exam->show_readonly) ? "Answer correction" : "Correct the answers" ?> for <?= $heading ?>.</h3>
+    <?php if ($exam->show_readonly) : ?>
+            <h3><?= $tr->_("Answer correction for %heading%", array('heading' => $heading)) ?></h3>
+    <?php else : ?>
+            <h3><?= $tr->_("Correct the answers for %heading%", array('heading' => $heading)) ?></h3>
+    <?php endif; ?>
+
     <?php foreach ($questions as $question) : ?>
             <?php
             $correctAns = array();
@@ -180,7 +185,10 @@ if ($exam->decoded | $exam->enquiry) {
                             <?= Phalcon\Tag::image(array("img/not-corrected.gif", "style" => "position: absolute; z-index: 1; right: 0px; width: 5%; min-width: 60px;", "id" => $question->id . "-corrected", "class" => "not-corrected")); ?>
                     <?php endif; ?>
                     <div class="q-heading correction-section-head">
-                        <span style="color:#333333; font-weight:normal"><i class="fa fa-pencil-square-o"></i> Question no. <?= $question->slot ?></span>
+                        <span style="color:#333333; font-weight:normal">
+                            <i class="fa fa-pencil-square-o"></i> 
+                            <?= $tr->_("Question no. %slot%", array('slot' => $question->slot)) ?>
+                        </span>
                     </div>
 
                     <?php
@@ -289,7 +297,9 @@ if ($exam->decoded | $exam->enquiry) {
                                                             <div class="q-part-txt-student-ans">
                                                                 <?php $ansData = json_decode($qSpecAns->answer, true); ?>
                                                                 <span style="color:#990000;"><i class="fa fa-arrow-circle-right"></i></span> 
-                                                                <span style="color:#000; font-weight:bold">Student's answer</span>
+                                                                <span style="color:#000; font-weight:bold">
+                                                                    <?= $tr->_("Student's answer") ?>
+                                                                </span>
                                                                 <?php
                                                                 if (isset($correctAns[$question->id][$qPartTitle])) {
                                                                         $correctAnsPart = $correctAns[$question->id][$qPartTitle];
@@ -314,7 +324,9 @@ if ($exam->decoded | $exam->enquiry) {
                                                                                             <li><?= $stAns ?></li>
                                                                                     <?php endif; ?>
                                                                                     <?php if (empty($ansData[$qPartTitle]['ans'][0])): ?>
-                                                                                            <li><i>Student did not answer this question.</i></li>
+                                                                                            <li>
+                                                                                                <i><?= $tr->_("Student did not answer this question.") ?></i>
+                                                                                            </li>
                                                                                     <?php endif; ?>
                                                                             <?php endforeach; ?>
                                                                             <?php
@@ -325,17 +337,22 @@ if ($exam->decoded | $exam->enquiry) {
                                                                             ?>
                                                                         </ul>
                                                                 <?php else: ?>
-                                                                        <span style="background-color:#FEFF99"><i>Student did not answer this question part.</i></span>
+                                                                        <span style="background-color:#FEFF99">
+                                                                            <i><?= $tr->_("Student did not answer this question part.") ?></i>
+                                                                        </span>
                                                                 <?php endif; ?>
                                                             </div>
                                                             <?php if ($qPart['ans_area']['type'] == 'choicebox' && count($correctAnsPart) && $totalCorrect && $totalCorrect != count($correctAnsPart)) : ?>
-                                                                    <div style="color:orange; margin-left:35px"><i class="fa fa-warning"></i>  Student's answer is partially correct </div>
+                                                                    <div style="color:orange; margin-left:35px">
+                                                                        <i class="fa fa-warning"></i>  
+                                                                        <?= $tr->_("Student's answer is partially correct") ?>
+                                                                    </div>
                                                             <?php endif; ?>
 
                                                             <div class="q-part-student-score savable" style="padding-left: 35px; margin-top: 10px; display: <?= $qPart['q_points'] == 0 ? 'none' : '' ?>">
                                                                 <i class="fa fa-certificate" style="color:#D84B4B"></i>
                                                                 <span style="color:#000;">
-                                                                    Points:
+                                                                    <?= $tr->_("Points:") ?>
                                                                     <span style="margin-left: 15px">
                                                                         <?php
                                                                         // 
@@ -375,17 +392,30 @@ if ($exam->decoded | $exam->enquiry) {
                                                                                 <div class="savable" style="padding-bottom: 10px; padding-left:35px">
                                                                                     <i class="fa fa-comments"></i>
                                                                                     Comments:<br />
-                                                                                    <textarea class="form-control changeable no-print" placeholder="Add your comments here for the student" style="margin-left: 15px; width:30%" qst-id="<?= $qSpecAns->question_id ?>" ans-id="<?= $qSpecAns->id ?>"><?= $result->comment ?></textarea>
+                                                                                    <textarea class="form-control changeable no-print" 
+                                                                                              placeholder="<?= $tr->_("Add your comments here for the student") ?>" 
+                                                                                              style="margin-left: 15px; width:30%" 
+                                                                                              qst-id="<?= $qSpecAns->question_id ?>" 
+                                                                                              ans-id="<?= $qSpecAns->id ?>">
+                                                                                                  <?= $result->comment ?>
+                                                                                    </textarea>
                                                                                 </div>
                                                                                 <div class="savable" style="padding-bottom: 10px; padding-left: 45px;">
-                                                                                    <input class="btn btn-success save-result no-print" type="button" qst-id="<?= $qSpecAns->question_id ?>" ans-id="<?= $qSpecAns->id ?>" value="Save result for this question" corrector-id="<?= $question->corrector ?>">
+                                                                                    <input class="btn btn-success save-result no-print" 
+                                                                                           type="button" 
+                                                                                           qst-id="<?= $qSpecAns->question_id ?>" 
+                                                                                           ans-id="<?= $qSpecAns->id ?>" 
+                                                                                           value="<?= $tr->_("Save result for this question") ?>" 
+                                                                                           corrector-id="<?= $question->corrector ?>">
                                                                                 </div>
                                                                         <?php endif; ?>
                                                                 <?php else: ?>
                                                                         <?php if (!empty($result->comment)): ?>                                                
                                                                                 <div style="padding-top:8px">
                                                                                     <div>
-                                                                                        <strong>Corrector's comments:</strong>
+                                                                                        <strong>
+                                                                                            <?= $tr->_("Corrector's comments:") ?>
+                                                                                        </strong>
                                                                                     </div>
                                                                                     <div>
                                                                                         <?= $result->comment ?>
@@ -399,7 +429,9 @@ if ($exam->decoded | $exam->enquiry) {
 
                                                 <?php endforeach; ?>
                                                 <?php if (!count($qSpecificAns)): ?>
-                                                        <span style="background-color:#FEFF99"><i>Student did not answer this question part.</i></span>
+                                                        <span style="background-color:#FEFF99">
+                                                            <i><?= $tr->_("Student did not answer this question part.") ?></i>
+                                                        </span>
                                                         <script>$("#<?= $question->id ?>-corrected").hide();</script>
                                                 <?php endif; ?>
                                         <?php endif; ?>
@@ -422,9 +454,9 @@ if ($exam->decoded | $exam->enquiry) {
                                                     <span style="color:#514E4E; font-weight:normal">
                                                         <i class="fa fa-user"></i>
                                                         <?php if ($exam->show_code): ?>
-                                                                Students answer for this question (<?= $student->code ?>)
+                                                                <?= $tr->_("Students answer for this question") ?> (<?= $student->code ?>)
                                                         <?php else: ?>
-                                                                Students answer for this question (<?= $student->id ?>)
+                                                                <?= $tr->_("Students answer for this question") ?> (<?= $student->id ?>)
                                                         <?php endif; ?>
                                                     </span>
                                                 </div>
@@ -474,7 +506,9 @@ if ($exam->decoded | $exam->enquiry) {
                                                                                     <?php endif; ?>
 
                                                                                     <?php if (empty($ansData[$qPartTitle]['ans'][0])): ?>
-                                                                                            <li><i>Student did not answer this question.</i></li>
+                                                                                            <li>
+                                                                                                <i><?= $tr->_("Student did not answer this question.") ?></i>
+                                                                                            </li>
                                                                                     <?php endif; ?>
                                                                             <?php endforeach; ?>
                                                                             <?php
@@ -485,7 +519,10 @@ if ($exam->decoded | $exam->enquiry) {
                                                                             ?>
 
                                                                             <?php if ($qPart['type'] == 'choicebox' && $totalCorrect && $totalCorrect != count($correctAnsPart)) : ?>
-                                                                                    <li style="color:orange"><i class="fa fa-warning"></i> Student's answer is partially correct </li>
+                                                                                    <li style="color:orange">
+                                                                                        <i class="fa fa-warning"></i> 
+                                                                                        <?= $tr->_("Student's answer is partially correct") ?>
+                                                                                    </li>
                                                                             <?php endif; ?>
                                                                         </ul>
                                                                     </div>
@@ -493,7 +530,7 @@ if ($exam->decoded | $exam->enquiry) {
                                                                     <div class="q-part-student-score savable" style="padding-top: 10px; padding-left: 35px; margin-bottom: 10px; display: <?= $questParts[$qPartTitle]['q_points'] == 0 ? 'none' : '' ?>">
                                                                         <i class="fa fa-certificate" style="color:#D84B4B"></i>
                                                                         <span style="color:#000;">
-                                                                            Points:
+                                                                            <?= $tr->_("Points:") ?>
                                                                             <?php
                                                                             // 
                                                                             // Fill in score if max is zero on this question part.
@@ -518,19 +555,33 @@ if ($exam->decoded | $exam->enquiry) {
                                                                             <?php if (count($ansData) == $qPartCounter): ?>
                                                                                     <div class="savable" style="padding-top: 10px; padding-left:35px">
                                                                                         <i class="fa fa-comments"></i>
-                                                                                        Comments:<br />
-                                                                                        <textarea class="form-control changeable no-print" placeholder="Add your comments here for the student" style="margin-left: 15px; width:30%" qst-id="<?= $answer->question_id ?>" ans-id="<?= $answer->id ?>"><?= $result->comment ?></textarea>
+                                                                                        <?= $tr->_("Comments:") ?>
+                                                                                        <br />
+                                                                                        <textarea class="form-control changeable no-print" 
+                                                                                                  placeholder="<?= $tr->_("Add your comments here for the student") ?>" 
+                                                                                                  style="margin-left: 15px; width:30%" 
+                                                                                                  qst-id="<?= $answer->question_id ?>" 
+                                                                                                  ans-id="<?= $answer->id ?>">
+                                                                                                      <?= $result->comment ?>
+                                                                                        </textarea>
                                                                                     </div>
 
                                                                                     <div class="savable no-print" style="padding-top: 10px; padding-left: 45px;">
-                                                                                        <input class="btn btn-success save-result no-print" type="button" qst-id="<?= $answer->question_id ?>" ans-id="<?= $answer->id ?>" value="Save this result" corrector-id="<?= $question->corrector ?>">
+                                                                                        <input class="btn btn-success save-result no-print" 
+                                                                                               type="button" 
+                                                                                               qst-id="<?= $answer->question_id ?>" 
+                                                                                               ans-id="<?= $answer->id ?>" 
+                                                                                               value="<?= $tr->_("Save this result") ?>" 
+                                                                                               corrector-id="<?= $question->corrector ?>">
                                                                                     </div>
                                                                             <?php endif; ?>
                                                                     <?php else: ?>
                                                                             <?php if (!empty($result->comment)): ?>
                                                                                     <div>
                                                                                         <div>
-                                                                                            <strong>Corrector's comments:</strong>
+                                                                                            <strong>
+                                                                                                <?= $tr->_("Corrector's comments:") ?>
+                                                                                            </strong>
                                                                                         </div>
                                                                                         <div>
                                                                                             <?= $result->comment ?>
@@ -545,7 +596,9 @@ if ($exam->decoded | $exam->enquiry) {
                                                         <?php endforeach; ?>
 
                                                         <?php if (!count($ansData)): ?>
-                                                                <span style="background-color:#FEFF99"><i>Student did not answer this question part.</i></span>
+                                                                <span style="background-color:#FEFF99">
+                                                                    <i><?= $tr->_("Student did not answer this question part.") ?></i>
+                                                                </span>
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
@@ -563,36 +616,44 @@ if ($exam->decoded | $exam->enquiry) {
 <?php if ($exam->decoded == false) : ?>
         <div class="no-print" style="position: fixed; bottom: -30px; right: 30px; padding: 10px; background-color: whitesmoke; border-radius: 5px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.2); z-index: 2;">
             <div>
-                <?php
-                printf("<a href=\"#\" style=\"float: right; padding: 5px\" onclick=\"return render_pdf_document('%s','%s')\" title=\"Download current view as PDF document\"><i class=\"fa fa-file-pdf-o fa-2x\" aria-hidden=\"true\"></i></a>\n", urlencode($this->request->get("_url")), $this->url->get("utility/render/pdf"));
-                printf("<a href=\"#\" style=\"float: right; padding: 5px\" onclick=\"return online_url_document('%s')\" title=\"View online in print friendly format\"><i class=\"fa fa-print fa-2x\" aria-hidden=\"true\"></i></a>\n", $this->url->get($this->request->get('_url')));
-                printf("<a href=\"#\" style=\"float: right; padding: 5px\" id=\"reset-student-results\" title=\"Reset all results found on this view\"><i class=\"fa fa-window-restore fa-2x\" aria-hidden=\"true\"></i></a>");
-
-                ?>
+                <?php $onclick = sprintf("return render_pdf_document('%s','%s')", urlencode($this->request->get("_url")), $this->url->get("utility/render/pdf")) ?>
+                <a href="#" style="float: right; padding: 5px" onclick="<?= $onclick ?>" title="<?= $tr->_("Download current view as PDF document") ?>">
+                    <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
+                </a>
+                <?php $onclick = sprintf("return render_url_document('%s')", urlencode($this->request->get("_url"))) ?>
+                <a href="#" style="float: right; padding: 5px" onclick="<?= $onclick ?>" title="<?= $tr->_("View online in print friendly format") ?>">
+                    <i class="fa fa-print fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="#" style="float: right; padding: 5px" id="reset-student-results" title="<?= $tr->_("Reset all results found on this view") ?>">
+                    <i class="fa fa-window-restore fa-2x" aria-hidden="true"></i>
+                </a>
             </div>
             <hr style="clear: both; margin: 0">
             <div style="padding-left: 10px; padding-top: 5px">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" class="hide-completed">
-                        Hide fully corrected answers
+                        <?= $tr->_("Hide fully corrected answers") ?>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" class="hide-resources">
-                        Hide media and resource files
+                        <?= $tr->_("Hide media and resource files") ?>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" class="hide-uncorrectable">
-                        Hide uncorrectable answers
+                        <?= $tr->_("Hide uncorrectable answers") ?>
                     </label>
                 </div>
             </div>
             <?php if ($question->corrector != "none") : ?>
-                    <input type="button" class="btn btn-success btn-lg save-all-result savable" corrector-id="<?= $question->corrector ?>" value="Save all results »">
+                    <input type="button" 
+                           class="btn btn-success btn-lg save-all-result savable" 
+                           corrector-id="<?= $question->corrector ?>" 
+                           value="<?= $tr->_("Save all results") ?> »">
             <?php endif; ?>
         </div>
 <?php endif; ?>
@@ -603,29 +664,29 @@ if ($exam->decoded | $exam->enquiry) {
 </form>
 
 <script>
-        // 
-        // Trigger download of PDF document:
-        // 
-        function render_pdf_document(url, render) {
-            window.location.href = render + '?url=' + url;
-            return false;
-        }
+                                // 
+                                // Trigger download of PDF document:
+                                // 
+                                function render_pdf_document(url, render) {
+                                    window.location.href = render + '?url=' + url;
+                                    return false;
+                                }
 
-        // 
-        // Trigger print of URL:
-        // 
-        function online_url_document(url) {
-            window.location.href = url + "#print";
-            return false;
-        }
+                                // 
+                                // Trigger print of URL:
+                                // 
+                                function online_url_document(url) {
+                                    window.location.href = url + "#print";
+                                    return false;
+                                }
 
-        // 
-        // Popup print dialog if hash-bang is set:
-        // 
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.location.hash && window.location.hash === '#print') {
-                window.print();
-            }
-        });
+                                // 
+                                // Popup print dialog if hash-bang is set:
+                                // 
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    if (window.location.hash && window.location.hash === '#print') {
+                                        window.print();
+                                    }
+                                });
 
 </script>

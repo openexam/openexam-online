@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 05:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phalcon-mvc/app/views/result/view.phtml:77
+msgid "Exam held on:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:100
+msgid "Exam description"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:117
+msgid "Examination result"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:121
+msgid "Summary"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:125
+msgid "You scored total <strong>%score%</strong> of maximum <strong>%maximum%</strong> points (<strong>%percent%%</strong>) on this examination."
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:137
+msgid "Graduation"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:140
+msgid "Your graduation on this examination is: <strong>%grade%</strong>"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:145
+msgid "Score Table"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:149
+msgid "This table shows a summary of your score versus the maximum scores."
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:150
+msgid "Questions without answer are marked with an '-' in the table."
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:156
+#: phalcon-mvc/app/views/result/view.phtml:217
+#: phalcon-mvc/app/views/result/view.phtml:446
+msgid "Question"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:157
+msgid "Score"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:158
+msgid "Max score"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:159
+#: phalcon-mvc/app/views/result/view.phtml:369
+msgid "Percent"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:160
+msgid "Notice"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:195
+#: phalcon-mvc/app/views/result/view.phtml:382
+msgid "Summary:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:278
+msgid "Your answer:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:309
+msgid "No answer was provided for this part."
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:318
+msgid "Teacher's comments:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:327
+msgid "Your score:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:330
+msgid "Max score:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:351
+msgid "Statistics"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:354
+msgid "This section shows overall statistics for all participants of this examination."
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:358
+msgid "Distribution"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:361
+msgid "This table shows the distribution by grades. The number of student allotted for each grade are:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:366
+msgid "Grade"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:367
+msgid "Threshold"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:368
+msgid "Students"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:399
+msgid "Reference"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:403
+msgid "Information about this examination."
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:409
+msgid "Contact Information"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:412
+msgid "This section lists those people who have been involved in this examination."
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:416
+msgid "Responsable for examination:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:420
+msgid "Main responsible person for the examination is"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:432
+msgid "Correction of answers:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:435
+msgid "Following persons have contributed in this exam and have corrected answers:"
+msgstr ""
+
+#: phalcon-mvc/app/views/result/view.phtml:442
+msgid "Corrected questions:"
+msgstr ""

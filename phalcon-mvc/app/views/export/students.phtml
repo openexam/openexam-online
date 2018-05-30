@@ -62,12 +62,22 @@
     <tr>
         <td colspan="7">
             <b><?= $exam->name ?> (<?= $exam->code ?>)</b><br/>
-            <span class="subject">Department:</span> <?= $exam->orgunit ?>
+            <span class="subject">
+                <?= $tr->_("Department:") ?>
+            </span> <?= $exam->orgunit ?>
         </td>
     </tr>
     <tr>
-        <td colspan="2"><span class="subject">Start:</span> <?= $exam->starttime ?></td>
-        <td colspan="2"><span class="subject">End:</span> <?= $exam->endtime ?></td>
+        <td colspan="2">
+            <span class="subject">
+                <?= $tr->_("Start:") ?>
+            </span> <?= $exam->starttime ?>
+        </td>
+        <td colspan="2">
+            <span class="subject">
+                <?= $tr->_("End:") ?>
+            </span> <?= $exam->endtime ?>
+        </td>
     </tr>
     <tr><td></td></tr>
     <tr>
@@ -76,12 +86,37 @@
     <tr><td></td></tr>
     <tr>
         <td colspan="7">
-            <span class="subject">Contact:</span> <?= $contact->name ?> (<?= implode(", ", $contact->mail) ?>)
+            <span class="subject">
+                <?= $tr->_("Contact:") ?>
+            </span> <?= $contact->name ?> (<?= implode(", ", $contact->mail) ?>)
         </td>
     </tr>
     <tr><td><br/></td></tr>
     <tr>
-        <th>Name</th><th>Pers Nr</th><th>Code</th><th>User</th><th>Tag</th><th>ID</th><th>Finished</th><th class="notes">Notes</th>
+        <th>
+            <?= $tr->_("Name") ?>
+        </th>
+        <th>
+            <?= $tr->_("Pers Nr") ?>
+        </th>
+        <th>
+            <?= $tr->_("Code") ?>
+        </th>
+        <th>
+            <?= $tr->_("User") ?>
+        </th>
+        <th>
+            <?= $tr->_("Tag") ?>
+        </th>
+        <th>
+            <?= $tr->_("ID") ?>
+        </th>
+        <th>
+            <?= $tr->_("Finished") ?>
+        </th>
+        <th class="notes">
+            <?= $tr->_("Notes") ?>
+        </th>
     </tr>
     <?php foreach ($students as $student) { ?>
             <tr class="student">

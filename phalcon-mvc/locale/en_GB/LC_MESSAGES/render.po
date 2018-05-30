@@ -1,0 +1,173 @@
+# English translations for openexam-online package.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:65
+msgid "Download result"
+msgstr "Download result"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:70
+msgid "Select student results for download."
+msgstr "Select student results for download."
+
+#: phalcon-mvc/app/views/render/decoder.phtml:71
+msgid "Only those students visible in the list below will be part of the download archive."
+msgstr "Only those students visible in the list below will be part of the download archive."
+
+#: phalcon-mvc/app/views/render/decoder.phtml:77
+#: phalcon-mvc/app/views/render/decoder.phtml:139
+#: phalcon-mvc/app/views/render/student.phtml:166
+msgid "Download"
+msgstr "Download"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:81
+msgid "Select"
+msgstr "Select"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:92
+msgid "ready for download"
+msgstr "ready for download"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:116
+msgid "Render status:"
+msgstr "Render status:"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:120
+msgid "Queued:"
+msgstr "Queued:"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:124
+msgid "Finish:"
+msgstr "Finish:"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:128
+msgid "Position:"
+msgstr "Position:"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:133
+msgid "Remove"
+msgstr "Remove"
+
+#: phalcon-mvc/app/views/render/decoder.phtml:136
+#: phalcon-mvc/app/views/render/student.phtml:50
+msgid "Status"
+msgstr "Status"
+
+#: phalcon-mvc/app/views/render/student.phtml:44
+msgid "This dialog let you download your exam result in PDF-file format."
+msgstr "This dialog let you download your exam result in PDF-file format."
+
+#: phalcon-mvc/app/views/render/student.phtml:45
+msgid "Generated files are kept online for a limited period of time, but can be re-created from here on-demand."
+msgstr "Generated files are kept online for a limited period of time, but can be re-created from here on-demand."
+
+#: phalcon-mvc/app/views/render/student.phtml:53
+msgid "Error message."
+msgstr "Error message."
+
+#: phalcon-mvc/app/views/render/student.phtml:60
+msgid "Checking for ready to download file on server."
+msgstr "Checking for ready to download file on server."
+
+#: phalcon-mvc/app/views/render/student.phtml:61
+msgid "Plase wait for this step to finish."
+msgstr "Plase wait for this step to finish."
+
+#: phalcon-mvc/app/views/render/student.phtml:69
+#: phalcon-mvc/app/views/render/student.phtml:87
+#: phalcon-mvc/app/views/render/student.phtml:115
+#: phalcon-mvc/app/views/render/student.phtml:139
+#: phalcon-mvc/app/views/render/student.phtml:211
+msgid "Close"
+msgstr "Close"
+
+#: phalcon-mvc/app/views/render/student.phtml:78
+msgid "The PDF-file with you result for this exam is missing."
+msgstr "The PDF-file with you result for this exam is missing."
+
+#: phalcon-mvc/app/views/render/student.phtml:79
+msgid "Click on the generate button to create the file for download."
+msgstr "Click on the generate button to create the file for download."
+
+#: phalcon-mvc/app/views/render/student.phtml:93
+msgid "Generate"
+msgstr "Generate"
+
+#: phalcon-mvc/app/views/render/student.phtml:102
+msgid "The result file generation has been submitted and is queued for rendering."
+msgstr "The result file generation has been submitted and is queued for rendering."
+
+#: phalcon-mvc/app/views/render/student.phtml:103
+msgid "You can keep this dialog open and wait for the rendition to start or come back later."
+msgstr "You can keep this dialog open and wait for the rendition to start or come back later."
+
+#: phalcon-mvc/app/views/render/student.phtml:104
+msgid "Your request is being processed in the background even if you close this dialog."
+msgstr "Your request is being processed in the background even if you close this dialog."
+
+#: phalcon-mvc/app/views/render/student.phtml:107
+msgid "Your job is at position <span id=\"queue-position\"></span> in the render queue."
+msgstr "Your job is at position <span id=\"queue-position\"></span> in the render queue."
+
+#: phalcon-mvc/app/views/render/student.phtml:121
+msgid "Cancel"
+msgstr "Cancel"
+
+#: phalcon-mvc/app/views/render/student.phtml:130
+msgid "The result file is currently being rendered."
+msgstr "The result file is currently being rendered."
+
+#: phalcon-mvc/app/views/render/student.phtml:131
+msgid "You can keep this dialog open and wait for the rendering to complete or come back later when the file is ready for download."
+msgstr "You can keep this dialog open and wait for the rendering to complete or come back later when the file is ready for download."
+
+#: phalcon-mvc/app/views/render/student.phtml:148
+msgid "The render job has finished and ready for download."
+msgstr "The render job has finished and ready for download."
+
+#: phalcon-mvc/app/views/render/student.phtml:149
+msgid "Click on regenerate button to render the result again in case formatting or images is missing in the PDF."
+msgstr "Click on regenerate button to render the result again in case formatting or images is missing in the PDF."
+
+#: phalcon-mvc/app/views/render/student.phtml:152
+msgid "Problem with download? Try click on the <a href=\"\" id=\"%id%\">result file</a> link."
+msgstr "Problem with download? Try click on the <a href=\"\" id=\"%id%\">result file</a> link."
+
+#: phalcon-mvc/app/views/render/student.phtml:160
+msgid "Regenerate"
+msgstr "Regenerate"
+
+#: phalcon-mvc/app/views/render/student.phtml:175
+msgid "The render job has failed. You can chose to retry it in case it was a temporary failiure."
+msgstr "The render job has failed. You can chose to retry it in case it was a temporary failiure."
+
+#: phalcon-mvc/app/views/render/student.phtml:177
+msgid "If the problem persist, please report it to <a href=\"mailto:%addr%\">%name%</a>"
+msgstr "If the problem persist, please report it to <a href=\"mailto:%addr%\">%name%</a>"
+
+#: phalcon-mvc/app/views/render/student.phtml:193
+msgid "Report"
+msgstr "Report"
+
+#: phalcon-mvc/app/views/render/student.phtml:203
+msgid "Your render job has been cancelled."
+msgstr "Your render job has been cancelled."
+
+#: phalcon-mvc/app/views/render/student.phtml:221
+msgid "Status message."
+msgstr "Status message."

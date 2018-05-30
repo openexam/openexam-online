@@ -79,11 +79,11 @@ class ImportOpenExamXml extends ImportBase
         private function verify()
         {
                 if (!isset($this->_data['format'])) {
-                        $message = _("Missing XML format attribute. This don't look like an OpenExam project data file.");
+                        $message = "Missing XML format attribute. This don't look like an OpenExam project data file.";
                         throw new ImportException($message, Error::NOT_ACCEPTABLE);
                 }
                 if (!in_array($this->_data['format'], self::$_supported)) {
-                        $message = sprintf(_("Unsupported XML format version: %d. This file can not be imported."), $this->_data['@attributes']['format']);
+                        $message = sprintf("Unsupported XML format version: %d. This file can not be imported.", $this->_data['@attributes']['format']);
                         throw new ImportException($message, Error::NOT_ACCEPTABLE);
                 }
         }

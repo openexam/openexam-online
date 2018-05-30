@@ -24,11 +24,10 @@
 // Author:  Anders Lövgren (Nowise Systems)
 // 
 
-
 $userRoles = array(
-        'contributor' => 'Contributors',
-        'decoder'     => 'Decoders',
-        'invigilator' => 'Invigilators'
+        'contributor' => $tr->_('Contributors'),
+        'decoder'     => $tr->_('Decoders'),
+        'invigilator' => $tr->_('Invigilators')
 );
 $i = 1;
 
@@ -75,7 +74,11 @@ $exam->is_contributable = in_array("contributable", $exam->flags);
                         <?php endif; ?>
 
                         <li style=" <?= (count($roles) ? 'display:none' : '') ?>" class="left-col-def-msg"> 
-                            <a href="#" class="prevent">&nbsp;<span class="left-col-def-msg">No user has been added</span></a> 
+                            <a href="#" class="prevent">&nbsp;
+                                <span class="left-col-def-msg">
+                                    <?= $tr->_("No user has been added") ?>
+                                </span>
+                            </a> 
                         </li>
 
                         <?php foreach ($roles as $user): ?>
@@ -103,8 +106,8 @@ $exam->is_contributable = in_array("contributable", $exam->flags);
         <li> 
             <span style="display: flex">
                 <a href="#" style="min-width: 180px;">
-                    <i class="menu-list-caret fa fa-caret-right" aria-hidden="true"></i> 
-                    &nbsp;Students (<span class="total-exam-students"><?= count($exam->getStudents()) ?></span>)
+                    <i class="menu-list-caret fa fa-caret-right" aria-hidden="true"></i> &nbsp;
+                    <?= $tr->_("Students") ?> (<span class="total-exam-students"><?= count($exam->getStudents()) ?></span>)
                 </a>
 
                 <?php if ($this->user->hasCapability('student', 'create')) : ?>
@@ -124,7 +127,7 @@ $exam->is_contributable = in_array("contributable", $exam->flags);
             <span style="display: flex">
                 <a href="#" style="min-width: 180px;" rel="menu-level-1">
                     <i class="menu-list-caret fa fa-caret-down" aria-hidden="true"></i>
-                    &nbsp;Questions &nbsp;
+                    &nbsp;<?= $tr->_("Questions") ?> &nbsp;
                 </a>
 
                 <?php if ($this->user->hasCapability('question', 'create') && $exam->is_contributable): ?>

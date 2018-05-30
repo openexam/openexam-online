@@ -47,11 +47,11 @@ use Phalcon\Tag;
     </style>
     <body>
         <script type="text/x-mathjax-config">
-                MathJax.Hub.Config({
-                        extensions: ["tex2jax.js"],
-                        jax: ["input/TeX","output/HTML-CSS"],
-                        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-                });
+            MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX","output/HTML-CSS"],
+            tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+            });
         </script>
         <?= Tag::javascriptInclude('plugins/mathjax/MathJax.js'); ?>
 
@@ -73,7 +73,9 @@ use Phalcon\Tag;
                                 </div>
                                 <div>
                                     <small>
-                                        <span style="color:#797C80">Exam held on: <?= date("Y-m-d", strtotime($exam->starttime)) ?> (<?= date("H:i", strtotime($exam->starttime)) ?>&mdash;<?= date("H:i", strtotime($exam->endtime)) ?>)</span><br />
+                                        <span style="color:#797C80">
+                                            <?= $tr->_("Exam held on:") ?> <?= date("Y-m-d", strtotime($exam->starttime)) ?> (<?= date("H:i", strtotime($exam->starttime)) ?>&mdash;<?= date("H:i", strtotime($exam->endtime)) ?>)
+                                        </span><br />
                                     </small>
                                 </div>
                                 <?php if ($student): ?>
@@ -94,7 +96,9 @@ use Phalcon\Tag;
                     <div class="page page-inner">
                         <div class="body" >
                             <div class="body-content" style="height:950px">
-                                <h1>Exam description</h1>
+                                <h1>
+                                    <?= $tr->_("Exam description") ?>
+                                </h1>
                                 <div>
                                     <div>
                                         <?= $exam->descr ?>
@@ -109,35 +113,51 @@ use Phalcon\Tag;
                             <div class="page page-inner">
                                 <div class="body" >
                                     <div class="body-content">
-                                        <h1>Examination result</h1>
+                                        <h1>
+                                            <?= $tr->_("Examination result") ?>
+                                        </h1>
                                         <div>
-                                            <h2>Summary</h2>
+                                            <h2>
+                                                <?= $tr->_("Summary") ?>
+                                            </h2>
                                             <div>
-                                                You scored total <strong><?= floatval($data['studentScore'][$student->id]) ?></strong> of maximum <strong><?= floatval($data['examScore']) ?></strong> points (<strong><?= sprintf("%1.1f", ($data['studentScore'][$student->id] / $data['examScore']) * 100) ?>%</strong>) on this examination.<br>
+                                                <?=
+                                                $tr->_("You scored total <strong>%score%</strong> of maximum <strong>%maximum%</strong> points (<strong>%percent%%</strong>) on this examination.", array(
+                                                        'score'   => floatval($data['studentScore'][$student->id]),
+                                                        'maximum' => floatval($data['examScore']),
+                                                        'percent' => sprintf("%1.1f", ($data['studentScore'][$student->id] / $data['examScore']) * 100)
+                                                ))
+
+                                                ?>
+                                                <br>
                                             </div>
 
                                             <?php if (($exam->details & Exam::HIDE_STUDENT_GRADE_IN_RESULT) == 0): ?>
-                                                    <h2>Graduation</h2>
+                                                    <h2>
+                                                        <?= $tr->_("Graduation") ?>
+                                                    </h2>
                                                     <div>
-                                                        Your graduation on this examination is: <strong><?= $data['studentGrade'][$student->id] ?></strong>
+                                                        <?= $tr->_("Your graduation on this examination is: <strong>%grade%</strong>", array('grade' => $data['studentGrade'][$student->id])) ?>
                                                     </div>
                                             <?php endif; ?>
 
-                                            <h2>Score Table</h2>
+                                            <h2>
+                                                <?= $tr->_("Score Table") ?>
+                                            </h2>
                                             <div>
                                                 <div>
-                                                    This table shows a summary of your score versus the maximum scores. Questions without answer are marked
-                                                    with an '-' in the table.
+                                                    <?= $tr->_("This table shows a summary of your score versus the maximum scores.") ?> 
+                                                    <?= $tr->_("Questions without answer are marked with an '-' in the table.") ?>
                                                 </div>
                                                 <div>
                                                     <table cellpadding="5" cellspacing="5" style="border:1px solid #bebebe; background-color: #fff">
 
                                                         <tr>
-                                                            <th>Question</th>
-                                                            <th>Score</th>
-                                                            <th>Max score</th>
-                                                            <th>Percent</th>
-                                                            <th>Notice</th>
+                                                            <th><?= $tr->_("Question") ?></th>
+                                                            <th><?= $tr->_("Score") ?></th>
+                                                            <th><?= $tr->_("Max score") ?></th>
+                                                            <th><?= $tr->_("Percent") ?></th>
+                                                            <th><?= $tr->_("Notice") ?></th>
                                                         </tr>
 
                                                         <?php foreach ($data['questions'] as $question): ?>
@@ -172,7 +192,7 @@ use Phalcon\Tag;
                                                                 <?php endforeach; ?>
                                                         <?php endforeach; ?>
                                                         <tr class="summary-row">
-                                                            <td>Summary:</td>
+                                                            <td><?= $tr->_("Summary:") ?></td>
                                                             <td><?= floatval($data['studentScore'][$student->id]) ?></td>
                                                             <td><?= floatval($data['examScore']) ?></td>
                                                             <td><?= sprintf("%1.1f", ($data['studentScore'][$student->id] / $data['examScore']) * 100) ?>%</td>
@@ -194,7 +214,7 @@ use Phalcon\Tag;
                                         <div class="body" >
                                             <div class="body-content">
                                                 <div class="quest">
-                                                    <h1 class="q-<?= $question->id ?>">Question <?= $question->slot ?> </h1>
+                                                    <h1 class="q-<?= $question->id ?>"><?= $tr->_("Question") ?> <?= $question->slot ?> </h1>
 
                                                     <?php foreach ($data['qData'][$question->id]['qParts'] as $pTitle => $pData): ?>
                                                             <div class="quest-part">
@@ -254,7 +274,9 @@ use Phalcon\Tag;
 
 
                                                                     <div style="padding-bottom: 20px;">
-                                                                        <div class="blue-txt"> Your answer:</div> 
+                                                                        <div class="blue-txt"> 
+                                                                            <?= $tr->_("Your answer:") ?>
+                                                                        </div> 
 
                                                                         <div>
                                                                             <?php if ($pData["ans_area"]["type"] == 'canvas'): ?>
@@ -283,7 +305,9 @@ use Phalcon\Tag;
                                                                                                     <?php endif; ?>	
                                                                                             <?php endif; ?>
                                                                                     <?php else: ?>
-                                                                                            <em>No answer was provided for this part.</em>
+                                                                                            <em>
+                                                                                                <?= $tr->_("No answer was provided for this part.") ?>
+                                                                                            </em>
                                                                                     <?php endif; ?>
                                                                             <?php endif; ?>
                                                                         </div>
@@ -291,7 +315,7 @@ use Phalcon\Tag;
 
                                                                     <?php if (isset($data['results'][$student->id][$question->id]["comments"]) && !empty($data['results'][$student->id][$question->id]["comments"])): ?>
                                                                             <div style="padding-bottom: 20px;">
-                                                                                <div class="blue-txt"> Teacher's comments:</div> 
+                                                                                <div class="blue-txt"> <?= $tr->_("Teacher's comments:") ?></div> 
                                                                                 <div class="uu-color"><?= nl2br($data['results'][$student->id][$question->id]["comments"]) ?></div>
                                                                             </div>
                                                                     <?php endif; ?>
@@ -299,7 +323,12 @@ use Phalcon\Tag;
                                                                     <?php if ($data['qData'][$question->id]['qParts'][$pTitle]['q_points'] > 0) : ?>
                                                                             <div style="padding-bottom: 20px;">
                                                                                 <div style="font-size:14px"> 
-                                                                                    <strong>Your score:</strong> <span class="uu-color"><?= floatval($data['results'][$student->id][$question->id][$pTitle]) ?> (<em>Max score: <?= floatval($data['qData'][$question->id]['qParts'][$pTitle]['q_points']) ?></em>)</span>
+                                                                                    <strong>
+                                                                                        <?= $tr->_("Your score:") ?>
+                                                                                    </strong> 
+                                                                                    <span class="uu-color">
+                                                                                        <?= floatval($data['results'][$student->id][$question->id][$pTitle]) ?> (<em><?= $tr->_("Max score:") ?> <?= floatval($data['qData'][$question->id]['qParts'][$pTitle]['q_points']) ?></em>)
+                                                                                    </span>
                                                                                 </div> 
                                                                             </div>
                                                                     <?php endif; ?>
@@ -318,22 +347,26 @@ use Phalcon\Tag;
                             <div class="page page-inner">
                                 <div class="body" >
                                     <div class="body-content" style="height:950px">
-                                        <h1>Statistics</h1>
+                                        <h1>
+                                            <?= $tr->_("Statistics") ?>
+                                        </h1>
                                         <div>
-                                            This section shows overall statistics for all participants of this examination.
+                                            <?= $tr->_("This section shows overall statistics for all participants of this examination.") ?>
                                         </div>
                                         <div style="padding-left:35px">
-                                            <h2>Distribution</h2>
+                                            <h2>
+                                                <?= $tr->_("Distribution") ?>
+                                            </h2>
                                             <div>
-                                                This table shows the distribution by grades. The number of student allotted for each grade are:
+                                                <?= $tr->_("This table shows the distribution by grades. The number of student allotted for each grade are:") ?>
                                             </div>
 
                                             <table>
                                                 <tr>
-                                                    <th>Grade</th>
-                                                    <th>Threshold</th>
-                                                    <th>Students</th>
-                                                    <th>Percent</th>
+                                                    <th><?= $tr->_("Grade") ?></th>
+                                                    <th><?= $tr->_("Threshold") ?></th>
+                                                    <th><?= $tr->_("Students") ?></th>
+                                                    <th><?= $tr->_("Percent") ?></th>
                                                 </tr>
 
                                                 <?php foreach ($data['examGrades'] as $grade => $threshold): ?>
@@ -346,7 +379,7 @@ use Phalcon\Tag;
                                                 <?php endforeach; ?>
 
                                                 <tr class="summary-row">
-                                                    <td>Summary:</td>
+                                                    <td><?= $tr->_("Summary:") ?></td>
                                                     <td>---</td>
                                                     <td><?= $allStudents->count() ?></td>
                                                     <td>-----</td>
@@ -362,32 +395,55 @@ use Phalcon\Tag;
                     <div class="page page-inner">
                         <div class="body" >
                             <div class="body-content" style="height:950px">
-                                <h1>Reference</h1>
+                                <h1>
+                                    <?= $tr->_("Reference") ?>
+                                </h1>
                                 <div>
-                                    <div>Information about this examination.</div>
+                                    <div>
+                                        <?= $tr->_("Information about this examination.") ?>
+                                    </div>
                                 </div>
                                 <div style="padding-left:35px">
                                     <div>
-                                        <h2>Contact Information</h2>
+                                        <h2>
+                                            <?= $tr->_("Contact Information") ?>
+                                        </h2>
                                         <div>
-                                            This section lists those people who have been involved in this examination.<br>
+                                            <?= $tr->_("This section lists those people who have been involved in this examination.") ?>
+                                            <br>
                                             <div style="margin-top:15px">
-                                                <span style="font-size:15px; color:#3d749b">Responsable for examination:</span><br>
-                                                <span class="uu-color">Main responsible person for the examination is <a href="mailto:<?= $this->catalog->getMail($exam->creator) ?>" style="color:#990000; text-decoration:none"><?= $this->catalog->getName($exam->creator) ?></a></span><br>
+                                                <span style="font-size:15px; color:#3d749b">
+                                                    <?= $tr->_("Responsable for examination:") ?>
+                                                </span>
+                                                <br>
+                                                <span class="uu-color">
+                                                    <?= $tr->_("Main responsible person for the examination is") ?> 
+                                                    <a href="mailto:<?= $this->catalog->getMail($exam->creator) ?>" 
+                                                       style="color:#990000; text-decoration:none">
+                                                           <?= $this->catalog->getName($exam->creator) ?>
+                                                    </a>
+                                                </span>
+                                                <br>
                                             </div>
 
                                             <?php if (($exam->details & Exam::RESULT_EXPOSE_EMPLOYEES) != 0): ?>
                                                     <div style="margin-top:15px">
-                                                        <span style="font-size:15px; color:#3d749b">Correction of answers:</span><br>
-                                                        <span class="uu-color">Following persons have contributed in this exam and have corrected answers:</span>
+                                                        <span style="font-size:15px; color:#3d749b">
+                                                            <?= $tr->_("Correction of answers:") ?>
+                                                        </span><br>
+                                                        <span class="uu-color">
+                                                            <?= $tr->_("Following persons have contributed in this exam and have corrected answers:") ?>
+                                                        </span>
                                                         <ul class="uu-color">
                                                             <?php foreach ($data['qCorrectors'] as $corrector => $qList): ?>
                                                                     <li style="padding-bottom:10px">
                                                                         <a href="mailto:<?= $this->catalog->getMail($corrector) ?>" style="color:#990000; text-decoration:none"><?= $this->catalog->getName($corrector) ?></a>                                                                                <div>
-                                                                            <span style="color:#000">Corrected questions:</span> 
+                                                                            <span style="color:#000">
+                                                                                <?= $tr->_("Corrected questions:") ?>
+                                                                            </span> 
                                                                             <ul>
                                                                                 <?php foreach ($qList as $qSlot): ?>
-                                                                                        <li>Question <?= $qSlot ?></li>
+                                                                                        <li><?= $tr->_("Question") ?> <?= $qSlot ?></li>
                                                                                 <?php endforeach; ?>
                                                                             </ul>
                                                                         </div>       

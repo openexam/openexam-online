@@ -1,0 +1,398 @@
+# Swedish translations for openexam-online package
+# Svenska översättningar för paket openexam-online.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-30 01:19+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:41
+msgid "Corrected:"
+msgstr "Rättade:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:41
+msgid "Percent:"
+msgstr "Procent:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:46
+msgid "More"
+msgstr "Mer"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:51
+msgid "Correction status"
+msgstr "Rättningsstatus"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:54
+msgid "Answers corrected:"
+msgstr "Rättade svar:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:55
+msgid "Percent of max score:"
+msgstr "Procent av max-poäng:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:61
+msgid "Question corrector's"
+msgstr "Rättande lärare"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:79
+msgid "Contact All"
+msgstr "Kontakta alla"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:54
+msgid "Registered students in this exam"
+msgstr "Registrerade studenter på denna tenta"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:58
+msgid "Click inside table cells to edit their content."
+msgstr "Klicka inuti tabellcell för att editera innehållet."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:59
+msgid "Dates are omitted from display whenever they coincidence with exam start or end date."
+msgstr "Datum är dolda från visning om dom överlappar med tentans start- eller slutdatum."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:60
+msgid "Input time as hh:mm with optional date, use the suggested date/time as a guide."
+msgstr "Skriv in tid som hh:mm med valfritt datum, använd föreslaget datum/tid som en guide."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:67
+msgid "No students have been added to the exam yet."
+msgstr "Inga studenter har lagts till på tentan ännu."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:74
+msgid "Download"
+msgstr "Ladda ner"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:86
+msgid "Filter students"
+msgstr "Filtrera studenter"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:93
+msgid "Name"
+msgstr "Namn"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:94
+msgid "Username"
+msgstr "Användarnamn"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:95
+msgid "Person no."
+msgstr "Person-nr."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:96
+msgid "Start time"
+msgstr "Starttid"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:97
+msgid "End time"
+msgstr "Sluttid"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:98
+msgid "Code"
+msgstr "Kod"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:99
+msgid "Tag"
+msgstr "Märkning"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:142
+msgid "Save"
+msgstr "Spara"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:34
+msgid "Add single or multiple"
+msgstr "Lägg till enstaka eller flera"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:38
+msgid "Write identities (username or personal number) and anonymous code (optional, system will generate one if missing) of single or multiple students."
+msgstr "Skriv identiteter (användarnamn eller personnummer) och anonym kod (valfri, systemet kommer att generera en ifall den saknas) för enstaka eller flera studenter."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:39
+msgid "Separate identity and anonymous code by whitespace."
+msgstr "Separera identiteter och anonym kod med mellanslag eller tabb-tecken."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:42
+msgid "Input multiple students at once by separating them with newline:"
+msgstr "Ange flera studenter på en gång genom att separera dessa med radbrytning:"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:55
+msgid "Add students"
+msgstr "Lägg till studenter"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:61
+msgid "Import from file"
+msgstr "Importera från fil"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:66
+msgid "Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag."
+msgstr "Ladda upp filen med studenter att importera. Studenter kan importeras via användarnamn eller personnummer, med valfritt angiven anonym kod och/eller märkning."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:77
+#: phalcon-mvc/app/views/partials/students-add.phtml:128
+msgid "Auto Detect"
+msgstr "Känn igen automatiskt"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:82
+msgid "OpenDocument Format Spreadsheet (*.ods,*.ots)"
+msgstr "OpenDocument Format Kalkylblad (*.ods,*.ots)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:87
+msgid "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
+msgstr "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:92
+msgid "Microsoft Excel 2003 XML (*.xml)"
+msgstr "Microsoft Excel 2003 XML (*.xml)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:97
+msgid "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
+msgstr "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:102
+msgid "TAB Separated Values (*.tab,*.tsv,*.txt)"
+msgstr "TAB-Separerade Värden (*.tab,*.tsv,*.txt)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:107
+msgid "CSV File (*.csv)"
+msgstr "CSV-Fil (*.csv)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:112
+msgid "Gnumeric Spreadsheet (*.gnumeric)"
+msgstr "Gnumeric Kalkylblad (*.gnumeric)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:117
+msgid "HTML Document (*.htm,*.html)"
+msgstr "HTML Dokument (*.htm,*.html)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:122
+msgid "SYLK Document (*.slk,*.sylk)"
+msgstr "SYLK Dokument (*.slk,*.sylk)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:139
+#: phalcon-mvc/app/views/partials/students-add.phtml:181
+msgid "Import students"
+msgstr "Importera studenter"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:145
+msgid "Import from group"
+msgstr "Importera från grupp"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:150
+msgid "Supply the name of a group to import students from."
+msgstr "Ange namnet på grupper som studenter ska importeras ifrån."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:151
+msgid "The name could e.g. be a course code or a domain group."
+msgstr "Namnet kan t.ex. vara en kurskod eller en domängrupp."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:152
+msgid "The search can be restricted to a single domain."
+msgstr "Sökningen kan begränsas till en enstaka domän."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:158
+msgid "Group name:"
+msgstr "Gruppnamn:"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:164
+msgid "Domain:"
+msgstr "Domän:"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:28
+msgid "Contributors"
+msgstr "Bidragare"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:29
+msgid "Decoders"
+msgstr "Avkodare"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:30
+msgid "Invigilators"
+msgstr "Tentavakter"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:79
+msgid "No user has been added"
+msgstr "Inga användare har lagts till"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:110
+msgid "Students"
+msgstr "Studenter"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:130
+msgid "Questions"
+msgstr "Frågor"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:41
+msgid "User insert and catalog service search"
+msgstr "Inläggning av användare och katalogsökning"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:44
+msgid "Search:"
+msgstr "Sök:"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:47
+msgid "Search for user or add username"
+msgstr "Sök efter användare eller lägg till användarnamn"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:53
+msgid "Add"
+msgstr "Lägg till"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:63
+msgid "Insert existing user:"
+msgstr "Lägg in existerande användare:"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:78
+msgid "Display email address instead of username"
+msgstr "Visa e-postadress istället för användarnamn"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:64
+msgid "Download audio file"
+msgstr "Ladda ner ljudfil"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:68
+msgid "Download video file"
+msgstr "Ladda ner videofil"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:72
+msgid "Download image file"
+msgstr "Ladda ner bildfil"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:78
+msgid "Download PDF"
+msgstr "Ladda ner PDF"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:84
+msgid "Download spreadsheet"
+msgstr "Ladda ner kalkylblad"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:90
+msgid "Download text document"
+msgstr "Ladda ner textdokument"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:96
+msgid "Download presentation"
+msgstr "Ladda ner presentation"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:102
+msgid "Download archive file"
+msgstr "Ladda ner arkivfil"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:115
+msgid "The media content has been hidden on request from teacher"
+msgstr "Media-innehållet har dolts på begäran från läraren"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:133
+msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+msgstr "Slå på javascript för att visa denna videofil och fundera på att uppdatera till en webbläsare som <a href=\"%link%\" target=\"%target%\">stödjer HTML5 video/audio</a>"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:152
+msgid "To listen to this audio file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på att uppdatera till en webbläsare som <a href=\"%link%\" target=\"%target%\">stödjer HTML5 video/audio</a>"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:171
+msgid "The media content has been blurred on request from teacher"
+msgstr "Media-innehållet har gjorts suddigt på begäran från läraren"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:156
+msgid "Home"
+msgstr "Hem"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:163
+msgid "My Exams"
+msgstr "Mina tentor"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:174
+msgid "Language"
+msgstr "Språk"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:191
+msgid "Task"
+msgstr "Uppgifter"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:197
+msgid "Create Exam..."
+msgstr "Skapa tenta..."
+
+#: phalcon-mvc/app/views/layouts/main.phtml:202
+msgid "Contribute Questions"
+msgstr "Bidra med frågor"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:207
+msgid "Correct Answers"
+msgstr "Rätta svar"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:212
+msgid "Invigilate Exam"
+msgstr "Vakta tenta"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:217
+msgid "Decode Exam"
+msgstr "Avkoda tenta"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:222
+msgid "Download Results"
+msgstr "Ladda ner resultat"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:233
+msgid "Tools"
+msgstr "Verktyg"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:238
+msgid "Statistics"
+msgstr "Statistik"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:241
+msgid "Diagnostics"
+msgstr "Diagnostik"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:247
+msgid "High Contrast"
+msgstr "Hög kontrast"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:258
+msgid "Help"
+msgstr "Hjälp"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:263
+msgid "Teacher Manual"
+msgstr "Lärarmanual"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:266
+msgid "Student Manual"
+msgstr "Studentmanual"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:269
+msgid "Show All..."
+msgstr "Visa alla..."
+
+#: phalcon-mvc/app/views/layouts/main.phtml:269
+msgid "Open page with manuals in other languages and formats in new window."
+msgstr "Öppna sida med manualer i andra språk och format i ett nytt fönster."
+
+#: phalcon-mvc/app/views/layouts/main.phtml:273
+msgid "About"
+msgstr "Om"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:284
+msgid "Logout"
+msgstr "Logga ut"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:289
+msgid "Login"
+msgstr "Logga in"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:332
+msgid "About OpenExam Online"
+msgstr "Om OpenExam Online"

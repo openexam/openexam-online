@@ -1,0 +1,199 @@
+# Swedish translations for openexam-online package
+# Svenska översättningar för paket openexam-online.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-30 00:04+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:145
+msgid "Change Font style"
+msgstr "Ändra fontstorlek"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:156
+msgid "High Contrast"
+msgstr "Högkontrast"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:172
+msgid "Sign out"
+msgstr "Logga ut"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:180
+msgid "Click to set auto-hide mode on clock"
+msgstr "Klicka för att automatiskt dölja klockan"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:185
+msgid "Click to pin clock always visible"
+msgstr "Klicka för att alltid visa klockan"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:214
+msgid "General instructions"
+msgstr "Allmänna instruktioner"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:224
+msgid "Exam specific instructions"
+msgstr "Tentaspecifika instruktioner"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:234
+msgid "Preview your answers and Quit"
+msgstr "Förhandsgranska dina svar och avsluta"
+
+#: phalcon-mvc/app/views/layouts/thin-layout.phtml:284
+msgid "I have previewed my answers and I'm satisfied. Quit my exam."
+msgstr "Jag har förhandsgranskat mina svar och är nöjd. Avsluta tentan."
+
+#: phalcon-mvc/app/views/question/view.phtml:58
+msgid "Test mode activated."
+msgstr "Testläge aktiverat."
+
+#: phalcon-mvc/app/views/question/view.phtml:61
+msgid "You are currently previewing the student view in test mode. Please note that answers will <strong>not</strong> be saved."
+msgstr "Du visar för tillfället studentvyn i testläge. Notera att svar kommer <strong>inte</strong> att sparas."
+
+#: phalcon-mvc/app/views/question/view.phtml:66
+msgid "Finished"
+msgstr "Avslutad"
+
+#: phalcon-mvc/app/views/question/view.phtml:78
+msgid "Careful preview all of your answers before quitting!"
+msgstr "Förhandsgranska dina svar noggrant innan du avslutar!"
+
+#: phalcon-mvc/app/views/question/view.phtml:82
+msgid "All answers seen below has been read directly from the database. If something is wrong, then contact the invigilator immediately."
+msgstr "Alla svar som visas nedan har lästs direkt från databasen. Kontakta skrivningsvakten omedelbart ifall något är fel."
+
+#: phalcon-mvc/app/views/question/view.phtml:84
+msgid "Please sign out and close all opened browser windows once you are satisfied with your answers."
+msgstr "Logga ut och stäng alla webbläsarfönster då du är nöjd med dina svar."
+
+#: phalcon-mvc/app/views/question/view.phtml:92
+msgid "Question is missing."
+msgstr "Frågan saknas."
+
+#: phalcon-mvc/app/views/question/view.phtml:95
+msgid "This exam seems to have no questions. Please inform the invigilator about this problem to get it fixed."
+msgstr "Denna tenta saknar frågor. Informera tentavakten om detta problem för att få det fixat."
+
+#: phalcon-mvc/app/views/question/view.phtml:190
+#: phalcon-mvc/app/views/question/view.phtml:210
+msgid "Your Answer:"
+msgstr "Ditt svar:"
+
+#: phalcon-mvc/app/views/question/view.phtml:214
+msgid "You haven't answered this part."
+msgstr "Du har inte besvarat denna del."
+
+#: phalcon-mvc/app/views/question/view.phtml:223
+msgid "Write your answer here ..."
+msgstr "Skriv ditt svar här..."
+
+#: phalcon-mvc/app/views/question/view.phtml:233
+msgid "Fullscreen"
+msgstr "Fullskärm"
+
+#: phalcon-mvc/app/views/question/view.phtml:262
+msgid "Supplementary material"
+msgstr "Extramaterial"
+
+#: phalcon-mvc/app/views/question/view.phtml:302
+msgid "I would like to review my answer for this question later on, so mark it."
+msgstr "Jag vill återkomma till denna mitt svar på denna fråga, så markera den."
+
+#: phalcon-mvc/app/views/question/view.phtml:310
+#: phalcon-mvc/app/views/question/view.phtml:403
+msgid "Previous Question"
+msgstr "Föregående fråga"
+
+#: phalcon-mvc/app/views/question/view.phtml:318
+#: phalcon-mvc/app/views/question/view.phtml:404
+msgid "Next Question"
+msgstr "Nästa fråga"
+
+#: phalcon-mvc/app/views/question/view.phtml:326
+msgid "Preview your answers for all questions"
+msgstr "Förhandsgranska dina svar på alla frågor"
+
+#: phalcon-mvc/app/views/question/view.phtml:334
+msgid "Change your answer"
+msgstr "Ändra ditt svar"
+
+#: phalcon-mvc/app/views/question/view.phtml:357
+msgid "Missed to answer some questions?"
+msgstr "Har du missat att besvara några frågor?"
+
+#: phalcon-mvc/app/views/question/view.phtml:361
+msgid "One or more questions are not yet answered."
+msgstr "En eller flera frågor har ännu inte besvarats."
+
+#: phalcon-mvc/app/views/question/view.phtml:362
+msgid "Please go back and answer all parts if you have missed one."
+msgstr "Gå tillbaks och besvara alla delar ifall du missat något."
+
+#: phalcon-mvc/app/views/question/view.phtml:369
+msgid "Saving ..."
+msgstr "Sparar..."
+
+#: phalcon-mvc/app/views/question/view.phtml:374
+msgid "Exam instructions: %name%"
+msgstr "Tentainstruktioner: %name%"
+
+#: phalcon-mvc/app/views/question/view.phtml:384
+msgid "General exam instructions: %name%"
+msgstr "Allmänna instruktioner: %name%"
+
+#: phalcon-mvc/app/views/question/view.phtml:388
+msgid "Use the buttons in the heading to minimize the left pane or increase the text size under exam info"
+msgstr "Använd knapparna i sidhuvudet för att minimera vänstra sidan eller förstora textstorleken under tentainfo"
+
+#: phalcon-mvc/app/views/question/view.phtml:389
+msgid "You may again read the instructions, access a preview of all your answers and log out when you are done."
+msgstr "Du kan läsa instruktionerna igen, förhandsgranskning dina svar och logga ut då du är klar."
+
+#: phalcon-mvc/app/views/question/view.phtml:390
+msgid "You can hover over images (in supplementary material) to zoom. You can see full size image by clicking on it."
+msgstr "Du kan hålla muspekaren över bilder (i extramaterial) för att zooma in. Du kan visa bilderna i full storlek genom att klicka på dom."
+
+#: phalcon-mvc/app/views/question/view.phtml:395
+msgid "Important to know:"
+msgstr "Viktigt att veta:"
+
+#: phalcon-mvc/app/views/question/view.phtml:400
+msgid "All your answers are continuously saved every 10 seconds if changed or when switching between question."
+msgstr "Alla dina svar sparas kontinuerligt var tionde sekund om dom ändras eller vid växling mellan frågor."
+
+#: phalcon-mvc/app/views/question/view.phtml:405
+msgid "It is highly recommended that you <u>don't</u> use \"back\" and \"forward\" buttons in the browser to navigate between questions."
+msgstr "Det rekommenderas starkt att du <u>inte</u> använder \"tillbaka\" eller \"framåt\" knapparna i webbläsaren för att navigera mellan frågorna."
+
+#: phalcon-mvc/app/views/question/view.phtml:406
+msgid "Always use the %prevbtn% and %nextbtn% buttons or question links in left hand side menu."
+msgstr "Använda alltid %prevbtn% och %nextbtn% knapparna eller länkarna i menyn på vänster sida."
+
+#: phalcon-mvc/app/views/question/view.phtml:410
+msgid "Please report to invigilator immediately if any button or link do not work."
+msgstr "Rapportera direkt till tentavakten om en knapp eller länk inte fungerar."
+
+#: phalcon-mvc/app/views/question/view.phtml:411
+msgid "In such a case, please don't close/refresh web browser otherwise we may loose your answer."
+msgstr "Stäng inte eller ladda om sidan i webbläsaren i så fall, om du gör det riskerar du att förlora ditt senaste svar."
+
+#: phalcon-mvc/app/views/question/view.phtml:412
+msgid "If you see any error message from system, it is highly important that you <u>don't</u> refresh/close the web page before you report."
+msgstr "Om du ser några felmeddelanden från systemet så rekommenderas det att du <u>inte</u> laddar om eller stänger webbsidan innan du rapperterat felet."
+
+#: phalcon-mvc/app/views/question/view.phtml:429
+msgid "System will not be able to save your answer for this question. Please report this issue to exam invigilators immediately."
+msgstr "Systemet kommer inte att kunna spara ditt svar på denna fråga. Rapportera detta problem direkt till tentavakten."

@@ -536,12 +536,18 @@ class QuestionController extends GuiController
                 // 
                 if ($exam->show_code) {
                         $this->view->setVars(array(
-                                'heading' => sprintf('Student (Code: %s)', $student->code),
+                                'heading' => $this->tr->_(
+                                    "Student (Code: %code%)", array(
+                                        'code' => $student->code
+                                )),
                                 'loading' => 'student'
                         ));
                 } else {
                         $this->view->setVars(array(
-                                'heading' => sprintf('Student (ID: %d)', $sid),
+                                'heading' => $this->tr->_(
+                                    "Student (ID: %id%)", array(
+                                        'id' => $student->id
+                                )),
                                 'loading' => 'student'
                         ));
                 }
@@ -583,12 +589,20 @@ class QuestionController extends GuiController
                 // 
                 if ($exam->show_code) {
                         $this->view->setVars(array(
-                                'heading' => sprintf('Question (Q%d) answered by student (Code: %s)', $question->slot, $student->code),
+                                'heading' => $this->tr->_(
+                                    "Question (Q%slot%) answered by student (Code: %code%)", array(
+                                        'slot' => $question->slot,
+                                        'code' => $student->code
+                                )),
                                 'loading' => 'answer'
                         ));
                 } else {
                         $this->view->setVars(array(
-                                'heading' => sprintf('Question (Q%d) answered by student (ID: %d)', $question->slot, $answer->student_id),
+                                'heading' => $this->tr->_(
+                                    "Question (Q%slot%) answered by student (ID: %id%)", array(
+                                        'slot' => $question->slot,
+                                        'id'   => $answer->student_id
+                                )),
                                 'loading' => 'answer'
                         ));
                 }
@@ -625,7 +639,10 @@ class QuestionController extends GuiController
                 // Set header based on exam settings:
                 //                 
                 $this->view->setVars(array(
-                        'heading' => sprintf('Question (Q%d)', $question->slot),
+                        'heading' => $this->tr->_(
+                            "Question (Q%slot%)", array(
+                                'slot' => $question->slot
+                        )),
                         'loading' => 'question'
                 ));
 

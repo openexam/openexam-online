@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 05:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phalcon-mvc/app/views/error/show500.phtml:34
+msgid "Internal system error:"
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show500.phtml:43
+msgid "There was an error processing the request."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show500.phtml:44
+msgid "It might be caused by a miss configuration or an external service no longer working."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show500.phtml:47
+msgid "This kind of error is usually permanent and will persist until been taking cared of by someone."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show500.phtml:48
+msgid "Please click on the <u>report button</u> to send an email to the system manager."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show500.phtml:49
+#: phalcon-mvc/app/views/error/show503.phtml:48
+#: phalcon-mvc/app/views/error/showError.phtml:49
+msgid "In case of <u>emergency</u>, please call %phone% immediately"
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show500.phtml:52
+#: phalcon-mvc/app/views/error/show503.phtml:54
+#: phalcon-mvc/app/views/error/showError.phtml:55
+#: phalcon-mvc/app/views/error/show404.phtml:50
+msgid "Report"
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show503.phtml:34
+msgid "Service temporary unavailable:"
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show503.phtml:43
+msgid "The web server is currently unable to handle the HTTP request due to a temporary overloading or maintenance of the server."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show503.phtml:46
+msgid "You can click on the <u>retry button</u> below to send the request again."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show503.phtml:47
+#: phalcon-mvc/app/views/error/showError.phtml:48
+msgid "Click on the <u>report button</u> to send an email to the system manager."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show503.phtml:51
+#: phalcon-mvc/app/views/error/showError.phtml:52
+msgid "Retry"
+msgstr ""
+
+#: phalcon-mvc/app/views/error/showError.phtml:43
+msgid "There was an problem processing the last request."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/showError.phtml:44
+msgid "The error message might give you an clue on what is wrong, but many kind of errors are permanent and can't be resolved without further assistance from the system manager."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/showError.phtml:47
+msgid "You can click on the <u>retry button</u> below to try the request again."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show404.phtml:34
+msgid "Page not found:"
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show404.phtml:43
+msgid "The requested page seems to be missing."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show404.phtml:44
+msgid "If you ended up here by following a link, please click on the <u>report button</u> to send an email to the system manager."
+msgstr ""
+
+#: phalcon-mvc/app/views/error/show404.phtml:47
+msgid "Back"
+msgstr ""

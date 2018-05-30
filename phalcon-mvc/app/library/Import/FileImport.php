@@ -128,7 +128,7 @@ class FileImport extends Component
                                 case "txt":
                                         return new ImportPingPongText();
                                 default:
-                                        throw new ImportException(sprintf(_("Don't know how import *.%s files."), $extension), Error::NOT_ACCEPTABLE);
+                                        throw new ImportException(sprintf("Don't know how to import *.%s files.", $extension), Error::NOT_ACCEPTABLE);
                         }
                 } elseif ($from == self::TYPE_OPEN_EXAM_QUESTIONS || $from == self::TYPE_OPEN_EXAM_PROJECT) {
                         switch ($extension) {
@@ -171,7 +171,7 @@ class FileImport extends Component
                                 case "sylk":
                                         return new ImportStudentsSylk();
                                 default:
-                                        throw new ImportException(sprintf(_("Don't know how import *.%s files."), $extension), Error::NOT_ACCEPTABLE);
+                                        throw new ImportException(sprintf("Don't know how to import *.%s files.", $extension), Error::NOT_ACCEPTABLE);
                         }
                 }
         }

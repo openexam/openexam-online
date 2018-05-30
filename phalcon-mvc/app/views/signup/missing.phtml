@@ -36,13 +36,14 @@
 </style>
 
 <div class="signup">
-    <h1 class="signup">Missing affiliation</h1>
+    <h1 class="signup">
+        <?= $tr->_("Missing affiliation") ?>
+    </h1>
     <p>
-        It appears like you are neither an employee or student. Your affiliation
-        is queried from the catalog service that might be missing this information.
+        <?= $tr->_("It appears like you are neither an employee or student.") ?>  
+        <?= $tr->_("Your affiliation is queried from the catalog service that might be missing this information.") ?>
     </p>
     <p>
-        If you think this is a bug, please contact the system administrator for
-        further assistants in solving this issue.
+        <?= $tr->_("If you think this is a bug, please contact the system administrator for further assistants in solving this issue.") ?>
     </p>
 </div>

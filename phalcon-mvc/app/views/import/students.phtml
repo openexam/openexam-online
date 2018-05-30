@@ -32,7 +32,8 @@ use Phalcon\Tag;
 <?= Tag::javascriptInclude('js/views/import/students.js?rev=1'); ?>
 
 <p>
-    Select type of data contained in columns using the column header drop-down button. Scroll down and press the 'Import students' button to add students in list to this exam.
+    <?= $tr->_("Select type of data contained in columns using the column header drop-down button.") ?>
+    <?= $tr->_("Scroll down and press the 'Import students' button to add students in list to this exam.") ?>
 </p>
 <table id="table-import-students" class="table table-bordered">
     <thead>
@@ -40,16 +41,27 @@ use Phalcon\Tag;
             <?php for ($col = 0; $col < count($data[0]); $col++): ?>
                     <th>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Select 
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+                                <?= $tr->_("Select") ?> 
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#" value='user'>Username</a></li>
-                                <li><a href="#" value='code'>Anonymous Code</a></li>
-                                <li><a href="#" value='pnr'>Personal Number</a></li>
-                                <li><a href="#" value='tag'>Custom Tag</a></li>
+                                <li>
+                                    <a href="#" value='user'><?= $tr->_("Username") ?></a>
+                                </li>
+                                <li>
+                                    <a href="#" value='code'><?= $tr->_("Anonymous Code") ?></a>
+                                </li>
+                                <li>
+                                    <a href="#" value='pnr'><?= $tr->_("Personal Number") ?></a>
+                                </li>
+                                <li>
+                                    <a href="#" value='tag'><?= $tr->_("Custom Tag") ?></a>
+                                </li>
                                 <li role="presentation" class="divider"></li>
-                                <li><a href="#" value='remove'><i class="fa fa-cut"></i> Remove</a></li>
+                                <li>
+                                    <a href="#" value='remove'><i class="fa fa-cut"></i> <?= $tr->_("Remove") ?></a>
+                                </li>
                             </ul>
                         </div>
                     </th>
@@ -62,7 +74,14 @@ use Phalcon\Tag;
                     <?php for ($col = 0; $col < count($data[$row]); $col++): ?>
                             <td contenteditable="true"><?= $data[$row][$col] ?></td>
                     <?php endfor; ?>
-                    <td><a class="import-student-remove"><span class="toolbtn toolbtn-orange"><i class="fa fa-cut"></i> Remove</span></a></td>
+                    <td>
+                        <a class="import-student-remove">
+                            <span class="toolbtn toolbtn-orange">
+                                <i class="fa fa-cut"></i> 
+                                <?= $tr->_("Remove") ?>
+                            </span>
+                        </a>
+                    </td>
                 </tr>
         <?php endfor; ?>
     </tbody>

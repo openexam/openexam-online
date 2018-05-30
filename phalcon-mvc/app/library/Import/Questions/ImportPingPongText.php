@@ -69,12 +69,12 @@ class ImportPingPongText extends ImportPingPong
         public function read()
         {
                 if (($data = $this->next()) && $data[0] != self::EXPECT) {
-                        $message = sprintf(_("Expected header '%s' at index (1,1)"), self::EXPECT);
+                        $message = sprintf("Expected header '%s' at index (1,1)", self::EXPECT);
                         throw new ImportException($message, Error::NOT_ACCEPTABLE);
                 }
 
                 if (($data = $this->next()) && $data[1] != self::FORMAT) {
-                        $message = sprintf(_("Expected format '%s' at index (2,2)"), self::FORMAT);
+                        $message = sprintf("Expected format '%s' at index (2,2)", self::FORMAT);
                         throw new ImportException($message, Error::NOT_ACCEPTABLE);
                 }
 

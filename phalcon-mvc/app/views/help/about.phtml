@@ -28,16 +28,20 @@
 
 <div class="tabs">
     <ul>
-        <li><a href="#tabs-0">General</a></li>
-        <li><a href="#tabs-1">Authors</a></li>
-        <li><a href="#tabs-2">Contributors</a></li>
-        <li><a href="#tabs-3">License</a></li>
-        <li><a href="#tabs-4">Project</a></li>
+        <li><a href="#tabs-0"><?= $tr->_("General") ?></a></li>
+        <li><a href="#tabs-1"><?= $tr->_("Authors") ?></a></li>
+        <li><a href="#tabs-2"><?= $tr->_("Contributors") ?></a></li>
+        <li><a href="#tabs-3"><?= $tr->_("License") ?></a></li>
+        <li><a href="#tabs-4"><?= $tr->_("Project") ?></a></li>
     </ul>
 
     <div id="tabs-0">
-        <p><?= $composer->description ?></p>
-        <p>OpenExam Online v<?= $composer->version ?></p>
+        <p>
+            <?= $composer->description ?>
+        </p>
+        <p>
+            <?= $tr->_("OpenExam Online v%version%", array('version' => $composer->version)) ?>
+        </p>
     </div>
 
     <div id="tabs-1">
@@ -53,7 +57,9 @@
     </div>
 
     <div id="tabs-2">
-        <p>The following organizations has contributed to the project:</p>
+        <p>
+            <?= $tr->_("The following organizations has contributed to the project:") ?>
+        </p>
         <?php foreach ($composer->contributors as $contributor): ?>
                 <p>
                     <button class="btn btn-success about-link-href" style="min-width: 165px; text-align: left" data-link="<?= $contributor->link ?>">
@@ -65,14 +71,18 @@
     </div>
 
     <div id="tabs-3">
-        <p>Released under <?= $composer->license ?> license.</p>
-        <button class="btn btn-default" id="project-license-btn">Details</button>
+        <p>
+            <?= $tr->_("Released under %license% license.", array('license' => $composer->license)) ?>
+        </p>
+        <button class="btn btn-default" id="project-license-btn">
+            <?= $tr->_("Details") ?>
+        </button>
     </div>
 
     <div id="tabs-4">
         <p>
-            More information is available on the <a href="<?= $composer->homepage ?>">project homepage</a>.
-            Source code can be downloaded from <a href="<?= $composer->projpage ?>">GitHub</a>.
+            <?= $tr->_("More information is available on the <a href=\"%homepage%\">project homepage</a>.", array('homepage' => $composer->homepage)) ?>
+            <?= $tr->_("Source code can be downloaded from <a href=\"%projpage%\">GitHub</a>.", array('projpage' => $composer->projpage)) ?>
         </p>
         <p>
             <a href="<?= $composer->homepage ?>"><?= $composer->homepage ?></a><br>
@@ -87,7 +97,9 @@
     <center>
         <span style="min-width: 10em" class="btn btn-success" id="about-close">
             <i class="fa fa-close"></i>
-            <span>Close</span>
+            <span>
+                <?= $tr->_("Close") ?>
+            </span>
         </span>
     </center>		
 </div>   
@@ -125,4 +137,4 @@
         });
 </script>
 
-<div id="project-license" style="display: none" title="Project license"></div>
+<div id="project-license" style="display: none" title="<?= $tr->_("Project license") ?>"></div>

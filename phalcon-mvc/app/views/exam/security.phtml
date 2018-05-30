@@ -59,7 +59,7 @@ class DisplayLocation
                                 printf("<b>%s</b><br/><div class='location-addresses'>%s</br/></div>\n", $key, implode('<br/>', $location['disp']));
                                 printf("<span class='btn btn-success' id='location-add'>\n");
                                 printf("<i class='fa fa-plus-circle'></i>\n");
-                                printf("<span>Add</span>\n");
+                                printf("<span>%s</span>\n", $tr->_("Add"));
                                 printf("</span>\n");
                                 printf("</li>\n");
                                 printf("<br/>\n");
@@ -83,7 +83,11 @@ class DisplayLocation
 
 <div class="exam-security-box">
     <div class="alert alert-info">
-        Use this view for defining exam security and access restrictions. <strong>Notice:</strong> For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option.
+        <?= $tr->_("Use this view for defining exam security and access restrictions.") ?>
+        <strong>
+            <?= $tr->_("Notice:") ?>
+        </strong> 
+        <?= $tr->_("For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option.") ?>
     </div>
 
     <div class="checkbox">
@@ -98,9 +102,16 @@ class DisplayLocation
     </div>
 
     <div class="locations <?= $exam->lockdown->enable ? '' : 'oe-disabled' ?>">
-        <p><b>This exam should only be accessable from these locations:</b></p>
+        <p><b>
+                <?= $tr->_("This exam should only be accessable from these locations:") ?>
+            </b></p>
         <table id="locations-table" class="table table-hover">
-            <thead><tr><th>Location</th><th>Address</th></tr></thead>
+            <thead>
+                <tr>
+                    <th><?= $tr->_("Location") ?></th>
+                    <th><?= $tr->_("Address") ?></th>
+                </tr>
+            </thead>
             <tbody>
                 <?php foreach ($active as $key => $location) { ?>
                         <tr entry="update" id="<?= $location['id'] ?>">
@@ -109,7 +120,9 @@ class DisplayLocation
                             <td>
                                 <span class="btn btn-success" id="location-remove">
                                     <i class="fa fa-cut"></i>
-                                    <span>Remove</span>
+                                    <span>
+                                        <?= $tr->_("Remove") ?>
+                                    </span>
                                 </span>
                             </td>
                         </tr>
@@ -118,34 +131,42 @@ class DisplayLocation
         </table>
         <div id="locations-list" style="display: none">
             <div class="alert alert-info">
-                Select locations from recent used, system pre-defined or current action locations.
+                <?= $tr->_("Select locations from recent used, system pre-defined or current action locations.") ?>
             </div>
             <span style="float: right" class="btn btn-success" id="locations-details">
                 <i class="fa fa-list-alt"></i>
-                <span>Details</span>
+                <span>
+                    <?= $tr->_("Details") ?>
+                </span>
             </span>
             <?php
-            $location = new DisplayLocation($recent, 'Recent used locations');
+            $location = new DisplayLocation($recent, $tr->_("Recent used locations"));
             $location->display();
-            $location = new DisplayLocation($system, 'Pre-defined locations');
+            $location = new DisplayLocation($system, $tr->_("Pre-defined locations"));
             $location->display();
-            $location = new DisplayLocation($active, 'Currently active locations');
+            $location = new DisplayLocation($active, $tr->_("Currently active locations"));
             $location->display();
 
             ?>
         </div>
         <span style="min-width: 6em" class="btn btn-success" id="location-new">
             <i class="fa fa-plus-circle"></i>
-            <span>New</span>
+            <span>
+                <?= $tr->_("New") ?>
+            </span>
         </span>
         <span style="min-width: 6em" class="btn btn-success" id="location-insert">
             <i class="fa fa-list"></i>
-            <span>Insert...</span>
+            <span>
+                <?= $tr->_("Insert...") ?>
+            </span>
         </span>
     </div>
 
     <div class="lockdown-method <?= $exam->lockdown->enable ? '' : 'oe-disabled' ?>">
-        <p><b>Use this method for client side locking:</b></p>
+        <p><b>
+                <?= $tr->_("Use this method for client side locking:") ?>
+            </b></p>
         <select id="lockdown-method" class="save form-control">
             <option value="" <?= $exam->lockdown->method == "" ? "selected" : "" ?>>---</option>
             <option value="fwexamd" <?= $exam->lockdown->method == "fwexamd" ? "selected" : "" ?>>fwexamd</option>
@@ -157,11 +178,15 @@ class DisplayLocation
         <center>
             <span style="min-width: 6em" class="btn btn-success save" id="close-security">
                 <i class="fa fa-save"></i>
-                <span>OK</span>
+                <span>
+                    <?= $tr->_("OK") ?>
+                </span>
             </span>
             <span style="min-width: 6em" class="btn btn-success" id="close-security">
                 <i class="fa fa-undo"></i>
-                <span>Cancel</span>
+                <span>
+                    <?= $tr->_("Cancel") ?>
+                </span>
             </span>
         </center>		
     </div>

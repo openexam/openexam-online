@@ -1,0 +1,70 @@
+# English translations for openexam-online package.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: phalcon-mvc/app/views/monitor/diagnostics.phtml:103
+msgid "System Diagnostics"
+msgstr "System Diagnostics"
+
+#: phalcon-mvc/app/views/monitor/diagnostics.phtml:108
+msgid "No problem detected"
+msgstr "No problem detected"
+
+#: phalcon-mvc/app/views/monitor/diagnostics.phtml:112
+msgid "Problem detected!"
+msgstr "Problem detected!"
+
+#: phalcon-mvc/app/views/monitor/diagnostics.phtml:115
+msgid "Pause Update"
+msgstr "Pause Update"
+
+#: phalcon-mvc/app/views/monitor/diagnostics.phtml:118
+msgid "Show Details"
+msgstr "Show Details"
+
+#: phalcon-mvc/app/views/monitor/index.phtml:30
+msgid "System Monitoring"
+msgstr "System Monitoring"
+
+#: phalcon-mvc/app/views/monitor/index.phtml:34
+msgid "Click on one of the buttons below to start."
+msgstr "Click on one of the buttons below to start."
+
+#: phalcon-mvc/app/views/monitor/index.phtml:39
+msgid "The performance page displays various counters useful for diagnostic bottlenecks in the system (like CPU, memory or network utilization)."
+msgstr "The performance page displays various counters useful for diagnostic bottlenecks in the system (like CPU, memory or network utilization)."
+
+#: phalcon-mvc/app/views/monitor/index.phtml:42
+msgid "The diagnostics page is used to monitor health of system services (for example authentication or directory services)."
+msgstr "The diagnostics page is used to monitor health of system services (for example authentication or directory services)."
+
+#: phalcon-mvc/app/views/monitor/index.phtml:48
+msgid "These tools are strictly for system monitoring and are probably of zero to none interest for ordinary users."
+msgstr "These tools are strictly for system monitoring and are probably of zero to none interest for ordinary users."
+
+#: phalcon-mvc/app/views/monitor/index.phtml:53
+msgid "Performance"
+msgstr "Performance"
+
+#: phalcon-mvc/app/views/monitor/index.phtml:56
+msgid "Diagnostics"
+msgstr "Diagnostics"
+
+#: phalcon-mvc/app/views/monitor/performance.phtml:78
+msgid "Performance Monitor"
+msgstr "Performance Monitor"

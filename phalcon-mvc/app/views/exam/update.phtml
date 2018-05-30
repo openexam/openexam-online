@@ -227,7 +227,9 @@ if (in_array("editable", $exam->flags)) {
                     <div style="display: block; float:right; clear:both">
                         <span class="btn btn-success">
                             <i class="fa fa-plus-circle"></i>
-                            <span>Add new question</span>
+                            <span>
+                                <?= $tr->_("Add new question") ?>
+                            </span>
                         </span>
                     </div>                        
                 </a>
@@ -239,7 +241,8 @@ if (in_array("editable", $exam->flags)) {
         <div id="qs_area" style="float: left;margin-top: 1.5em;">
 
             <div id="default_msg_qs" class="data-missing">
-                There are no questions in this exam yet. <br>
+                <?= $tr->_("There are no questions in this exam yet.") ?> 
+                <br>
             </div>
 
             <!-- Question line template: -->
@@ -249,18 +252,49 @@ if (in_array("editable", $exam->flags)) {
                     <div class="q_score"></div>
                     <div class="q_line_op">
                         <?php if ($exam->is_published) : ?>
-                                <a href="#" class="q-tool-item view-q" title="Preview question"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="q-tool-item edit-q published" title="Edit question"><i class="fa fa-pencil"></i></a>
+                                <a href="#" class="q-tool-item view-q" 
+                                   title="<?= $tr->_("Preview question") ?>">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="q-tool-item edit-q published" 
+                                   title="<?= $tr->_("Edit question") ?>">
+                                    <i class="fa fa-pencil"></i>
+                                </a>
                                 <br>
-                                <a href="#" class="q-tool-item remove-q" style="display: block" title="Flag question as removed from this exam"><i class="fa fa-caret-square-o-right"></i></a>
-                                <a href="#" class="q-tool-item insert-q" style="display: none" title="Re-add removed question on this exam"><i class="fa fa-caret-square-o-left"></i></a>
+                                <a href="#" class="q-tool-item remove-q" 
+                                   style="display: block" 
+                                   title="<?= $tr->_("Flag question as removed from this exam") ?>">
+                                    <i class="fa fa-caret-square-o-right"></i>
+                                </a>
+                                <a href="#" class="q-tool-item insert-q" 
+                                   style="display: none" 
+                                   title="<?= $tr->_("Re-add removed question on this exam") ?>">
+                                    <i class="fa fa-caret-square-o-left"></i>
+                                </a>
                         <?php else : ?>
-                                <a href="#" class="q-tool-item view-q" title="Preview question"><i class="fa fa-eye"></i></a>
-                                <a href="#" class="q-tool-item edit-q editable" title="Edit question"><i class="fa fa-pencil"></i></a>
+                                <a href="#" class="q-tool-item view-q" 
+                                   title="<?= $tr->_("Preview question") ?>">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a href="#" class="q-tool-item edit-q editable" 
+                                   title="<?= $tr->_("Edit question") ?>">
+                                    <i class="fa fa-pencil"></i>
+                                </a>
                                 <br>
-                                <a href="#" class="q-tool-item remove-q" style="display: block" title="Flag question as removed from this exam"><i class="fa fa-caret-square-o-right"></i></a>
-                                <a href="#" class="q-tool-item insert-q" style="display: none" title="Re-add removed question on this exam"><i class="fa fa-caret-square-o-left"></i></a>
-                                <a href="#" class="q-tool-item del-q" title="Delete question from this exam"><i class="fa fa-close"></i></a>
+                                <a href="#" class="q-tool-item remove-q" 
+                                   style="display: block" 
+                                   title="<?= $tr->_("Flag question as removed from this exam") ?>">
+                                    <i class="fa fa-caret-square-o-right"></i>
+                                </a>
+                                <a href="#" class="q-tool-item insert-q" 
+                                   style="display: none" 
+                                   title="<?= $tr->_("Re-add removed question on this exam") ?>">
+                                    <i class="fa fa-caret-square-o-left"></i>
+                                </a>
+                                <a href="#" class="q-tool-item del-q" 
+                                   title="<?= $tr->_("Delete question from this exam") ?>">
+                                    <i class="fa fa-close"></i>
+                                </a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -286,7 +320,9 @@ if (in_array("editable", $exam->flags)) {
                         <a href="<?= $this->url->get('exam/' . $exam->id) ?>">
                             <span class="btn btn-default" style="color:#333333">
                                 <i class="fa fa-chevron-circle-right"></i>
-                                <span>Preview student view</span>
+                                <span>
+                                    <?= $tr->_("Preview student view") ?>
+                                </span>
                             </span>
                         </a>
                     </center>
@@ -298,7 +334,9 @@ if (in_array("editable", $exam->flags)) {
                         <center>
                             <span class="btn btn-success">
                                 <i class="fa fa-chevron-circle-right"></i>
-                                <span>I am done with my questions. Notify exam creator.</span>
+                                <span>
+                                    <?= $tr->_("I am done with my questions. Notify exam creator.") ?>
+                                </span>
                             </span>
                         </center>
                     </div>
@@ -311,23 +349,25 @@ if (in_array("editable", $exam->flags)) {
 <div id="question-form-dialog-wrap" q-no="" style="display:none" title=""></div>
 
 <!-- Student management form -->
-<div id="manage-students" title="Manage students for exam" style="display:none"></div>
+<div id="manage-students" title="<?= $tr->_("Manage students for exam") ?>" style="display:none"></div>
 
 <!-- Exam settings -->
-<div id="exam-settings-box" style="display:none" title="Exam settings"></div>
+<div id="exam-settings-box" style="display:none" title="<?= $tr->_("Exam settings") ?>"></div>
 
 <!-- Exam security -->
-<div id="exam-security-box" style="display:none" title="Security and access control"></div>
+<div id="exam-security-box" style="display:none" title="<?= $tr->_("Security and access control") ?>"></div>
 
 <!-- Exam status check -->
-<div id="exam-check-box" style="display:none" title="Exam status check"></div>
+<div id="exam-check-box" style="display:none" title="<?= $tr->_("Exam status check") ?>"></div>
 
 <!-- Exam archive tool -->
-<div id="exam-archive-box" style="display:none" title="Offline tool for exam">
-    <h2>Exam export and archive tool</h2>
+<div id="exam-archive-box" style="display:none" title="<?= $tr->_("Offline tool for exam") ?>">
+    <h2>
+        <?= $tr->_("Exam export and archive tool") ?>
+    </h2>
     <div class="alert alert-info">
-        Use this tool to access exam content (i.e. questions) in format suitable for printing or archiving. 
-        This is also the right tool to use if some students need to write this exam on paper.
+        <?= $tr->_("Use this tool to access exam content (i.e. questions) in format suitable for printing or archiving.") ?>
+        <?= $tr->_("This is also the right tool to use if some students need to write this exam on paper.") ?>
     </div>
     <a style="display: none" class="exam-archive-action-target" href="<?= $this->url->get('exam/archive/' . $exam->id) . '?correct=false'; ?>" id="exam-archive-action-online" target="_blank"></a>
     <a style="display: none" class="exam-archive-action-target" href="<?= $this->url->get('exam/archive/' . $exam->id) . '/download?correct=false'; ?>" id="exam-archive-action-download"></a>
@@ -335,19 +375,25 @@ if (in_array("editable", $exam->flags)) {
     <center>
         <span style="min-width: 9em" class="btn btn-default" id="exam-archive-online">
             <i class="fa fa-external-link"></i>
-            <span>View Online</span>
+            <span>
+                <?= $tr->_("View Online") ?>
+            </span>
         </span>
         <span style="min-width: 9em" class="btn btn-default" id="exam-archive-download">
             <i class="fa fa-file-archive-o"></i>
-            <span>Download Archive</span>
+            <span>
+                <?= $tr->_("Download Archive") ?>
+            </span>
         </span>
     </center>
     <div style="margin-top: 20px">
         <label>
-            <input type="checkbox" id="exam-archive-show-correct"> Display correct answers for questions
+            <input type="checkbox" id="exam-archive-show-correct"> 
+            <?= $tr->_("Display correct answers for questions") ?>
         </label>
         <label>
-            <input type="checkbox" id="exam-archive-cleanup-file"> Remove existing PDF before rendering
+            <input type="checkbox" id="exam-archive-cleanup-file"> 
+            <?= $tr->_("Remove existing PDF before rendering") ?>
         </label>
     </div>
 
@@ -356,7 +402,9 @@ if (in_array("editable", $exam->flags)) {
         <center>
             <span style="min-width: 6em; float: right" class="btn btn-success" id="close-archive">
                 <i class="fa fa-undo"></i>
-                <span>Close</span>
+                <span>
+                    <?= $tr->_("Close") ?>
+                </span>
             </span>
         </center>		
     </div>

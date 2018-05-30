@@ -34,47 +34,68 @@ if ($exam->decoded && $exam->enquiry) {
 
 ?>
 
-<h2>Decode wizard for exam <?= $exam->name ?></h2>
+<h2>
+    <?=
+    $tr->_("Decode wizard for exam %name%", array(
+            'name' => $exam->name
+    ))
+
+    ?>
+</h2>
 
 <div class="alert alert-info">
-    This dialog is for decoding the exam. Click cancel button to stop this wizard at any time or next to advance to next step.
+    <?= $tr->_("This dialog is for decoding the exam. Click cancel button to stop this wizard at any time or next to advance to next step.") ?>
 </div>
 
 <div id="exam-decode-step-1" class="exam-decode-step" style="display: none">
-    <b>Step 1</b>
+    <b>
+        <?= $tr->_("Step 1") ?>
+    </b>
     <p>
-        You should only run this wizard when correction is completed. 
-        Each step will provide enough information and no changes will be done without your confirmation.
+        <?= $tr->_("You should only run this wizard when correction is completed.") ?>
+        <?= $tr->_("Each step will provide enough information and no changes will be done without your confirmation.") ?>
     </p>
-    <label><input type="checkbox"> Skip this wizard and decode this exam.</label>
+    <label><input type="checkbox"> 
+        <?= $tr->_("Skip this wizard and decode this exam.") ?>
+    </label>
 </div>
 
 <div id="exam-decode-step-2" class="exam-decode-step" style="display: none">
-    <b>Step 2</b>
+    <b>
+        <?= $tr->_("Step 2") ?>
+    </b>
     <p>
-        Continue with next step will enquiry your exam. 
-        Doing so will lock further correction and reveal students identities. 
-        This state is useful for investigation. 
-        As the exam is not yet decoded, students can't access their results on this exam.
+        <?= $tr->_("Continue with next step will enquiry your exam.") ?>
+        <?= $tr->_("Doing so will lock further correction and reveal students identities.") ?>
+        <?= $tr->_("This state is useful for investigation.") ?> 
+        <?= $tr->_("As the exam is not yet decoded, students can't access their results on this exam.") ?>
     </p>
-    <label><input type="checkbox"> I understand and like to enquiry this exam.</label>
+    <label><input type="checkbox"> 
+        <?= $tr->_("I understand and like to enquiry this exam.") ?>
+    </label>
 </div>
 
 <div id="exam-decode-step-3" class="exam-decode-step" style="display: none">
-    <b>Step 3</b>
+    <b>
+        <?= $tr->_("Step 3") ?>
+    </b>
     <p>
-        Continue with next step will decode your exam. 
-        Once the exam has been decoded, students can access it to download their result.
-        Consider if you like to change some settings for result generation before continue.
+        <?= $tr->_("Continue with next step will decode your exam.") ?>
+        <?= $tr->_("Once the exam has been decoded, students can access it to download their result.") ?>
+        <?= $tr->_("Consider if you like to change some settings for result generation before continue.") ?>
     </p>
-    <label><input type="checkbox"> I understand and like to decode this exam.</label>
+    <label><input type="checkbox"> 
+        <?= $tr->_("I understand and like to decode this exam.") ?>
+    </label>
 </div>
 
 <div id="exam-decode-step-4" class="exam-decode-step" style="display: none">
-    <b>Step 4</b>
+    <b>
+        <?= $tr->_("Step 4") ?>
+    </b>
     <p>
         <i class="fa fa-check-square-o fa-2x" aria-hidden="true" style="color: limegreen"></i> 
-        Your exam has now been decoded. Click on the close button to finish this wizard.
+        <?= $tr->_("Your exam has now been decoded. Click on the close button to finish this wizard.") ?>
     </p>
 </div>
 
@@ -85,11 +106,15 @@ if ($exam->decoded && $exam->enquiry) {
     <center>
         <span style="min-width: 6em" class="btn btn-default" id="exam-decode-cancel">
             <i class="fa fa-ban" aria-hidden="true"></i>
-            <span>Cancel</span>
+            <span>
+                <?= $tr->_("Cancel") ?>
+            </span>
         </span>
         <span style="min-width: 6em" class="btn btn-success" id="exam-decode-next">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span>Next</span>
+            <span>
+                <?= $tr->_("Next") ?>
+            </span>
         </span>
     </center>		
 </div>

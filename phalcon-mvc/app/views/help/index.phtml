@@ -26,27 +26,37 @@
 
 ?>
 
-<h1 class="success">Help sections</h1>
+<h1 class="success">
+    <?= $tr->_("Help sections") ?>
+</h1>
 <div class="row">
-    <?php
-    foreach ($help as $section => $ds) {
-            printf("<div class=\"col-lg-3 col-md-3 col-sm-3\">\n");
-            foreach ($help as $section => $ds) {
-                    printf("<a href=\"%s/%s\" title=\"Click to display more manuals in various formats and translations\">\n", $base, $section);
-                    printf("<h2>%s</h2>\n", $ds['name']);
-                    printf("<img src=\"%s\" style=\"padding-bottom:15px\" />\n", $icon);
-                    printf("</a>\n");
-                    printf("<ul>\n");
-                    foreach ($ds['data'] as $target => $dt) {
-                            printf("<li><a href=\"%s/%s/%s\">%s</a></li>\n", $base, $section, $target, $dt['name']);
-                    }
-                    printf("<br/><li><a href=\"%s/%s\">Other formats and translations...</a></li>\n", $base, $section);
-                    printf("</ul>\n");
-            }
-            printf("</div>\n");
-    }
-
-    ?>            
+    <?php foreach ($help as $section => $ds) : ?>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <a href="<?= sprintf("%s/%s", $base, $section) ?>" 
+                   title="<?= $tr->_("Click to display more manuals in various formats and translations") ?>">
+                    <h2><?= $ds['name'] ?></h2>
+                    <img src="<?= $icon ?>" style="padding-bottom:15px">
+                </a>
+                <ul>
+                    <?php foreach ($ds['data'] as $target => $dt) : ?>
+                            <li>
+                                <a href="<?= sprintf("%s/%s/%s", $base, $section, $target) ?>">
+                                    <?= $dt['name'] ?>
+                                </a>
+                            </li>
+                    <?php endforeach; ?>
+                    <br>
+                    <li>
+                        <a href="<?= sprintf("%s/%s", $base, $section) ?>">
+                            <?= $tr->_("Other formats and translations...") ?>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    <?php endforeach; ?>
 </div>
 <br><hr/>    
-<p>If you see this page, then you might have ended up on this page by misstake. Please follow one of the links above to access desired content.</p>
+<p>
+    <?= $tr->_("If you see this page, then you might have ended up on this page by misstake.") ?>
+    <?= $tr->_("Please follow one of the links above to access desired content.") ?>
+</p>

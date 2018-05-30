@@ -33,9 +33,13 @@
 </style>
 
 <div class="oe-login">
-    <h2 class="identity">Authentication is required to continue</h2>
+    <h2 class="identity">
+        <?= $tr->_("Authentication is required to continue") ?>
+    </h2>
     <hr/>
-    <label>Select authentication method:</label>
+    <label>
+        <?= $tr->_("Select authentication method:") ?>
+    </label>
     <form action="<?= $form->getAction(); ?>" method="POST">
         <?= $form->render("embed"); ?>
         <p>

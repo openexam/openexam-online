@@ -136,7 +136,7 @@ class RenderService extends Component
                                 );
                         }
                 } else {
-                        throw new Exception($this->tr->_("Unknown format type %format%", array('format' => $type)));
+                        throw new Exception(sprintf("Unknown format type %s", $type));
                 }
         }
 

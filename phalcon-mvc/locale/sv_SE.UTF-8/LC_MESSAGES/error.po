@@ -1,0 +1,103 @@
+# Swedish translations for openexam-online package
+# Svenska översättningar för paket openexam-online.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 05:33+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: phalcon-mvc/app/views/error/show500.phtml:34
+msgid "Internal system error:"
+msgstr "Internt systemfel:"
+
+#: phalcon-mvc/app/views/error/show500.phtml:43
+msgid "There was an error processing the request."
+msgstr "Det uppstod ett fel då förfrågan behandlades."
+
+#: phalcon-mvc/app/views/error/show500.phtml:44
+msgid "It might be caused by a miss configuration or an external service no longer working."
+msgstr "Det kan ha orsakats av en felinställning eller en extern tjänst som inte längre fungerar."
+
+#: phalcon-mvc/app/views/error/show500.phtml:47
+msgid "This kind of error is usually permanent and will persist until been taking cared of by someone."
+msgstr "Denna typ av fel är vanligtvis permanenta och kommer att återstå tills någon tar hand om att fixa dom."
+
+#: phalcon-mvc/app/views/error/show500.phtml:48
+msgid "Please click on the <u>report button</u> to send an email to the system manager."
+msgstr "Vänligen klicka på <u>rapportera knappen</u> för att skicka ett e-postmeddelande till systemansvarig."
+
+#: phalcon-mvc/app/views/error/show500.phtml:49
+#: phalcon-mvc/app/views/error/show503.phtml:48
+#: phalcon-mvc/app/views/error/showError.phtml:49
+msgid "In case of <u>emergency</u>, please call %phone% immediately"
+msgstr "Vid <u>akuta fall</u>, var vänlig och ring %phone% direkt"
+
+#: phalcon-mvc/app/views/error/show500.phtml:52
+#: phalcon-mvc/app/views/error/show503.phtml:54
+#: phalcon-mvc/app/views/error/showError.phtml:55
+#: phalcon-mvc/app/views/error/show404.phtml:50
+msgid "Report"
+msgstr "Rapportera"
+
+#: phalcon-mvc/app/views/error/show503.phtml:34
+msgid "Service temporary unavailable:"
+msgstr "Tjänsten är tillfälligt inte tillgänglig:"
+
+#: phalcon-mvc/app/views/error/show503.phtml:43
+msgid "The web server is currently unable to handle the HTTP request due to a temporary overloading or maintenance of the server."
+msgstr "Webbserver kan för närvarande inte hantera HTTP-förfrågan på grund av att den är tillfälligt överbelastad eller neretagen för underhåll."
+
+#: phalcon-mvc/app/views/error/show503.phtml:46
+msgid "You can click on the <u>retry button</u> below to send the request again."
+msgstr "Klicka på <u>försök igen knappen</u> nedan för att försöka igen."
+
+#: phalcon-mvc/app/views/error/show503.phtml:47
+#: phalcon-mvc/app/views/error/showError.phtml:48
+msgid "Click on the <u>report button</u> to send an email to the system manager."
+msgstr "Klicka på <u>rapportera knappen</u> för att skicka ett e-postmeddelande till systemansvarig."
+
+#: phalcon-mvc/app/views/error/show503.phtml:51
+#: phalcon-mvc/app/views/error/showError.phtml:52
+msgid "Retry"
+msgstr "Försök igen"
+
+#: phalcon-mvc/app/views/error/showError.phtml:43
+msgid "There was an problem processing the last request."
+msgstr "Det var ett problem att behandla senaste förfrågan."
+
+#: phalcon-mvc/app/views/error/showError.phtml:44
+msgid "The error message might give you an clue on what is wrong, but many kind of errors are permanent and can't be resolved without further assistance from the system manager."
+msgstr "Felmeddelandet kan ge dig en idé på vad som är fel, men många fel är permanenta och kommer inte att lösa sig utan assistans från systemansvarig."
+
+#: phalcon-mvc/app/views/error/showError.phtml:47
+msgid "You can click on the <u>retry button</u> below to try the request again."
+msgstr "Du kan klicka på <u>försök igen knappen</u> nedan för att försöka igen."
+
+#: phalcon-mvc/app/views/error/show404.phtml:34
+msgid "Page not found:"
+msgstr "Sidan saknas:"
+
+#: phalcon-mvc/app/views/error/show404.phtml:43
+msgid "The requested page seems to be missing."
+msgstr "Den begärda sidan verka saknas."
+
+#: phalcon-mvc/app/views/error/show404.phtml:44
+msgid "If you ended up here by following a link, please click on the <u>report button</u> to send an email to the system manager."
+msgstr "Om du hamnade här genom att följa en länk, var vänlig och klicka på <u>rapportera knappen</u> för att skicka ett e-postmeddelande till systemansvarig."
+
+#: phalcon-mvc/app/views/error/show404.phtml:47
+msgid "Back"
+msgstr "Tillbaks"

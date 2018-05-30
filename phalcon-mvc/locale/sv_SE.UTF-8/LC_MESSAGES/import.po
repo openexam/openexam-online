@@ -1,0 +1,57 @@
+# Swedish translations for openexam-online package
+# Svenska översättningar för paket openexam-online.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-30 01:39+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: phalcon-mvc/app/views/import/students.phtml:35
+msgid "Select type of data contained in columns using the column header drop-down button."
+msgstr "Välj typ av data för respektive kolumn genom att använda dropplist knappen i tabellhuvudet."
+
+#: phalcon-mvc/app/views/import/students.phtml:36
+msgid "Scroll down and press the 'Import students' button to add students in list to this exam."
+msgstr "Skrolla ner och tryck på 'Importera studenter'-knappen för att lägga till studenterna i listan till denna tenta."
+
+#: phalcon-mvc/app/views/import/students.phtml:45
+msgid "Select"
+msgstr "Välj"
+
+#: phalcon-mvc/app/views/import/students.phtml:50
+msgid "Username"
+msgstr "Användarnamn"
+
+#: phalcon-mvc/app/views/import/students.phtml:53
+msgid "Anonymous Code"
+msgstr "Anonym kod"
+
+#: phalcon-mvc/app/views/import/students.phtml:56
+msgid "Personal Number"
+msgstr "Personnummer"
+
+#: phalcon-mvc/app/views/import/students.phtml:59
+msgid "Custom Tag"
+msgstr "Valfri markering"
+
+#: phalcon-mvc/app/views/import/students.phtml:63
+#: phalcon-mvc/app/views/import/students.phtml:81
+msgid "Remove"
+msgstr "Ta bort"
+
+#: phalcon-mvc/app/views/import/missing.phtml:30
+msgid "The query for current import task did not return any data. Please check for example the group name or course code."
+msgstr "Förfrågan för aktuell import returnerade ingen data. Kontrollera t.ex. gruppnamnet eller kurskoden."

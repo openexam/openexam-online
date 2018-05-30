@@ -99,12 +99,24 @@
     }
 </style>
 
-<h1>System Diagnostics</h1>
+<h1>
+    <?= $tr->_("System Diagnostics") ?>
+</h1>
 <div id="summary">
-    <div id="status-success" class="status"><i id="success-icon" class="fa fa-thumbs-up"></i> No problem detected</div>
-    <div id="status-failure" class="status"><i id="failure-icon" class="fa fa-thumbs-down"></i> Problem detected!</div>
-    <button class="btn btn-primary timer">Pause Update</button>
-    <button class="btn btn-success details">Show Details</button>
+    <div id="status-success" class="status">
+        <i id="success-icon" class="fa fa-thumbs-up"></i> 
+        <?= $tr->_("No problem detected") ?>
+    </div>
+    <div id="status-failure" class="status">
+        <i id="failure-icon" class="fa fa-thumbs-down"></i> 
+        <?= $tr->_("Problem detected!") ?>
+    </div>
+    <button class="btn btn-primary timer">
+        <?= $tr->_("Pause Update") ?>
+    </button>
+    <button class="btn btn-success details">
+        <?= $tr->_("Show Details") ?>
+    </button>
 </div>
 <div id="details" class="hide row"></div>
 

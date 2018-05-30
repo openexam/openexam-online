@@ -41,27 +41,33 @@
 <div class="exam-results">
     <div class="alert alert-info alert-dismissable">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        This dialog let you download your exam result in PDF-file format.
-        Generated files are kept online for a limited period of time, but can be re-created from here on-demand.
+        <?= $tr->_("This dialog let you download your exam result in PDF-file format.") ?> 
+        <?= $tr->_("Generated files are kept online for a limited period of time, but can be re-created from here on-demand.") ?>
     </div>
 
     <div id="error" class="alert alert-danger" style="display: none">
-        <strong class="status">Status</strong>:
-        <span class="message">Error message.</span>
+        <strong class="status">
+            <?= $tr->_("Status") ?>
+        </strong>:
+        <span class="message">
+            <?= $tr->_("Error message.") ?>
+        </span>
     </div>
 
     <div class="wizard-page" id="checking" style="display: none">
         <div>
             <i class="fa fa-refresh fa-spin fa-fw"></i>
-            Checking for ready to download file on server. 
-            Plase wait for this step to finish.
+            <?= $tr->_("Checking for ready to download file on server.") ?> 
+            <?= $tr->_("Plase wait for this step to finish.") ?>
         </div>
         <div class="oe-dialog-buttons">
             <hr>
             <center>
                 <span style="min-width: 10em" class="btn btn-default close-dialog">
                     <i class="fa fa-close" aria-hidden="true"></i>
-                    <span>Close</span>
+                    <span>
+                        <?= $tr->_("Close") ?>
+                    </span>
                 </span>
             </center>        
         </div>
@@ -69,19 +75,23 @@
 
     <div class="wizard-page" id="missing" style="display: none">
         <div>
-            The PDF-file with you result for this exam is missing. 
-            Click on the generate button to create the file for download.
+            <?= $tr->_("The PDF-file with you result for this exam is missing.") ?> 
+            <?= $tr->_("Click on the generate button to create the file for download.") ?>
         </div>
         <div class="oe-dialog-buttons">
             <hr>
             <center>
                 <span style="min-width: 10em" class="btn btn-default close-dialog">
                     <i class="fa fa-close" aria-hidden="true"></i>
-                    <span>Close</span>
+                    <span>
+                        <?= $tr->_("Close") ?>
+                    </span>
                 </span>
                 <span style="min-width: 10em" class="btn btn-success" id="generate-result-file">
                     <i class="fa fa-hourglass-o" aria-hidden="true"></i>
-                    <span>Generate</span>
+                    <span>
+                        <?= $tr->_("Generate") ?>
+                    </span>
                 </span>
             </center>        
         </div>
@@ -89,23 +99,27 @@
 
     <div class="wizard-page" id="queued" style="display: none">
         <div>
-            The result file generation has been submitted and is queued for rendering.
-            You can keep this dialog open and wait for the rendition to start or come back later.
-            Your request is being processed in the background even if you close this dialog.
+            <?= $tr->_("The result file generation has been submitted and is queued for rendering.") ?> 
+            <?= $tr->_("You can keep this dialog open and wait for the rendition to start or come back later.") ?> 
+            <?= $tr->_("Your request is being processed in the background even if you close this dialog.") ?>
         </div>
         <div style="margin-top: 10px">
-            Your job is at position <span id="queue-position"></span> in the render queue.
+            <?= $tr->_("Your job is at position <span id=\"queue-position\"></span> in the render queue.") ?>
         </div>
         <div class="oe-dialog-buttons">
             <hr>
             <center>
                 <span style="min-width: 10em" class="btn btn-default close-dialog">
                     <i class="fa fa-close" aria-hidden="true"></i>
-                    <span>Close</span>
+                    <span>
+                        <?= $tr->_("Close") ?>
+                    </span>
                 </span>
                 <span style="min-width: 10em" class="btn btn-warning" id="cancel-render-job">
                     <i class="fa fa-ban" aria-hidden="true"></i>
-                    <span>Cancel</span>
+                    <span>
+                        <?= $tr->_("Cancel") ?>
+                    </span>
                 </span>
             </center>        
         </div>
@@ -113,15 +127,17 @@
 
     <div class="wizard-page" id="render" style="display: none">
         <div>
-            The result file is currently being rendered.
-            You can keep this dialog open and wait for the rendering to complete or come back later when the file is ready for download.
+            <?= $tr->_("The result file is currently being rendered.") ?> 
+            <?= $tr->_("You can keep this dialog open and wait for the rendering to complete or come back later when the file is ready for download.") ?>
         </div>
         <div class="oe-dialog-buttons">
             <hr>
             <center>
                 <span style="min-width: 10em" class="btn btn-default close-dialog">
                     <i class="fa fa-close" aria-hidden="true"></i>
-                    <span>Close</span>
+                    <span>
+                        <?= $tr->_("Close") ?>
+                    </span>
                 </span>
             </center>        
         </div>
@@ -129,24 +145,26 @@
 
     <div class="wizard-page" id="finish" style="display: none">
         <div>
-            The render job has finished and ready for download.
-            Click on regenerate button to render the result again in case formatting or images is missing in the PDF.
+            <?= $tr->_("The render job has finished and ready for download.") ?> 
+            <?= $tr->_("Click on regenerate button to render the result again in case formatting or images is missing in the PDF.") ?>
         </div>
         <div class="alert alert-success" style="display: none; margin-top: 10px">
-            Problem with download? Try click on the
-            <a href="" id="download-result-link">result file</a> 
-            link.
+            <?= $tr->_("Problem with download? Try click on the <a href=\"\" id=\"%id%\">result file</a> link.", array('id' => 'download-result-link')) ?>
         </div>
         <div class="oe-dialog-buttons">
             <hr>
             <center>
                 <span style="min-width: 10em" class="btn btn-default" id="regenerate-result-file">
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    <span>Regenerate</span>
+                    <span>
+                        <?= $tr->_("Regenerate") ?>
+                    </span>
                 </span>
                 <span style="min-width: 10em" class="btn btn-success" id="download-result-file">
                     <i class="fa fa-download" aria-hidden="true"></i>
-                    <span>Download</span>
+                    <span>
+                        <?= $tr->_("Download") ?>
+                    </span>
                 </span>
             </center>        
         </div>
@@ -154,8 +172,13 @@
 
     <div class="wizard-page" id="failed" style="display: none">
         <div>
-            The render job has failed. You can chose to retry it in case it was a temporary failiure.
-            If the problem persist, please report it to <a href="mailto:<?= $contact['addr'] ?>"><?= $contact['name'] ?></a>.
+            <?= $tr->_("The render job has failed. You can chose to retry it in case it was a temporary failiure.") ?> 
+            <?=
+            $tr->_("If the problem persist, please report it to <a href=\"mailto:%addr%\">%name%</a>", array(
+                    'addr' => $contact['addr'],
+                    'name' => $contact['name']))
+
+            ?>
         </div>
         <div class="oe-dialog-buttons">
             <hr>
@@ -166,7 +189,9 @@
                 </span>
                 <span style="min-width: 10em" class="btn btn-warning">
                     <i class="fa fa-bug" aria-hidden="true"></i>
-                    <a href="mailto:<?= $contact['addr'] ?>">Report</a>
+                    <a href="mailto:<?= $contact['addr'] ?>">
+                        <?= $tr->_("Report") ?>
+                    </a>
                 </span>
             </center>        
         </div>
@@ -175,14 +200,16 @@
     <div class="wizard-page" id="cancelled" style="display: none">
         <div>
             <i class="fa fa-check fa-lg" aria-hidden="true" style="color: green"></i>
-            Your render job has been cancelled.
+            <?= $tr->_("Your render job has been cancelled.") ?>
         </div>
         <div class="oe-dialog-buttons">
             <hr>
             <center>
                 <span style="min-width: 10em" class="btn btn-default close-dialog">
                     <i class="fa fa-close" aria-hidden="true"></i>
-                    <span>Close</span>
+                    <span>
+                        <?= $tr->_("Close") ?>
+                    </span>
                 </span>
             </center>        
         </div>
@@ -190,7 +217,9 @@
 
     <div id="status" style="display: none; text-align: center">
         <br>
-        <span class="message">Status message.</span>
+        <span class="message">
+            <?= $tr->_("Status message.") ?>
+        </span>
     </div>
 
 </div>

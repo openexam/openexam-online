@@ -52,17 +52,21 @@ use Phalcon\Tag;
 </style>
 
 <div class="signup">
-    <h1 class="signup">Processing signup request...</h1>
+    <h1 class="signup">
+        <?= $tr->_("Processing signup request...") ?>
+    </h1>
     <div class="exam-listing">
         <?php if (isset($teacher)) { ?>
-                <p>The following teacher tasks are being performed:</p>
+                <p>
+                    <?= $tr->_("The following teacher tasks are being performed:") ?>
+                </p>
                 <div class="exam-content-box grant">
-                    <div class="exam-head">Insert teacher role:</div>
+                    <div class="exam-head"><?= $tr->_("Insert teacher role:") ?></div>
                     <div class="exam-status none">&nbsp;</div>
                 </div>
                 <?php foreach ($texams as $exam) { ?>
                         <div class="exam-content-box clone" exam="<?= $exam->id ?>">
-                            <div class="exam-head">Copy exam <?= $exam->name ?>:</div>
+                            <div class="exam-head"><?= $tr->_("Copy exam %name%", array('name' => $exam->name)) ?>:</div>
                             <div class="exam-body"><?= $exam->descr ?></div>
                             <hr/>
                             <div class="exam-status none">&nbsp;</div>
@@ -71,10 +75,12 @@ use Phalcon\Tag;
         <?php } ?>
 
         <?php if (isset($student)) { ?>
-                <p>The following student tasks are being performed:</p>
+                <p>
+                    <?= $tr->_("The following student tasks are being performed:") ?>
+                </p>
                 <?php foreach ($sexams as $exam) { ?>
                         <div class="exam-content-box register" exam="<?= $exam->id ?>">
-                            <div class="exam-head">Register on exam <?= $exam->name ?>:</div>
+                            <div class="exam-head"><?= $tr->_("Register on exam %name%", array('name' => $exam->name)) ?>:</div>
                             <div class="exam-body"><?= $exam->descr ?></div>
                             <hr/>
                             <div class="exam-status none">&nbsp;</div>
@@ -85,8 +91,22 @@ use Phalcon\Tag;
     <hr/>
 
     <?php if ($wizard) { ?>
-            <input class="btn btn-green" id="next" style="display: none" type="submit" name="finish" value="Finish" onclick="window.location.assign('<?= $next ?>')" title ="Click on this button to finish the signup wizard."/>
-    <?php } else { ?>
-            <input class="btn btn-green" id="next" style="display: none" type="submit" name="start" value="Start" onclick="window.location.assign('<?= $next ?>')" title="Signup completed. Start using the system."/>
-    <?php } ?>
+            <input class="btn btn-green" 
+                   id="next" 
+                   style="display: none" 
+                   type="submit" 
+                   name="finish" 
+                   value="<?= $tr->_("Finish") ?>" 
+                   onclick="window.location.assign('<?= $next ?>')" 
+                   title ="<?= $tr->_("Click on this button to finish the signup wizard.") ?>"/>
+           <?php } else { ?>
+            <input class="btn btn-green" 
+                   id="next" 
+                   style="display: none" 
+                   type="submit" 
+                   name="start" 
+                   value="<?= $tr->_("Start") ?>" 
+                   onclick="window.location.assign('<?= $next ?>')" 
+                   title="<?= $tr->_("Signup completed. Start using the system.") ?>"/>
+           <?php } ?>
 </div>

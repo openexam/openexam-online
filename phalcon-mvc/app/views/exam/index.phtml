@@ -111,18 +111,23 @@ foreach ($roles as $role) {
 
 <div id="unsupported-browser" class="alert alert-warning alert-dismissable" style="display: none">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-    <strong>Possible browser problem!</strong>
+    <strong>
+        <?= $tr->_("Possible browser problem!") ?>
+    </strong>
     <p>
-        It looks like you are using a browser that is missing support for some web standards. 
-        We have enabled some workarounds (polyfills) for increased compatibility.
-        If you experience difficulties using the system, please try a modern web browser with native support for latest web standards (HTML5 and ES6).
+        <?= $tr->_("It looks like you are using a browser that is missing support for some web standards.") ?>
+        <?= $tr->_("We have enabled some workarounds (polyfills) for increased compatibility.") ?>
+        <?= $tr->_("If you experience difficulties using the system, please try a modern web browser with native support for latest web standards (HTML5 and ES6).") ?>
     </p>
 </div>
 
 <div class="jumbotron" style="margin:15px; margin-top: 0px; padding: 20px">
-    <h1 class="main">Hi <?= $this->catalog->getFirstName() ?>!</h1>
+    <h1 class="main">
+        <?= $tr->_("Hi %name%!", array('name' => $this->catalog->getFirstName())) ?>
+    </h1>
     <div style="padding:10px 0px">
-        The content of this page depends on the different roles you have. Information about the different roles (creator, contributor, corrector, invigilator, student) can be found <a href="<?= $this->url->get('/help/manual/teacher') ?>">teacher manual</a>.  
+        <?= $tr->_("The content of this page depends on the different roles you have.") ?>
+        <?= $tr->_("Information about the different roles (creator, contributor, corrector, invigilator, student) can be found in the <a href=\"%manual%\">teacher manual</a>.", array('manual' => $this->url->get('/help/manual/teacher'))) ?>
     </div>
 </div>
 
@@ -145,7 +150,7 @@ foreach ($roles as $role) {
                         <article class="ac-large exam-listing-wrapper">
                             <div class="exam-search-wrapper">
                                 <div class="exam-search-box">
-                                    <input class="form-control" type="text" style="display: inline-block;min-height: 38px;" placeholder="Quick search" value="<?= $search ?>"> 
+                                    <input class="form-control" type="text" style="display: inline-block;min-height: 38px;" placeholder="<?= $tr->_("Quick search") ?>" value="<?= $search ?>"> 
                                     <span class="toolbtn toolbtn-orange-outline search-exam" style="display: inline-block; margin-left: 5px; padding-top: 5px">
                                         <i class="fa fa-search fa-2x"></i>
                                     </span> 
@@ -154,7 +159,8 @@ foreach ($roles as $role) {
                                         <span class="toolbtn-create-exam"> 
                                             <a href="<?= $this->url->get('exam/create') ?>"> 
                                                 <span class="toolbtn toolbtn-orange-outline toolbtn-bigger">
-                                                    <i class="fa fa-plus-square"></i> Create new exam
+                                                    <i class="fa fa-plus-square"></i> 
+                                                    <?= $tr->_("Create new exam") ?>
                                                 </span> 
                                             </a>
                                         </span> 
@@ -170,33 +176,35 @@ foreach ($roles as $role) {
 <!--
     Dialog for managing students on exam.
 -->
-<div id="manage-students" title="Manage students for exam" style="display:none"></div>
+<div id="manage-students" title="<?= $tr->_("Manage students for exam") ?>" style="display:none"></div>
 
 <!--    
     Dialog for reusing exam (copy properties and questions).
 -->
-<div id="reuse-exam-dialog" title="Reuse exam" style="display:none">
+<div id="reuse-exam-dialog" title="<?= $tr->_("Reuse exam") ?>" style="display:none">
     <div style="margin-top:15px; margin-bottom:10px">
-        Along with <strong>Exam title, instructions and exam settings</strong>, please select if any of the following exam parts you would like to reuse:
+        <?= $tr->_("Along with <strong>Exam title, instructions and exam settings</strong>, please select if any of the following exam parts you would like to reuse:") ?>
     </div>
     <div style="margin-left:25px">
         <div>
             <div class="checkbox">
                 <label>
                     <input type="checkbox" value="topics" class="exam-reuse-opt">
-                    Question sections
+                    <?= $tr->_("Question sections") ?>
                 </label>
             </div>
             <div class="checkbox">
                 <label>
                     <input type="checkbox" value="questions" class="exam-reuse-opt">
-                    Questions and question correctors<br>
+                    <?= $tr->_("Questions and question correctors") ?>
+                    <br>
                 </label>
             </div>
             <div class="checkbox">
                 <label>
                     <input type="checkbox" value="roles"  class="exam-reuse-opt">
-                    Exam roles<br>
+                    <?= $tr->_("Exam roles") ?>
+                    <br>
                 </label>
             </div>
         </div>
@@ -206,16 +214,21 @@ foreach ($roles as $role) {
 <!--    
     Dialog for changing exam schedule.
 -->
-<div id="exam-datetime-changer" style="display: none;" title="Change exam schedule">
+<div id="exam-datetime-changer" style="display: none;" title="<?= $tr->_("Change exam schedule") ?>">
     <div class="alert alert-info">
-        Input date/time manual or click on the calender icon to select from the datetime picker. 
-        Click on the clock icon at bottom of the picker to select the time. 
-        Either select time by scrolling or clicking on hour/minute to quickly select from a table.
+        <?= $tr->_("Input date/time manual or click on the calender icon to select from the datetime picker.") ?>
+        <?= $tr->_("Click on the clock icon at bottom of the picker to select the time.") ?>
+        <?= $tr->_("Either select time by scrolling or clicking on hour/minute to quickly select from a table.") ?>
     </div>
     <div class="row exam-datetime-select">
         <div class='col-sm-6'>
             <div class="form-group">
-                <label for="start"><b>Exam starts:</b> <span style="color:#F02222">*</span></label>
+                <label for="start">
+                    <b>
+                        <?= $tr->_("Exam starts:") ?>
+                    </b> 
+                    <span style="color:#F02222">*</span>
+                </label>
                 <div class="input-group date datetime-exam">
                     <input class="form-control" type="text" value="" placeholder="yyyy-mm-dd hh:mm" name="starttime" id="exam-starttime">
                     <span class="input-group-addon">
@@ -227,7 +240,12 @@ foreach ($roles as $role) {
 
         <div class='col-sm-6'>
             <div class="form-group">
-                <label for="start"><b>Exam ends:</b> <span style="color:#F02222">*</span></label>
+                <label for="start">
+                    <b>
+                        <?= $tr->_("Exam ends:") ?>
+                    </b> 
+                    <span style="color:#F02222">*</span>
+                </label>
                 <div class="input-group date datetime-exam">
                     <input class="form-control" type="text" value="" placeholder="yyyy-mm-dd hh:mm" name="endtime" id="exam-endtime">
                     <span class="input-group-addon">
@@ -242,10 +260,10 @@ foreach ($roles as $role) {
 <!--
     Dialog for checking exam status.
 -->
-<div id="exam-check-box" style="display:none" title="Exam status check" ></div>    
+<div id="exam-check-box" style="display:none" title="<?= $tr->_("Exam status check") ?>"></div>    
 
-<div id="render-student-result" style="display:none" title="Download exam result" ></div>    
-<div id="render-decoder-result" style="display:none" title="Download exam result" ></div>    
+<div id="render-student-result" style="display:none" title="<?= $tr->_("Download exam result") ?>"></div>    
+<div id="render-decoder-result" style="display:none" title="<?= $tr->_("Download exam result") ?>"></div>    
 
 <?= Tag::javascriptInclude('js/views/exam/index.js?rev=1') ?>
 

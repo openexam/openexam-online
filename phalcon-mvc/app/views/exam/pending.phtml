@@ -46,7 +46,7 @@
 <div class="oe-pending">
     <h1 class="header">
         <i class="fa fa-clock-o" aria-hidden="true" style="color: darkorange"></i>
-        Approval required
+        <?= $tr->_("Approval required") ?>
     </h1>
 
     <p class="message">
@@ -54,9 +54,14 @@
 
     <div class="info">
         <p>
-            Access to the exam '<?= $exam->name; ?>' is pending approval by the exam invigilator. 
-            Please wait for a while before retrying again or wait for the automatic retry that occurs every 30 seconds.
+            <?= $tr->_("Access to the exam '%name%' is pending approval by the exam invigilator.", array('name' => $exam->name)) ?>
+            <?= $tr->_("Please wait for a while before retrying again or wait for the automatic retry that occurs every 30 seconds.") ?>
         </p>
-        <button class="btn btn-success" type="submit" name="retry" onclick="window.location.assign('<?= $retry ?>')" title="Click on this button to retry access to this exam."/>Retry</button>
+        <button class="btn btn-success" 
+                type="submit" name="retry" 
+                onclick="window.location.assign('<?= $retry ?>')" 
+                title="<?= $tr->_("Click on this button to retry access to this exam.") ?>"/>
+                <?= $tr->_("Retry") ?>
+        </button>
     </div>
 </div>

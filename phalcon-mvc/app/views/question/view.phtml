@@ -54,11 +54,17 @@ use Phalcon\Tag;
     <!-- Question title row -->
     <?php if ($testMode): ?>
             <div class="alert alert-info clearfix" style="margin:15px 0px;">  
-                <strong>Test mode activated.</strong> <br/>
-                You are currently previewing the student view in test mode. Please note that answers will <strong>not</strong> be saved.<br/>
+                <strong>
+                    <?= $tr->_("Test mode activated.") ?>
+                </strong> 
+                <br/>
+                <?= $tr->_("You are currently previewing the student view in test mode. Please note that answers will <strong>not</strong> be saved.") ?>
+                <br/>
                 <a href="<?= $this->url->get('exam/index') ?>" class="btn btn-primary pull-right">
                     <i class="icon-ok-circle"> 
-                        <span>Finished</span>
+                        <span>
+                            <?= $tr->_("Finished") ?>
+                        </span>
                     </i>
                 </a>
             </div>
@@ -67,18 +73,26 @@ use Phalcon\Tag;
     <?php if (!$testMode && $viewMode == 'all'): ?>
             <div class="alert alert-info alert-dismissable" style="margin:15px 0px;">  
                 <a href="#" data-dismiss="alert" class="close">×</a>
-                <p><strong>Careful preview all of your answers before quitting!</strong></p>
                 <p>
-                    All answers seen below has been read directly from the database. If something is wrong, then contact the invigilator immediately.<br>
-                    Please sign out and close all opened browser windows once you are satisfied with your answers.
+                    <strong>
+                        <?= $tr->_("Careful preview all of your answers before quitting!") ?>
+                    </strong>
+                </p>
+                <p>
+                    <?= $tr->_("All answers seen below has been read directly from the database. If something is wrong, then contact the invigilator immediately.") ?>
+                    <br>
+                    <?= $tr->_("Please sign out and close all opened browser windows once you are satisfied with your answers.") ?>
                 </p>
             </div>
     <?php endif; ?>
 
     <?php if (!$testMode && $viewMode == 'none') : ?>
             <div class="alert alert-warning" style="margin:15px 0px;">  
-                <strong>Question is missing.</strong> <br/>
-                This exam seems to have no questions. Please inform the invigilator about this problem to get it fixed.
+                <strong>
+                    <?= $tr->_("Question is missing.") ?>
+                </strong> 
+                <br/>
+                <?= $tr->_("This exam seems to have no questions. Please inform the invigilator about this problem to get it fixed.") ?>
             </div>
     <?php endif; ?>
 
@@ -173,7 +187,7 @@ use Phalcon\Tag;
                                                         <?php if (!empty($answerData[$qPart]['ans'][0])): ?>
                                                                 <div style="color:#0f74a8; padding-top:15px; padding-bottom: 5px">
                                                                     <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                                                    Your Answer:
+                                                                    <?= $tr->_("Your Answer:") ?>
                                                                 </div>
                                                                 <div style="background-color:#F4F4F4; border-left: 5px solid #dedede; padding:10px">
                                                                     <?php if (count($answerData[$qPart]['ans']) > 1): ?>
@@ -193,10 +207,12 @@ use Phalcon\Tag;
                                                         <?php else: ?>
                                                                 <div style="color:#f45956; padding-top:15px; padding-bottom: 5px">
                                                                     <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                                                                    Your Answer:
+                                                                    <?= $tr->_("Your Answer:") ?>
                                                                 </div>
                                                                 <div style="border-left: 5px solid #f45956; padding:10px">
-                                                                    <i>You haven't answered this part.</i>
+                                                                    <i>
+                                                                        <?= $tr->_("You haven't answered this part.") ?>
+                                                                    </i>
                                                                     <?php $unanswered++ ?>
                                                                 </div>
                                                         <?php endif; ?>
@@ -204,7 +220,7 @@ use Phalcon\Tag;
                                                         <div class="form-group q-part-ans-type" data-id="<?= $qPartData['ans_area']['type'] ?>">
                                                             <?php if ($qPartData['ans_area']['type'] == 'textbox'): ?>
                                                                     <div id="ansBkp<?= $qPart ?>" style="display:none"><?= htmlentities($answerData[$qPart]['ans'][0]) ?></div>
-                                                                    <input type="text" class="form-control changeable" value="<?= htmlentities($answerData[$qPart]['ans'][0]) ?>" placeholder="Write your answer here ..." />
+                                                                    <input type="text" class="form-control changeable" value="<?= htmlentities($answerData[$qPart]['ans'][0]) ?>" placeholder="<?= $tr->_("Write your answer here ...") ?>" />
                                                             <?php elseif ($qPartData['ans_area']['type'] == 'canvas'): ?>
                                                                     <?php
                                                                     $drawingJson = trim(json_encode($answerData[$qPart]['ans'][0]['canvasJson']), '"');
@@ -213,7 +229,9 @@ use Phalcon\Tag;
 
                                                                     ?>
                                                                     <div id="<?= $elementId ?>" class="literally changeable"></div>
-                                                                    <button class="fullscreen btn btn-block" isfor="<?= $elementId ?>" style="background-color: ghostwhite">Fullscreen</button>    
+                                                                    <button class="fullscreen btn btn-block" isfor="<?= $elementId ?>" style="background-color: ghostwhite">
+                                                                        <?= $tr->_("Fullscreen") ?>
+                                                                    </button>    
                                                                     <script language="javascript">canvasInit('<?= $elementId ?>', '<?= $drawingJson ?>', '<?= $imageUrl ?>');</script>
                                                             <?php elseif ($qPartData['ans_area']['type'] == 'choicebox'): ?>
                                                                     <?php $type = (count(array_filter($qPartData['ans_area']['data'])) == 1) ? 'radio' : 'checkbox'; ?>
@@ -240,7 +258,8 @@ use Phalcon\Tag;
                                                     <div class="q-part-resource-area col-sm-2">
                                                         <div class="box">
                                                             <div class="lead" style="font-size:15px"> 
-                                                                <i class="icon-file-text-alt text-contrast resource-file" style="cursor: pointer" title="Hide resource files"></i> Supplementary material 
+                                                                <i class="icon-file-text-alt text-contrast resource-file" style="cursor: pointer" title="Hide resource files"></i> 
+                                                                <?= $tr->_("Supplementary material") ?> 
                                                             </div>
 
                                                             <?php
@@ -279,27 +298,41 @@ use Phalcon\Tag;
                                             <div style="padding-bottom:25px">
                                                 <div style="font-weight:normal">
                                                     <input type="checkbox" id="highlight_q" value="1" class="changeable" <?= $answerData['highlight-q'] == 'yes' ? 'checked' : '' ?> <?= $testMode ? 'disabled' : '' ?>>
-                                                    <span style="font-size:14px">I would like to review my answer for this question later on, so mark it.</span>
+                                                    <span style="font-size:14px">
+                                                        <?= $tr->_("I would like to review my answer for this question later on, so mark it.") ?>
+                                                    </span>
                                                 </div>
                                             </div>
                                             <?php if ($prevQuestId && $prevQuestId != $qObj->id): ?>
                                                     <a class="sync-answer" href="#" hlink="<?= $this->url->get('exam/' . $exam->id . '/question/' . ($prevQuestId)) ?>">
-                                                        <button class="btn btn-prev"><i class="icon-arrow-left"></i> Prev. Question </button>
+                                                        <button class="btn btn-prev">
+                                                            <i class="icon-arrow-left"></i> 
+                                                            <?= $tr->_("Previous Question") ?> 
+                                                        </button>
                                                     </a>
                                             <?php endif; ?>
 
                                             <?php if ($nextQuestId): ?>
                                                     <a class="sync-answer" href="#" hlink="<?= $this->url->get('exam/' . $exam->id . '/question/' . ($nextQuestId)) ?>">
-                                                        <button class="btn btn-success btn-next"> Next Question <i class="icon-arrow-right"></i></button>
+                                                        <button class="btn btn-success btn-next"> 
+                                                            <?= $tr->_("Next Question") ?> 
+                                                            <i class="icon-arrow-right"></i>
+                                                        </button>
                                                     </a>
                                             <?php else: ?>
                                                     <a class="sync-answer" href="#" hlink="<?= $this->url->get('exam/' . $exam->id . '/question/all') ?>">
-                                                        <button class="btn btn-success btn-next"><i class="icon-list"></i> Preview your answers for all questions</button>
+                                                        <button class="btn btn-success btn-next">
+                                                            <i class="icon-list"></i> 
+                                                            <?= $tr->_("Preview your answers for all questions") ?>
+                                                        </button>
                                                     </a>
                                             <?php endif; ?>
                                     <?php else: ?>
                                             <a href="<?= $this->url->get('exam/' . $exam->id . '/question/' . ($qObj->id)) ?>">
-                                                <button class="btn btn-success btn-prev"><i class="icon-pencil"></i> Change your answer </button>
+                                                <button class="btn btn-success btn-prev">
+                                                    <i class="icon-pencil"></i> 
+                                                    <?= $tr->_("Change your answer") ?>
+                                                </button>
                                             </a>
                                     <?php endif; ?>
                                 </div>
@@ -319,16 +352,27 @@ use Phalcon\Tag;
     <?php if ($unanswered > 0) : ?>
             <div class="alert alert-warning alert-dismissable" style="margin:15px 0px;">  
                 <a href="#" data-dismiss="alert" class="close">×</a>
-                <p><strong>Missed to answer some questions?</strong></p>
-                <p>One or more questions are not yet answered. Please go back and answer all parts if you have missed one.</p>
+                <p>
+                    <strong>
+                        <?= $tr->_("Missed to answer some questions?") ?>
+                    </strong>
+                </p>
+                <p>
+                    <?= $tr->_("One or more questions are not yet answered.") ?> 
+                    <?= $tr->_("Please go back and answer all parts if you have missed one.") ?>
+                </p>
             </div>
     <?php endif; ?>
 </div>
 
-<div class="ans-sync-msg">Saving ... </div>
+<div class="ans-sync-msg">
+    <?= $tr->_("Saving ...") ?>
+</div>
 
 <div id="exam-instructions" style="max-width:800px; display:none; font-family:Verdana, Geneva, sans-serif;">
-    <h2 style="color: #c2100c">Exam instructions: <?= $exam->name ?></h2>
+    <h2 style="color: #c2100c">
+        <?= $tr->_("Exam instructions: %name%", array('name' => $exam->name)) ?>
+    </h2>
     <hr>
     <div class="alert alert-info">
         <?= $exam->descr ?>
@@ -336,23 +380,38 @@ use Phalcon\Tag;
 </div>
 
 <div id="general-instructions" style="max-width:800px; display:none; font-family:Verdana, Geneva, sans-serif;">
-    <h2 style="color: #c2100c">General exam instructions: <?= $exam->name ?></h2>
+    <h2 style="color: #c2100c">
+        <?= $tr->_("General exam instructions: %name%", array('name' => $exam->name)) ?>
+    </h2>
     <hr>
     <div class="alert alert-info">
-        Use the buttons in the heading to minimize the left pane or increase the text size 
-        Under Exam info. You may again read the instructions, access a preview of all your answers and log out when you are done. 
-        You can hover over images (in supplementary material) to zoom. You can see full size image by clicking on it.
+        <?= $tr->_("Use the buttons in the heading to minimize the left pane or increase the text size under exam info") ?> 
+        <?= $tr->_("You may again read the instructions, access a preview of all your answers and log out when you are done.") ?> 
+        <?= $tr->_("You can hover over images (in supplementary material) to zoom. You can see full size image by clicking on it.") ?>
     </div>
     <div style="padding-bottom:10px">
         <br />
-        <strong>Important to know:</strong><br><br>
+        <strong>
+            <?= $tr->_("Important to know:") ?>
+        </strong>
+        <br><br>
         <ul>
-            <li>All your answers are continuously saved every 10 seconds if changed or when switching between question.</li><br>
-            <li>It is highly recommended that you <u>don't</u> use "back" and "forward" buttons in the browser to navigate between questions. Always use the 
-                <button class="btn btn-xs" disabled="disabled"><i class="icon-arrow-left"></i> Prev. Question </button> and 
-                <button class="btn btn-xs btn-success" disabled="disabled"> Next Question <i class="icon-arrow-right"></i></button> 
-                buttons or question links in left hand side menu.</li><br>
-            <li>Please report to invigilator immediately if any button or link do not work. In such a case, please don't close/refresh web browser otherwise we may loose your answer. If you see any error message from system, it is highly important that you <u>don't</u> refresh/close the web page before you report. </li><br>
+            <li>
+                <?= $tr->_("All your answers are continuously saved every 10 seconds if changed or when switching between question.") ?>
+            </li><br>
+            <li>
+                <?php $prevbtn = sprintf("<button class=\"btn btn-xs\" disabled=\"disabled\"><i class=\"icon-arrow-left\"></i> %s </button>", $tr->_("Previous Question")) ?>
+                <?php $nextbtn = sprintf("<button class=\"btn btn-xs btn-success\" disabled=\"disabled\"><i class=\"icon-arrow-right\"></i> %s </button>", $tr->_("Next Question")) ?>
+                <?= $tr->_("It is highly recommended that you <u>don't</u> use \"back\" and \"forward\" buttons in the browser to navigate between questions.") ?>
+                <?= $tr->_("Always use the %prevbtn% and %nextbtn% buttons or question links in left hand side menu.", array('prevbtn' => $prevbtn, 'nextbtn' => $nextbtn)) ?>
+            </li>
+            <br>
+            <li>
+                <?= $tr->_("Please report to invigilator immediately if any button or link do not work.") ?>
+                <?= $tr->_("In such a case, please don't close/refresh web browser otherwise we may loose your answer.") ?>
+                <?= $tr->_("If you see any error message from system, it is highly important that you <u>don't</u> refresh/close the web page before you report.") ?>
+            </li>
+            <br>
         </ul>
     </div>
 </div>
@@ -367,7 +426,7 @@ use Phalcon\Tag;
                 var qName = '<?= $qObj->slot ?>';
                 var ansId = '<?= $answer[$qObj->id]->id ?>';
                 if (ansId === '') {
-                    alert("System will not be able to save your answer for this question. Please report this issue to exam invigilators immediately.");
+                    alert("<?= $tr->_("System will not be able to save your answer for this question. Please report this issue to exam invigilators immediately.") ?>");
                 }
 <?php else: ?>
                 var ansId = 'None!';

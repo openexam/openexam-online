@@ -1,0 +1,468 @@
+# Swedish translations for openexam-online package
+# Svenska översättningar för paket openexam-online.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-29 23:58+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: phalcon-mvc/app/views/question/correction.phtml:120
+msgid "Exam status"
+msgstr "Tentastatus"
+
+#: phalcon-mvc/app/views/question/correction.phtml:121
+#: phalcon-mvc/app/views/question/correction.phtml:139
+#, php-format
+msgid "Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>"
+msgstr "Tabellen visar alla svar från studenter på frågor för tentan <strong>\"%s\"</strong>"
+
+#: phalcon-mvc/app/views/question/correction.phtml:122
+msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is not yet finished, so you can only monitor the answering progress for students on this exam."
+msgstr "Du kan visa studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Denna tenta är inte avslutad än, så du kan bara monitorera inkommande svar från studenter."
+
+#: phalcon-mvc/app/views/question/correction.phtml:126
+msgid "Exam investigation"
+msgstr "Undersökning av tenta"
+
+#: phalcon-mvc/app/views/question/correction.phtml:127
+#: phalcon-mvc/app/views/question/correction.phtml:133
+#, php-format
+msgid "Following table shows the final result of all students for the examination <strong>\"%s\"</strong>"
+msgstr "Tabeller visar dom slutgiltiga resultaten för alla studenter på tentan <strong>\"%s\"</strong>"
+
+#: phalcon-mvc/app/views/question/correction.phtml:128
+msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is in enquiry state (correction has finished, but decoding is on hold). In this phase its no longer possible to change student results."
+msgstr "Du kan visa studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Denna tenta är under utredning (rättningen är avslutad, men avkodning väntar). I detta tillstånd är det inte längre möjligt att ändra på studenternas resultat."
+
+#: phalcon-mvc/app/views/question/correction.phtml:132
+msgid "Exam score board"
+msgstr "Poängtabell"
+
+#: phalcon-mvc/app/views/question/correction.phtml:134
+msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam has been decoded, so it's no longer possible to change student results."
+msgstr "Du kan visa studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Denna tenta hart avkodats, så det är inte längre möjligt att ändra på studenternas resultat."
+
+#: phalcon-mvc/app/views/question/correction.phtml:138
+msgid "Exam correction"
+msgstr "Rättning"
+
+#: phalcon-mvc/app/views/question/correction.phtml:140
+msgid "Correct answers by student (rows), by question (column) or individual (by index). You can only correct answers for questions published by yourself or those you have been assigned the role as corrector for."
+msgstr "Rätta studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Du kan bara rätta svaren för dom frågor som publicerats av dig själv eller dom som du blivit tilldelad rollen som rättande lärare för."
+
+#: phalcon-mvc/app/views/question/correction.phtml:328
+msgid "Run wizard for enquiry or decoding this exam."
+msgstr "Kör guiden för att utreda eller avkoda tentan."
+
+#: phalcon-mvc/app/views/question/correction.phtml:334
+msgid "Download score board in spreadsheet format"
+msgstr "Ladda ner poängtabellen som ett kalkylblad"
+
+#: phalcon-mvc/app/views/question/correction.phtml:340
+msgid "Open dialog for downloading all or selected students as zip-file"
+msgstr "Öppna dialog för att ladda ner alla eller valda students resultat som en zip-fil"
+
+#: phalcon-mvc/app/views/question/correction.phtml:363
+msgid "Correctors: "
+msgstr "Rättande lärare: "
+
+#: phalcon-mvc/app/views/question/correction.phtml:386
+#: phalcon-mvc/app/views/question/correction.phtml:544
+msgid "Student"
+msgstr "Student"
+
+#: phalcon-mvc/app/views/question/correction.phtml:390
+msgid "Code"
+msgstr "Kod"
+
+#: phalcon-mvc/app/views/question/correction.phtml:395
+msgid "F. name"
+msgstr "F. namn"
+
+#: phalcon-mvc/app/views/question/correction.phtml:398
+msgid "L. name"
+msgstr "E. namn"
+
+#: phalcon-mvc/app/views/question/correction.phtml:401
+msgid "P No."
+msgstr "P-nr."
+
+#: phalcon-mvc/app/views/question/correction.phtml:406
+msgid "Total score"
+msgstr "Total poäng"
+
+#: phalcon-mvc/app/views/question/correction.phtml:415
+msgid "Grade"
+msgstr "Betyg"
+
+#: phalcon-mvc/app/views/question/correction.phtml:456
+msgid "Failed decode JSON data"
+msgstr "Gick inte av avkoda data som JSON"
+
+#: phalcon-mvc/app/views/question/correction.phtml:522
+msgid "Download student result in PDF-file format"
+msgstr "Ladda ner students resultat i PDF-filformat"
+
+#: phalcon-mvc/app/views/question/correction.phtml:530
+msgid "Toggle enquiry flag on this student"
+msgstr "Koppla om flaggning för utredning på denna student"
+
+#: phalcon-mvc/app/views/question/correction.phtml:686
+msgid "Color codes used in the score board:"
+msgstr "Färgkoder använda i poängtabellen:"
+
+#: phalcon-mvc/app/views/question/correction.phtml:692
+msgid "Answer has been corrected."
+msgstr "Svaret har rättats."
+
+#: phalcon-mvc/app/views/question/correction.phtml:697
+msgid "This answer should be corrected by another person."
+msgstr "Detta svar ska rättas av en annan person."
+
+#: phalcon-mvc/app/views/question/correction.phtml:702
+msgid "No answer was given for this question."
+msgstr "Inget svar har givits för denna fråga."
+
+#: phalcon-mvc/app/views/question/correction.phtml:706
+msgid "The answer is uncorrected or partially corrected."
+msgstr "Svaret har inte rättats eller är delvis rättat."
+
+#: phalcon-mvc/app/views/question/correction.phtml:710
+msgid "Student can pass with some grace marks."
+msgstr "Studenten kan godkännas efter en viss justering."
+
+#: phalcon-mvc/app/views/question/correction.phtml:717
+msgid "Exam decode wizard"
+msgstr "Guide för avkodning av tenta"
+
+#: phalcon-mvc/app/views/question/correction.phtml:719
+#: phalcon-mvc/app/views/question/correction.phtml:720
+msgid "Download exam result"
+msgstr "Ladda ner tentaresultat"
+
+#: phalcon-mvc/app/views/question/form.phtml:129
+msgid "Template"
+msgstr "Mall"
+
+#: phalcon-mvc/app/views/question/form.phtml:132
+#: phalcon-mvc/app/views/question/form.phtml:146
+#: phalcon-mvc/app/views/question/form.phtml:156
+msgid "Remove Tab"
+msgstr "Ta bort flik"
+
+#: phalcon-mvc/app/views/question/form.phtml:143
+#: phalcon-mvc/app/views/question/form.phtml:152
+msgid "Part"
+msgstr "Del"
+
+#: phalcon-mvc/app/views/question/form.phtml:172
+msgid "Write question"
+msgstr "Skriv fråga"
+
+#: phalcon-mvc/app/views/question/form.phtml:182
+msgid "Write your question here"
+msgstr "Skriv din fråga här"
+
+#: phalcon-mvc/app/views/question/form.phtml:190
+msgid "Add supplementary materials"
+msgstr "Lägg till extramaterial"
+
+#: phalcon-mvc/app/views/question/form.phtml:213
+msgid "Answer options"
+msgstr "Svarsinställningar"
+
+#: phalcon-mvc/app/views/question/form.phtml:224
+msgid "Single line text box"
+msgstr "Enkelrads textbox"
+
+#: phalcon-mvc/app/views/question/form.phtml:237
+msgid "Multi line text box"
+msgstr "Flerraders textbox"
+
+#: phalcon-mvc/app/views/question/form.phtml:264
+msgid "Unlimited"
+msgstr "Obegränsad"
+
+#: phalcon-mvc/app/views/question/form.phtml:280
+msgid "Other:"
+msgstr "Annat:"
+
+#: phalcon-mvc/app/views/question/form.phtml:288
+msgid "Enable spell checker"
+msgstr "Tillåt rättstavning"
+
+#: phalcon-mvc/app/views/question/form.phtml:298
+msgid "Choice box"
+msgstr "Flervals"
+
+#: phalcon-mvc/app/views/question/form.phtml:332
+msgid "Add new option"
+msgstr "Lägg till valmöjlighet"
+
+#: phalcon-mvc/app/views/question/form.phtml:344
+msgid "Drawing Canvas"
+msgstr "Rityta"
+
+#: phalcon-mvc/app/views/question/form.phtml:357
+msgid "Select background image"
+msgstr "Välj bakgrundsbild"
+
+#: phalcon-mvc/app/views/question/form.phtml:383
+msgid "Maximum points:"
+msgstr "Maximalt antal poäng:"
+
+#: phalcon-mvc/app/views/question/form.phtml:401
+msgid "Question Correctors:"
+msgstr "Rättande lärare:"
+
+#: phalcon-mvc/app/views/question/form.phtml:432
+msgid "Media file manager"
+msgstr "Mediafilshanterare"
+
+#: phalcon-mvc/app/views/question/view.phtml:58
+msgid "Test mode activated."
+msgstr "Testläge aktiverat."
+
+#: phalcon-mvc/app/views/question/view.phtml:61
+msgid "You are currently previewing the student view in test mode. Please note that answers will <strong>not</strong> be saved."
+msgstr "Du visar för tillfället studentvyn i testläge. Notera att svar kommer <strong>inte</strong> att sparas."
+
+#: phalcon-mvc/app/views/question/view.phtml:66
+msgid "Finished"
+msgstr "Avslutad"
+
+#: phalcon-mvc/app/views/question/view.phtml:78
+msgid "Careful preview all of your answers before quitting!"
+msgstr "Förhandsgranska dina svar noggrant innan du avslutar!"
+
+#: phalcon-mvc/app/views/question/view.phtml:82
+msgid "All answers seen below has been read directly from the database. If something is wrong, then contact the invigilator immediately."
+msgstr "Alla svar som visas nedan har lästs direkt från databasen. Kontakta skrivningsvakten omedelbart ifall något är fel."
+
+#: phalcon-mvc/app/views/question/view.phtml:84
+msgid "Please sign out and close all opened browser windows once you are satisfied with your answers."
+msgstr "Logga ut och stäng alla webbläsarfönster då du är nöjd med dina svar."
+
+#: phalcon-mvc/app/views/question/view.phtml:92
+msgid "Question is missing."
+msgstr "Frågan saknas."
+
+#: phalcon-mvc/app/views/question/view.phtml:95
+msgid "This exam seems to have no questions. Please inform the invigilator about this problem to get it fixed."
+msgstr "Denna tenta saknar frågor. Informera tentavakten om detta problem för att få det fixat."
+
+#: phalcon-mvc/app/views/question/view.phtml:190
+#: phalcon-mvc/app/views/question/view.phtml:210
+msgid "Your Answer:"
+msgstr "Ditt svar:"
+
+#: phalcon-mvc/app/views/question/view.phtml:214
+msgid "You haven't answered this part."
+msgstr "Du har inte besvarat denna del."
+
+#: phalcon-mvc/app/views/question/view.phtml:223
+msgid "Write your answer here ..."
+msgstr "Skriv ditt svar här..."
+
+#: phalcon-mvc/app/views/question/view.phtml:233
+msgid "Fullscreen"
+msgstr "Fullskärm"
+
+#: phalcon-mvc/app/views/question/view.phtml:262
+msgid "Supplementary material"
+msgstr "Extramaterial"
+
+#: phalcon-mvc/app/views/question/view.phtml:302
+msgid "I would like to review my answer for this question later on, so mark it."
+msgstr "Jag vill återkomma till denna mitt svar på denna fråga, så markera den."
+
+#: phalcon-mvc/app/views/question/view.phtml:310
+#: phalcon-mvc/app/views/question/view.phtml:403
+msgid "Previous Question"
+msgstr "Föregående fråga"
+
+#: phalcon-mvc/app/views/question/view.phtml:318
+#: phalcon-mvc/app/views/question/view.phtml:404
+msgid "Next Question"
+msgstr "Nästa fråga"
+
+#: phalcon-mvc/app/views/question/view.phtml:326
+msgid "Preview your answers for all questions"
+msgstr "Förhandsgranska dina svar på alla frågor."
+
+#: phalcon-mvc/app/views/question/view.phtml:334
+msgid "Change your answer"
+msgstr "Ändra ditt svar"
+
+#: phalcon-mvc/app/views/question/view.phtml:357
+msgid "Missed to answer some questions?"
+msgstr "Har du missat att besvara några frågor?"
+
+#: phalcon-mvc/app/views/question/view.phtml:361
+msgid "One or more questions are not yet answered."
+msgstr "En eller flera frågor har ännu inte besvarats."
+
+#: phalcon-mvc/app/views/question/view.phtml:362
+msgid "Please go back and answer all parts if you have missed one."
+msgstr "Gå tillbaks och besvara alla delar ifall du missat något."
+
+#: phalcon-mvc/app/views/question/view.phtml:369
+msgid "Saving ..."
+msgstr "Sparar..."
+
+#: phalcon-mvc/app/views/question/view.phtml:374
+msgid "Exam instructions: %name%"
+msgstr "Tentainstruktioner: %name%"
+
+#: phalcon-mvc/app/views/question/view.phtml:384
+msgid "General exam instructions: %name%"
+msgstr "Allmänna instruktioner: %name%"
+
+#: phalcon-mvc/app/views/question/view.phtml:388
+msgid "Use the buttons in the heading to minimize the left pane or increase the text size under exam info"
+msgstr "Använd knapparna i sidhuvudet för att minimera vänstra sidan eller förstora textstorleken under tentainfo"
+
+#: phalcon-mvc/app/views/question/view.phtml:389
+msgid "You may again read the instructions, access a preview of all your answers and log out when you are done."
+msgstr "Du kan läsa instruktionerna igen, förhandsgranskning dina svar och logga ut då du är klar."
+
+#: phalcon-mvc/app/views/question/view.phtml:390
+msgid "You can hover over images (in supplementary material) to zoom. You can see full size image by clicking on it."
+msgstr "Du kan hålla muspekaren över bilder (i extramaterial) för att zooma in. Du kan visa bilderna i full storlek genom att klicka på dom."
+
+#: phalcon-mvc/app/views/question/view.phtml:395
+msgid "Important to know:"
+msgstr "Viktigt att veta:"
+
+#: phalcon-mvc/app/views/question/view.phtml:400
+msgid "All your answers are continuously saved every 10 seconds if changed or when switching between question."
+msgstr "Alla dina svar sparas kontinuerligt var tionde sekund om dom ändras eller vid växling mellan frågor."
+
+#: phalcon-mvc/app/views/question/view.phtml:405
+msgid "It is highly recommended that you <u>don't</u> use \"back\" and \"forward\" buttons in the browser to navigate between questions."
+msgstr "Det rekommenderas starkt att du <u>inte</u> använder \"tillbaka\" eller \"framåt\" knapparna i webbläsaren för att navigera mellan frågorna."
+
+#: phalcon-mvc/app/views/question/view.phtml:406
+msgid "Always use the %prevbtn% and %nextbtn% buttons or question links in left hand side menu."
+msgstr "Använda alltid %prevbtn% och %nextbtn% knapparna eller länkarna i menyn på vänster sida."
+
+#: phalcon-mvc/app/views/question/view.phtml:410
+msgid "Please report to invigilator immediately if any button or link do not work."
+msgstr "Rapportera direkt till tentavakten om en knapp eller länk inte fungerar."
+
+#: phalcon-mvc/app/views/question/view.phtml:411
+msgid "In such a case, please don't close/refresh web browser otherwise we may loose your answer."
+msgstr "Stäng inte eller ladda om sidan i webbläsaren i så fall, om du gör det riskerar du att förlora ditt senaste svar."
+
+#: phalcon-mvc/app/views/question/view.phtml:412
+msgid "If you see any error message from system, it is highly important that you <u>don't</u> refresh/close the web page before you report."
+msgstr "Om du ser några felmeddelanden från systemet så rekommenderas det att du <u>inte</u> laddar om eller stänger webbsidan innan du rapperterat felet."
+
+#: phalcon-mvc/app/views/question/view.phtml:429
+msgid "System will not be able to save your answer for this question. Please report this issue to exam invigilators immediately."
+msgstr "Systemet kommer inte att kunna spara ditt svar på denna fråga. Rapportera detta problem direkt till tentavakten."
+
+#: phalcon-mvc/app/views/question/answers.phtml:147
+msgid "Answer correction for %heading%"
+msgstr "Rättning av svar för %heading%"
+
+#: phalcon-mvc/app/views/question/answers.phtml:149
+msgid "Correct the answers for %heading%"
+msgstr "Rätta svaren för %heading%"
+
+#: phalcon-mvc/app/views/question/answers.phtml:190
+msgid "Question no. %slot%"
+msgstr "Frågenummer %slot%"
+
+#: phalcon-mvc/app/views/question/answers.phtml:301
+msgid "Student's answer"
+msgstr "Studentens svar"
+
+#: phalcon-mvc/app/views/question/answers.phtml:328
+#: phalcon-mvc/app/views/question/answers.phtml:510
+msgid "Student did not answer this question."
+msgstr "Studenten har inte besvarat denna fråga."
+
+#: phalcon-mvc/app/views/question/answers.phtml:341
+#: phalcon-mvc/app/views/question/answers.phtml:433
+#: phalcon-mvc/app/views/question/answers.phtml:600
+msgid "Student did not answer this question part."
+msgstr "Studenten har inte besvarat denna frågedel."
+
+#: phalcon-mvc/app/views/question/answers.phtml:348
+#: phalcon-mvc/app/views/question/answers.phtml:524
+msgid "Student's answer is partially correct"
+msgstr "Studentens svar är delvis korrekt"
+
+#: phalcon-mvc/app/views/question/answers.phtml:355
+#: phalcon-mvc/app/views/question/answers.phtml:533
+msgid "Points:"
+msgstr "Poäng:"
+
+#: phalcon-mvc/app/views/question/answers.phtml:396
+#: phalcon-mvc/app/views/question/answers.phtml:561
+msgid "Add your comments here for the student"
+msgstr "Lägg till dina kommentarer för studenten"
+
+#: phalcon-mvc/app/views/question/answers.phtml:408
+msgid "Save result for this question"
+msgstr "Spara resultatet för denna fråga"
+
+#: phalcon-mvc/app/views/question/answers.phtml:417
+#: phalcon-mvc/app/views/question/answers.phtml:583
+msgid "Corrector's comments:"
+msgstr "Kommentar från rättande lärare:"
+
+#: phalcon-mvc/app/views/question/answers.phtml:457
+#: phalcon-mvc/app/views/question/answers.phtml:459
+msgid "Students answer for this question"
+msgstr "Studentens svar för denna fråga"
+
+#: phalcon-mvc/app/views/question/answers.phtml:558
+msgid "Comments:"
+msgstr "Kommentar:"
+
+#: phalcon-mvc/app/views/question/answers.phtml:574
+msgid "Save this result"
+msgstr "Spara detta resultat"
+
+#: phalcon-mvc/app/views/question/answers.phtml:620
+msgid "Download current view as PDF document"
+msgstr "Ladda ner aktuell vy som ett PDF-dokument"
+
+#: phalcon-mvc/app/views/question/answers.phtml:624
+msgid "View online in print friendly format"
+msgstr "Visa online i skrivarvänligt format"
+
+#: phalcon-mvc/app/views/question/answers.phtml:627
+msgid "Reset all results found on this view"
+msgstr "Återställ alla resultat som syns i denna vy"
+
+#: phalcon-mvc/app/views/question/answers.phtml:636
+msgid "Hide fully corrected answers"
+msgstr "Dölj färdigrättade svar"
+
+#: phalcon-mvc/app/views/question/answers.phtml:642
+msgid "Hide media and resource files"
+msgstr "Dölj media och resursfiler"
+
+#: phalcon-mvc/app/views/question/answers.phtml:648
+msgid "Hide uncorrectable answers"
+msgstr "Dölj svar som inte kan rättas"
+
+#: phalcon-mvc/app/views/question/answers.phtml:656
+msgid "Save all results"
+msgstr "Spara alla resultat"

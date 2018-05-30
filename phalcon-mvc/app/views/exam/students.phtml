@@ -78,8 +78,16 @@ foreach ($exam->students as $student) {
     <?php else: ?>
             <div class="tabs">
                 <ul>
-                    <li><a href="#tabs-1">Add new students</a></li>
-                    <li><a href="#tabs-2">Manage existing students</a></li>
+                    <li>
+                        <a href="#tabs-1">
+                            <?= $tr->_("Add new students") ?>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">
+                            <?= $tr->_("Manage existing students") ?>
+                        </a>
+                    </li>
                 </ul>
                 <?php $this->partial("partials/students-add", array('domains' => $domains)) ?>
                 <?php $this->partial("partials/students-list", array('exam' => $exam, 'readonly' => false)) ?>

@@ -125,8 +125,12 @@ if ($question->status == 'removed') {
 
 <!-- Template for new question tab -->
 <li id="question-form-tab-template" role="tab" tabindex="0" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" aria-controls="q-part-1" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true" style="display: none">
-    <a href="#q-part-x" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Template</a>
-    <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span>
+    <a href="#q-part-x" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">
+        <?= $tr->_("Template") ?>
+    </a>
+    <span class="ui-icon ui-icon-close" role="presentation">
+        <?= $tr->_("Remove Tab") ?>
+    </span>
 </li>
 
 <!-- Question form that appears in dialog -->
@@ -134,11 +138,24 @@ if ($question->status == 'removed') {
     <div id="qPartTabs" class="<?= $question->is_editable ? '' : 'oe-disabled'; ?>">
         <?php $tabCounter = 1 ?>
         <ul id="q-part-tabs" style=" <?= ($totalQParts <= 1 ? "display:none" : "") ?>">
-            <li><a href="#q-part-<?= $tabCounter ?>">Part a</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            <li>
+                <a href="#q-part-<?= $tabCounter ?>">
+                    <?= $tr->_("Part") ?> a
+                </a>
+                <span class="ui-icon ui-icon-close" role="presentation">
+                    <?= $tr->_("Remove Tab") ?>
+                </span>
+            </li>
             <?php for ($tabCounter; $tabCounter < $totalQParts; $tabCounter++): ?>
-                    <li><a href="#q-part-<?= $tabCounter + 1 ?>">Part
+                    <li>
+                        <a href="#q-part-<?= $tabCounter + 1 ?>">
+                            <?= $tr->_("Part") ?> 
                             <?= chr($tabCounter + 97) ?>
-                        </a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+                        </a>
+                        <span class="ui-icon ui-icon-close" role="presentation">
+                            <?= $tr->_("Remove Tab") ?>
+                        </span>
+                    </li>
             <?php endfor; ?>
         </ul>
         <div id="q-parts-wrapper">
@@ -151,18 +168,27 @@ if ($question->status == 'removed') {
                     <div id="q-part-<?= $i ?>" class="q-part" style="padding:<?= ($tabCounter <= 1 ? "0px" : "1em 1.4em") ?>;">
                         <div class="accordion">
 
-                            <h3>Write question</h3>
+                            <h3>
+                                <?= $tr->_("Write question") ?>
+                            </h3>
                             <div>
                                 <article class="ac-large">
                                     <div>
                                         <?php $qText = $qParts[$qPartTitle]['q_text']; ?>
-                                        <textarea id="q_text<?= $i ?>" class="write_q_ckeditor" style="width:99%;" rows="1" placeholder="Write your question here"><?= $qText ?>
+                                        <textarea id="q_text<?= $i ?>" 
+                                                  class="write_q_ckeditor" 
+                                                  style="width:99%;" 
+                                                  rows="1" 
+                                                  placeholder="<?= $tr->_("Write your question here") ?>">
+                                                      <?= $qText ?>
                                         </textarea>
                                         <div class="q_resources lib_resources">
                                             <div class="add_resources">
                                                 <a class="add_media" href="#">
                                                     <i class="fa fa-plus-square" aria-hidden="true" style="color: limegreen;"></i>
-                                                    <span> Add supplementary materials</span>
+                                                    <span> 
+                                                        <?= $tr->_("Add supplementary materials") ?>
+                                                    </span>
                                                 </a>
                                             </div>
                                             <ul class="lib_resources_list">
@@ -183,7 +209,9 @@ if ($question->status == 'removed') {
                                 </article>
                             </div>
 
-                            <h3>Answer options</h3>
+                            <h3>
+                                <?= $tr->_("Answer options") ?>
+                            </h3>
                             <?php $qAnsType = $qParts[$qPartTitle]['ans_area']['type'] ?>
                             <div class="answering_options">
                                 <article class="ac-large">
@@ -192,7 +220,9 @@ if ($question->status == 'removed') {
                                             <div class="ans_type_selector_box">
                                                 <label>
                                                     <input class="ans_type_selector" type="radio" value="textbox" <?= ($qAnsType == 'textbox') ? 'checked="checked"' : '' ?> />
-                                                    <span> Single line text box</span> 
+                                                    <span> 
+                                                        <?= $tr->_("Single line text box") ?>
+                                                    </span> 
                                                 </label>
                                             </div>
                                             <div class="ans_type" style=" <?= ($qAnsType == 'textbox') ? 'display:block' : 'display:none' ?>">
@@ -203,7 +233,9 @@ if ($question->status == 'removed') {
                                             <div class="ans_type_selector_box">
                                                 <label>
                                                     <input type="radio"  class="ans_type_selector" value="textarea" <?= ($qAnsType == 'textarea') ? 'checked="checked"' : '' ?>/>
-                                                    <span>Multi line text box</span> 
+                                                    <span>
+                                                        <?= $tr->_("Multi line text box") ?>
+                                                    </span> 
                                                 </label>
                                             </div>
                                             <div class="ans_type" style=" <?= ($qAnsType == 'textarea') ? 'display:block' : 'display:none' ?>">
@@ -229,7 +261,7 @@ if ($question->status == 'removed') {
                                                     <form class="word-count-selector" action="">
                                                         <input type="radio" name="word-count" value="-1" <?= $wordcount == -1 ? 'checked="checked"' : '' ?>>
                                                         <span style="margin-right: 25px; margin-left: 5px"> 
-                                                            Unlimited
+                                                            <?= $tr->_("Unlimited") ?>
                                                         </span>
                                                         <input type="radio" name="word-count" value="100"  <?= $wordcount == 100 ? 'checked="checked"' : '' ?>>
                                                         <span style="margin-right: 25px; margin-left: 5px"> 
@@ -245,7 +277,7 @@ if ($question->status == 'removed') {
                                                         </span>      
                                                         <input type="radio" name="word-count" value="<?= $wordother ? $wordcount : "" ?>" class="word-count-unlimited" <?= $wordother ? 'checked="checked"' : '' ?>>
                                                         <span style="margin-right: 10px; margin-left: 5px"> 
-                                                            Other: 
+                                                            <?= $tr->_("Other:") ?>  
                                                         </span>      
                                                         <input type="text" value="<?= $wordother ? $wordcount : "" ?>" onchange="this.closest('form').querySelectorAll('.word-count-unlimited')[0].value = this.value" class="form-control">
                                                     </form>
@@ -253,7 +285,7 @@ if ($question->status == 'removed') {
                                                 <div style="margin-top: 5px; padding-left: 15px; border-left: 3px solid #dddddd">
                                                     <input type="checkbox" name="spell-check" <?= $spellcheck ? 'checked="checked"' : '' ?>>
                                                     <span style="margin-right: 10px; margin-left: 5px"> 
-                                                        Enable spell checker
+                                                        <?= $tr->_("Enable spell checker") ?>
                                                     </span>      
                                                 </div>
                                             </div>
@@ -262,7 +294,9 @@ if ($question->status == 'removed') {
                                             <div class="ans_type_selector_box">
                                                 <label>
                                                     <input type="radio"  class="ans_type_selector" value="choicebox" <?= ($qAnsType == 'choicebox') ? 'checked="checked"' : '' ?>/>
-                                                    <span>Choice box</span> 
+                                                    <span>
+                                                        <?= $tr->_("Choice box") ?>
+                                                    </span> 
                                                 </label>
                                             </div>
                                             <div class="ans_type" style=" <?= ($qAnsType == 'choicebox') ? 'display:block' : 'display:none' ?>">
@@ -294,7 +328,9 @@ if ($question->status == 'removed') {
                                                         </div>
                                                         <span class="add-new-sortable hideable">
                                                             <i class="fa fa-plus-square" aria-hidden="true" style="color: limegreen;"></i>
-                                                            <a href="#" style="color:grey" onClick="return false">Add new option</a>
+                                                            <a href="#" style="color:grey" onClick="return false">
+                                                                <?= $tr->_("Add new option") ?>
+                                                            </a>
                                                         </span> 
                                                     </div>
                                                 </div>
@@ -304,7 +340,9 @@ if ($question->status == 'removed') {
                                             <div class="ans_type_selector_box">
                                                 <label>
                                                     <input type="radio"  class="ans_type_selector" value="canvas" <?= ($qAnsType == 'canvas') ? 'checked="checked"' : '' ?>/>
-                                                    <span>Drawing Canvas</span> 
+                                                    <span>
+                                                        <?= $tr->_("Drawing Canvas") ?>
+                                                    </span> 
                                                 </label>
                                             </div>
                                             <div class="ans_type" style=" <?= ($qAnsType == 'canvas') ? 'display:block' : 'display:none' ?>">
@@ -315,7 +353,9 @@ if ($question->status == 'removed') {
                                                     <div class="add_resources">
                                                         <a class="set_canvas_background" href="#">
                                                             <i class="fa fa-plus-square" aria-hidden="true" style="color: limegreen;"></i>
-                                                            <span> Select background image</span>
+                                                            <span> 
+                                                                <?= $tr->_("Select background image") ?>
+                                                            </span>
                                                         </a>
                                                     </div>
                                                     <ul class="lib_canvas_background">
@@ -339,7 +379,8 @@ if ($question->status == 'removed') {
 
                             <h3>Points</h3>
                             <div>
-                                <div style="min-height:200px"> Maximum points:
+                                <div style="min-height:200px"> 
+                                    <?= $tr->_("Maximum points:") ?>
                                     <input type="text" class="q-part-points form-control" style="width:50px" value="<?= floatval($qParts[$qPartTitle]['q_points']) ?>" />
                                 </div>
                             </div>
@@ -356,7 +397,8 @@ if ($question->status == 'removed') {
             <br style="clear:both" />
             <div style="margin:0px 10px 10px;" id="q_correctors">
                 <article class="ac-large">
-                    <div style="font-weight:bold"> Question Correctors: 
+                    <div style="font-weight:bold"> 
+                        <?= $tr->_("Question Correctors:") ?> 
                         <a href="#" id="uu-id4" data-model="corrector" qid='<?= $question->id ?>' class="search-catalog-service prevent">
                             <i class="fa fa-plus-circle" aria-hidden="true" style="color: limegreen"></i>
                         </a> 
@@ -387,7 +429,7 @@ if ($question->status == 'removed') {
 </div>
 
 <!-- Dialog for resource selection -->
-<div  id="media-library" style="display:none" title="Media file manager"></div>
+<div  id="media-library" style="display:none" title="<?= $tr->_("Media file manager") ?>"></div>
 
 <script language="javascript">
         var tabId = tabCounter = <?= ($totalQParts ? $totalQParts + 1 : 2) ?>;

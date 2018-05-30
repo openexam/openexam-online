@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 05:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phalcon-mvc/app/views/import/students.phtml:35
+msgid "Select type of data contained in columns using the column header drop-down button."
+msgstr ""
+
+#: phalcon-mvc/app/views/import/students.phtml:36
+msgid "Scroll down and press the 'Import students' button to add students in list to this exam."
+msgstr ""
+
+#: phalcon-mvc/app/views/import/students.phtml:45
+msgid "Select"
+msgstr ""
+
+#: phalcon-mvc/app/views/import/students.phtml:50
+msgid "Username"
+msgstr ""
+
+#: phalcon-mvc/app/views/import/students.phtml:53
+msgid "Anonymous Code"
+msgstr ""
+
+#: phalcon-mvc/app/views/import/students.phtml:56
+msgid "Personal Number"
+msgstr ""
+
+#: phalcon-mvc/app/views/import/students.phtml:59
+msgid "Custom Tag"
+msgstr ""
+
+#: phalcon-mvc/app/views/import/students.phtml:63
+#: phalcon-mvc/app/views/import/students.phtml:81
+msgid "Remove"
+msgstr ""
+
+#: phalcon-mvc/app/views/import/missing.phtml:30
+msgid "The query for current import task did not return any data. Please check for example the group name or course code."
+msgstr ""

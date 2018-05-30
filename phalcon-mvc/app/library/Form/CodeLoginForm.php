@@ -56,14 +56,14 @@ class CodeLoginForm extends Form
                 $this->setAction($this->url->get('auth/login/' . $login->name));
 
                 $this->setUserOption('description', $login->description);
-                $this->setUserOption('information', "Select your exam and use your anonymous code as login. Contact the invigilator if you don't know the code.<br><br>Example code: AB-39845");
+                $this->setUserOption('information', $this->tr->_("Select your exam and use your anonymous code as login. Contact the invigilator if you don't know the code.<br><br>Example code: AB-39845"));
 
-                $this->add(new Password('fpass', array('name' => $login->fpass, 'placeholder' => 'The anonymous code', 'class' => 'form-control')));
+                $this->add(new Password('fpass', array('name' => $login->fpass, 'placeholder' => $this->tr->_('The anonymous code'), 'class' => 'form-control')));
                 $this->add(new Select('fexam', $exams, array('using' => array('id', 'name'), 'name' => $login->fuser, 'class' => 'form-control')));
                 $this->add(new Hidden('fcode', array('name' => 'secret', 'value' => $login->secret)));
                 $this->add(new Hidden("fembed", array('value' => $this->request->get("embed"))));
                 $this->add(new Submit('fcancel', array('id' => 'cancel', 'value' => 'Back', 'class' => 'btn btn-default', 'style' => 'min-width: 80px', 'onclick' => 'history.back(); return false;')));
-                $this->add(new Submit('fsubmit', array('name' => $login->fname, 'value' => 'Login', 'class' => 'btn btn-success', 'style' => 'min-width: 80px')));
+                $this->add(new Submit('fsubmit', array('name' => $login->fname, 'value' => $this->tr->_('Login'), 'class' => 'btn btn-success', 'style' => 'min-width: 80px')));
         }
 
 }

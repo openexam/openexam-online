@@ -32,27 +32,34 @@
         padding: 10px; 
         background-color: white;
     }
-    
+
     span.question-corrector {
         padding-right: 8px;
     }
 </style>
 
-<td title="Corrected: <?= $corrected ?> Percent: <?= $percent ?>%" class="cc aa">
+<td title="<?= $tr->_("Corrected:") ?> <?= $corrected ?> <?= $tr->_("Percent:") ?> <?= $percent ?>%" class="cc aa">
     <span style="white-space: nowrap;"><?= $avarage ?> (<?= floatval($question->score) ?>)</span>
     <div>
-        <button class='q-info-btn btn btn-default no-print' style="white-space: nowrap;"><i class="fa fa-battery-<?= intval($percent / 25) ?> fa-rotate-270"></i> More</button>
+        <button class='q-info-btn btn btn-default no-print' style="white-space: nowrap;">
+            <i class="fa fa-battery-<?= intval($percent / 25) ?> fa-rotate-270"></i> 
+            <?= $tr->_("More") ?>
+        </button>
         <div style="display: none">
             <div class="correction-status">
-                <b>Correction status</b>
+                <b>
+                    <?= $tr->_("Correction status") ?>
+                </b>
                 <div class='question-info-section'>
-                    Answers corrected: <?= $corrected ?><br>
-                    Percent of max score: <?= $percent ?>%
+                    <?= $tr->_("Answers corrected:") ?> <?= $corrected ?><br>
+                    <?= $tr->_("Percent of max score:") ?> <?= $percent ?>%
                 </div>
             </div>
             <hr>
             <div class="question-correctors">
-                <b>Question corrector's</b>
+                <b>
+                    <?= $tr->_("Question corrector's") ?>
+                </b>
                 <?php $correctors = array(); ?>
                 <div class='question-info-section'>
                     <?php foreach ($question->correctors as $corrector): ?>
@@ -68,7 +75,9 @@
                 <br>
                 <a href="mailto:<?= implode(',', $correctors) ?>" class="btn btn-success btn-sm no-print">
                     <i class="fa fa-envelope"></i> 
-                    <span>Contact All</span>
+                    <span>
+                        <?= $tr->_("Contact All") ?>
+                    </span>
                 </a>                
             </div>
         </div>

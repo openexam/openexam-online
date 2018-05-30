@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 05:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phalcon-mvc/app/views/media/library.phtml:151
+msgid "Select resource files from the media library containing your personal files from previous uploads or files shared by other people."
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:152
+msgid "You can choose to share your personal files with others if you like or keep them private."
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:159
+msgid "Resource name"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:165
+msgid "This resource can be used"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:168
+msgid "Only by me"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:171
+msgid "By co-workers on this exam"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:174
+msgid "For anyone in my department or group"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:177
+msgid "By everyone else"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:184
+msgid "Save"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:221
+msgid "Media library"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:233
+msgid "Show personal files"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:236
+msgid "Expand current display"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:248
+msgid "No shared %type% resources was found."
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:288
+msgid "No personal %type% resources was found."
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:331
+msgid "Selected files"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:339
+msgid "Drag and drop or click to upload files from your computer"
+msgstr ""
+
+#: phalcon-mvc/app/views/media/library.phtml:349
+msgid "No files have been uploaded or selected yet."
+msgstr ""

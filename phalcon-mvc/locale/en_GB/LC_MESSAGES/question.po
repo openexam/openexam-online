@@ -1,0 +1,466 @@
+# English translations for openexam-online package.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: phalcon-mvc/app/views/question/correction.phtml:120
+msgid "Exam status"
+msgstr "Exam status"
+
+#: phalcon-mvc/app/views/question/correction.phtml:121
+#: phalcon-mvc/app/views/question/correction.phtml:139
+#, php-format
+msgid "Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>"
+msgstr "Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>"
+
+#: phalcon-mvc/app/views/question/correction.phtml:122
+msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is not yet finished, so you can only monitor the answering progress for students on this exam."
+msgstr "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is not yet finished, so you can only monitor the answering progress for students on this exam."
+
+#: phalcon-mvc/app/views/question/correction.phtml:126
+msgid "Exam investigation"
+msgstr "Exam investigation"
+
+#: phalcon-mvc/app/views/question/correction.phtml:127
+#: phalcon-mvc/app/views/question/correction.phtml:133
+#, php-format
+msgid "Following table shows the final result of all students for the examination <strong>\"%s\"</strong>"
+msgstr "Following table shows the final result of all students for the examination <strong>\"%s\"</strong>"
+
+#: phalcon-mvc/app/views/question/correction.phtml:128
+msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is in enquiry state (correction has finished, but decoding is on hold). In this phase its no longer possible to change student results."
+msgstr "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is in enquiry state (correction has finished, but decoding is on hold). In this phase its no longer possible to change student results."
+
+#: phalcon-mvc/app/views/question/correction.phtml:132
+msgid "Exam score board"
+msgstr "Exam score board"
+
+#: phalcon-mvc/app/views/question/correction.phtml:134
+msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam has been decoded, so it's no longer possible to change student results."
+msgstr "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam has been decoded, so it's no longer possible to change student results."
+
+#: phalcon-mvc/app/views/question/correction.phtml:138
+msgid "Exam correction"
+msgstr "Exam correction"
+
+#: phalcon-mvc/app/views/question/correction.phtml:140
+msgid "Correct answers by student (rows), by question (column) or individual (by index). You can only correct answers for questions published by yourself or those you have been assigned the role as corrector for."
+msgstr "Correct answers by student (rows), by question (column) or individual (by index). You can only correct answers for questions published by yourself or those you have been assigned the role as corrector for."
+
+#: phalcon-mvc/app/views/question/correction.phtml:328
+msgid "Run wizard for enquiry or decoding this exam."
+msgstr "Run wizard for enquiry or decoding this exam."
+
+#: phalcon-mvc/app/views/question/correction.phtml:334
+msgid "Download score board in spreadsheet format"
+msgstr "Download score board in spreadsheet format"
+
+#: phalcon-mvc/app/views/question/correction.phtml:340
+msgid "Open dialog for downloading all or selected students as zip-file"
+msgstr "Open dialog for downloading all or selected students as zip-file"
+
+#: phalcon-mvc/app/views/question/correction.phtml:363
+msgid "Correctors: "
+msgstr "Correctors: "
+
+#: phalcon-mvc/app/views/question/correction.phtml:386
+#: phalcon-mvc/app/views/question/correction.phtml:544
+msgid "Student"
+msgstr "Student"
+
+#: phalcon-mvc/app/views/question/correction.phtml:390
+msgid "Code"
+msgstr "Code"
+
+#: phalcon-mvc/app/views/question/correction.phtml:395
+msgid "F. name"
+msgstr "F. name"
+
+#: phalcon-mvc/app/views/question/correction.phtml:398
+msgid "L. name"
+msgstr "L. name"
+
+#: phalcon-mvc/app/views/question/correction.phtml:401
+msgid "P No."
+msgstr "P No."
+
+#: phalcon-mvc/app/views/question/correction.phtml:406
+msgid "Total score"
+msgstr "Total score"
+
+#: phalcon-mvc/app/views/question/correction.phtml:415
+msgid "Grade"
+msgstr "Grade"
+
+#: phalcon-mvc/app/views/question/correction.phtml:456
+msgid "Failed decode JSON data"
+msgstr "Failed decode JSON data"
+
+#: phalcon-mvc/app/views/question/correction.phtml:522
+msgid "Download student result in PDF-file format"
+msgstr "Download student result in PDF-file format"
+
+#: phalcon-mvc/app/views/question/correction.phtml:530
+msgid "Toggle enquiry flag on this student"
+msgstr "Toggle enquiry flag on this student"
+
+#: phalcon-mvc/app/views/question/correction.phtml:686
+msgid "Color codes used in the score board:"
+msgstr "Color codes used in the score board:"
+
+#: phalcon-mvc/app/views/question/correction.phtml:692
+msgid "Answer has been corrected."
+msgstr "Answer has been corrected."
+
+#: phalcon-mvc/app/views/question/correction.phtml:697
+msgid "This answer should be corrected by another person."
+msgstr "This answer should be corrected by another person."
+
+#: phalcon-mvc/app/views/question/correction.phtml:702
+msgid "No answer was given for this question."
+msgstr "No answer was given for this question."
+
+#: phalcon-mvc/app/views/question/correction.phtml:706
+msgid "The answer is uncorrected or partially corrected."
+msgstr "The answer is uncorrected or partially corrected."
+
+#: phalcon-mvc/app/views/question/correction.phtml:710
+msgid "Student can pass with some grace marks."
+msgstr "Student can pass with some grace marks."
+
+#: phalcon-mvc/app/views/question/correction.phtml:717
+msgid "Exam decode wizard"
+msgstr "Exam decode wizard"
+
+#: phalcon-mvc/app/views/question/correction.phtml:719
+#: phalcon-mvc/app/views/question/correction.phtml:720
+msgid "Download exam result"
+msgstr "Download exam result"
+
+#: phalcon-mvc/app/views/question/form.phtml:129
+msgid "Template"
+msgstr "Template"
+
+#: phalcon-mvc/app/views/question/form.phtml:132
+#: phalcon-mvc/app/views/question/form.phtml:146
+#: phalcon-mvc/app/views/question/form.phtml:156
+msgid "Remove Tab"
+msgstr "Remove Tab"
+
+#: phalcon-mvc/app/views/question/form.phtml:143
+#: phalcon-mvc/app/views/question/form.phtml:152
+msgid "Part"
+msgstr "Part"
+
+#: phalcon-mvc/app/views/question/form.phtml:172
+msgid "Write question"
+msgstr "Write question"
+
+#: phalcon-mvc/app/views/question/form.phtml:182
+msgid "Write your question here"
+msgstr "Write your question here"
+
+#: phalcon-mvc/app/views/question/form.phtml:190
+msgid "Add supplementary materials"
+msgstr "Add supplementary materials"
+
+#: phalcon-mvc/app/views/question/form.phtml:213
+msgid "Answer options"
+msgstr "Answer options"
+
+#: phalcon-mvc/app/views/question/form.phtml:224
+msgid "Single line text box"
+msgstr "Single line text box"
+
+#: phalcon-mvc/app/views/question/form.phtml:237
+msgid "Multi line text box"
+msgstr "Multi line text box"
+
+#: phalcon-mvc/app/views/question/form.phtml:264
+msgid "Unlimited"
+msgstr "Unlimited"
+
+#: phalcon-mvc/app/views/question/form.phtml:280
+msgid "Other:"
+msgstr "Other:"
+
+#: phalcon-mvc/app/views/question/form.phtml:288
+msgid "Enable spell checker"
+msgstr "Enable spell checker"
+
+#: phalcon-mvc/app/views/question/form.phtml:298
+msgid "Choice box"
+msgstr "Choice box"
+
+#: phalcon-mvc/app/views/question/form.phtml:332
+msgid "Add new option"
+msgstr "Add new option"
+
+#: phalcon-mvc/app/views/question/form.phtml:344
+msgid "Drawing Canvas"
+msgstr "Drawing Canvas"
+
+#: phalcon-mvc/app/views/question/form.phtml:357
+msgid "Select background image"
+msgstr "Select background image"
+
+#: phalcon-mvc/app/views/question/form.phtml:383
+msgid "Maximum points:"
+msgstr "Maximum points:"
+
+#: phalcon-mvc/app/views/question/form.phtml:401
+msgid "Question Correctors:"
+msgstr "Question Correctors:"
+
+#: phalcon-mvc/app/views/question/form.phtml:432
+msgid "Media file manager"
+msgstr "Media file manager"
+
+#: phalcon-mvc/app/views/question/view.phtml:58
+msgid "Test mode activated."
+msgstr "Test mode activated."
+
+#: phalcon-mvc/app/views/question/view.phtml:61
+msgid "You are currently previewing the student view in test mode. Please note that answers will <strong>not</strong> be saved."
+msgstr "You are currently previewing the student view in test mode. Please note that answers will <strong>not</strong> be saved."
+
+#: phalcon-mvc/app/views/question/view.phtml:66
+msgid "Finished"
+msgstr "Finished"
+
+#: phalcon-mvc/app/views/question/view.phtml:78
+msgid "Careful preview all of your answers before quitting!"
+msgstr "Careful preview all of your answers before quitting!"
+
+#: phalcon-mvc/app/views/question/view.phtml:82
+msgid "All answers seen below has been read directly from the database. If something is wrong, then contact the invigilator immediately."
+msgstr "All answers seen below has been read directly from the database. If something is wrong, then contact the invigilator immediately."
+
+#: phalcon-mvc/app/views/question/view.phtml:84
+msgid "Please sign out and close all opened browser windows once you are satisfied with your answers."
+msgstr "Please sign out and close all opened browser windows once you are satisfied with your answers."
+
+#: phalcon-mvc/app/views/question/view.phtml:92
+msgid "Question is missing."
+msgstr "Question is missing."
+
+#: phalcon-mvc/app/views/question/view.phtml:95
+msgid "This exam seems to have no questions. Please inform the invigilator about this problem to get it fixed."
+msgstr "This exam seems to have no questions. Please inform the invigilator about this problem to get it fixed."
+
+#: phalcon-mvc/app/views/question/view.phtml:190
+#: phalcon-mvc/app/views/question/view.phtml:210
+msgid "Your Answer:"
+msgstr "Your Answer:"
+
+#: phalcon-mvc/app/views/question/view.phtml:214
+msgid "You haven't answered this part."
+msgstr "You haven't answered this part."
+
+#: phalcon-mvc/app/views/question/view.phtml:223
+msgid "Write your answer here ..."
+msgstr "Write your answer here ..."
+
+#: phalcon-mvc/app/views/question/view.phtml:233
+msgid "Fullscreen"
+msgstr "Fullscreen"
+
+#: phalcon-mvc/app/views/question/view.phtml:262
+msgid "Supplementary material"
+msgstr "Supplementary material"
+
+#: phalcon-mvc/app/views/question/view.phtml:302
+msgid "I would like to review my answer for this question later on, so mark it."
+msgstr "I would like to review my answer for this question later on, so mark it."
+
+#: phalcon-mvc/app/views/question/view.phtml:310
+#: phalcon-mvc/app/views/question/view.phtml:403
+msgid "Previous Question"
+msgstr "Previous Question"
+
+#: phalcon-mvc/app/views/question/view.phtml:318
+#: phalcon-mvc/app/views/question/view.phtml:404
+msgid "Next Question"
+msgstr "Next Question"
+
+#: phalcon-mvc/app/views/question/view.phtml:326
+msgid "Preview your answers for all questions"
+msgstr "Preview your answers for all questions"
+
+#: phalcon-mvc/app/views/question/view.phtml:334
+msgid "Change your answer"
+msgstr "Change your answer"
+
+#: phalcon-mvc/app/views/question/view.phtml:357
+msgid "Missed to answer some questions?"
+msgstr "Missed to answer some questions?"
+
+#: phalcon-mvc/app/views/question/view.phtml:361
+msgid "One or more questions are not yet answered."
+msgstr "One or more questions are not yet answered."
+
+#: phalcon-mvc/app/views/question/view.phtml:362
+msgid "Please go back and answer all parts if you have missed one."
+msgstr "Please go back and answer all parts if you have missed one."
+
+#: phalcon-mvc/app/views/question/view.phtml:369
+msgid "Saving ..."
+msgstr "Saving ..."
+
+#: phalcon-mvc/app/views/question/view.phtml:374
+msgid "Exam instructions: %name%"
+msgstr "Exam instructions: %name%"
+
+#: phalcon-mvc/app/views/question/view.phtml:384
+msgid "General exam instructions: %name%"
+msgstr "General exam instructions: %name%"
+
+#: phalcon-mvc/app/views/question/view.phtml:388
+msgid "Use the buttons in the heading to minimize the left pane or increase the text size under exam info"
+msgstr "Use the buttons in the heading to minimize the left pane or increase the text size under exam info"
+
+#: phalcon-mvc/app/views/question/view.phtml:389
+msgid "You may again read the instructions, access a preview of all your answers and log out when you are done."
+msgstr "You may again read the instructions, access a preview of all your answers and log out when you are done."
+
+#: phalcon-mvc/app/views/question/view.phtml:390
+msgid "You can hover over images (in supplementary material) to zoom. You can see full size image by clicking on it."
+msgstr "You can hover over images (in supplementary material) to zoom. You can see full size image by clicking on it."
+
+#: phalcon-mvc/app/views/question/view.phtml:395
+msgid "Important to know:"
+msgstr "Important to know:"
+
+#: phalcon-mvc/app/views/question/view.phtml:400
+msgid "All your answers are continuously saved every 10 seconds if changed or when switching between question."
+msgstr "All your answers are continuously saved every 10 seconds if changed or when switching between question."
+
+#: phalcon-mvc/app/views/question/view.phtml:405
+msgid "It is highly recommended that you <u>don't</u> use \"back\" and \"forward\" buttons in the browser to navigate between questions."
+msgstr "It is highly recommended that you <u>don't</u> use \"back\" and \"forward\" buttons in the browser to navigate between questions."
+
+#: phalcon-mvc/app/views/question/view.phtml:406
+msgid "Always use the %prevbtn% and %nextbtn% buttons or question links in left hand side menu."
+msgstr "Always use the %prevbtn% and %nextbtn% buttons or question links in left hand side menu."
+
+#: phalcon-mvc/app/views/question/view.phtml:410
+msgid "Please report to invigilator immediately if any button or link do not work."
+msgstr "Please report to invigilator immediately if any button or link do not work."
+
+#: phalcon-mvc/app/views/question/view.phtml:411
+msgid "In such a case, please don't close/refresh web browser otherwise we may loose your answer."
+msgstr "In such a case, please don't close/refresh web browser otherwise we may loose your answer."
+
+#: phalcon-mvc/app/views/question/view.phtml:412
+msgid "If you see any error message from system, it is highly important that you <u>don't</u> refresh/close the web page before you report."
+msgstr "If you see any error message from system, it is highly important that you <u>don't</u> refresh/close the web page before you report."
+
+#: phalcon-mvc/app/views/question/view.phtml:429
+msgid "System will not be able to save your answer for this question. Please report this issue to exam invigilators immediately."
+msgstr "System will not be able to save your answer for this question. Please report this issue to exam invigilators immediately."
+
+#: phalcon-mvc/app/views/question/answers.phtml:147
+msgid "Answer correction for %heading%"
+msgstr "Answer correction for %heading%"
+
+#: phalcon-mvc/app/views/question/answers.phtml:149
+msgid "Correct the answers for %heading%"
+msgstr "Correct the answers for %heading%"
+
+#: phalcon-mvc/app/views/question/answers.phtml:190
+msgid "Question no. %slot%"
+msgstr "Question no. %slot%"
+
+#: phalcon-mvc/app/views/question/answers.phtml:301
+msgid "Student's answer"
+msgstr "Student's answer"
+
+#: phalcon-mvc/app/views/question/answers.phtml:328
+#: phalcon-mvc/app/views/question/answers.phtml:510
+msgid "Student did not answer this question."
+msgstr "Student did not answer this question."
+
+#: phalcon-mvc/app/views/question/answers.phtml:341
+#: phalcon-mvc/app/views/question/answers.phtml:433
+#: phalcon-mvc/app/views/question/answers.phtml:600
+msgid "Student did not answer this question part."
+msgstr "Student did not answer this question part."
+
+#: phalcon-mvc/app/views/question/answers.phtml:348
+#: phalcon-mvc/app/views/question/answers.phtml:524
+msgid "Student's answer is partially correct"
+msgstr "Student's answer is partially correct"
+
+#: phalcon-mvc/app/views/question/answers.phtml:355
+#: phalcon-mvc/app/views/question/answers.phtml:533
+msgid "Points:"
+msgstr "Points:"
+
+#: phalcon-mvc/app/views/question/answers.phtml:396
+#: phalcon-mvc/app/views/question/answers.phtml:561
+msgid "Add your comments here for the student"
+msgstr "Add your comments here for the student"
+
+#: phalcon-mvc/app/views/question/answers.phtml:408
+msgid "Save result for this question"
+msgstr "Save result for this question"
+
+#: phalcon-mvc/app/views/question/answers.phtml:417
+#: phalcon-mvc/app/views/question/answers.phtml:583
+msgid "Corrector's comments:"
+msgstr "Corrector's comments:"
+
+#: phalcon-mvc/app/views/question/answers.phtml:457
+#: phalcon-mvc/app/views/question/answers.phtml:459
+msgid "Students answer for this question"
+msgstr "Students answer for this question"
+
+#: phalcon-mvc/app/views/question/answers.phtml:558
+msgid "Comments:"
+msgstr "Comments:"
+
+#: phalcon-mvc/app/views/question/answers.phtml:574
+msgid "Save this result"
+msgstr "Save this result"
+
+#: phalcon-mvc/app/views/question/answers.phtml:620
+msgid "Download current view as PDF document"
+msgstr "Download current view as PDF document"
+
+#: phalcon-mvc/app/views/question/answers.phtml:624
+msgid "View online in print friendly format"
+msgstr "View online in print friendly format"
+
+#: phalcon-mvc/app/views/question/answers.phtml:627
+msgid "Reset all results found on this view"
+msgstr "Reset all results found on this view"
+
+#: phalcon-mvc/app/views/question/answers.phtml:636
+msgid "Hide fully corrected answers"
+msgstr "Hide fully corrected answers"
+
+#: phalcon-mvc/app/views/question/answers.phtml:642
+msgid "Hide media and resource files"
+msgstr "Hide media and resource files"
+
+#: phalcon-mvc/app/views/question/answers.phtml:648
+msgid "Hide uncorrectable answers"
+msgstr "Hide uncorrectable answers"
+
+#: phalcon-mvc/app/views/question/answers.phtml:656
+msgid "Save all results"
+msgstr "Save all results"

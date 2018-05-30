@@ -50,26 +50,42 @@ use OpenExam\Library\Core\Exam\State;
 
     <div class='alert alert-info alert-dismissable'> 
         <a class='close' data-dismiss='alert' href='#'>&times;</a>
-        <strong>Welcome to OpenExam Online!</strong>
+        <strong>
+            <?= $tr->_("Welcome to OpenExam Online!") ?>
+        </strong>
         <br/><br/>
         <p style="margin-left: 15px">
-            Use the buttons in the heading to minimize the left pane or increase the text size. 
-            Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size.
-            During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done.
+            <?= $tr->_("Use the buttons in the heading to minimize the left pane or increase the text size.") ?>
+            <?= $tr->_("Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size.") ?>
+            <?= $tr->_("During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done.") ?>
         </p>
         <br />
 
         <div id='exam-generic'>
-            <strong>Important to know:</strong><br/><br/>
+            <strong>
+                <?= $tr->_("Important to know:") ?>
+            </strong>
+            <br/><br/>
             <ul>
-                <li>All your answers are automatically saved every 10 seconds.</li>
-                <li>It is highly recommended that you <u>don't</u> use the web browsers "back" and "forward" buttons for navigation. Always use buttons and/or links in the web interface. To open a specific question, you can always click on desired question number appearing in left side menu.</li>
-                <li>Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes. </li>
+                <li>
+                    <?= $tr->_("All your answers are automatically saved every 10 seconds.") ?>
+                </li>
+                <li>
+                    <?= $tr->_("It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation.") ?>
+                    <?= $tr->_("Always use buttons and/or links in the web interface.") ?>
+                    <?= $tr->_("To open a specific question, you can always click on desired question number appearing in left side menu.") ?>
+                </li>
+                <li>
+                    <?= $tr->_("Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes.") ?>
+                </li>
             </ul>
         </div>
 
         <div id='exam-specific' style='display: none'>
-            <strong>Exam instructions:</strong><br/><br/>
+            <strong>
+                <?= $tr->_("Exam instructions:") ?>
+            </strong>
+            <br/><br/>
             <p style="margin-left: 15px">
                 <?= $exam->descr ?>
             </p>
@@ -79,35 +95,74 @@ use OpenExam\Library\Core\Exam\State;
     </div>
 
     <div id='exam-wait-info' style='display: none'>
-        <strong>While waiting:</strong><br/><br/>
+        <strong>
+            <?= $tr->_("While waiting:") ?>
+        </strong>
+        <br/><br/>
         <p style="margin-left: 15px">
-            Why not spend the time waiting for the exam to start with some reading? The student manual will give you a brief introduction to examination part of the system.
+            <?= $tr->_("Why not spend the time waiting for the exam to start with some reading?") ?>
+            <?= $tr->_("The student manual will give you a brief introduction to examination part of the system.") ?>
             <?php if (isset($location['info'])): ?>
-                    Press current location to see information specific to <?= $location['desc'] ?>.
+                    <?= $tr->_("Press current location to see information specific to %location%.", array('location' => $location['desc'])) ?>
             <?php endif; ?>
         </p>
         <center>
             <?php if (isset($location['info'])): ?>
-                    <input class="btn btn-default btn-lg" style="margin: 2px; min-width: 200px" onclick="window.location.assign('<?= $this->url->get('/help/manual/student') ?>')" value="Open student manual" title="Open student manual" type="submit" name="manual" />
-                    <input class="btn btn-default btn-lg" style="margin: 2px; min-width: 200px" onclick="window.location.assign('<?= $this->url->get($location['info']) ?>')" value="Show current location" title="<?= $location['desc'] ?>" type="submit" name="location" />
-            <?php else: ?>
-                    <input class="btn btn-default btn-lg" style="margin: 2px; min-width: 200px" onclick="window.location.assign('<?= $this->url->get('/help/manual/student') ?>')" value="Open student manual" title="Open student manual" type="submit" name="manual" />
-            <?php endif; ?>
+                    <input class="btn btn-default btn-lg" 
+                           style="margin: 2px; min-width: 200px" 
+                           onclick="window.location.assign('<?= $this->url->get('/help/manual/student') ?>')" 
+                           value="<?= $tr->_("Open student manual") ?>" 
+                           title="<?= $tr->_("Open student manual") ?>" 
+                           type="submit" name="manual" 
+                           />
+                    <input class="btn btn-default btn-lg" 
+                           style="margin: 2px; min-width: 200px" 
+                           onclick="window.location.assign('<?= $this->url->get($location['info']) ?>')" 
+                           value="<?= $tr->_("Show current location") ?>" 
+                           title="<?= $location['desc'] ?>" 
+                           type="submit" name="location" 
+                           />
+                   <?php else: ?>
+                    <input class="btn btn-default btn-lg" 
+                           style="margin: 2px; min-width: 200px" 
+                           onclick="window.location.assign('<?= $this->url->get('/help/manual/student') ?>')" 
+                           value="<?= $tr->_("Open student manual") ?>" 
+                           title="<?= $tr->_("Open student manual") ?>" 
+                           type="submit" name="manual" 
+                           />
+                   <?php endif; ?>
         </center>            
     </div>
 
     <div id="exam-start-info" style='display: none'>
-        <strong>Ready to start?</strong><br/><br/>
+        <strong>
+            <?= $tr->_("Ready to start?") ?>
+        </strong>
+        <br/><br/>
         <p style="margin-left: 15px">
-            You have not yet opened the exam, this page is only for showing some information. 
+            <?= $tr->_("You have not yet opened the exam, this page is only for showing some information.") ?>
             <?php if ($exam->lockdown->enable): ?>
-                    Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions.
+                    <?= $tr->_("Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions.") ?>
             <?php else: ?>
-                    This exam has no locking, so you will be able to open it again from another computer until it has finished.
+                    <?= $tr->_("This exam has no locking, so you will be able to open it again from another computer until it has finished.") ?>
             <?php endif; ?>
         </p>
         <center>
-            <input class="btn btn-success btn-lg" style="margin: 2px" onclick="javascript:location.href = '<?= $this->url->get('exam/' . $exam->id . '/question/1') ?>';" value="I am ready, start the exam <?= $testMode ? 'in test mode' : '' ?>" type="button" style=" <?= ((strtotime($exam->starttime) <= strtotime("now")) || $testMode) ? '' : 'display:none' ?>">
+            <?php if ($testMode) : ?>
+                    <input class="btn btn-success btn-lg" 
+                           style="margin: 2px" 
+                           type="button"                   
+                           onclick="javascript:location.href = '<?= $this->url->get('exam/' . $exam->id . '/question/1') ?>';" 
+                           value="<?= $tr->_("I am ready, start the exam in test mode") ?>"
+                           >
+                   <?php else : ?>
+                    <input class="btn btn-success btn-lg" 
+                           style="margin: 2px" 
+                           type="button"
+                           onclick="javascript:location.href = '<?= $this->url->get('exam/' . $exam->id . '/question/1') ?>';" 
+                           value="<?= $tr->_("I am ready, start the exam") ?>"
+                           style=" <?= ((strtotime($exam->starttime) <= strtotime("now"))) ? '' : 'display:none' ?>">
+                   <?php endif; ?>
         </center>
     </div>
 </div>

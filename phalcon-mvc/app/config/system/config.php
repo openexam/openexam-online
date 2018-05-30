@@ -92,7 +92,7 @@ $config = new Config(
                 'tasksDir'       => APP_DIR . '/tasks',
                 'schemasDir'     => BASE_DIR . '/schemas/',
                 'migrationsDir'  => BASE_DIR . '/schemas/migrations/',
-                'localeDir'      => BASE_DIR . '/locale',
+                'localeDir'      => BASE_DIR . '/locale/',
                 'cacheDir'       => BASE_DIR . '/cache/',
                 'auditDir'       => BASE_DIR . '/audit',
                 'logsDir'        => BASE_DIR . '/logs',
@@ -146,7 +146,7 @@ $config = new Config(
                         'name'    => 'openexam-online',
                         'version' => '2.0',
                         'copying' => 'The OpenExam project',
-                        'address' => 'openexam@bmc.uu.se'
+                        'address' => 'i18n@openexam.io'
                 )
         ),
         /**
@@ -164,15 +164,13 @@ $config = new Config(
                                 'phalcon-mvc/app/models',
                                 'phalcon-mvc/app/plugins'
                         ),
-                        'files'       => array(
-                                'phalcon-mvc/app/views/layouts/cardbox.phtml'
-                        )
                 ),
                 'main'       => array(
                         'directories' => array(
                                 'phalcon-mvc/app/views/partials'
                         ),
                         'files'       => array(
+                                'phalcon-mvc/app/views/layouts/cardbox.phtml',
                                 'phalcon-mvc/app/views/layouts/main.phtml'
                         )
                 ),
@@ -187,60 +185,64 @@ $config = new Config(
                  */
                 'auth'       => array(
                         'directories' => array('phalcon-mvc/app/views/auth'),
-                        'merge'       => array('core')
+                        'merge'       => array('main')
                 ),
                 'error'      => array(
                         'directories' => array('phalcon-mvc/app/views/error'),
-                        'merge'       => array('core')
+                        'merge'       => array('main')
                 ),
                 'exam'       => array(
                         'directories' => array('phalcon-mvc/app/views/exam'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
                 'help'       => array(
                         'directories' => array('phalcon-mvc/app/views/help'),
+                        'merge'       => array('main')
+                ),
+                'index'      => array(
+                        'directories' => array('phalcon-mvc/app/views/index'),
                         'merge'       => array('core', 'main')
                 ),
                 'question'   => array(
                         'directories' => array('phalcon-mvc/app/views/question'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main', 'student')
                 ),
                 'result'     => array(
                         'directories' => array('phalcon-mvc/app/views/result'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
                 'signup'     => array(
                         'directories' => array('phalcon-mvc/app/views/signup'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
-                'task'       => array(),
+//                'task'       => array(),
                 /**
                  * Utility controller translation units:
                  */
-                'cache'      => array(),
+//                'cache'      => array(),
                 'export'     => array(
                         'directories' => array('phalcon-mvc/app/views/export'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
                 'import'     => array(
                         'directories' => array('phalcon-mvc/app/views/import'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
                 'media'      => array(
                         'directories' => array('phalcon-mvc/app/views/media'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
                 'monitor'    => array(
                         'directories' => array('phalcon-mvc/app/views/monitor'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
                 'render'     => array(
                         'directories' => array('phalcon-mvc/app/views/render'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 ),
                 'statistics' => array(
                         'directories' => array('phalcon-mvc/app/views/statistics'),
-                        'merge'       => array('core', 'main')
+                        'merge'       => array('main')
                 )
         ),
         /**

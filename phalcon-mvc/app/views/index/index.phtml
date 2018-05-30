@@ -1,5 +1,7 @@
 <?php
 
+use Phalcon\Tag;
+
 /*
  * Copyright (C) 2014-2018 The OpenExam Project
  *
@@ -23,56 +25,69 @@
 // 
 // Author:  Ahsan Shahzad (MedfarmDoIT)
 // 
+
 ?>
 
 <div class="jumbotron box-shadow" style="padding:20px">
-    <h1 class="main">Welcome!</h1>
+    <h1 class="main"><?= $tr->_("Welcome!") ?></h1>
     <br />
-    <div style="padding-bottom:15px">OpenExam is an on line examination system that allows different types of computer-based tests and exams. It replaces traditional paper-based exams if performed in exam halls equipped with computers or in computer class rooms where restricted interned can be controlled. It may also be used for home exams and diagnostic tests on student’s personal devices. The front end of the system is entirely web based, from creating the exam to providing the students with the corrected exams.
+    <div style="padding-bottom:15px">
+        <?= $tr->_("OpenExam is an on line examination system that allows different types of computer-based tests and exams.") ?>
+        <?= $tr->_("It replaces traditional paper-based exams if performed in exam halls equipped with computers or in computer class rooms where restricted interned can be controlled.") ?>
+        <?= $tr->_("It may also be used for home exams and diagnostic tests on student’s personal devices.") ?>
+        <?= $tr->_("The front end of the system is entirely web based, from creating the exam to providing the students with the corrected exams.") ?>
     </div>
     <div style="padding-bottom:10px">
-    Through the links below, teachers and course providers can log in and create an exam, assign different roles to teachers contributing to the exam. Students can also log in and get access to their completed exams and find information about upcoming exams.
-    <?= Phalcon\Tag::linkTo('help/manual', 'Read more..') ?>
+        <?= $tr->_("Through the links below, teachers and course providers can log in and create an exam, assign different roles to teachers contributing to the exam.") ?>
+        <?= $tr->_("Students can also log in and get access to their completed exams and find information about upcoming exams.") ?>
+        <?= Tag::linkTo('help/manual', 'Read more..') ?>
     </div>
 </div>
 
-<div class="row">
+<div class="row" style="padding:10px">
     <div class="col-lg-4 col-md-4 col-sm-4">
-        <h2>Are you a Teacher? </h2>
+        <h2>
+            <?= $tr->_("Are you a Teacher?") ?>
+        </h2>
         <div>
-		<img src="<?=$this->url->get("img/teachers.jpg")?>" style="padding-bottom:15px" />
-                If you are a teacher at Uppsala University or if you have been given access to the system by the administrator you can log in by clicking on "Login" link in top right corner.</a>.<br />
-		If you do not have access, please contact the <a href="#">system administrator.</a><br />
+            <img src="<?= $this->url->get("img/teachers.jpg") ?>" style="padding-bottom:15px;" />
+            <p>
+                <?= $tr->_("If you are a teacher or if you have been given access to the system by the administrator you can log in by clicking on \"Login\" link in top right corner.") ?>
+            </p>
+            <p>
+                <?=
+                $tr->_("If you do not have access, please contact <a href=\"mailto:%addr%\">%name%</a>.", array(
+                        'addr' => $this->config->contact->addr,
+                        'name' => $this->config->contact->name))
+
+                ?>
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4" style="background-color: #f0f0f0">
+        <h2>
+            <?= $tr->_("Are you a Student?") ?>
+        </h2>
+        <div>
+            <img src="<?= $this->url->get("img/students.jpg") ?>" style="padding-bottom:15px" />
+            <p>
+                <?= $tr->_("If you have been registered for computer based exams you can log in by clicking on \"Login\" link in top right corner and find your previous and upcoming exams.") ?>
+                <?= $tr->_("If you cannot log in please contact your course administrator.") ?>
+            </p>
         </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-        <h2>Are you a Student? </h2>
+        <h2>
+            <?= $tr->_("Getting started") ?>
+        </h2>
         <div>
-                <img src="<?=$this->url->get("img/students.jpg")?>" style="padding-bottom:15px" />
-                If you have been registered for computer based exams you can log in by clicking on "Login" link in top right corner and find your previous and upcoming exams. If you cannot log in please contact your course administrator.<br />
+            <img src="<?= $this->url->get("img/flight-sky-earth-space.jpeg") ?>" style="padding-bottom:15px;" />
+            <p>
+                <?= $tr->_("If this is your first use of the system, please take some time to read the student or teacher manual.") ?>
+            </p>
+            <p>
+                <?= Tag::linkTo('help/manual', 'Read the manuals') ?>
+            </p>
         </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4">
-        <h2>News</h2>
-        <div>
-	<em>There are no news for now.</em>
-	</div>
-	<!--<p>
-        <span style="color:#3a87ad">2014-11-18</span><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-	-->
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4">
-        <h2>OpenExam Demo </h2>
-        <div>
-	<!--
-        <ul style="margin-top:0px; margin-bottom:15px">
-        	<li>Are you a teacher? <a href="#">Try!</a></li>
-                <li>Are you a student? <a href="#">Try!</a></li>
-        </ul>
-	-->
-        	<div id="msg-box" class="alert" style="font-weight:normal;text-align:left; position: inherit; width:90%; padding:8px 8px 8px 14px">We are working to setup  OpenExam demo. Thank you for your patience.</div>
-	Please <a href="#">contact</a> if you want to see OpenExam demo.
-	</div>
     </div>
 </div>

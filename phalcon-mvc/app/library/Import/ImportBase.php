@@ -112,23 +112,23 @@ abstract class ImportBase extends Component implements Import
                 if (isset($_FILES['file']['error'])) {
                         switch ($_FILES['file']['error']) {
                                 case UPLOAD_ERR_INI_SIZE:
-                                        throw new ImportException(_("The uploaded file exceeds the upload_max_filesize directive in php.ini."), Error::NOT_ACCEPTABLE);
+                                        throw new ImportException("The uploaded file exceeds the upload_max_filesize directive in php.ini.", Error::NOT_ACCEPTABLE);
                                 case UPLOAD_ERR_FORM_SIZE:
-                                        throw new ImportException(_("The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form."), Error::NOT_ACCEPTABLE);
+                                        throw new ImportException("The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.", Error::NOT_ACCEPTABLE);
                                 case UPLOAD_ERR_PARTIAL:
-                                        throw new ImportException(_("The uploaded file was only partially uploaded."), Error::NOT_ACCEPTABLE);
+                                        throw new ImportException("The uploaded file was only partially uploaded.", Error::NOT_ACCEPTABLE);
                                 case UPLOAD_ERR_NO_FILE:
-                                        throw new ImportException(_("No file was uploaded."), Error::BAD_REQUEST);
+                                        throw new ImportException("No file was uploaded.", Error::BAD_REQUEST);
                                 case UPLOAD_ERR_NO_TMP_DIR:
-                                        throw new ImportException(_("Missing a temporary folder."), Error::INTERNAL_SERVER_ERROR);
+                                        throw new ImportException("Missing a temporary folder.", Error::INTERNAL_SERVER_ERROR);
                                 case UPLOAD_ERR_CANT_WRITE:
-                                        throw new ImportException(_("Failed to write file to disk."), Error::INTERNAL_SERVER_ERROR);
+                                        throw new ImportException("Failed to write file to disk.", Error::INTERNAL_SERVER_ERROR);
                                 case UPLOAD_ERR_EXTENSION:
-                                        throw new ImportException(_("A PHP extension stopped the file upload. PHP does not provide a way to ascertain which extension caused the file upload to stop; examining the list of loaded extensions with phpinfo() may help."), Error::INTERNAL_SERVER_ERROR);
+                                        throw new ImportException("A PHP extension stopped the file upload. PHP does not provide a way to ascertain which extension caused the file upload to stop; examining the list of loaded extensions with phpinfo() may help.", Error::INTERNAL_SERVER_ERROR);
                         }
                 }
                 if (!is_uploaded_file($this->_file)) {
-                        throw new ImportException(_("The file don't reference an uploaded file, possible file attack."), Error::BAD_REQUEST);
+                        throw new ImportException("The file don't reference an uploaded file, possible file attack.", Error::BAD_REQUEST);
                 }
                 if ($this->_mime == FileImport::OCTET_STREAM) {
                         $this->_mime = FileImport::getMimeType($this->_file);
@@ -157,10 +157,10 @@ abstract class ImportBase extends Component implements Import
                 }
 
                 if (!$accepted) {
-                        throw new ImportException(sprintf(_("Wrong MIME type (%s) on uploaded file %s (expected %s)"), $this->_mime, $this->_name, $expected), Error::NOT_ACCEPTABLE);
+                        throw new ImportException(sprintf("Wrong MIME type (%s) on uploaded file %s (expected %s)", $this->_mime, $this->_name, $expected), Error::NOT_ACCEPTABLE);
                 }
                 if ($this->_size == 0) {
-                        throw new ImportException(sprintf(_("Empty file %s uploaded"), $this->_name), Error::BAD_REQUEST);
+                        throw new ImportException(sprintf("Empty file %s uploaded", $this->_name), Error::BAD_REQUEST);
                 }
         }
 

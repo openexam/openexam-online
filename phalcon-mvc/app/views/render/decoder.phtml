@@ -61,22 +61,24 @@
     }
 </style>
 
-<h2>Download result</h2>
+<h2>
+    <?= $tr->_("Download result") ?>
+</h2>
 
 <div class="alert alert-info alert-dismissable">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-    Select student results for download. 
-    Only those students visible in the list below will be part of the download archive.
+    <?= $tr->_("Select student results for download.") ?>
+    <?= $tr->_("Only those students visible in the list below will be part of the download archive.") ?>
 </div>
 
 <div class="download-box">
     <button class="btn btn-success" id="download-visible" style="min-width: 8em">
         <i class="fa fa-download" aria-hidden="true"></i>
-        Download
+        <?= $tr->_("Download") ?>
     </button>
     <button class="btn btn-default" id="download-select"  style="min-width: 8em">
         <i class="fa fa-asterisk" aria-hidden="true"></i>
-        Select
+        <?= $tr->_("Select") ?>
     </button>
     <div class="download-filter">
         <input class="form-control" type="text" placeholder="Quick search" value="" id="filter-students"> 
@@ -85,7 +87,9 @@
         </span> 
     </div>
     <div class="completed-status">
-        <span id="render-completed"><?= 0 ?></span> / <span id="render-total"><?= count($students) ?></span> ready for download
+        <span id="render-completed"><?= 0 ?></span> / 
+        <span id="render-total"><?= count($students) ?></span> 
+        <?= $tr->_("ready for download") ?>
     </div>
 </div>
 
@@ -108,14 +112,32 @@
                     </h4>
                     <div class="alert alert-info status-details" style="display: none">
                         <div><strong class="render-message"></strong></div>
-                        <div>Render status: <span class="render-status"></span></div>
-                        <div>Queued: <span class="render-queued"></span></div>
-                        <div>Finish: <span class="render-finish"></span></div>
-                        <div>Position: <span class="queue-position"></span></div>
+                        <div>
+                            <?= $tr->_("Render status:") ?> 
+                            <span class="render-status"></span>
+                        </div>
+                        <div>
+                            <?= $tr->_("Queued:") ?> 
+                            <span class="render-queued"></span>
+                        </div>
+                        <div>
+                            <?= $tr->_("Finish:") ?> 
+                            <span class="render-finish"></span>
+                        </div>
+                        <div>
+                            <?= $tr->_("Position:") ?> 
+                            <span class="queue-position"></span>
+                        </div>
                     </div>
-                    <button href="#" class="btn btn-default student-remove" style="min-width: 7em">Remove</button>
-                    <button href="#" class="btn btn-default student-status" style="min-width: 7em">Status</button>
-                    <button href="#" class="btn btn-primary student-download" style="min-width: 7em">Download</button>
+                    <button href="#" class="btn btn-default student-remove" style="min-width: 7em">
+                        <?= $tr->_("Remove") ?>
+                    </button>
+                    <button href="#" class="btn btn-default student-status" style="min-width: 7em">
+                        <?= $tr->_("Status") ?>
+                    </button>
+                    <button href="#" class="btn btn-primary student-download" style="min-width: 7em">
+                        <?= $tr->_("Download") ?>
+                    </button>
                 </li>
         <?php endforeach; ?>
     </ul>

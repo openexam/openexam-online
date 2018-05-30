@@ -52,33 +52,35 @@ class HelpController extends GuiController
          * Help content description.
          * @var array 
          */
-        private static $_help = array(
-                "manual" => array(
-                        "name" => "User Manuals",
-                        "data" => array(
-                                "teacher" => array(
-                                        "name" => "The OpenExam Teacher Manual",
-                                        "data" => array(
-                                                "pdf"  => "Portable Document Format (PDF)",
-                                                "docx" => "Microsoft Word OpenXML (Text)"
-                                        ),
-                                        "lang" => array("swedish", "english")
-                                ),
-                                "student" => array(
-                                        "name" => "The OpenExam Student Manual",
-                                        "data" => array(
-                                                "pdf" => "Portable Document Format (PDF)",
-                                                "odt" => "Open Document Format (Text)"
-                                        ),
-                                        "lang" => array("swedish", "english")
-                                )
-                        )
-                )
-        );
+        private static $_help;
 
         public function initialize()
         {
                 parent::initialize();
+
+                self::$_help = array(
+                        "manual" => array(
+                                "name" => $this->tr->_("User Manuals"),
+                                "data" => array(
+                                        "teacher" => array(
+                                                "name" => $this->tr->_("The OpenExam Teacher Manual"),
+                                                "data" => array(
+                                                        "pdf"  => "Portable Document Format (PDF)",
+                                                        "docx" => "Microsoft Word OpenXML (Text)"
+                                                ),
+                                                "lang" => array("swedish", "english")
+                                        ),
+                                        "student" => array(
+                                                "name" => $this->tr->_("The OpenExam Student Manual"),
+                                                "data" => array(
+                                                        "pdf" => "Portable Document Format (PDF)",
+                                                        "odt" => "Open Document Format (Text)"
+                                                ),
+                                                "lang" => array("swedish", "english")
+                                        )
+                                )
+                        )
+                );
 
                 $base = $this->url->get('help');
                 $icon = $this->url->get('img/instruction-manual.jpg');
@@ -119,7 +121,7 @@ class HelpController extends GuiController
         {
                 $filename = sprintf("%s/LICENSE", PROJ_DIR);
                 $content = file_get_contents($filename);
-                
+
                 $this->view->setVar('content', $content);
         }
 

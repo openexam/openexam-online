@@ -30,6 +30,7 @@ namespace OpenExam\Controllers;
 
 use Exception;
 use OpenExam\Library\Core\Error;
+use OpenExam\Library\Globalization\Translate\Gettext\Translate;
 use OpenExam\Library\Security\Exception as SecurityException;
 use OpenExam\Library\Security\Roles;
 use Phalcon\Config;
@@ -55,6 +56,17 @@ class GuiController extends ControllerBase
         {
                 parent::initialize();
 
+                // 
+                // Set translation object. Observe that all core components 
+                // uses the tr service or _() wrapper.
+                // 
+                $controller = $this->dispatcher->getControllerName();
+                $translator = new Translate($controller);
+                $this->view->setVar('tr', $translator);
+
+                // 
+                // Detect request context:
+                // 
                 $this->detectAjaxRequest();
                 $this->detectPrimaryRole();
                 $this->detectRequestParams();

@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 05:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phalcon-mvc/app/views/auth/select.phtml:37
+msgid "Authentication is required to continue"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/select.phtml:41
+msgid "Select authentication method:"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/form.phtml:56
+msgid "Login using %service%"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/form.phtml:64
+msgid "Code:"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/form.phtml:68
+msgid "Exam:"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/form.phtml:74
+msgid "Username:"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/form.phtml:78
+msgid "Password:"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/form.phtml:84
+msgid "Show password"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/login.phtml:38
+msgid "Logged in"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/login.phtml:41
+msgid "You have successful login to %service%"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/logout.phtml:38
+msgid "Logged out"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/logout.phtml:41
+msgid "You have successful logout from %service%"
+msgstr ""
+
+#: phalcon-mvc/app/views/auth/logout.phtml:42
+msgid "Please close any open browser windows to clean up any existing session cookies."
+msgstr ""

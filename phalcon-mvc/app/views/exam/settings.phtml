@@ -70,39 +70,59 @@ if (in_array("editable", $exam->flags)) {
 <div class="exam-settings-box">
     <div class="tabs">
         <ul>
-            <li><a href="#tabs-0">Information</a></li>
-            <li><a href="#tabs-1">General</a></li>
-            <li><a href="#tabs-2">Schedule</a></li>
-            <li><a href="#tabs-3">Grades</a></li>
-            <li><a href="#tabs-4">Instructions</a></li>
-            <li><a href="#tabs-5">Result</a></li>
-            <li><a href="#tabs-6">Correction</a></li>
+            <li><a href="#tabs-0"><?= $tr->_("Information") ?></a></li>
+            <li><a href="#tabs-1"><?= $tr->_("General") ?></a></li>
+            <li><a href="#tabs-2"><?= $tr->_("Schedule") ?></a></li>
+            <li><a href="#tabs-3"><?= $tr->_("Grades") ?></a></li>
+            <li><a href="#tabs-4"><?= $tr->_("Instructions") ?></a></li>
+            <li><a href="#tabs-5"><?= $tr->_("Result") ?></a></li>
+            <li><a href="#tabs-6"><?= $tr->_("Correction") ?></a></li>
         </ul>
 
         <div id="tabs-0">
             <div class="alert alert-info" style="padding: 10px">
-                Please note that you may return at anytime to complete the exam settings. Remember to press the 'Save settings' button. Use 'Check exam' to detect missing tasks to complete.
+                <?= $tr->_("Please note that you may return at anytime to complete the exam settings.") ?>
+                <?= $tr->_("Remember to press the 'Save settings' button.") ?> 
+                <?= $tr->_("Use 'Check exam' to detect missing tasks to complete.") ?>
             </div>
 
             <div class="row">
                 <div class="col-sm-6">
                     <ul>
                         <?php if (empty($exam->name) || empty($exam->starttime) || empty($exam->endtime) || empty($exam->grades)): ?>
-                                <li style="color:#c09853">Please fill up all required fields (marked with <span style="color:#F02222">*</span>) on each separate tab. </li>
+                                <li style="color:#c09853">
+                                    <?= $tr->_("Please fill up all required fields (marked with <span style=\"color:#F02222\">*</span>) on each separate tab.") ?> 
+                                </li>
                         <?php endif; ?>
                         <?php if (count($missingQuestText)): ?>
-                                <li style="color:#c09853">Some questions are empty: <?= implode(", ", $missingQuestText) ?></li>
+                                <li style="color:#c09853">
+                                    <?=
+                                    $tr->_("Some questions are empty: %missing%", array(
+                                            'missing' => implode(", ", $missingQuestText)
+                                    ))
+
+                                    ?>
+                                </li>
                         <?php endif; ?>
                         <?php if (count($missingPoints)): ?>
-                                <li style="color:#c09853">Some questions don't have any credits: <?= implode(", ", $missingPoints) ?></li>
+                                <li style="color:#c09853">
+                                    <?=
+                                    $tr->_("Some questions don't have any credits: %missing%", array(
+                                            'missing' => implode(", ", $missingPoints)
+                                    ))
+
+                                    ?>
+                                </li>
                         <?php endif; ?>
                     </ul>
                 </div>
                 <div class="col-sm-6">
                     <div class="alert alert-success">
-                        Total number of students in exam: <?= count($exam->getStudents()) ?> <br />
-                        Total exam points: <?= $totalScore ?> <br><br>
-                        Created: <?= $exam->created ?>
+                        <?= $tr->_("Total number of students in exam: %students%", array('students' => count($exam->getStudents()))) ?> 
+                        <br />
+                        <?= $tr->_("Total exam points: %score%", array('score' => $totalScore)) ?> 
+                        <br><br>
+                        <?= $tr->_("Created: %created%", array('created' => $exam->created)) ?>
                     </div>                        
                 </div>
             </div>
@@ -110,26 +130,57 @@ if (in_array("editable", $exam->flags)) {
 
         <div id="tabs-1">
             <div class="alert alert-info" style="padding: 10px">
-                The exam title will be shown for students when selecting exam. The organization should not be edited in normal cases as it affects grouping of exams in statistics.
+                <?= $tr->_("The exam title will be shown for students when selecting exam.") ?>
+                <?= $tr->_("The organization should not be edited in normal cases as it affects grouping of exams in statistics.") ?>
             </div>
 
             <div>
-                <label for="exam-title"><strong>Exam title:</strong> <span style="color:#F02222">*</span></label>
-                <input class="form-control" title="The exam name" type="text" value="<?= $exam->name ?>" name="exam-title"  class="validate[required]" style="width:100% !important" <?= $exam->on_disabled ?>>
+                <label for="exam-title">
+                    <strong>
+                        <?= $tr->_("Exam title:") ?>
+                    </strong> 
+                    <span style="color:#F02222">*</span>
+                </label>
+                <input class="form-control" 
+                       title="<?= $tr->_("The exam name") ?>" 
+                       type="text" 
+                       value="<?= $exam->name ?>" 
+                       name="exam-title"  
+                       class="validate[required]" 
+                       style="width:100% !important" <?= $exam->on_disabled ?>
+                       >
             </div>
 
             <div class="row" style="max-width: 480px">
                 <div class='col-sm-6'>
                     <div class="form-group">
-                        <label for="exam-course-code"><strong>Course code:</strong></label>
-                        <input class="form-control" title="Course code of this exam (i.e. 3FK726)" type="text" value="<?= $exam->course ?>" name="exam-course-code" <?= $exam->on_disabled ?>>
+                        <label for="exam-course-code">
+                            <strong>
+                                <?= $tr->_("Course code:") ?>
+                            </strong>
+                        </label>
+                        <input class="form-control" 
+                               title="<?= $tr->_("Course code of this exam (i.e. 3FK726)") ?>" 
+                               type="text" 
+                               value="<?= $exam->course ?>" 
+                               name="exam-course-code" <?= $exam->on_disabled ?>
+                               >
                     </div>
                 </div>
 
                 <div class='col-sm-6'>
                     <div class="form-group">
-                        <label for="exam-code"><strong>Institution code:</strong></label>
-                        <input class="form-control" title="The institition, department or division code from the directory service (i.e. LDAP)" type="text" value="<?= $exam->code ?>" name="exam-code" readonly="true">
+                        <label for="exam-code">
+                            <strong>
+                                <?= $tr->_("Institution code:") ?>
+                            </strong>
+                        </label>
+                        <input class="form-control" 
+                               title="<?= $tr->_("The institition, department or division code from the directory service (i.e. LDAP)") ?>" 
+                               type="text" 
+                               value="<?= $exam->code ?>" 
+                               name="exam-code" 
+                               readonly="true">
                     </div>
                 </div>
             </div>
@@ -145,20 +196,37 @@ if (in_array("editable", $exam->flags)) {
             </datalist>
 
             <div>
-                <label for="unit"><b>Organization:</b> <span style="color:#F02222">*</span></label>
-                <input class="form-control" title="The organization name from directory service (don't edit unless told so)" type="text" value="<?= $exam->orgunit ?>" name="unit" class="validate[required]" list="user-department-list" onclick="this.value = '';" <?= $exam->on_disabled ?>>
+                <label for="unit">
+                    <b><?= $tr->_("Organization:") ?></b> 
+                    <span style="color:#F02222">*</span>
+                </label>
+                <input class="form-control" 
+                       title="<?= $tr->_("The organization name from directory service (don't edit unless told so)") ?>" 
+                       type="text" 
+                       value="<?= $exam->orgunit ?>" 
+                       name="unit" 
+                       class="validate[required]" 
+                       list="user-department-list" 
+                       onclick="this.value = '';" <?= $exam->on_disabled ?>
+                       >
             </div>
         </div>
 
         <div id="tabs-2">
             <div class="alert alert-info" style="padding: 10px">
-                The exam will remain as draft until the start time is set. An exam without end time is treated as an forever ongoing exam (mostly useful for self-diagnostic tests).
+                <?= $tr->_("The exam will remain as draft until the start time is set.") ?>
+                <?= $tr->_("An exam without end time is treated as an forever ongoing exam (mostly useful for self-diagnostic tests).") ?>
             </div>
 
             <div class="row">
                 <div class='col-sm-6'>
                     <div class="form-group">
-                        <label for="start"><b>Exam starts:</b> <span style="color:#F02222">*</span></label>
+                        <label for="start">
+                            <b>
+                                <?= $tr->_("Exam starts:") ?>
+                            </b> 
+                            <span style="color:#F02222">*</span>
+                        </label>
                         <div class="input-group date datetime-exam">
                             <input class="form-control" type="text" placeholder="yyyy-mm-dd hh:mm" value="<?= $exam->starttime ?>" name="start" <?= $exam->on_disabled ?>>
                             <span class="input-group-addon">
@@ -170,7 +238,12 @@ if (in_array("editable", $exam->flags)) {
 
                 <div class='col-sm-6'>
                     <div class="form-group">
-                        <label for="start"><b>Exam ends:</b> <span style="color:#F02222">*</span></label>
+                        <label for="start">
+                            <b>
+                                <?= $tr->_("Exam ends:") ?>
+                            </b> 
+                            <span style="color:#F02222">*</span>
+                        </label>
                         <div class="input-group date datetime-exam">
                             <input class="form-control" type="text" placeholder="yyyy-mm-dd hh:mm" value="<?= $exam->endtime ?>" name="end" <?= $exam->on_disabled ?>>
                             <span class="input-group-addon">
@@ -184,57 +257,92 @@ if (in_array("editable", $exam->flags)) {
 
         <div id="tabs-3">
             <div class="alert alert-info" style="padding: 10px">
-                Input grade:value pairs on separate lines defining the graduation levels in percent for this examination. The first line must be on form name:0, denoting the failed grade.
+                <?= $tr->_("Input grade:value pairs on separate lines defining the graduation levels in percent for this examination.") ?>
+                <?= $tr->_("The first line must be on form name:0, denoting the failed grade.") ?>
             </div>
 
             <label for="grade"><strong>Grades:</strong> <span style="color:#F02222">*</span></label>
-            <textarea class="form-control" style="width: 100%" rows="4" title="The newline separated grades" name="grade" class="grade validate[required]" placeholder="<?= str_pad("U:0", 65, " ") . str_pad("G:50", 60, " ") . "VG:75" ?>"><?= trim($exam->grades) ?></textarea>
+            <textarea class="form-control" 
+                      style="width: 100%" 
+                      rows="4" 
+                      title="<?= $tr->_("The newline separated grades") ?>"
+                      name="grade" 
+                      class="grade validate[required]" 
+                      placeholder="<?= str_pad("U:0", 65, " ") . str_pad("G:50", 60, " ") . "VG:75" ?>"><?= trim($exam->grades) ?>
+            </textarea>
         </div>
 
         <div id="tabs-4">
             <div class="alert alert-info" style="padding: 10px">
-                Student instructions for this exam. Typical information on grades, allowed tools and teacher question time during the exam.
+                <?= $tr->_("Student instructions for this exam. Typical information on grades, allowed tools and teacher question time during the exam.") ?>
             </div>
 
             <div>
-                <label for="exam-desc"><strong>Exam instructions for students:</strong></label>		
-                <textarea class="form-control" id="exam-desc" style="width:99%;" rows="1" placeholder="Write exam description here" <?= $exam->on_disabled ?>><?= trim($exam->descr) ?></textarea>
+                <label for="exam-desc">
+                    <strong>
+                        <?= $tr->_("Exam instructions for students:") ?>
+                    </strong>
+                </label>		
+                <textarea class="form-control" 
+                          id="exam-desc" 
+                          style="width:99%;" 
+                          rows="1" 
+                          placeholder="<?= $tr->_("Write exam description here") ?>" 
+                          <?= $exam->on_disabled ?>
+                          <?= trim($exam->descr) ?>>
+                </textarea>
             </div>    
         </div>
 
         <div id="tabs-5">
             <div class="alert alert-info" style="padding: 10px">
-                Controls the details to expose in student result file. For example, whether to include statistics or correcting teacher.
+                <?= $tr->_("Controls the details to expose in student result file. For example, whether to include statistics or correcting teacher.") ?>
             </div>
 
             <div>
-                <label for="exam-result"><strong>Student results:</strong></label>		
+                <label for="exam-result">
+                    <strong>
+                        <?= $tr->_("Student results:") ?>
+                    </strong>
+                </label>		
 
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="1" title="Expose names and contact information for people involved in the creation and correction process in the result PDF seen by the student." <?= ((($exam->details & Exam::RESULT_EXPOSE_EMPLOYEES) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
-                        Show correcting teachers.                                
+                        <input type="checkbox" 
+                               value="1" 
+                               title="<?= $tr->_("Expose names and contact information for people involved in the creation and correction process in the result PDF seen by the student.") ?>" 
+                               <?= ((($exam->details & Exam::RESULT_EXPOSE_EMPLOYEES) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
+                               <?= $tr->_("Show correcting teachers.") ?> 
                     </label>
                 </div>
 
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="2" title="Include statistics like avarage/mean values and score distribution compared to other students in the result PDF seen by the student." <?= ((($exam->details & Exam::RESULT_OTHERS_STATISTICS) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
-                        Include section with statistics.
+                        <input type="checkbox" 
+                               value="2" 
+                               title="<?= $tr->_("Include statistics like avarage/mean values and score distribution compared to other students in the result PDF seen by the student.") ?>" 
+                               <?= ((($exam->details & Exam::RESULT_OTHERS_STATISTICS) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
+                               <?= $tr->_("Include section with statistics.") ?>
                     </label>
                 </div>
 
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="64" title="Don't include student grade calculated by the system. This option is useful when the actual grading is finalized outside of the system." <?= ((($exam->details & Exam::HIDE_STUDENT_GRADE_IN_RESULT) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
-                        Hide student grade section.
+                        <input type="checkbox" 
+                               value="64" 
+                               title="<?= $tr->_("Don't include student grade calculated by the system. This option is useful when the actual grading is finalized outside of the system.") ?>" 
+                               <?= ((($exam->details & Exam::HIDE_STUDENT_GRADE_IN_RESULT) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
+                               <?= $tr->_("Hide student grade section.") ?>
                     </label>
                 </div>
 
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="16" title="Forge (blur/hide) media content like images when rendering the PDF with student results. Select this option if media content should only be viewable by students during the exam." <?= ((($exam->details & Exam::HIDE_MEDIA_CONTENT_IN_RESULT) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
-                        Hide rendered media content (i.e. images).
+                        <input type="checkbox" 
+                               value="16" 
+                               title="<?= $tr->_("Forge (blur/hide) media content like images when rendering the PDF with student results. Select this option if media content should only be viewable by students during the exam.") ?>" 
+                               <?= ((($exam->details & Exam::HIDE_MEDIA_CONTENT_IN_RESULT) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
+                               <?= $tr->_("Hide rendered media content (i.e. images).") ?>
                     </label>
                 </div>
             </div>
@@ -242,24 +350,34 @@ if (in_array("editable", $exam->flags)) {
 
         <div id="tabs-6">
             <div class="alert alert-info" style="padding: 10px">
-                Controls the details to expose in score board during correction. Affects users having the corrector role.
+                <?= $tr->_("Controls the details to expose in score board during correction. Affects users having the corrector role.") ?>
             </div>
 
             <div>
-                <label for="exam-correction"><strong>Exam correction:</strong></label>		
+                <label for="exam-correction">
+                    <strong>
+                        <?= $tr->_("Exam correction:") ?>
+                    </strong>
+                </label>		
 
                 <div class="checkbox">
                     <label>
 
-                        <input type="checkbox" value="4" title="Display student statistics like scoring percentage during correction. Might have an influence on correcting teacher." <?= ((($exam->details & Exam::SHOW_SUMMARY_DURING_CORRECTION) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
-                        Show student's accumulated points in score board.
+                        <input type="checkbox" 
+                               value="4" 
+                               title="<?= $tr->_("Display student statistics like scoring percentage during correction. Might have an influence on correcting teacher.") ?>" 
+                               <?= ((($exam->details & Exam::SHOW_SUMMARY_DURING_CORRECTION) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
+                               <?= $tr->_("Show student's accumulated points in score board.") ?>
                     </label>
                 </div>
 
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="32" title="Display students anonymous code during correction. Leave disabled if same persons that registered students are going to participate in the answer correction." <?= ((($exam->details & Exam::SHOW_CODE_DURING_CORRECTION) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
-                        Show student's anonymous code in score board.
+                        <input type="checkbox" 
+                               value="32" 
+                               title="<?= $tr->_("Display students anonymous code during correction. Leave disabled if same persons that registered students are going to participate in the answer correction.") ?> 
+                               <?= ((($exam->details & Exam::SHOW_CODE_DURING_CORRECTION) != 0) ? 'checked="checked"' : '') ?> name="details[]" >
+                               <?= $tr->_("Show student's anonymous code in score board.") ?>
                     </label>
                 </div>
             </div>
@@ -271,11 +389,15 @@ if (in_array("editable", $exam->flags)) {
         <center>
             <span style="min-width: 10em" class="btn btn-success save-exam-settings">
                 <i class="fa fa-floppy-o"></i>
-                <span>Save settings</span>
+                <span>
+                    <?= $tr->_("Save settings") ?>
+                </span>
             </span>
             <span style="min-width: 10em" class="btn btn-success check-exam">
                 <i class="fa fa-check-square"></i>
-                <span>Check exam</span>
+                <span>
+                    <?= $tr->_("Check exam") ?>
+                </span>
             </span>
         </center>		
     </div>   

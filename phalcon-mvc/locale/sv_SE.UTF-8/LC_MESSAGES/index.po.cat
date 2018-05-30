@@ -1,0 +1,1734 @@
+# Swedish translations for openexam-online package
+# Svenska översättningar för paket openexam-online.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"#-#-#-#-#  index.po (openexam-online 2.0)  #-#-#-#-#\n"
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:53+0200\n"
+"PO-Revision-Date: 2018-05-28 03:55+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"#-#-#-#-#  core.po (openexam-online 2.0)  #-#-#-#-#\n"
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 05:20+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 04:46+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 32
+msgid "Welcome!"
+msgstr "Välkommen!"
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 35
+msgid "OpenExam is an on line examination system that allows different types of computer-based tests and exams."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 36
+msgid "It replaces traditional paper-based exams if performed in exam halls equipped with computers or in computer class rooms where restricted interned can be controlled."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 37
+msgid "It may also be used for home exams and diagnostic tests on student’s personal devices."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 38
+msgid "The front end of the system is entirely web based, from creating the exam to providing the students with the corrected exams."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 41
+msgid "Through the links below, teachers and course providers can log in and create an exam, assign different roles to teachers contributing to the exam."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 42
+msgid "Students can also log in and get access to their completed exams and find information about upcoming exams."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 50
+msgid "Are you a Teacher?"
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 55
+msgid "If you are a teacher or if you have been given access to the system by the administrator you can log in by clicking on \"Login\" link in top right corner."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 59
+msgid "If you do not have access, please contact <a href=\"mailto:%addr%\">%name%</a>."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 69
+msgid "Are you a Student?"
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 74
+msgid "If you have been registered for computer based exams you can log in by clicking on \"Login\" link in top right corner and find your previous and upcoming exams."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 75
+msgid "If you cannot log in please contact your course administrator."
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 81
+msgid "Getting started"
+msgstr ""
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 86
+msgid "If this is your first use of the system, please take some time to read the student or teacher manual."
+msgstr ""
+#
+# File: phalcon-mvc/app/config/system/services.php, line: 266
+msgid "Swedish"
+msgstr "Svenska"
+#
+# File: phalcon-mvc/app/config/system/services.php, line: 267
+msgid "English (US)"
+msgstr "Engelska (US)"
+#
+# File: phalcon-mvc/app/config/system/services.php, line: 268
+msgid "English (GB)"
+msgstr "Engelska (GB)"
+#
+# File: phalcon-mvc/app/config/system/services.php, line: 269
+msgid "Browser Default"
+msgstr "Webbläsarens Förvalda"
+#
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 540
+msgid "Student (Code: %code%)"
+msgstr "Student (Kod: %code%)"
+#
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 548
+msgid "Student (ID: %id%)"
+msgstr "Student (ID: %id%)"
+#
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 593
+msgid "Question (Q%slot%) answered by student (Code: %code%)"
+msgstr "Fråga (Q%slot) besvarad av student (Kod: %code%)"
+#
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 602
+msgid "Question (Q%slot%) answered by student (ID: %id%)"
+msgstr "Fråga (Q%slot) besvarad av student (ID: %id%)"
+#
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 643
+msgid "Question (Q%slot%)"
+msgstr "Fråga (Q%slot%)"
+#
+# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 63
+msgid "User Manuals"
+msgstr "Användarnanualer"
+#
+# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 66
+msgid "The OpenExam Teacher Manual"
+msgstr "Lärarmanual för OpenExam"
+#
+# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 74
+msgid "The OpenExam Student Manual"
+msgstr "Studentmanual för OpenExam"
+#
+# File: phalcon-mvc/app/library/Form/CodeLoginForm.php, line: 59
+msgid "Select your exam and use your anonymous code as login. Contact the invigilator if you don't know the code.<br><br>Example code: AB-39845"
+msgstr "Välj din tenta och använd din anonyma kod för inloggning. Kontakta skrivningsvakten ifall du inte känner till din kod.<br><br>Exempelkod: AB-39845"
+#
+# File: phalcon-mvc/app/library/Form/CodeLoginForm.php, line: 61
+msgid "The anonymous code"
+msgstr "Anonym kod"
+#
+# File: phalcon-mvc/app/library/Form/CodeLoginForm.php, line: 66
+# File: phalcon-mvc/app/library/Form/UserLoginForm.php, line: 59
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 289
+msgid "Login"
+msgstr "Logga in"
+#
+# File: phalcon-mvc/app/library/Form/LoginSelect.php, line: 59
+msgid "Continue"
+msgstr "Fortsätt"
+#
+# File: phalcon-mvc/app/library/Form/UserLoginForm.php, line: 53
+msgid "Use your domain account for login. Contact the invigilator if you have any questions or problem with the login.<br><br>Example username: john1234@user.uu.se"
+msgstr "Använd ditt domänkonto för inloggning. Kontakta tentavakten om du har frågor eller problem att logga in.<br><br>Exempel på användarnamn: john1234@user.uu.se"
+#
+# File: phalcon-mvc/app/library/Form/UserLoginForm.php, line: 56
+msgid "Type your password"
+msgstr "Skriv ditt lösenord"
+#
+# File: phalcon-mvc/app/library/Form/UserLoginForm.php, line: 58
+msgid "Back"
+msgstr "Tillbaka"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Students.php, line: 95
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 206
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 133
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 173
+# File: phalcon-mvc/app/library/Core/Statistics.php, line: 186
+# File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 110
+msgid "Students"
+msgstr "Studenter"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 113
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 127
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 177
+msgid "System Users"
+msgstr "Systemanvändare"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 164
+# File: phalcon-mvc/app/library/Core/Statistics.php, line: 176
+msgid "Users"
+msgstr "Användare"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 194
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 136
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 161
+msgid "Admins"
+msgstr "Administratörer"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 196
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 128
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 163
+# File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 28
+msgid "Contributors"
+msgstr "Bidragare"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 198
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 129
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 165
+msgid "Correctors"
+msgstr "Rättande lärare"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 200
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 130
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 167
+msgid "Creators"
+msgstr "Skapare"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 202
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 131
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 169
+# File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 29
+msgid "Decoders"
+msgstr "Avkodare"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 204
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 132
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 171
+# File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 30
+msgid "Invigilators"
+msgstr "Tentavakter"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Users.php, line: 208
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 137
+# File: phalcon-mvc/app/library/Organization/DataProvider/Roles.php, line: 175
+msgid "Teachers"
+msgstr "Lärare"
+#
+# File: phalcon-mvc/app/library/Organization/DataProvider/Employees.php, line: 95
+# File: phalcon-mvc/app/library/Core/Statistics.php, line: 182
+msgid "Employees"
+msgstr "Anställda"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 65
+msgid "Partition"
+msgstr "Partition"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 74
+msgid "Partition Statistics (%part%)"
+msgstr "Partitionsstatistik (%part%)"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 85
+msgid "Read and write statistics for this partition."
+msgstr "Läs- och skrivstatistik för denna partition."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 98
+msgid "I/O"
+msgstr "I/O"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 99
+msgid "Total request and sector I/O for this partition."
+msgstr "Total förfrågningar och sektor I/O för denna partition."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 101
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 106
+msgid "Reads"
+msgstr "Läsningar"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 102
+msgid "Total number of reads issued to this partition."
+msgstr "Totala antal läsningar startade för denna partition."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 105
+msgid "Sectors (Read)"
+msgstr "Sektorer (Läsningar)"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 106
+msgid "Total read sectors for partition."
+msgstr "Totalt antal lästa sektorer för partitionen."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 109
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 126
+msgid "Writes"
+msgstr "Skrivningar"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 110
+msgid "Total number of writes issued to this partition."
+msgstr "Totala antal skrivningar startade för denna partition."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 113
+msgid "Requests (Write)"
+msgstr "Förfrågningar (Skrivning)"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Partition.php, line: 114
+msgid "Total number of write requests made for partition."
+msgstr "Totalt antal skrivningar startade för denna partition."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 93
+msgid "Apache"
+msgstr "Apache"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 102
+msgid "Apache Web Server"
+msgstr "Apache Webbserver"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 111
+msgid "Performance counter for the Apache Web Server"
+msgstr "Prestandaräknare för Apache webbserver"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 124
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 127
+msgid "Sockets"
+msgstr "Sockets"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 125
+msgid "Total number of socket (inclusing closed) by Apache"
+msgstr "Totalt antal sockets (inklusive stängda) använda av Apache"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 128
+msgid "Network or UNIX domain sockets"
+msgstr "Nätverk och UNIX-domän sockets."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 131
+msgid "Mutex"
+msgstr "Mutex"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 132
+msgid "File system mutex or lock files"
+msgstr "Filsystem mutex eller låsfiler"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 135
+msgid "Event"
+msgstr "Händelse"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 136
+msgid "Event poll socket"
+msgstr "Händelse-pollad socket"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 139
+msgid "Pipe"
+msgstr "Pipe"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 140
+msgid "File system pipe"
+msgstr "Filsystem pipe"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 143
+msgid "File"
+msgstr "Fil"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 144
+msgid "Standard file or device"
+msgstr "Standardfil eller enhet"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 147
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 228
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 101
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 179
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 109
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 129
+# File: phalcon-mvc/app/library/Core/Statistics.php, line: 178
+msgid "Total"
+msgstr "Totalt"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 148
+msgid "Total number of files in used"
+msgstr "Totalt antal använda filer"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 152
+msgid "State"
+msgstr "Tillstånd"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 153
+msgid "Socket connection state"
+msgstr "Tillstånd för socket-anslutning"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 155
+msgid "Established"
+msgstr "Upprättad"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 156
+msgid "The socket has an established connection."
+msgstr "Socketen har en etablerad anslutning."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 159
+msgid "Syn Sent"
+msgstr "Syn Sent"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 160
+msgid "The socket is actively attempting to establish a connection."
+msgstr "Socketen försöker aktivt att skapa en anslutning."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 163
+msgid "Syn Recv"
+msgstr "Syn Recv"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 164
+msgid "A connection request has been received from the network."
+msgstr "En förfrågan om anslutning har tagits emot från nätverket."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 167
+msgid "Fin Wait 1"
+msgstr "Fin Wait 1"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 168
+msgid "The socket is closed, and the connection is shutting down."
+msgstr "Socketen är stängd och anslutningen stänger ner."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 171
+msgid "Fin Wait 2"
+msgstr "Fin Wait 2"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 172
+msgid "Connection is closed, and the socket is waiting for a shutdown from the remote end."
+msgstr "Socketen är stängs och väntar väntar på nerkoppling från den andra sidan."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 175
+msgid "Time Wait"
+msgstr "Time Wait"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 176
+msgid "The socket is waiting after close to handle packets still in the network."
+msgstr "Socketen väntar efter stängning på att hantera paket som fortfarande finns på nätverket."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 179
+msgid "Closed"
+msgstr "Stängd"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 180
+msgid "The socket is not being used."
+msgstr "Socketen används inte."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 183
+msgid "Close Wait"
+msgstr "Close Wait"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 184
+msgid "The remote end has shut down, waiting for the socket to close."
+msgstr "Den andra sidan har stängt ner, väntar på socketen att stänga."
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 187
+msgid "Last Ack"
+msgstr "Last Ack"
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 188
+msgid "The remote end has shut down, and the socket is closed. Waiting for acknowledgement."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 191
+msgid "Listen"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 192
+msgid "The socket is listening for incoming connections."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 195
+msgid "Closing"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 196
+msgid "Both sockets are shut down but we still don't have all our data sent."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 200
+msgid "Queue"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 201
+msgid "Socket I/O pending read/write"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 203
+msgid "Send"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 204
+msgid "The number of bytes waiting in output buffers to be sent"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 207
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 102
+msgid "Receive"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 208
+msgid "The number of bytes in input buffers waiting to be received"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 212
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 251
+msgid "Load"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 213
+msgid "Apache process load"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 215
+msgid "Last Minute"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 216
+msgid "Load since last minute"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 219
+msgid "5 Minutes"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 220
+msgid "Load during last 5 minutes"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 223
+msgid "15 Minutes"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 224
+msgid "Load during last 15 minutes"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 229
+msgid "Overall transfer and request statistics"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 231
+msgid "Access"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 232
+msgid "The number of requests made since last restart"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 235
+msgid "kBytes"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 236
+msgid "The number of kilo bytes transfered since last restart"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 240
+msgid "CPU"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 241
+msgid "CPU time consumed by the Apache process"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 243
+msgid "User"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 244
+msgid "User space CPU time"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 247
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 196
+msgid "System"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 248
+msgid "Kernel space CPU time"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 252
+msgid "Avarage system load"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 256
+msgid "Requests"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 257
+msgid "Current request footprint"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 259
+msgid "#/sec"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 260
+msgid "Requests per second"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 263
+msgid "kB/sec"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 264
+msgid "Bytes transfered per second"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 267
+msgid "kB/req"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 268
+msgid "Bytes per request in avarage"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 272
+msgid "Workers"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 273
+msgid "Number of workers handling incoming connections"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 275
+msgid "Busy"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 276
+msgid "Number of busy workers (in use)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 279
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 127
+msgid "Idle"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Apache.php, line: 280
+msgid "Number of idle workers (waiting)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 65
+msgid "File System"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 74
+msgid "File System %name%"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 85
+msgid "Usage information for mounted file system."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 98
+msgid "Usage"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 99
+msgid "Total size and used space of file system."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 102
+msgid "The total size of file system (MB)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 105
+msgid "Used"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 106
+msgid "The used space in file system (MB)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 109
+msgid "Free"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 110
+msgid "Teh free space in file system (MB)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 85
+msgid "MySQL"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 94
+msgid "MySQL Database Server"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 103
+msgid "Performance counter for MySQL"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 116
+msgid "Queries"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 117
+msgid "SQL command execution counters"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 119
+msgid "Delete"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 120
+msgid "Number of DELETE statements executed"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 123
+msgid "Insert"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 124
+msgid "Number of INSERT statements executed"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 127
+msgid "Select"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 128
+msgid "Number of SELECT queries runned"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 131
+msgid "Update"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 132
+msgid "Number of UPDATE statements executed"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 135
+msgid "Slow"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 136
+msgid "The number of queries that have taken more than the predefined number of seconds."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 140
+msgid "Transactions"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 141
+msgid "SQL transaction statistics"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 143
+msgid "Begin"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 144
+msgid "Number of BEGIN statements issued"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 147
+msgid "Commit"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 148
+msgid "Number of COMMIT statements issued"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 151
+msgid "Rollback"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 152
+msgid "Number of ROLLBACK statements issued"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 156
+msgid "Threads"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 157
+msgid "Server thread statistics"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 159
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 155
+msgid "Cached"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 160
+msgid "The number of threads in the thread cache."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 163
+msgid "Connected"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 164
+msgid "The number of currently open connections."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 167
+msgid "Created"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 168
+msgid "The number of threads created to handle connections."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 171
+msgid "Running"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 172
+msgid "The number of threads that are not sleeping."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 176
+msgid "Connections"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 177
+msgid "Network connection statistics"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 180
+msgid "The number of connection attempts (successful or not) to the MySQL server."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 183
+msgid "Max Used"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 184
+msgid "The maximum number of connections that have been in use simultaneously since the server started."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 188
+msgid "Transfer"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 189
+msgid "Network I/O transfer statistics"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 191
+msgid "Bytes Received"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 192
+msgid "The number of bytes received from all clients."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 195
+msgid "Bytes Sent"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 196
+msgid "The number of bytes sent to all clients."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 200
+msgid "Aborted"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 201
+msgid "Connection aborted statistics"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 203
+msgid "Clients"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 204
+msgid "The number of connections that were aborted because the client died without closing the connection properly."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 207
+msgid "Connects"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 208
+msgid "The number of failed attempts to connect to the MySQL server."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 73
+msgid "Disk"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 82
+msgid "Disk Performance (%disk%)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 93
+msgid "Disk I/O (read/write) statistics."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 107
+msgid "Statistics for read operation."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 110
+msgid "Total reads completed successfully."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 113
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 133
+msgid "Merged"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 114
+msgid "Grouped reads (resulting in one I/O)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 117
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 137
+msgid "Sectors"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 118
+msgid "Sectors read successfully."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 121
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 141
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 153
+msgid "Summary"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 122
+msgid "Milliseconds spent reading."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 127
+msgid "Statistics for write operation."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 130
+msgid "Total writes completed successfully."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 134
+msgid "Grouped writes (resulting in one I/O)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 138
+msgid "Sectors written successfully."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 142
+msgid "Milliseconds spent writing."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 146
+msgid "Disk I/O"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 147
+msgid "Statistics for current I/O operations"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 149
+msgid "Current"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 150
+msgid "I/O in progress."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Disk.php, line: 154
+msgid "Seconds spent for I/O."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 69
+msgid "Network"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 78
+msgid "Network Interface (%nic%)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 89
+msgid "Performance counter for network interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 103
+msgid "Information about incoming traffic on network interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 105
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 141
+msgid "Bytes"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 106
+msgid "The total number of bytes of data received by the interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 109
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 145
+msgid "Packets"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 110
+msgid "The total number of packets of data received by the interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 113
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 149
+msgid "Errors"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 114
+msgid "The total number of receive errors detected by the device driver"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 117
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 153
+msgid "Dropped"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 118
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 154
+msgid "The total number of packets dropped by the device driver"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 121
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 157
+msgid "FIFO"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 122
+msgid "The number of FIFO buffer errors (underruns)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 125
+msgid "Frame"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 126
+msgid "The number of packet framing errors (e.g. too-long, ring-buffer overflow, CRC or alignment)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 129
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 169
+msgid "Compressed"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 130
+msgid "The number of compressed packets received by the device driver"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 133
+msgid "Multicast"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 134
+msgid "The number of multicast frames transmitted or received by the device driver"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 138
+msgid "Transmit"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 139
+msgid "Information about outgoing traffic on network interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 142
+msgid "The total number of bytes of data transmitted by the interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 146
+msgid "The total number of packets of data transmitted by the interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 150
+msgid "The total number of transmit errors detected by the device driver"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 158
+msgid "The number of FIFO buffer errors (overruns)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 161
+msgid "Collisions"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 162
+msgid "The number of collisions detected on the interface"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 165
+msgid "Carrier"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 166
+msgid "The number of carrier losses detected by the device driver (incl. aborted, window size and heartbeat errors)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Network.php, line: 170
+msgid "The number of compressed packets transmitted by the device driver"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 85
+msgid "Server"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 94
+msgid "Virtual Memory Counters"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 103
+msgid "Information about processes, memory, paging, block I/O and CPU activity."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 116
+msgid "Processor (CPU)"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 117
+msgid "These are percentages of total CPU time."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 119
+msgid "User Mode"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 120
+msgid "Time spent running non-kernel code."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 123
+msgid "Kernel Mode"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 124
+msgid "Time spent running kernel code."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 128
+msgid "Time spent idle."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 131
+msgid "I/O Wait"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 132
+msgid "Time spent waiting for IO."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 135
+msgid "Stolen"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 136
+msgid "Time stolen from a virtual machine."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 140
+msgid "Memory"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 141
+msgid "RAM and swap used, including disk cache and buffers."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 143
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 160
+msgid "Swap"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 144
+msgid "The amount of virtual memory used."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 147
+msgid "Free Memory"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 148
+msgid "The amount of idle (unused) memory."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 151
+msgid "Buffered"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 152
+msgid "The amount of memory used as buffers."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 156
+msgid "The amount of memory used as cache."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 161
+msgid "Usage of disk paging."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 163
+msgid "Pages In"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 164
+msgid "Amount of memory swapped in from disk (/s)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 167
+msgid "Pages Out"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 168
+msgid "Amount of memory swapped to disk (/s)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 172
+msgid "Processes"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 173
+msgid "Information about running processes."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 175
+msgid "Runnable"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 176
+msgid "The number of runnable processes (running or waiting for run time)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 179
+msgid "Sleeping"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 180
+msgid "The number of processes in uninterruptible sleep."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 184
+msgid "Block I/O"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 185
+msgid "Read/write for block devices."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 187
+msgid "Block In"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 188
+msgid "Blocks received from a block device (blocks/s)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 191
+msgid "Block Out"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 192
+msgid "Blocks sent to a block device (blocks/s)."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 197
+msgid "IRQ and context switches."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 199
+msgid "Interrupts"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 200
+msgid "The number of interrupts per second, including the clock."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 203
+msgid "Context Switches"
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Monitor/Performance/Counter/Server.php, line: 204
+msgid "The number of context switches per second."
+msgstr ""
+#
+# File: phalcon-mvc/app/library/Core/Statistics.php, line: 167
+msgid "Roles"
+msgstr "Roller"
+#
+# File: phalcon-mvc/app/library/Core/Statistics.php, line: 172
+msgid "Exams"
+msgstr "Tentor"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Actions.php, line: 127
+msgid "Open exam"
+msgstr "Öppna tenta"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Actions.php, line: 143
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 107
+msgid "Add questions"
+msgstr "Lägg till frågor"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Actions.php, line: 155
+msgid "View exam"
+msgstr "Visa tenta"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 106
+msgid "Decoded"
+msgstr "Avkodad"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 108
+msgid "Enquiry"
+msgstr "Utredning"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 110
+msgid "Corrected"
+msgstr "Rättad"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 112
+msgid "Finished"
+msgstr "Avslutad"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 114
+msgid "Answered"
+msgstr "Besvarad"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 116
+msgid "Ongoing"
+msgstr "Pågående"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 118
+msgid "Started"
+msgstr "Startad"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 120
+msgid "Published"
+msgstr "Publicerad"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Progress.php, line: 122
+msgid "Upcoming"
+msgstr "Kommande"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 94
+msgid "Suggested task"
+msgstr "Föreslagna uppgifter"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 99
+msgid "Remaining task"
+msgstr "Återstående uppgifter"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 110
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 55
+msgid "Add students"
+msgstr "Lägg till studenter"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 113
+msgid "Exam is ready for use"
+msgstr "Tentan är redo att användas"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 116
+msgid "Publish exam"
+msgstr "Publicera tenta"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 119
+msgid "Set exam name"
+msgstr "Sätt tentanamn"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 124
+msgid "Set exam security"
+msgstr "Ställ in säkerhet"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 126
+msgid "Set exam lockdown"
+msgstr "Ställ in nerlåsning"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 128
+msgid "Set exam location"
+msgstr "Sätt plats för tentan"
+#
+# File: phalcon-mvc/app/library/Gui/Component/Exam/Check.php, line: 133
+msgid "Set exam start time"
+msgstr ""
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
+msgid "Corrected:"
+msgstr "Rättade:"
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
+msgid "Percent:"
+msgstr "Procent:"
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 46
+msgid "More"
+msgstr "Mer"
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 51
+msgid "Correction status"
+msgstr "Rättningsstatus"
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 54
+msgid "Answers corrected:"
+msgstr "Rättade svar:"
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 55
+msgid "Percent of max score:"
+msgstr "Procent av max-poäng:"
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 61
+msgid "Question corrector's"
+msgstr "Rättande lärare"
+#
+# File: phalcon-mvc/app/views/partials/question-info.phtml, line: 79
+msgid "Contact All"
+msgstr "Kontakta alla"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 54
+msgid "Registered students in this exam"
+msgstr "Registrerade studenter på denna tenta"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 58
+msgid "Click inside table cells to edit their content."
+msgstr "Klicka inuti tabellcell för att editera innehållet."
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 59
+msgid "Dates are omitted from display whenever they coincidence with exam start or end date."
+msgstr "Datum är dolda från visning om dom överlappar med tentans start- eller slutdatum."
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 60
+msgid "Input time as hh:mm with optional date, use the suggested date/time as a guide."
+msgstr "Skriv in tid som hh:mm med valfritt datum, använd föreslaget datum/tid som en guide."
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 67
+msgid "No students have been added to the exam yet."
+msgstr "Inga studenter har lagts till på tentan ännu."
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 74
+msgid "Download"
+msgstr "Ladda ner"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 86
+msgid "Filter students"
+msgstr "Filtrera studenter"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 93
+msgid "Name"
+msgstr "Namn"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 94
+msgid "Username"
+msgstr "Användarnamn"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 95
+msgid "Person no."
+msgstr "Person-nr."
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 96
+msgid "Start time"
+msgstr "Starttid"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 97
+msgid "End time"
+msgstr "Sluttid"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 98
+msgid "Code"
+msgstr "Kod"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 99
+msgid "Tag"
+msgstr "Märkning"
+#
+# File: phalcon-mvc/app/views/partials/students-list.phtml, line: 142
+msgid "Save"
+msgstr "Spara"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 34
+msgid "Add single or multiple"
+msgstr "Lägg till enstaka eller flera"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 38
+msgid "Write identities (username or personal number) and anonymous code (optional, system will generate one if missing) of single or multiple students."
+msgstr "Skriv identiteter (användarnamn eller personnummer) och anonym kod (valfri, systemet kommer att generera en ifall den saknas) för enstaka eller flera studenter."
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 39
+msgid "Separate identity and anonymous code by whitespace."
+msgstr "Separera identiteter och anonym kod med mellanslag eller tabb-tecken."
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 42
+msgid "Input multiple students at once by separating them with newline:"
+msgstr "Ange flera studenter på en gång genom att separera dessa med radbrytning:"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 61
+msgid "Import from file"
+msgstr "Importera från fil"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 66
+msgid "Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag."
+msgstr "Ladda upp filen med studenter att importera. Studenter kan importeras via användarnamn eller personnummer, med valfritt angiven anonym kod och/eller märkning."
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 77
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 128
+msgid "Auto Detect"
+msgstr "Känn igen automatiskt"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 82
+msgid "OpenDocument Format Spreadsheet (*.ods,*.ots)"
+msgstr "OpenDocument Format Kalkylblad (*.ods,*.ots)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 87
+msgid "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
+msgstr "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 92
+msgid "Microsoft Excel 2003 XML (*.xml)"
+msgstr "Microsoft Excel 2003 XML (*.xml)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 97
+msgid "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
+msgstr "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 102
+msgid "TAB Separated Values (*.tab,*.tsv,*.txt)"
+msgstr "TAB-Separerade Värden (*.tab,*.tsv,*.txt)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 107
+msgid "CSV File (*.csv)"
+msgstr "CSV-Fil (*.csv)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 112
+msgid "Gnumeric Spreadsheet (*.gnumeric)"
+msgstr "Gnumeric Kalkylblad (*.gnumeric)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 117
+msgid "HTML Document (*.htm,*.html)"
+msgstr "HTML Dokument (*.htm,*.html)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 122
+msgid "SYLK Document (*.slk,*.sylk)"
+msgstr "SYLK Dokument (*.slk,*.sylk)"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 139
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 181
+msgid "Import students"
+msgstr "Importera studenter"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 145
+msgid "Import from group"
+msgstr "Importera från grupp"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 150
+msgid "Supply the name of a group to import students from."
+msgstr "Ange namnet på grupper som studenter ska importeras ifrån."
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 151
+msgid "The name could e.g. be a course code or a domain group."
+msgstr "Namnet kan t.ex. vara en kurskod eller en domängrupp."
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 152
+msgid "The search can be restricted to a single domain."
+msgstr "Sökningen kan begränsas till en enstaka domän."
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 158
+msgid "Group name:"
+msgstr "Gruppnamn:"
+#
+# File: phalcon-mvc/app/views/partials/students-add.phtml, line: 164
+msgid "Domain:"
+msgstr "Domän:"
+#
+# File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 79
+msgid "No user has been added"
+msgstr "Inga användare har lagts till"
+#
+# File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 130
+msgid "Questions"
+msgstr "Frågor"
+#
+# File: phalcon-mvc/app/views/partials/user-search.phtml, line: 41
+msgid "User insert and catalog service search"
+msgstr "Inläggning av användare och katalogsökning"
+#
+# File: phalcon-mvc/app/views/partials/user-search.phtml, line: 44
+msgid "Search:"
+msgstr "Sök:"
+#
+# File: phalcon-mvc/app/views/partials/user-search.phtml, line: 47
+msgid "Search for user or add username"
+msgstr "Sök efter användare eller lägg till användarnamn"
+#
+# File: phalcon-mvc/app/views/partials/user-search.phtml, line: 53
+msgid "Add"
+msgstr "Lägg till"
+#
+# File: phalcon-mvc/app/views/partials/user-search.phtml, line: 63
+msgid "Insert existing user:"
+msgstr "Lägg in existerande användare:"
+#
+# File: phalcon-mvc/app/views/partials/user-search.phtml, line: 78
+msgid "Display email address instead of username"
+msgstr "Visa e-postadress istället för användarnamn"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 64
+msgid "Download audio file"
+msgstr "Ladda ner ljudfil"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 68
+msgid "Download video file"
+msgstr "Ladda ner videofil"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 72
+msgid "Download image file"
+msgstr "Ladda ner bildfil"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 78
+msgid "Download PDF"
+msgstr "Ladda ner PDF"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 84
+msgid "Download spreadsheet"
+msgstr "Ladda ner kalkylblad"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 90
+msgid "Download text document"
+msgstr "Ladda ner textdokument"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 96
+msgid "Download presentation"
+msgstr "Ladda ner presentation"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 102
+msgid "Download archive file"
+msgstr "Ladda ner arkivfil"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 115
+msgid "The media content has been hidden on request from teacher"
+msgstr "Mediainnehållet har dolts på begäran från läraren"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 133
+msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+msgstr "Slå på javascript för att visa denna videofil och fundera på att uppdatera till en webbläsare som <a href=\"%link%\" target=\"%target%\">stödjer HTML5 video/audio</a>"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 152
+msgid "To listen to this audio file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på att uppdatera till en webbläsare som <a href=\"%link%\" target=\"%target%\">stödjer HTML5 video/audio</a>"
+#
+# File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 171
+msgid "The media content has been blurred on request from teacher"
+msgstr ""
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 156
+msgid "Home"
+msgstr "Hem"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 163
+msgid "My Exams"
+msgstr "Mina tentor"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 174
+msgid "Language"
+msgstr "Språk"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 191
+msgid "Task"
+msgstr "Uppgifter"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 197
+msgid "Create Exam..."
+msgstr "Skapa tenta..."
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 202
+msgid "Contribute Questions"
+msgstr "Bidra med frågor"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 207
+msgid "Correct Answers"
+msgstr "Rätta svar"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 212
+msgid "Invigilate Exam"
+msgstr "Vakta tenta"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 217
+msgid "Decode Exam"
+msgstr "Avkoda tenta"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 222
+msgid "Download Results"
+msgstr "Ladda ner resultat"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 233
+msgid "Tools"
+msgstr "Verktyg"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 238
+msgid "Statistics"
+msgstr "Statistik"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 241
+msgid "Diagnostics"
+msgstr "Diagnostik"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 247
+msgid "High Contrast"
+msgstr "Hög kontrast"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 258
+msgid "Help"
+msgstr "Hjälp"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 263
+msgid "Teacher Manual"
+msgstr "Lärarmanual"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 266
+msgid "Student Manual"
+msgstr "Studentmanual"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 269
+msgid "Show All..."
+msgstr "Visa alla..."
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 269
+msgid "Open page with manuals in other languages and formats in new window."
+msgstr "Öppna sida med manualer i andra språk och format i ett nytt fönster."
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 273
+msgid "About"
+msgstr "Om"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 284
+msgid "Logout"
+msgstr "Logga ut"
+#
+# File: phalcon-mvc/app/views/layouts/main.phtml, line: 332
+msgid "About OpenExam Online"
+msgstr "Om OpenExam Online"

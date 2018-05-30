@@ -34,8 +34,10 @@
 </style>
 
 <div class="oe-login">
-    <h2 class="success">Logged in</h2>
+    <h2 class="success">
+        <?= $tr->_("Logged in") ?>
+    </h2>
     <p>
-        You have successful login to <?= $auth->description; ?>. 
+        <?= $tr->_("You have successful login to %service%", array('service' => $auth->description)) ?> 
     </p>
 </div>

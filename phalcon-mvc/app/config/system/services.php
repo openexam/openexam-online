@@ -260,7 +260,7 @@ $di->set(
 /**
  * The locale service. Detect prefered locale on first use.
  */
-$di->set('locale', function() use($config) {
+$di->set('locale', function() use($config, $di) {
         $locale = new OpenExam\Library\Globalization\Locale\Locale();
         $locale->setLocales(array(
                 'sv_SE.UTF-8' => _('Swedish'),

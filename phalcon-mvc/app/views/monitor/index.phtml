@@ -26,19 +26,35 @@
 
 ?>
 
-<h1>System Monitoring</h1>
+<h1>
+    <?= $tr->_("System Monitoring") ?>
+</h1>
 
-<p>Click on one of the buttons below to start.</p>
+<p>
+    <?= $tr->_("Click on one of the buttons below to start.") ?>
+</p>
 
-<ul><li>The performance page displays various counters useful for diagnostic bottlenecks in the system (like CPU, memory or network utilization).</li>
-    <li>The diagnostics page is used to monitor health of system services (for example authentication or directory services).</li>
+<ul>
+    <li>
+        <?= $tr->_("The performance page displays various counters useful for diagnostic bottlenecks in the system (like CPU, memory or network utilization).") ?>
+    </li>
+    <li>
+        <?= $tr->_("The diagnostics page is used to monitor health of system services (for example authentication or directory services).") ?>
+    </li>
 </ul>
 <br/>
-<p><i class="fa fa-exclamation"></i> These tools are strictly for system monitoring and are probably of zero to none interest for ordinary users.</p>
+<p>
+    <i class="fa fa-exclamation"></i> 
+    <?= $tr->_("These tools are strictly for system monitoring and are probably of zero to none interest for ordinary users.") ?>
+</p>
 <br/>
 <div>
-    <button id="performance" class="btn btn-primary">Performance</button>
-    <button id="diagnostics" class="btn btn-primary">Diagnostics</button>
+    <button id="performance" class="btn btn-primary">
+        <?= $tr->_("Performance") ?>
+    </button>
+    <button id="diagnostics" class="btn btn-primary">
+        <?= $tr->_("Diagnostics") ?>
+    </button>
 </div>
 
 <script>

@@ -61,45 +61,45 @@
     switch ($type[0]) {
             case 'audio':
                     $icon = 'file-audio-o';
-                    $desc = 'Download audio file';
+                    $desc = $tr->_('Download audio file');
                     break;
             case 'video':
                     $icon = 'file-video-o';
-                    $desc = 'Download video file';
+                    $desc = $tr->_('Download video file');
                     break;
             case 'image':
                     $icon = 'file-image-o';
-                    $desc = 'Download image file';
+                    $desc = $tr->_('Download image file');
                     break;
             case 'application':
                     switch ($type[1]) {
                             case 'pdf':
                                     $icon = 'file-pdf-o';
-                                    $desc = 'Download PDF';
+                                    $desc = $tr->_('Download PDF');
                                     break;
                             case 'vnd.oasis.opendocument.spreadsheet':
                             case 'octet-stream':
                             case 'vnd.ms-office':
                                     $icon = 'file-excel-o';
-                                    $desc = 'Download spreadsheet';
+                                    $desc = $tr->_('Download spreadsheet');
                                     break;
                             case 'vnd.openxmlformats-officedocument.wordprocessingml.document':
                             case 'vnd.oasis.opendocument.text':
                             case 'msword':
                                     $icon = 'file-word-o';
-                                    $desc = 'Download text document';
+                                    $desc = $tr->_('Download text document');
                                     break;
                             case 'vnd.openxmlformats-officedocument.presentationml.presentation':
                             case 'vnd.oasis.opendocument.presentation':
                             case 'vnd.ms-powerpoint':
                                     $icon = 'file-powerpoint-o';
-                                    $desc = 'Download presentation';
+                                    $desc = $tr->_('Download presentation');
                                     break;
                             case 'zip':
                             case 'x-gzip':
                             case 'java-archive':
                                     $icon = 'file-archive-o';
-                                    $desc = 'Download archive file';
+                                    $desc = $tr->_('Download archive file');
                                     break;
                     }
                     break;
@@ -111,7 +111,9 @@
             <div style="position: relative">
                 <img src="<?= $url->get('img/pexels-photo-87216-camera.jpeg') ?>" style="max-width:100%">
                 <div class="resource-file-hidden">
-                    <h3>The media content has been hidden on request from teacher</h3>
+                    <h3>
+                        <?= $tr->_("The media content has been hidden on request from teacher") ?>
+                    </h3>
                 </div>
             </div>
             <?php $href = '#' ?>
@@ -127,11 +129,12 @@
                         data-setup='{}'>
                         <source src="<?= $href ?>" type="<?= $mime ?>"></source>
                         <p class="vjs-no-js">
-                            To view this video file please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="http://videojs.com/html5-video-support/" target="_blank">
-                                supports HTML5 video/audio
-                            </a>
+                            <?=
+                            $tr->_("To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>", array(
+                                    'link'   => 'http://videojs.com/html5-video-support/',
+                                    'target' => '_blank'))
+
+                            ?>
                         </p>
                     </video>
             <?php elseif ($type[0] == 'audio') : ?>
@@ -145,11 +148,12 @@
                         data-setup='{}'>
                         <source src="<?= $href ?>" type="<?= $mime ?>"></source>
                         <p class="vjs-no-js">
-                            To listen to this audio file please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="http://videojs.com/html5-video-support/" target="_blank">
-                                supports HTML5 audio/audio
-                            </a>
+                            <?=
+                            $tr->_("To listen to this audio file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>", array(
+                                    'link'   => 'http://videojs.com/html5-video-support/',
+                                    'target' => '_blank'))
+
+                            ?>
                         </p>
                     </audio>
             <?php elseif ($type[0] == 'image') : ?>
@@ -163,7 +167,9 @@
                             <image xlink:href="<?= $href ?>" y="0px" x="15px" width="250px" height="250px" filter="url(#blur)">  
                             </image> 
                             </svg>                                                                                                
-                            <div class="resource-file-blurred">The media content has been blurred on request from teacher</div>
+                            <div class="resource-file-blurred">
+                                <?= $tr->_("The media content has been blurred on request from teacher") ?>
+                            </div>
                             <?php $href = '#' ?>
                     <?php else : ?>
                             <img class="img-zoom" src="<?= $href ?>" data-zoom-image="<?= $href ?>" style="background-color:#f9f9f9; max-width:100%;">

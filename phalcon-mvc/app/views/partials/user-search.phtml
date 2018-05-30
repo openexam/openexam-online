@@ -38,16 +38,20 @@
 </style>
 
 <!-- User search/add/select box -->
-<div id="user-insert-box" class="user-insert-box" style="display:none;" title="User insert and catalog service search">
+<div id="user-insert-box" class="user-insert-box" style="display:none;" title="<?= $tr->_("User insert and catalog service search") ?>">
     <div class="user-search-box">
-        <label for="user-search">Search:</label>
+        <label for="user-search">
+            <?= $tr->_("Search:") ?>
+        </label>
         <div class="form-inline">
-            <input class="form-control user-search" placeholder="Search for user or add username">
+            <input class="form-control user-search" placeholder="<?= $tr->_("Search for user or add username") ?>">
             <a href="#" class="user-search-add">
                 <div style="display: block; float: right">
                     <span class="btn btn-success">
                         <i class="fa fa-plus-circle"></i>
-                        <span>Add</span>
+                        <span>
+                            <?= $tr->_("Add") ?>
+                        </span>
                     </span>
                 </div>                        
             </a>
@@ -55,7 +59,9 @@
     </div>
     <hr>
     <div class="user-insert-staff">
-        <span>Insert existing user:</span>
+        <span>
+            <?= $tr->_("Insert existing user:") ?>
+        </span>
         <div style="margin-top: 5px; margin-left: 15px">
             <?php foreach ($staff->users as $user => $data) : ?>
                     <div class="user-staff-entry">
@@ -69,7 +75,7 @@
         <div class="checkbox">
             <label>
                 <input type="checkbox" class="user-insert-show-mail">
-                Display email address instead of username
+                <?= $tr->_("Display email address instead of username") ?>
             </label>
         </div>
     </div>

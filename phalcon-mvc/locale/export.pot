@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 05:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phalcon-mvc/app/views/export/students.phtml:66
+msgid "Department:"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:73
+msgid "Start:"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:78
+msgid "End:"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:90
+msgid "Contact:"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:97
+msgid "Name"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:100
+msgid "Pers Nr"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:103
+msgid "Code"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:106
+msgid "User"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:109
+msgid "Tag"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:112
+msgid "ID"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:115
+msgid "Finished"
+msgstr ""
+
+#: phalcon-mvc/app/views/export/students.phtml:118
+msgid "Notes"
+msgstr ""

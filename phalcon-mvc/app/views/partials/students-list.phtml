@@ -50,24 +50,29 @@ if (!$cdt->etime) {
 </style>
 
 <div id="tabs-2">
-    <h4>Registered students in this exam</h4>
+    <h4>
+        <?= $tr->_("Registered students in this exam") ?>
+    </h4>
 
     <div class="alert alert-info">
-        Click inside table cells to edit their content. Dates are omitted from display whenever they coincidence with exam start or end date. 
-        Input time as hh:mm with optional date, use the suggested date/time as a guide.
+        <?= $tr->_("Click inside table cells to edit their content.") ?>
+        <?= $tr->_("Dates are omitted from display whenever they coincidence with exam start or end date.") ?>
+        <?= $tr->_("Input time as hh:mm with optional date, use the suggested date/time as a guide.") ?>
     </div>
 
     <div style="clear:both"></div>
 
     <?php if (!count($exam->students)): ?>
             <div id="no-student-msg" class="data-missing">
-                No students have been added to the exam yet.
+                <?= $tr->_("No students have been added to the exam yet.") ?>
             </div>
     <?php else: ?>
             <div id="print-students-list" style="float:left; display: inline; margin-bottom: 10px; margin-right: 5px;">        
                 <span class="btn btn-success">
                     <i class="fa fa-print"></i>
-                    <span>Download</span>
+                    <span>
+                        <?= $tr->_("Download") ?>
+                    </span>
                 </span>
             </div>                                
 
@@ -78,20 +83,20 @@ if (!$cdt->etime) {
                 </span>
             </div>
             <div class="student-search-box" style="float:right">
-                <input class="form-control" id="search-students" type="text" placeholder="Filter students"/>
+                <input class="form-control" id="search-students" type="text" placeholder="<?= $tr->_("Filter students") ?>"/>
                 <span class="toolbtn toolbtn-orange-outline filter-students"><i class="fa fa-search fa-2x"></i></span>
             </div>
             <table id="all-students-table" style="width:100%" class="tablesorter">
                 <thead>
                     <tr>
                         <th class="no-sort"><input id="select_all_students" type="checkbox" value="1" <?= $readonly ? "disabled" : "" ?>></th>
-                        <th>Name</th>
-                        <th>Username</th>
-                        <th>Person no.</th>
-                        <th>Start time</th>
-                        <th>End time</th>
-                        <th>Code</th>
-                        <th>Tag</th>
+                        <th><?= $tr->_("Name") ?></th>
+                        <th><?= $tr->_("Username") ?></th>
+                        <th><?= $tr->_("Person no.") ?></th>
+                        <th><?= $tr->_("Start time") ?></th>
+                        <th><?= $tr->_("End time") ?></th>
+                        <th><?= $tr->_("Code") ?></th>
+                        <th><?= $tr->_("Tag") ?></th>
                     </tr>    
                 </thead>
                 <tbody>
@@ -133,7 +138,9 @@ if (!$cdt->etime) {
                                 <td class="st-exam-item-save">
                                     <span class="btn btn-default" style="visibility: hidden;">
                                         <i class="fa fa-save"></i>
-                                        <span> Save</span>
+                                        <span>
+                                            <?= $tr->_("Save") ?>
+                                        </span>
                                     </span>
                                 </td>
                             </tr>

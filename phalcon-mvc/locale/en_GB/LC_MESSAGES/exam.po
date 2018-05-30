@@ -1,0 +1,1098 @@
+# English translations for openexam-online package.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: phalcon-mvc/app/views/exam/decode.phtml:39
+msgid "Decode wizard for exam %name%"
+msgstr "Decode wizard for exam %name%"
+
+#: phalcon-mvc/app/views/exam/decode.phtml:47
+msgid "This dialog is for decoding the exam. Click cancel button to stop this wizard at any time or next to advance to next step."
+msgstr "This dialog is for decoding the exam. Click cancel button to stop this wizard at any time or next to advance to next step."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:52
+msgid "Step 1"
+msgstr "Step 1"
+
+#: phalcon-mvc/app/views/exam/decode.phtml:55
+msgid "You should only run this wizard when correction is completed."
+msgstr "You should only run this wizard when correction is completed."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:56
+msgid "Each step will provide enough information and no changes will be done without your confirmation."
+msgstr "Each step will provide enough information and no changes will be done without your confirmation."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:59
+msgid "Skip this wizard and decode this exam."
+msgstr "Skip this wizard and decode this exam."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:65
+msgid "Step 2"
+msgstr "Step 2"
+
+#: phalcon-mvc/app/views/exam/decode.phtml:68
+msgid "Continue with next step will enquiry your exam."
+msgstr "Continue with next step will enquiry your exam."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:69
+msgid "Doing so will lock further correction and reveal students identities."
+msgstr "Doing so will lock further correction and reveal students identities."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:70
+msgid "This state is useful for investigation."
+msgstr "This state is useful for investigation."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:71
+msgid "As the exam is not yet decoded, students can't access their results on this exam."
+msgstr "As the exam is not yet decoded, students can't access their results on this exam."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:74
+msgid "I understand and like to enquiry this exam."
+msgstr "I understand and like to enquiry this exam."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:80
+msgid "Step 3"
+msgstr "Step 3"
+
+#: phalcon-mvc/app/views/exam/decode.phtml:83
+msgid "Continue with next step will decode your exam."
+msgstr "Continue with next step will decode your exam."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:84
+msgid "Once the exam has been decoded, students can access it to download their result."
+msgstr "Once the exam has been decoded, students can access it to download their result."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:85
+msgid "Consider if you like to change some settings for result generation before continue."
+msgstr "Consider if you like to change some settings for result generation before continue."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:88
+msgid "I understand and like to decode this exam."
+msgstr "I understand and like to decode this exam."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:94
+msgid "Step 4"
+msgstr "Step 4"
+
+#: phalcon-mvc/app/views/exam/decode.phtml:98
+msgid "Your exam has now been decoded. Click on the close button to finish this wizard."
+msgstr "Your exam has now been decoded. Click on the close button to finish this wizard."
+
+#: phalcon-mvc/app/views/exam/decode.phtml:110
+#: phalcon-mvc/app/views/exam/security.phtml:188
+msgid "Cancel"
+msgstr "Cancel"
+
+#: phalcon-mvc/app/views/exam/decode.phtml:116
+msgid "Next"
+msgstr "Next"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:73
+msgid "Information"
+msgstr "Information"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:74
+msgid "General"
+msgstr "General"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:75
+msgid "Schedule"
+msgstr "Schedule"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:76
+msgid "Grades"
+msgstr "Grades"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:77
+msgid "Instructions"
+msgstr "Instructions"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:78
+msgid "Result"
+msgstr "Result"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:79
+msgid "Correction"
+msgstr "Correction"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:84
+msgid "Please note that you may return at anytime to complete the exam settings."
+msgstr "Please note that you may return at anytime to complete the exam settings."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:85
+msgid "Remember to press the 'Save settings' button."
+msgstr "Remember to press the 'Save settings' button."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:86
+msgid "Use 'Check exam' to detect missing tasks to complete."
+msgstr "Use 'Check exam' to detect missing tasks to complete."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:94
+msgid "Please fill up all required fields (marked with <span style=\"color:#F02222\">*</span>) on each separate tab."
+msgstr "Please fill up all required fields (marked with <span style=\"color:#F02222\">*</span>) on each separate tab."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:100
+msgid "Some questions are empty: %missing%"
+msgstr "Some questions are empty: %missing%"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:110
+msgid "Some questions don't have any credits: %missing%"
+msgstr "Some questions don't have any credits: %missing%"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:121
+msgid "Total number of students in exam: %students%"
+msgstr "Total number of students in exam: %students%"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:123
+msgid "Total exam points: %score%"
+msgstr "Total exam points: %score%"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:125
+msgid "Created: %created%"
+msgstr "Created: %created%"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:133
+msgid "The exam title will be shown for students when selecting exam."
+msgstr "The exam title will be shown for students when selecting exam."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:134
+msgid "The organization should not be edited in normal cases as it affects grouping of exams in statistics."
+msgstr "The organization should not be edited in normal cases as it affects grouping of exams in statistics."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:140
+msgid "Exam title:"
+msgstr "Exam title:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:145
+msgid "The exam name"
+msgstr "The exam name"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:159
+msgid "Course code:"
+msgstr "Course code:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:163
+msgid "Course code of this exam (i.e. 3FK726)"
+msgstr "Course code of this exam (i.e. 3FK726)"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:175
+msgid "Institution code:"
+msgstr "Institution code:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:179
+msgid "The institition, department or division code from the directory service (i.e. LDAP)"
+msgstr "The institition, department or division code from the directory service (i.e. LDAP)"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:200
+msgid "Organization:"
+msgstr "Organization:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:204
+msgid "The organization name from directory service (don't edit unless told so)"
+msgstr "The organization name from directory service (don't edit unless told so)"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:217
+msgid "The exam will remain as draft until the start time is set."
+msgstr "The exam will remain as draft until the start time is set."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:218
+msgid "An exam without end time is treated as an forever ongoing exam (mostly useful for self-diagnostic tests)."
+msgstr "An exam without end time is treated as an forever ongoing exam (mostly useful for self-diagnostic tests)."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:226
+#: phalcon-mvc/app/views/exam/index.phtml:228
+msgid "Exam starts:"
+msgstr "Exam starts:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:243
+#: phalcon-mvc/app/views/exam/index.phtml:245
+msgid "Exam ends:"
+msgstr "Exam ends:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:260
+msgid "Input grade:value pairs on separate lines defining the graduation levels in percent for this examination."
+msgstr "Input grade:value pairs on separate lines defining the graduation levels in percent for this examination."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:261
+msgid "The first line must be on form name:0, denoting the failed grade."
+msgstr "The first line must be on form name:0, denoting the failed grade."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:268
+msgid "The newline separated grades"
+msgstr "The newline separated grades"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:277
+msgid "Student instructions for this exam. Typical information on grades, allowed tools and teacher question time during the exam."
+msgstr "Student instructions for this exam. Typical information on grades, allowed tools and teacher question time during the exam."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:283
+msgid "Exam instructions for students:"
+msgstr "Exam instructions for students:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:290
+msgid "Write exam description here"
+msgstr "Write exam description here"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:299
+msgid "Controls the details to expose in student result file. For example, whether to include statistics or correcting teacher."
+msgstr "Controls the details to expose in student result file. For example, whether to include statistics or correcting teacher."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:305
+msgid "Student results:"
+msgstr "Student results:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:313
+msgid "Expose names and contact information for people involved in the creation and correction process in the result PDF seen by the student."
+msgstr "Expose names and contact information for people involved in the creation and correction process in the result PDF seen by the student."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:315
+msgid "Show correcting teachers."
+msgstr "Show correcting teachers."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:323
+msgid "Include statistics like avarage/mean values and score distribution compared to other students in the result PDF seen by the student."
+msgstr "Include statistics like avarage/mean values and score distribution compared to other students in the result PDF seen by the student."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:325
+msgid "Include section with statistics."
+msgstr "Include section with statistics."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:333
+msgid "Don't include student grade calculated by the system. This option is useful when the actual grading is finalized outside of the system."
+msgstr "Don't include student grade calculated by the system. This option is useful when the actual grading is finalized outside of the system."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:335
+msgid "Hide student grade section."
+msgstr "Hide student grade section."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:343
+msgid "Forge (blur/hide) media content like images when rendering the PDF with student results. Select this option if media content should only be viewable by students during the exam."
+msgstr "Forge (blur/hide) media content like images when rendering the PDF with student results. Select this option if media content should only be viewable by students during the exam."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:345
+msgid "Hide rendered media content (i.e. images)."
+msgstr "Hide rendered media content (i.e. images)."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:353
+msgid "Controls the details to expose in score board during correction. Affects users having the corrector role."
+msgstr "Controls the details to expose in score board during correction. Affects users having the corrector role."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:359
+msgid "Exam correction:"
+msgstr "Exam correction:"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:368
+msgid "Display student statistics like scoring percentage during correction. Might have an influence on correcting teacher."
+msgstr "Display student statistics like scoring percentage during correction. Might have an influence on correcting teacher."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:370
+msgid "Show student's accumulated points in score board."
+msgstr "Show student's accumulated points in score board."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:378
+msgid "Display students anonymous code during correction. Leave disabled if same persons that registered students are going to participate in the answer correction."
+msgstr "Display students anonymous code during correction. Leave disabled if same persons that registered students are going to participate in the answer correction."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:380
+msgid "Show student's anonymous code in score board."
+msgstr "Show student's anonymous code in score board."
+
+#: phalcon-mvc/app/views/exam/settings.phtml:393
+msgid "Save settings"
+msgstr "Save settings"
+
+#: phalcon-mvc/app/views/exam/settings.phtml:399
+msgid "Check exam"
+msgstr "Check exam"
+
+#: phalcon-mvc/app/views/exam/details.phtml:99
+msgid "State"
+msgstr "State"
+
+#: phalcon-mvc/app/views/exam/details.phtml:104
+msgid "Grade"
+msgstr "Grade"
+
+#: phalcon-mvc/app/views/exam/details.phtml:109
+msgid "Staff"
+msgstr "Staff"
+
+#: phalcon-mvc/app/views/exam/details.phtml:114
+msgid "Roles"
+msgstr "Roles"
+
+#: phalcon-mvc/app/views/exam/details.phtml:119
+msgid "Other"
+msgstr "Other"
+
+#: phalcon-mvc/app/views/exam/details.phtml:140
+msgid "This exam is an draft (not yet scheduled)"
+msgstr "This exam is an draft (not yet scheduled)"
+
+#: phalcon-mvc/app/views/exam/details.phtml:144
+msgid "This exam is scheduled, but has not yet started"
+msgstr "This exam is scheduled, but has not yet started"
+
+#: phalcon-mvc/app/views/exam/details.phtml:146
+msgid "This exam is currently ongoing"
+msgstr "This exam is currently ongoing"
+
+#: phalcon-mvc/app/views/exam/details.phtml:148
+msgid "This exam has been finished"
+msgstr "This exam has been finished"
+
+#: phalcon-mvc/app/views/exam/details.phtml:152
+msgid "This exam has answers from students"
+msgstr "This exam has answers from students"
+
+#: phalcon-mvc/app/views/exam/details.phtml:155
+msgid "Questions can still be contributed"
+msgstr "Questions can still be contributed"
+
+#: phalcon-mvc/app/views/exam/details.phtml:158
+msgid "Answers can still be corrected on this exam"
+msgstr "Answers can still be corrected on this exam"
+
+#: phalcon-mvc/app/views/exam/details.phtml:161
+msgid "All answers has been fully corrected"
+msgstr "All answers has been fully corrected"
+
+#: phalcon-mvc/app/views/exam/details.phtml:165
+msgid "This exam is under investigation"
+msgstr "This exam is under investigation"
+
+#: phalcon-mvc/app/views/exam/details.phtml:169
+msgid "This exam has been decoded"
+msgstr "This exam has been decoded"
+
+#: phalcon-mvc/app/views/exam/details.phtml:171
+msgid "This exam can be decoded"
+msgstr "This exam can be decoded"
+
+#: phalcon-mvc/app/views/exam/details.phtml:175
+msgid "Can be deleted (no answers exist or exam is flagged as testcase)"
+msgstr "Can be deleted (no answers exist or exam is flagged as testcase)"
+
+#: phalcon-mvc/app/views/exam/details.phtml:178
+msgid "The exam can still be edited"
+msgstr "The exam can still be edited"
+
+#: phalcon-mvc/app/views/exam/details.phtml:181
+msgid "Student can be registered and start/endtime can be changed"
+msgstr "Student can be registered and start/endtime can be changed"
+
+#: phalcon-mvc/app/views/exam/details.phtml:184
+msgid "Lockdown mode is enabled on this exam"
+msgstr "Lockdown mode is enabled on this exam"
+
+#: phalcon-mvc/app/views/exam/details.phtml:187
+#: phalcon-mvc/app/views/exam/check.phtml:168
+msgid "Exam has been published"
+msgstr "Exam has been published"
+
+#: phalcon-mvc/app/views/exam/details.phtml:190
+msgid "Can be reused as new exam"
+msgstr "Can be reused as new exam"
+
+#: phalcon-mvc/app/views/exam/details.phtml:193
+msgid "Marked as testcase (always deletable)"
+msgstr "Marked as testcase (always deletable)"
+
+#: phalcon-mvc/app/views/exam/details.phtml:207
+msgid "This exam uses points instead of percent"
+msgstr "This exam uses points instead of percent"
+
+#: phalcon-mvc/app/views/exam/details.phtml:213
+msgid "Maximum score is %score%p on this exam"
+msgstr "Maximum score is %score%p on this exam"
+
+#: phalcon-mvc/app/views/exam/details.phtml:269
+msgid "Questions: %questions%"
+msgstr "Questions: %questions%"
+
+#: phalcon-mvc/app/views/exam/details.phtml:272
+msgid "Students: %students%"
+msgstr "Students: %students%"
+
+#: phalcon-mvc/app/views/exam/details.phtml:275
+#, php-format
+msgid "Locations: %locations"
+msgstr "Locations: %locations"
+
+#: phalcon-mvc/app/views/exam/details.phtml:281
+msgid "Security: None"
+msgstr "Security: None"
+
+#: phalcon-mvc/app/views/exam/details.phtml:285
+msgid "Security: Full"
+msgstr "Security: Full"
+
+#: phalcon-mvc/app/views/exam/details.phtml:289
+msgid "Security: Partial (lockdown missing)"
+msgstr "Security: Partial (lockdown missing)"
+
+#: phalcon-mvc/app/views/exam/details.phtml:293
+msgid "Security: Partial (no locations defined)"
+msgstr "Security: Partial (no locations defined)"
+
+#: phalcon-mvc/app/views/exam/details.phtml:297
+msgid "Security: Partial"
+msgstr "Security: Partial"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:54
+msgid "Welcome to OpenExam Online!"
+msgstr "Welcome to OpenExam Online!"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:58
+msgid "Use the buttons in the heading to minimize the left pane or increase the text size."
+msgstr "Use the buttons in the heading to minimize the left pane or increase the text size."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:59
+msgid "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
+msgstr "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:60
+msgid "During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done."
+msgstr "During the exam you can at any time access the instructions again. Remember to preview your answers before log out when you are done."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:66
+msgid "Important to know:"
+msgstr "Important to know:"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:71
+msgid "All your answers are automatically saved every 10 seconds."
+msgstr "All your answers are automatically saved every 10 seconds."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:74
+msgid "It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation."
+msgstr "It is highly recommended that you <u>don't</u> use the web browsers \"back\" and \"forward\" buttons for navigation."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:75
+msgid "Always use buttons and/or links in the web interface."
+msgstr "Always use buttons and/or links in the web interface."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:76
+msgid "To open a specific question, you can always click on desired question number appearing in left side menu."
+msgstr "To open a specific question, you can always click on desired question number appearing in left side menu."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:79
+msgid "Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes."
+msgstr "Please report any error message immediately to invigilator. In such a case, please <u>don't</u> close the web browser/refresh the page, or you may loose your latest changes."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:86
+msgid "Exam instructions:"
+msgstr "Exam instructions:"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:99
+msgid "While waiting:"
+msgstr "While waiting:"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:103
+msgid "Why not spend the time waiting for the exam to start with some reading?"
+msgstr "Why not spend the time waiting for the exam to start with some reading?"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:104
+msgid "The student manual will give you a brief introduction to examination part of the system."
+msgstr "The student manual will give you a brief introduction to examination part of the system."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:106
+msgid "Press current location to see information specific to %location%."
+msgstr "Press current location to see information specific to %location%."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:114
+#: phalcon-mvc/app/views/exam/instruction.phtml:115
+#: phalcon-mvc/app/views/exam/instruction.phtml:129
+#: phalcon-mvc/app/views/exam/instruction.phtml:130
+msgid "Open student manual"
+msgstr "Open student manual"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:121
+msgid "Show current location"
+msgstr "Show current location"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:139
+msgid "Ready to start?"
+msgstr "Ready to start?"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:143
+msgid "You have not yet opened the exam, this page is only for showing some information."
+msgstr "You have not yet opened the exam, this page is only for showing some information."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:145
+msgid "Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions."
+msgstr "Once you click the button below, the exam will be locked down on your account and currently used computer giving you access to the exam questions."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:147
+msgid "This exam has no locking, so you will be able to open it again from another computer until it has finished."
+msgstr "This exam has no locking, so you will be able to open it again from another computer until it has finished."
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:156
+msgid "I am ready, start the exam in test mode"
+msgstr "I am ready, start the exam in test mode"
+
+#: phalcon-mvc/app/views/exam/instruction.phtml:163
+msgid "I am ready, start the exam"
+msgstr "I am ready, start the exam"
+
+#: phalcon-mvc/app/views/exam/update.phtml:231
+msgid "Add new question"
+msgstr "Add new question"
+
+#: phalcon-mvc/app/views/exam/update.phtml:244
+msgid "There are no questions in this exam yet."
+msgstr "There are no questions in this exam yet."
+
+#: phalcon-mvc/app/views/exam/update.phtml:256
+#: phalcon-mvc/app/views/exam/update.phtml:276
+msgid "Preview question"
+msgstr "Preview question"
+
+#: phalcon-mvc/app/views/exam/update.phtml:260
+#: phalcon-mvc/app/views/exam/update.phtml:280
+msgid "Edit question"
+msgstr "Edit question"
+
+#: phalcon-mvc/app/views/exam/update.phtml:266
+#: phalcon-mvc/app/views/exam/update.phtml:286
+msgid "Flag question as removed from this exam"
+msgstr "Flag question as removed from this exam"
+
+#: phalcon-mvc/app/views/exam/update.phtml:271
+#: phalcon-mvc/app/views/exam/update.phtml:291
+msgid "Re-add removed question on this exam"
+msgstr "Re-add removed question on this exam"
+
+#: phalcon-mvc/app/views/exam/update.phtml:295
+msgid "Delete question from this exam"
+msgstr "Delete question from this exam"
+
+#: phalcon-mvc/app/views/exam/update.phtml:324
+msgid "Preview student view"
+msgstr "Preview student view"
+
+#: phalcon-mvc/app/views/exam/update.phtml:338
+msgid "I am done with my questions. Notify exam creator."
+msgstr "I am done with my questions. Notify exam creator."
+
+#: phalcon-mvc/app/views/exam/update.phtml:352
+#: phalcon-mvc/app/views/exam/index.phtml:179
+msgid "Manage students for exam"
+msgstr "Manage students for exam"
+
+#: phalcon-mvc/app/views/exam/update.phtml:355
+msgid "Exam settings"
+msgstr "Exam settings"
+
+#: phalcon-mvc/app/views/exam/update.phtml:358
+msgid "Security and access control"
+msgstr "Security and access control"
+
+#: phalcon-mvc/app/views/exam/update.phtml:361
+#: phalcon-mvc/app/views/exam/index.phtml:263
+msgid "Exam status check"
+msgstr "Exam status check"
+
+#: phalcon-mvc/app/views/exam/update.phtml:364
+msgid "Offline tool for exam"
+msgstr "Offline tool for exam"
+
+#: phalcon-mvc/app/views/exam/update.phtml:366
+msgid "Exam export and archive tool"
+msgstr "Exam export and archive tool"
+
+#: phalcon-mvc/app/views/exam/update.phtml:369
+msgid "Use this tool to access exam content (i.e. questions) in format suitable for printing or archiving."
+msgstr "Use this tool to access exam content (i.e. questions) in format suitable for printing or archiving."
+
+#: phalcon-mvc/app/views/exam/update.phtml:370
+msgid "This is also the right tool to use if some students need to write this exam on paper."
+msgstr "This is also the right tool to use if some students need to write this exam on paper."
+
+#: phalcon-mvc/app/views/exam/update.phtml:379
+msgid "View Online"
+msgstr "View Online"
+
+#: phalcon-mvc/app/views/exam/update.phtml:385
+msgid "Download Archive"
+msgstr "Download Archive"
+
+#: phalcon-mvc/app/views/exam/update.phtml:392
+msgid "Display correct answers for questions"
+msgstr "Display correct answers for questions"
+
+#: phalcon-mvc/app/views/exam/update.phtml:396
+msgid "Remove existing PDF before rendering"
+msgstr "Remove existing PDF before rendering"
+
+#: phalcon-mvc/app/views/exam/update.phtml:406
+#: phalcon-mvc/app/views/exam/check.phtml:278
+msgid "Close"
+msgstr "Close"
+
+#: phalcon-mvc/app/views/exam/check.phtml:42
+msgid "This exam is ready"
+msgstr "This exam is ready"
+
+#: phalcon-mvc/app/views/exam/check.phtml:46
+msgid "Exam need attention"
+msgstr "Exam need attention"
+
+#: phalcon-mvc/app/views/exam/check.phtml:50
+msgid "Exam is not ready"
+msgstr "Exam is not ready"
+
+#: phalcon-mvc/app/views/exam/check.phtml:55
+msgid "This dialog displays result from checking if exam is ready for use."
+msgstr "This dialog displays result from checking if exam is ready for use."
+
+#: phalcon-mvc/app/views/exam/check.phtml:56
+msgid "Control that all requirements are full-filled and press the 'Fix this problem' button to correct any issues."
+msgstr "Control that all requirements are full-filled and press the 'Fix this problem' button to correct any issues."
+
+#: phalcon-mvc/app/views/exam/check.phtml:57
+msgid "Click on 'Show Progress' to monitor student answer progress during an exam."
+msgstr "Click on 'Show Progress' to monitor student answer progress during an exam."
+
+#: phalcon-mvc/app/views/exam/check.phtml:64
+msgid "Exam has an name"
+msgstr "Exam has an name"
+
+#: phalcon-mvc/app/views/exam/check.phtml:69
+msgid "Exam name is missing"
+msgstr "Exam name is missing"
+
+#: phalcon-mvc/app/views/exam/check.phtml:77
+#: phalcon-mvc/app/views/exam/check.phtml:103
+#: phalcon-mvc/app/views/exam/check.phtml:129
+#: phalcon-mvc/app/views/exam/check.phtml:155
+#: phalcon-mvc/app/views/exam/check.phtml:193
+#: phalcon-mvc/app/views/exam/check.phtml:230
+#: phalcon-mvc/app/views/exam/check.phtml:255
+msgid "Fix this problem"
+msgstr "Fix this problem"
+
+#: phalcon-mvc/app/views/exam/check.phtml:90
+msgid "Questions has been added"
+msgstr "Questions has been added"
+
+#: phalcon-mvc/app/views/exam/check.phtml:95
+msgid "Questions are missing"
+msgstr "Questions are missing"
+
+#: phalcon-mvc/app/views/exam/check.phtml:116
+msgid "Students has been added"
+msgstr "Students has been added"
+
+#: phalcon-mvc/app/views/exam/check.phtml:121
+msgid "Students are missing"
+msgstr "Students are missing"
+
+#: phalcon-mvc/app/views/exam/check.phtml:142
+msgid "Exam has been scheduled (start time is set)"
+msgstr "Exam has been scheduled (start time is set)"
+
+#: phalcon-mvc/app/views/exam/check.phtml:147
+msgid "Exam has not been scheduled (start time is missing)"
+msgstr "Exam has not been scheduled (start time is missing)"
+
+#: phalcon-mvc/app/views/exam/check.phtml:176
+msgid "Unpublish exam"
+msgstr "Unpublish exam"
+
+#: phalcon-mvc/app/views/exam/check.phtml:185
+msgid "Exam is not yet published"
+msgstr "Exam is not yet published"
+
+#: phalcon-mvc/app/views/exam/check.phtml:203
+msgid "Security"
+msgstr "Security"
+
+#: phalcon-mvc/app/views/exam/check.phtml:209
+msgid "Exam is using all security settings"
+msgstr "Exam is using all security settings"
+
+#: phalcon-mvc/app/views/exam/check.phtml:217
+msgid "Exam has lockdown enabled"
+msgstr "Exam has lockdown enabled"
+
+#: phalcon-mvc/app/views/exam/check.phtml:222
+msgid "Exam lockdown is not set"
+msgstr "Exam lockdown is not set"
+
+#: phalcon-mvc/app/views/exam/check.phtml:242
+msgid "Exam has allowed locations set"
+msgstr "Exam has allowed locations set"
+
+#: phalcon-mvc/app/views/exam/check.phtml:247
+msgid "Allowed exam locations are not set"
+msgstr "Allowed exam locations are not set"
+
+#: phalcon-mvc/app/views/exam/check.phtml:272
+#: phalcon-mvc/app/views/exam/lock.phtml:66
+#: phalcon-mvc/app/views/exam/lock.phtml:82
+msgid "Refresh"
+msgstr "Refresh"
+
+#: phalcon-mvc/app/views/exam/check.phtml:290
+msgid "Open Manager"
+msgstr "Open Manager"
+
+#: phalcon-mvc/app/views/exam/check.phtml:296
+#: phalcon-mvc/app/views/exam/check.phtml:308
+msgid "Show Progress"
+msgstr "Show Progress"
+
+#: phalcon-mvc/app/views/exam/security.phtml:62
+msgid "Add"
+msgstr "Add"
+
+#: phalcon-mvc/app/views/exam/security.phtml:86
+msgid "Use this view for defining exam security and access restrictions."
+msgstr "Use this view for defining exam security and access restrictions."
+
+#: phalcon-mvc/app/views/exam/security.phtml:88
+msgid "Notice:"
+msgstr "Notice:"
+
+#: phalcon-mvc/app/views/exam/security.phtml:90
+msgid "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
+msgstr "For keeping the exam public (no access restriction), simply uncheck the 'Enable lockdown' option."
+
+#: phalcon-mvc/app/views/exam/security.phtml:106
+msgid "This exam should only be accessable from these locations:"
+msgstr "This exam should only be accessable from these locations:"
+
+#: phalcon-mvc/app/views/exam/security.phtml:111
+msgid "Location"
+msgstr "Location"
+
+#: phalcon-mvc/app/views/exam/security.phtml:112
+msgid "Address"
+msgstr "Address"
+
+#: phalcon-mvc/app/views/exam/security.phtml:124
+msgid "Remove"
+msgstr "Remove"
+
+#: phalcon-mvc/app/views/exam/security.phtml:134
+msgid "Select locations from recent used, system pre-defined or current action locations."
+msgstr "Select locations from recent used, system pre-defined or current action locations."
+
+#: phalcon-mvc/app/views/exam/security.phtml:139
+msgid "Details"
+msgstr "Details"
+
+#: phalcon-mvc/app/views/exam/security.phtml:143
+msgid "Recent used locations"
+msgstr "Recent used locations"
+
+#: phalcon-mvc/app/views/exam/security.phtml:145
+msgid "Pre-defined locations"
+msgstr "Pre-defined locations"
+
+#: phalcon-mvc/app/views/exam/security.phtml:147
+msgid "Currently active locations"
+msgstr "Currently active locations"
+
+#: phalcon-mvc/app/views/exam/security.phtml:155
+msgid "New"
+msgstr "New"
+
+#: phalcon-mvc/app/views/exam/security.phtml:161
+msgid "Insert..."
+msgstr "Insert..."
+
+#: phalcon-mvc/app/views/exam/security.phtml:168
+msgid "Use this method for client side locking:"
+msgstr "Use this method for client side locking:"
+
+#: phalcon-mvc/app/views/exam/security.phtml:182
+msgid "OK"
+msgstr "OK"
+
+#: phalcon-mvc/app/views/exam/index.phtml:115
+msgid "Possible browser problem!"
+msgstr "Possible browser problem!"
+
+#: phalcon-mvc/app/views/exam/index.phtml:118
+msgid "It looks like you are using a browser that is missing support for some web standards."
+msgstr "It looks like you are using a browser that is missing support for some web standards."
+
+#: phalcon-mvc/app/views/exam/index.phtml:119
+msgid "We have enabled some workarounds (polyfills) for increased compatibility."
+msgstr "We have enabled some workarounds (polyfills) for increased compatibility."
+
+#: phalcon-mvc/app/views/exam/index.phtml:120
+msgid "If you experience difficulties using the system, please try a modern web browser with native support for latest web standards (HTML5 and ES6)."
+msgstr "If you experience difficulties using the system, please try a modern web browser with native support for latest web standards (HTML5 and ES6)."
+
+#: phalcon-mvc/app/views/exam/index.phtml:126
+msgid "Hi %name%!"
+msgstr "Hi %name%!"
+
+#: phalcon-mvc/app/views/exam/index.phtml:129
+msgid "The content of this page depends on the different roles you have."
+msgstr "The content of this page depends on the different roles you have."
+
+#: phalcon-mvc/app/views/exam/index.phtml:130
+msgid "Information about the different roles (creator, contributor, corrector, invigilator, student) can be found in the <a href=\"%manual%\">teacher manual</a>."
+msgstr "Information about the different roles (creator, contributor, corrector, invigilator, student) can be found in the <a href=\"%manual%\">teacher manual</a>."
+
+#: phalcon-mvc/app/views/exam/index.phtml:153
+msgid "Quick search"
+msgstr "Quick search"
+
+#: phalcon-mvc/app/views/exam/index.phtml:163
+msgid "Create new exam"
+msgstr "Create new exam"
+
+#: phalcon-mvc/app/views/exam/index.phtml:184
+msgid "Reuse exam"
+msgstr "Reuse exam"
+
+#: phalcon-mvc/app/views/exam/index.phtml:186
+msgid "Along with <strong>Exam title, instructions and exam settings</strong>, please select if any of the following exam parts you would like to reuse:"
+msgstr "Along with <strong>Exam title, instructions and exam settings</strong>, please select if any of the following exam parts you would like to reuse:"
+
+#: phalcon-mvc/app/views/exam/index.phtml:193
+msgid "Question sections"
+msgstr "Question sections"
+
+#: phalcon-mvc/app/views/exam/index.phtml:199
+msgid "Questions and question correctors"
+msgstr "Questions and question correctors"
+
+#: phalcon-mvc/app/views/exam/index.phtml:206
+msgid "Exam roles"
+msgstr "Exam roles"
+
+#: phalcon-mvc/app/views/exam/index.phtml:217
+msgid "Change exam schedule"
+msgstr "Change exam schedule"
+
+#: phalcon-mvc/app/views/exam/index.phtml:219
+msgid "Input date/time manual or click on the calender icon to select from the datetime picker."
+msgstr "Input date/time manual or click on the calender icon to select from the datetime picker."
+
+#: phalcon-mvc/app/views/exam/index.phtml:220
+msgid "Click on the clock icon at bottom of the picker to select the time."
+msgstr "Click on the clock icon at bottom of the picker to select the time."
+
+#: phalcon-mvc/app/views/exam/index.phtml:221
+msgid "Either select time by scrolling or clicking on hour/minute to quickly select from a table."
+msgstr "Either select time by scrolling or clicking on hour/minute to quickly select from a table."
+
+#: phalcon-mvc/app/views/exam/index.phtml:265
+#: phalcon-mvc/app/views/exam/index.phtml:266
+msgid "Download exam result"
+msgstr "Download exam result"
+
+#: phalcon-mvc/app/views/exam/pending.phtml:49
+msgid "Approval required"
+msgstr "Approval required"
+
+#: phalcon-mvc/app/views/exam/pending.phtml:57
+msgid "Access to the exam '%name%' is pending approval by the exam invigilator."
+msgstr "Access to the exam '%name%' is pending approval by the exam invigilator."
+
+#: phalcon-mvc/app/views/exam/pending.phtml:58
+msgid "Please wait for a while before retrying again or wait for the automatic retry that occurs every 30 seconds."
+msgstr "Please wait for a while before retrying again or wait for the automatic retry that occurs every 30 seconds."
+
+#: phalcon-mvc/app/views/exam/pending.phtml:63
+msgid "Click on this button to retry access to this exam."
+msgstr "Click on this button to retry access to this exam."
+
+#: phalcon-mvc/app/views/exam/pending.phtml:64
+msgid "Retry"
+msgstr "Retry"
+
+#: phalcon-mvc/app/views/exam/students.phtml:83
+msgid "Add new students"
+msgstr "Add new students"
+
+#: phalcon-mvc/app/views/exam/students.phtml:88
+msgid "Manage existing students"
+msgstr "Manage existing students"
+
+#: phalcon-mvc/app/views/exam/section.phtml:35
+#: phalcon-mvc/app/views/exam/section.phtml:37
+#: phalcon-mvc/app/views/exam/section.phtml:38
+#: phalcon-mvc/app/views/exam/section.phtml:39
+msgid "Status"
+msgstr "Status"
+
+#: phalcon-mvc/app/views/exam/section.phtml:41
+msgid "Manage"
+msgstr "Manage"
+
+#: phalcon-mvc/app/views/exam/section.phtml:42
+msgid "Preview"
+msgstr "Preview"
+
+#: phalcon-mvc/app/views/exam/section.phtml:43
+msgid "Delete"
+msgstr "Delete"
+
+#: phalcon-mvc/app/views/exam/section.phtml:44
+msgid "Reuse"
+msgstr "Reuse"
+
+#: phalcon-mvc/app/views/exam/section.phtml:45
+msgid "Display"
+msgstr "Display"
+
+#: phalcon-mvc/app/views/exam/section.phtml:46
+msgid "Add questions"
+msgstr "Add questions"
+
+#: phalcon-mvc/app/views/exam/section.phtml:47
+msgid "Answer correction"
+msgstr "Answer correction"
+
+#: phalcon-mvc/app/views/exam/section.phtml:48
+msgid "Exam not finished yet"
+msgstr "Exam not finished yet"
+
+#: phalcon-mvc/app/views/exam/section.phtml:49
+msgid "View results"
+msgstr "View results"
+
+#: phalcon-mvc/app/views/exam/section.phtml:50
+msgid "View Score board"
+msgstr "View Score board"
+
+#: phalcon-mvc/app/views/exam/section.phtml:51
+msgid "Download results"
+msgstr "Download results"
+
+#: phalcon-mvc/app/views/exam/section.phtml:52
+msgid "Decode this exam"
+msgstr "Decode this exam"
+
+#: phalcon-mvc/app/views/exam/section.phtml:53
+msgid "Not open for decoding yet"
+msgstr "Not open for decoding yet"
+
+#: phalcon-mvc/app/views/exam/section.phtml:54
+msgid "Manage students"
+msgstr "Manage students"
+
+#: phalcon-mvc/app/views/exam/section.phtml:55
+msgid "Change schedule"
+msgstr "Change schedule"
+
+#: phalcon-mvc/app/views/exam/section.phtml:56
+msgid "Go to exam page"
+msgstr "Go to exam page"
+
+#: phalcon-mvc/app/views/exam/section.phtml:57
+msgid "View exam"
+msgstr "View exam"
+
+#: phalcon-mvc/app/views/exam/section.phtml:61
+msgid "Date created"
+msgstr "Date created"
+
+#: phalcon-mvc/app/views/exam/section.phtml:62
+msgid "Exam name"
+msgstr "Exam name"
+
+#: phalcon-mvc/app/views/exam/section.phtml:63
+msgid "Exam code"
+msgstr "Exam code"
+
+#: phalcon-mvc/app/views/exam/section.phtml:64
+msgid "Start date"
+msgstr "Start date"
+
+#: phalcon-mvc/app/views/exam/section.phtml:89
+msgid "Sort by:"
+msgstr "Sort by:"
+
+#: phalcon-mvc/app/views/exam/section.phtml:136
+msgid "Click to display exam details"
+msgstr "Click to display exam details"
+
+#: phalcon-mvc/app/views/exam/section.phtml:223
+msgid "No exams as %role% was found using current filtering."
+msgstr "No exams as %role% was found using current filtering."
+
+#: phalcon-mvc/app/views/exam/archive.phtml:83
+msgid "Exam held on: %date% (%stime% &mdash; %etime%)"
+msgstr "Exam held on: %date% (%stime% &mdash; %etime%)"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:97
+msgid "Name | Code:"
+msgstr "Name | Code:"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:111
+msgid "Exam description"
+msgstr "Exam description"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:130
+msgid "Question %slot%"
+msgstr "Question %slot%"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:184
+msgid "Teacher's comments:"
+msgstr "Teacher's comments:"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:194
+msgid "Max score: %score%"
+msgstr "Max score: %score%"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:214
+msgid "Reference"
+msgstr "Reference"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:218
+msgid "Responsable for examination:"
+msgstr "Responsable for examination:"
+
+#: phalcon-mvc/app/views/exam/archive.phtml:221
+msgid "Main responsible person for the examination is "
+msgstr "Main responsible person for the examination is "
+
+#: phalcon-mvc/app/views/exam/lock.phtml:39
+msgid "Connection"
+msgstr "Connection"
+
+#: phalcon-mvc/app/views/exam/lock.phtml:42
+msgid "FQHN:  "
+msgstr "FQHN:  "
+
+#: phalcon-mvc/app/views/exam/lock.phtml:43
+msgid "Place: "
+msgstr "Place: "
+
+#: phalcon-mvc/app/views/exam/lock.phtml:52
+msgid "Unlock"
+msgstr "Unlock"
+
+#: phalcon-mvc/app/views/exam/lock.phtml:59
+msgid "Approve"
+msgstr "Approve"
+
+#: phalcon-mvc/app/views/exam/lock.phtml:73
+msgid "Unlocked"
+msgstr "Unlocked"
+
+#: phalcon-mvc/app/views/exam/lock.phtml:76
+msgid "This student has no computer lock established for this exam"
+msgstr "This student has no computer lock established for this exam"

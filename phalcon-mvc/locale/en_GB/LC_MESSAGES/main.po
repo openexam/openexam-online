@@ -1,0 +1,396 @@
+# English translations for openexam-online package.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: i18n@openexam.io\n"
+"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:41
+msgid "Corrected:"
+msgstr "Corrected:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:41
+msgid "Percent:"
+msgstr "Percent:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:46
+msgid "More"
+msgstr "More"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:51
+msgid "Correction status"
+msgstr "Correction status"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:54
+msgid "Answers corrected:"
+msgstr "Answers corrected:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:55
+msgid "Percent of max score:"
+msgstr "Percent of max score:"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:61
+msgid "Question corrector's"
+msgstr "Question corrector's"
+
+#: phalcon-mvc/app/views/partials/question-info.phtml:79
+msgid "Contact All"
+msgstr "Contact All"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:54
+msgid "Registered students in this exam"
+msgstr "Registered students in this exam"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:58
+msgid "Click inside table cells to edit their content."
+msgstr "Click inside table cells to edit their content."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:59
+msgid "Dates are omitted from display whenever they coincidence with exam start or end date."
+msgstr "Dates are omitted from display whenever they coincidence with exam start or end date."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:60
+msgid "Input time as hh:mm with optional date, use the suggested date/time as a guide."
+msgstr "Input time as hh:mm with optional date, use the suggested date/time as a guide."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:67
+msgid "No students have been added to the exam yet."
+msgstr "No students have been added to the exam yet."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:74
+msgid "Download"
+msgstr "Download"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:86
+msgid "Filter students"
+msgstr "Filter students"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:93
+msgid "Name"
+msgstr "Name"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:94
+msgid "Username"
+msgstr "Username"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:95
+msgid "Person no."
+msgstr "Person no."
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:96
+msgid "Start time"
+msgstr "Start time"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:97
+msgid "End time"
+msgstr "End time"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:98
+msgid "Code"
+msgstr "Code"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:99
+msgid "Tag"
+msgstr "Tag"
+
+#: phalcon-mvc/app/views/partials/students-list.phtml:142
+msgid "Save"
+msgstr "Save"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:34
+msgid "Add single or multiple"
+msgstr "Add single or multiple"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:38
+msgid "Write identities (username or personal number) and anonymous code (optional, system will generate one if missing) of single or multiple students."
+msgstr "Write identities (username or personal number) and anonymous code (optional, system will generate one if missing) of single or multiple students."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:39
+msgid "Separate identity and anonymous code by whitespace."
+msgstr "Separate identity and anonymous code by whitespace."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:42
+msgid "Input multiple students at once by separating them with newline:"
+msgstr "Input multiple students at once by separating them with newline:"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:55
+msgid "Add students"
+msgstr "Add students"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:61
+msgid "Import from file"
+msgstr "Import from file"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:66
+msgid "Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag."
+msgstr "Upload the file containing students to import. Students can be imported by username or personal number, with optional supplied anonymous code and/or tag."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:77
+#: phalcon-mvc/app/views/partials/students-add.phtml:128
+msgid "Auto Detect"
+msgstr "Auto Detect"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:82
+msgid "OpenDocument Format Spreadsheet (*.ods,*.ots)"
+msgstr "OpenDocument Format Spreadsheet (*.ods,*.ots)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:87
+msgid "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
+msgstr "Microsoft Excel 2007/2010/2013 XML (*.xlsx)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:92
+msgid "Microsoft Excel 2003 XML (*.xml)"
+msgstr "Microsoft Excel 2003 XML (*.xml)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:97
+msgid "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
+msgstr "Microsoft Excel 97/2000/XP/2003 (*.xls,*.xlt)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:102
+msgid "TAB Separated Values (*.tab,*.tsv,*.txt)"
+msgstr "TAB Separated Values (*.tab,*.tsv,*.txt)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:107
+msgid "CSV File (*.csv)"
+msgstr "CSV File (*.csv)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:112
+msgid "Gnumeric Spreadsheet (*.gnumeric)"
+msgstr "Gnumeric Spreadsheet (*.gnumeric)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:117
+msgid "HTML Document (*.htm,*.html)"
+msgstr "HTML Document (*.htm,*.html)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:122
+msgid "SYLK Document (*.slk,*.sylk)"
+msgstr "SYLK Document (*.slk,*.sylk)"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:139
+#: phalcon-mvc/app/views/partials/students-add.phtml:181
+msgid "Import students"
+msgstr "Import students"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:145
+msgid "Import from group"
+msgstr "Import from group"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:150
+msgid "Supply the name of a group to import students from."
+msgstr "Supply the name of a group to import students from."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:151
+msgid "The name could e.g. be a course code or a domain group."
+msgstr "The name could e.g. be a course code or a domain group."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:152
+msgid "The search can be restricted to a single domain."
+msgstr "The search can be restricted to a single domain."
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:158
+msgid "Group name:"
+msgstr "Group name:"
+
+#: phalcon-mvc/app/views/partials/students-add.phtml:164
+msgid "Domain:"
+msgstr "Domain:"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:28
+msgid "Contributors"
+msgstr "Contributors"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:29
+msgid "Decoders"
+msgstr "Decoders"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:30
+msgid "Invigilators"
+msgstr "Invigilators"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:79
+msgid "No user has been added"
+msgstr "No user has been added"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:110
+msgid "Students"
+msgstr "Students"
+
+#: phalcon-mvc/app/views/partials/left-menu.phtml:130
+msgid "Questions"
+msgstr "Questions"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:41
+msgid "User insert and catalog service search"
+msgstr "User insert and catalog service search"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:44
+msgid "Search:"
+msgstr "Search:"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:47
+msgid "Search for user or add username"
+msgstr "Search for user or add username"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:53
+msgid "Add"
+msgstr "Add"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:63
+msgid "Insert existing user:"
+msgstr "Insert existing user:"
+
+#: phalcon-mvc/app/views/partials/user-search.phtml:78
+msgid "Display email address instead of username"
+msgstr "Display email address instead of username"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:64
+msgid "Download audio file"
+msgstr "Download audio file"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:68
+msgid "Download video file"
+msgstr "Download video file"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:72
+msgid "Download image file"
+msgstr "Download image file"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:78
+msgid "Download PDF"
+msgstr "Download PDF"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:84
+msgid "Download spreadsheet"
+msgstr "Download spreadsheet"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:90
+msgid "Download text document"
+msgstr "Download text document"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:96
+msgid "Download presentation"
+msgstr "Download presentation"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:102
+msgid "Download archive file"
+msgstr "Download archive file"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:115
+msgid "The media content has been hidden on request from teacher"
+msgstr "The media content has been hidden on request from teacher"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:133
+msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+msgstr "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:152
+msgid "To listen to this audio file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+msgstr "To listen to this audio file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
+
+#: phalcon-mvc/app/views/partials/resource-file-viewer.phtml:171
+msgid "The media content has been blurred on request from teacher"
+msgstr "The media content has been blurred on request from teacher"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:156
+msgid "Home"
+msgstr "Home"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:163
+msgid "My Exams"
+msgstr "My Exams"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:174
+msgid "Language"
+msgstr "Language"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:191
+msgid "Task"
+msgstr "Task"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:197
+msgid "Create Exam..."
+msgstr "Create Exam..."
+
+#: phalcon-mvc/app/views/layouts/main.phtml:202
+msgid "Contribute Questions"
+msgstr "Contribute Questions"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:207
+msgid "Correct Answers"
+msgstr "Correct Answers"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:212
+msgid "Invigilate Exam"
+msgstr "Invigilate Exam"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:217
+msgid "Decode Exam"
+msgstr "Decode Exam"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:222
+msgid "Download Results"
+msgstr "Download Results"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:233
+msgid "Tools"
+msgstr "Tools"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:238
+msgid "Statistics"
+msgstr "Statistics"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:241
+msgid "Diagnostics"
+msgstr "Diagnostics"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:247
+msgid "High Contrast"
+msgstr "High Contrast"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:258
+msgid "Help"
+msgstr "Help"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:263
+msgid "Teacher Manual"
+msgstr "Teacher Manual"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:266
+msgid "Student Manual"
+msgstr "Student Manual"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:269
+msgid "Show All..."
+msgstr "Show All..."
+
+#: phalcon-mvc/app/views/layouts/main.phtml:269
+msgid "Open page with manuals in other languages and formats in new window."
+msgstr "Open page with manuals in other languages and formats in new window."
+
+#: phalcon-mvc/app/views/layouts/main.phtml:273
+msgid "About"
+msgstr "About"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:284
+msgid "Logout"
+msgstr "Logout"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:289
+msgid "Login"
+msgstr "Login"
+
+#: phalcon-mvc/app/views/layouts/main.phtml:332
+msgid "About OpenExam Online"
+msgstr "About OpenExam Online"

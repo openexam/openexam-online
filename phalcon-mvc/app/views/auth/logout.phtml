@@ -34,9 +34,11 @@
 </style>
 
 <div class="oe-login">
-    <h2 class="success">Logged out</h2>
+    <h2 class="success">
+        <?= $tr->_("Logged out") ?>
+    </h2>
     <p>
-        You have successful logout from <?= $auth->description; ?>. 
-        Please close any open browser windows to clean up any existing session cookies.
+        <?= $tr->_("You have successful logout from %service%", array('service' => $auth->description)) ?>
+        <?= $tr->_("Please close any open browser windows to clean up any existing session cookies.") ?>
     </p>
 </div>
