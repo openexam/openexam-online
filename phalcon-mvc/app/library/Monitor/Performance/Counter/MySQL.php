@@ -82,7 +82,7 @@ class MySQL extends CounterBase implements Counter
          */
         public function getName()
         {
-                return $this->tr->_("MySQL");
+                return $this->i18n->_("MySQL");
         }
 
         /**
@@ -91,7 +91,7 @@ class MySQL extends CounterBase implements Counter
          */
         public function getTitle()
         {
-                return $this->tr->_("MySQL Database Server");
+                return $this->i18n->_("MySQL Database Server");
         }
 
         /**
@@ -100,7 +100,7 @@ class MySQL extends CounterBase implements Counter
          */
         public function getDescription()
         {
-                return $this->tr->_("Performance counter for MySQL");
+                return $this->i18n->_("Performance counter for MySQL");
         }
 
         /**
@@ -113,99 +113,99 @@ class MySQL extends CounterBase implements Counter
                         'label'       => $this->getTitle(),
                         'descr'       => $this->getDescription(),
                         'queries'     => array(
-                                'label'  => $this->tr->_("Queries"),
-                                'descr'  => $this->tr->_("SQL command execution counters"),
+                                'label'  => $this->i18n->_("Queries"),
+                                'descr'  => $this->i18n->_("SQL command execution counters"),
                                 'delete' => array(
-                                        'label' => $this->tr->_("Delete"),
-                                        'descr' => $this->tr->_("Number of DELETE statements executed")
+                                        'label' => $this->i18n->_("Delete"),
+                                        'descr' => $this->i18n->_("Number of DELETE statements executed")
                                 ),
                                 'insert' => array(
-                                        'label' => $this->tr->_("Insert"),
-                                        'descr' => $this->tr->_("Number of INSERT statements executed")
+                                        'label' => $this->i18n->_("Insert"),
+                                        'descr' => $this->i18n->_("Number of INSERT statements executed")
                                 ),
                                 'select' => array(
-                                        'label' => $this->tr->_("Select"),
-                                        'descr' => $this->tr->_("Number of SELECT queries runned")
+                                        'label' => $this->i18n->_("Select"),
+                                        'descr' => $this->i18n->_("Number of SELECT queries runned")
                                 ),
                                 'update' => array(
-                                        'label' => $this->tr->_("Update"),
-                                        'descr' => $this->tr->_("Number of UPDATE statements executed")
+                                        'label' => $this->i18n->_("Update"),
+                                        'descr' => $this->i18n->_("Number of UPDATE statements executed")
                                 ),
                                 'slow'   => array(
-                                        'label' => $this->tr->_("Slow"),
-                                        'descr' => $this->tr->_("The number of queries that have taken more than the predefined number of seconds.")
+                                        'label' => $this->i18n->_("Slow"),
+                                        'descr' => $this->i18n->_("The number of queries that have taken more than the predefined number of seconds.")
                                 ),
                         ),
                         'transaction' => array(
-                                'label'    => $this->tr->_("Transactions"),
-                                'descr'    => $this->tr->_("SQL transaction statistics"),
+                                'label'    => $this->i18n->_("Transactions"),
+                                'descr'    => $this->i18n->_("SQL transaction statistics"),
                                 'begin'    => array(
-                                        'label' => $this->tr->_("Begin"),
-                                        'descr' => $this->tr->_("Number of BEGIN statements issued")
+                                        'label' => $this->i18n->_("Begin"),
+                                        'descr' => $this->i18n->_("Number of BEGIN statements issued")
                                 ),
                                 'commit'   => array(
-                                        'label' => $this->tr->_("Commit"),
-                                        'descr' => $this->tr->_("Number of COMMIT statements issued")
+                                        'label' => $this->i18n->_("Commit"),
+                                        'descr' => $this->i18n->_("Number of COMMIT statements issued")
                                 ),
                                 'rollback' => array(
-                                        'label' => $this->tr->_("Rollback"),
-                                        'descr' => $this->tr->_("Number of ROLLBACK statements issued")
+                                        'label' => $this->i18n->_("Rollback"),
+                                        'descr' => $this->i18n->_("Number of ROLLBACK statements issued")
                                 ),
                         ),
                         'threads'     => array(
-                                'label'     => $this->tr->_("Threads"),
-                                'descr'     => $this->tr->_("Server thread statistics"),
+                                'label'     => $this->i18n->_("Threads"),
+                                'descr'     => $this->i18n->_("Server thread statistics"),
                                 'cached'    => array(
-                                        'label' => $this->tr->_("Cached"),
-                                        'descr' => $this->tr->_("The number of threads in the thread cache.")
+                                        'label' => $this->i18n->_("Cached"),
+                                        'descr' => $this->i18n->_("The number of threads in the thread cache.")
                                 ),
                                 'connected' => array(
-                                        'label' => $this->tr->_("Connected"),
-                                        'descr' => $this->tr->_("The number of currently open connections.")
+                                        'label' => $this->i18n->_("Connected"),
+                                        'descr' => $this->i18n->_("The number of currently open connections.")
                                 ),
                                 'created'   => array(
-                                        'label' => $this->tr->_("Created"),
-                                        'descr' => $this->tr->_("The number of threads created to handle connections.")
+                                        'label' => $this->i18n->_("Created"),
+                                        'descr' => $this->i18n->_("The number of threads created to handle connections.")
                                 ),
                                 'running'   => array(
-                                        'label' => $this->tr->_("Running"),
-                                        'descr' => $this->tr->_("The number of threads that are not sleeping.")
+                                        'label' => $this->i18n->_("Running"),
+                                        'descr' => $this->i18n->_("The number of threads that are not sleeping.")
                                 ),
                         ),
                         'connections' => array(
-                                'label'    => $this->tr->_("Connections"),
-                                'descr'    => $this->tr->_("Network connection statistics"),
+                                'label'    => $this->i18n->_("Connections"),
+                                'descr'    => $this->i18n->_("Network connection statistics"),
                                 'total'    => array(
-                                        'label' => $this->tr->_("Total"),
-                                        'descr' => $this->tr->_("The number of connection attempts (successful or not) to the MySQL server.")
+                                        'label' => $this->i18n->_("Total"),
+                                        'descr' => $this->i18n->_("The number of connection attempts (successful or not) to the MySQL server.")
                                 ),
                                 'max-used' => array(
-                                        'label' => $this->tr->_("Max Used"),
-                                        'descr' => $this->tr->_("The maximum number of connections that have been in use simultaneously since the server started.")
+                                        'label' => $this->i18n->_("Max Used"),
+                                        'descr' => $this->i18n->_("The maximum number of connections that have been in use simultaneously since the server started.")
                                 ),
                         ),
                         'transfer'    => array(
-                                'label'      => $this->tr->_("Transfer"),
-                                'descr'      => $this->tr->_("Network I/O transfer statistics"),
+                                'label'      => $this->i18n->_("Transfer"),
+                                'descr'      => $this->i18n->_("Network I/O transfer statistics"),
                                 'bytes-recv' => array(
-                                        'label' => $this->tr->_("Bytes Received"),
-                                        'descr' => $this->tr->_("The number of bytes received from all clients.")
+                                        'label' => $this->i18n->_("Bytes Received"),
+                                        'descr' => $this->i18n->_("The number of bytes received from all clients.")
                                 ),
                                 'bytes-sent' => array(
-                                        'label' => $this->tr->_("Bytes Sent"),
-                                        'descr' => $this->tr->_("The number of bytes sent to all clients.")
+                                        'label' => $this->i18n->_("Bytes Sent"),
+                                        'descr' => $this->i18n->_("The number of bytes sent to all clients.")
                                 ),
                         ),
                         'aborted'     => array(
-                                'label'    => $this->tr->_("Aborted"),
-                                'descr'    => $this->tr->_("Connection aborted statistics"),
+                                'label'    => $this->i18n->_("Aborted"),
+                                'descr'    => $this->i18n->_("Connection aborted statistics"),
                                 'clients'  => array(
-                                        'label' => $this->tr->_("Clients"),
-                                        'descr' => $this->tr->_("The number of connections that were aborted because the client died without closing the connection properly.")
+                                        'label' => $this->i18n->_("Clients"),
+                                        'descr' => $this->i18n->_("The number of connections that were aborted because the client died without closing the connection properly.")
                                 ),
                                 'connects' => array(
-                                        'label' => $this->tr->_("Connects"),
-                                        'descr' => $this->tr->_("The number of failed attempts to connect to the MySQL server.")
+                                        'label' => $this->i18n->_("Connects"),
+                                        'descr' => $this->i18n->_("The number of failed attempts to connect to the MySQL server.")
                                 ),
                         )
                 );

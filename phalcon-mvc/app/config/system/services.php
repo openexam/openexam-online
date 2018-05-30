@@ -276,7 +276,7 @@ $di->set('locale', function() use($config, $di) {
  * Translation service for application core. Views should typical use their
  * own translator object (with its own message catalogs).
  */
-$di->set('tr', function() use($config) {
+$di->set('i18n', function() use($config) {
         return new OpenExam\Library\Globalization\Translate\Gettext\Translate('core');
 }, true);
 

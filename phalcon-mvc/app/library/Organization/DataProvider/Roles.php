@@ -124,17 +124,17 @@ class Roles extends Component
         {
                 $roles = array();
 
-                $roles[] = new Role($this->_conditions, SecurityRoles::SYSTEM, $this->tr->_('System Users'));
-                $roles[] = new Role($this->_conditions, SecurityRoles::CONTRIBUTOR, $this->tr->_('Contributors'));
-                $roles[] = new Role($this->_conditions, SecurityRoles::CORRECTOR, $this->tr->_('Correctors'));
-                $roles[] = new Role($this->_conditions, SecurityRoles::CREATOR, $this->tr->_('Creators'));
-                $roles[] = new Role($this->_conditions, SecurityRoles::DECODER, $this->tr->_('Decoders'));
-                $roles[] = new Role($this->_conditions, SecurityRoles::INVIGILATOR, $this->tr->_('Invigilators'));
-                $roles[] = new Role($this->_conditions, SecurityRoles::STUDENT, $this->tr->_('Students'));
+                $roles[] = new Role($this->_conditions, SecurityRoles::SYSTEM, $this->i18n->_('System Users'));
+                $roles[] = new Role($this->_conditions, SecurityRoles::CONTRIBUTOR, $this->i18n->_('Contributors'));
+                $roles[] = new Role($this->_conditions, SecurityRoles::CORRECTOR, $this->i18n->_('Correctors'));
+                $roles[] = new Role($this->_conditions, SecurityRoles::CREATOR, $this->i18n->_('Creators'));
+                $roles[] = new Role($this->_conditions, SecurityRoles::DECODER, $this->i18n->_('Decoders'));
+                $roles[] = new Role($this->_conditions, SecurityRoles::INVIGILATOR, $this->i18n->_('Invigilators'));
+                $roles[] = new Role($this->_conditions, SecurityRoles::STUDENT, $this->i18n->_('Students'));
 
                 if (count($this->_filter) == 0) {
-                        $roles[] = new Role($this->_conditions, SecurityRoles::ADMIN, $this->tr->_('Admins'));
-                        $roles[] = new Role($this->_conditions, SecurityRoles::TEACHER, $this->tr->_('Teachers'));
+                        $roles[] = new Role($this->_conditions, SecurityRoles::ADMIN, $this->i18n->_('Admins'));
+                        $roles[] = new Role($this->_conditions, SecurityRoles::TEACHER, $this->i18n->_('Teachers'));
                 }
 
                 $result = array();
@@ -158,23 +158,23 @@ class Roles extends Component
         {
                 switch ($role) {
                         case SecurityRoles::ADMIN:
-                                return new Role($this->_conditions, $role, $this->tr->_('Admins'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Admins'));
                         case SecurityRoles::CONTRIBUTOR:
-                                return new Role($this->_conditions, $role, $this->tr->_('Contributors'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Contributors'));
                         case SecurityRoles::CORRECTOR:
-                                return new Role($this->_conditions, $role, $this->tr->_('Correctors'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Correctors'));
                         case SecurityRoles::CREATOR:
-                                return new Role($this->_conditions, $role, $this->tr->_('Creators'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Creators'));
                         case SecurityRoles::DECODER:
-                                return new Role($this->_conditions, $role, $this->tr->_('Decoders'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Decoders'));
                         case SecurityRoles::INVIGILATOR:
-                                return new Role($this->_conditions, $role, $this->tr->_('Invigilators'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Invigilators'));
                         case SecurityRoles::STUDENT:
-                                return new Role($this->_conditions, $role, $this->tr->_('Students'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Students'));
                         case SecurityRoles::TEACHER:
-                                return new Role($this->_conditions, $role, $this->tr->_('Teachers'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('Teachers'));
                         case SecurityRoles::SYSTEM:
-                                return new Role($this->_conditions, $role, $this->tr->_('System Users'));
+                                return new Role($this->_conditions, $role, $this->i18n->_('System Users'));
                 }
         }
 

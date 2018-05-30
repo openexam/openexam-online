@@ -92,7 +92,7 @@ class Students extends Component
          */
         public function getName()
         {
-                return $this->tr->_('Students');
+                return $this->i18n->_('Students');
         }
 
         /**

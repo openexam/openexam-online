@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"POT-Creation-Date: 2018-05-30 19:04+0200\n"
 "PO-Revision-Date: 2018-05-28 03:25+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -582,7 +582,8 @@ msgid "Free"
 msgstr "Free"
 
 #: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php:110
-msgid "Teh free space in file system (MB)."
+#, fuzzy
+msgid "The free space in file system (MB)."
 msgstr "Teh free space in file system (MB)."
 
 #: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php:85

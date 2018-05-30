@@ -164,26 +164,26 @@ class Statistics extends Component
 
                 $summary = array(
                         'roles' => array(
-                                'label' => $this->tr->_('Roles'),
+                                'label' => $this->i18n->_('Roles'),
                                 'count' => $roles->getSize(),
                                 'data'  => $roles->getData()
                         ),
                         'exams' => array(
-                                'label' => $this->tr->_('Exams'),
+                                'label' => $this->i18n->_('Exams'),
                                 'count' => $exams->getSize()
                         ),
                         'users' => array(
-                                'label'     => $this->tr->_('Users'),
+                                'label'     => $this->i18n->_('Users'),
                                 'total'     => array(
-                                        'label' => $this->tr->_('Total'),
+                                        'label' => $this->i18n->_('Total'),
                                         'count' => $users->getSize()
                                 ),
                                 'employees' => array(
-                                        'label' => $this->tr->_('Employees'),
+                                        'label' => $this->i18n->_('Employees'),
                                         'count' => $users->getEmployees()->getSize()
                                 ),
                                 'students'  => array(
-                                        'label' => $this->tr->_('Students'),
+                                        'label' => $this->i18n->_('Students'),
                                         'count' => $users->getStudents()->getSize()
                                 )
                         )

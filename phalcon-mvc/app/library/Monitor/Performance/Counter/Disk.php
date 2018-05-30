@@ -70,7 +70,7 @@ class Disk extends CounterBase implements Counter
          */
         public function getName()
         {
-                return $this->tr->_("Disk");
+                return $this->i18n->_("Disk");
         }
 
         /**
@@ -79,7 +79,7 @@ class Disk extends CounterBase implements Counter
          */
         public function getTitle()
         {
-                return $this->tr->_("Disk Performance (%disk%)", array(
+                return $this->i18n->_("Disk Performance (%disk%)", array(
                             'disk' => $this->_performance->getSource()
                 ));
         }
@@ -90,7 +90,7 @@ class Disk extends CounterBase implements Counter
          */
         public function getDescription()
         {
-                return $this->tr->_("Disk I/O (read/write) statistics.");
+                return $this->i18n->_("Disk I/O (read/write) statistics.");
         }
 
         /**
@@ -103,55 +103,55 @@ class Disk extends CounterBase implements Counter
                         'label' => $this->getTitle(),
                         'descr' => $this->getDescription(),
                         'read'  => array(
-                                'label'   => $this->tr->_("Reads"),
-                                'descr'   => $this->tr->_("Statistics for read operation."),
+                                'label'   => $this->i18n->_("Reads"),
+                                'descr'   => $this->i18n->_("Statistics for read operation."),
                                 'total'   => array(
-                                        'label' => $this->tr->_("Total"),
-                                        'descr' => $this->tr->_("Total reads completed successfully.")
+                                        'label' => $this->i18n->_("Total"),
+                                        'descr' => $this->i18n->_("Total reads completed successfully.")
                                 ),
                                 'merged'  => array(
-                                        'label' => $this->tr->_("Merged"),
-                                        'descr' => $this->tr->_("Grouped reads (resulting in one I/O).")
+                                        'label' => $this->i18n->_("Merged"),
+                                        'descr' => $this->i18n->_("Grouped reads (resulting in one I/O).")
                                 ),
                                 'sectors' => array(
-                                        'label' => $this->tr->_("Sectors"),
-                                        'descr' => $this->tr->_("Sectors read successfully.")
+                                        'label' => $this->i18n->_("Sectors"),
+                                        'descr' => $this->i18n->_("Sectors read successfully.")
                                 ),
                                 'ms'      => array(
-                                        'label' => $this->tr->_("Summary"),
-                                        'descr' => $this->tr->_("Milliseconds spent reading.")
+                                        'label' => $this->i18n->_("Summary"),
+                                        'descr' => $this->i18n->_("Milliseconds spent reading.")
                                 )
                         ),
                         'write' => array(
-                                'label'   => $this->tr->_("Writes"),
-                                'descr'   => $this->tr->_("Statistics for write operation."),
+                                'label'   => $this->i18n->_("Writes"),
+                                'descr'   => $this->i18n->_("Statistics for write operation."),
                                 'total'   => array(
-                                        'label' => $this->tr->_("Total"),
-                                        'descr' => $this->tr->_("Total writes completed successfully.")
+                                        'label' => $this->i18n->_("Total"),
+                                        'descr' => $this->i18n->_("Total writes completed successfully.")
                                 ),
                                 'merged'  => array(
-                                        'label' => $this->tr->_("Merged"),
-                                        'descr' => $this->tr->_("Grouped writes (resulting in one I/O).")
+                                        'label' => $this->i18n->_("Merged"),
+                                        'descr' => $this->i18n->_("Grouped writes (resulting in one I/O).")
                                 ),
                                 'sectors' => array(
-                                        'label' => $this->tr->_("Sectors"),
-                                        'descr' => $this->tr->_("Sectors written successfully.")
+                                        'label' => $this->i18n->_("Sectors"),
+                                        'descr' => $this->i18n->_("Sectors written successfully.")
                                 ),
                                 'ms'      => array(
-                                        'label' => $this->tr->_("Summary"),
-                                        'descr' => $this->tr->_("Milliseconds spent writing.")
+                                        'label' => $this->i18n->_("Summary"),
+                                        'descr' => $this->i18n->_("Milliseconds spent writing.")
                                 )
                         ),
                         'io'    => array(
-                                'label'   => $this->tr->_("Disk I/O"),
-                                'descr'   => $this->tr->_("Statistics for current I/O operations"),
+                                'label'   => $this->i18n->_("Disk I/O"),
+                                'descr'   => $this->i18n->_("Statistics for current I/O operations"),
                                 'current' => array(
-                                        'label' => $this->tr->_("Current"),
-                                        'descr' => $this->tr->_("I/O in progress.")
+                                        'label' => $this->i18n->_("Current"),
+                                        'descr' => $this->i18n->_("I/O in progress.")
                                 ),
                                 'seconds' => array(
-                                        'label' => $this->tr->_("Summary"),
-                                        'descr' => $this->tr->_("Seconds spent for I/O.")
+                                        'label' => $this->i18n->_("Summary"),
+                                        'descr' => $this->i18n->_("Seconds spent for I/O.")
                                 )
                         )
                 );

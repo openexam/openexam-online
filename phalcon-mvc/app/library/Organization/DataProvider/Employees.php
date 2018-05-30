@@ -92,7 +92,7 @@ class Employees extends Component
          */
         public function getName()
         {
-                return $this->tr->_('Employees');
+                return $this->i18n->_('Employees');
         }
 
         /**

@@ -30,6 +30,8 @@ namespace OpenExam\Controllers\Gui;
 use Exception;
 use OpenExam\Controllers\GuiController;
 use OpenExam\Library\Core\Error;
+use OpenExam\Library\Globalization\Translate\Gettext\Translate;
+use const PROJ_DIR;
 
 /**
  * Help content controller.
@@ -60,10 +62,10 @@ class HelpController extends GuiController
 
                 self::$_help = array(
                         "manual" => array(
-                                "name" => $this->tr->_("User Manuals"),
+                                "name" => $this->i18n->_("User Manuals"),
                                 "data" => array(
                                         "teacher" => array(
-                                                "name" => $this->tr->_("The OpenExam Teacher Manual"),
+                                                "name" => $this->i18n->_("The OpenExam Teacher Manual"),
                                                 "data" => array(
                                                         "pdf"  => "Portable Document Format (PDF)",
                                                         "docx" => "Microsoft Word OpenXML (Text)"
@@ -71,7 +73,7 @@ class HelpController extends GuiController
                                                 "lang" => array("swedish", "english")
                                         ),
                                         "student" => array(
-                                                "name" => $this->tr->_("The OpenExam Student Manual"),
+                                                "name" => $this->i18n->_("The OpenExam Student Manual"),
                                                 "data" => array(
                                                         "pdf" => "Portable Document Format (PDF)",
                                                         "odt" => "Open Document Format (Text)"
@@ -89,6 +91,9 @@ class HelpController extends GuiController
                         'base' => $base,
                         'icon' => $icon
                 ));
+
+                $translate = new Translate('help');
+                $this->view->setVar('tr', $translate);
 
                 $this->view->setTemplateBefore('cardbox');
         }

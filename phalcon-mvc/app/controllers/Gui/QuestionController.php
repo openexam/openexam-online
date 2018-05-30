@@ -536,7 +536,7 @@ class QuestionController extends GuiController
                 // 
                 if ($exam->show_code) {
                         $this->view->setVars(array(
-                                'heading' => $this->tr->_(
+                                'heading' => $this->i18n->_(
                                     "Student (Code: %code%)", array(
                                         'code' => $student->code
                                 )),
@@ -544,7 +544,7 @@ class QuestionController extends GuiController
                         ));
                 } else {
                         $this->view->setVars(array(
-                                'heading' => $this->tr->_(
+                                'heading' => $this->i18n->_(
                                     "Student (ID: %id%)", array(
                                         'id' => $student->id
                                 )),
@@ -589,7 +589,7 @@ class QuestionController extends GuiController
                 // 
                 if ($exam->show_code) {
                         $this->view->setVars(array(
-                                'heading' => $this->tr->_(
+                                'heading' => $this->i18n->_(
                                     "Question (Q%slot%) answered by student (Code: %code%)", array(
                                         'slot' => $question->slot,
                                         'code' => $student->code
@@ -598,7 +598,7 @@ class QuestionController extends GuiController
                         ));
                 } else {
                         $this->view->setVars(array(
-                                'heading' => $this->tr->_(
+                                'heading' => $this->i18n->_(
                                     "Question (Q%slot%) answered by student (ID: %id%)", array(
                                         'slot' => $question->slot,
                                         'id'   => $answer->student_id
@@ -639,7 +639,7 @@ class QuestionController extends GuiController
                 // Set header based on exam settings:
                 //                 
                 $this->view->setVars(array(
-                        'heading' => $this->tr->_(
+                        'heading' => $this->i18n->_(
                             "Question (Q%slot%)", array(
                                 'slot' => $question->slot
                         )),

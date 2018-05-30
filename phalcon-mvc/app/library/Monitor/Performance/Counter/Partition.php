@@ -62,7 +62,7 @@ class Partition extends CounterBase implements Counter
          */
         public function getName()
         {
-                return $this->tr->_("Partition");
+                return $this->i18n->_("Partition");
         }
 
         /**
@@ -71,7 +71,7 @@ class Partition extends CounterBase implements Counter
          */
         public function getTitle()
         {
-                return $this->tr->_("Partition Statistics (%part%)", array(
+                return $this->i18n->_("Partition Statistics (%part%)", array(
                             'part' => $this->_performance->getSource()
                 ));
         }
@@ -82,7 +82,7 @@ class Partition extends CounterBase implements Counter
          */
         public function getDescription()
         {
-                return $this->tr->_("Read and write statistics for this partition.");
+                return $this->i18n->_("Read and write statistics for this partition.");
         }
 
         /**
@@ -95,23 +95,23 @@ class Partition extends CounterBase implements Counter
                         'label' => $this->getTitle(),
                         'descr' => $this->getDescription(),
                         'io'    => array(
-                                'label'  => $this->tr->_("I/O"),
-                                'descr'  => $this->tr->_("Total request and sector I/O for this partition."),
+                                'label'  => $this->i18n->_("I/O"),
+                                'descr'  => $this->i18n->_("Total request and sector I/O for this partition."),
                                 'reads'  => array(
-                                        'label' => $this->tr->_("Reads"),
-                                        'descr' => $this->tr->_("Total number of reads issued to this partition."),
+                                        'label' => $this->i18n->_("Reads"),
+                                        'descr' => $this->i18n->_("Total number of reads issued to this partition."),
                                 ),
                                 'rdsect' => array(
-                                        'label' => $this->tr->_("Sectors (Read)"),
-                                        'descr' => $this->tr->_("Total read sectors for partition."),
+                                        'label' => $this->i18n->_("Sectors (Read)"),
+                                        'descr' => $this->i18n->_("Total read sectors for partition."),
                                 ),
                                 'writes' => array(
-                                        'label' => $this->tr->_("Writes"),
-                                        'descr' => $this->tr->_("Total number of writes issued to this partition."),
+                                        'label' => $this->i18n->_("Writes"),
+                                        'descr' => $this->i18n->_("Total number of writes issued to this partition."),
                                 ),
                                 'wrreq'  => array(
-                                        'label' => $this->tr->_("Requests (Write)"),
-                                        'descr' => $this->tr->_("Total number of write requests made for partition."),
+                                        'label' => $this->i18n->_("Requests (Write)"),
+                                        'descr' => $this->i18n->_("Total number of write requests made for partition."),
                                 )
                         )
                 );

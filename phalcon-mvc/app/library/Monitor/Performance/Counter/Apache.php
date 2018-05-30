@@ -90,7 +90,7 @@ class Apache extends CounterBase implements Counter
          */
         public function getName()
         {
-                return $this->tr->_("Apache");
+                return $this->i18n->_("Apache");
         }
 
         /**
@@ -99,7 +99,7 @@ class Apache extends CounterBase implements Counter
          */
         public function getTitle()
         {
-                return $this->tr->_("Apache Web Server");
+                return $this->i18n->_("Apache Web Server");
         }
 
         /**
@@ -108,7 +108,7 @@ class Apache extends CounterBase implements Counter
          */
         public function getDescription()
         {
-                return $this->tr->_("Performance counter for the Apache Web Server");
+                return $this->i18n->_("Performance counter for the Apache Web Server");
         }
 
         /**
@@ -121,163 +121,163 @@ class Apache extends CounterBase implements Counter
                         'label'          => $this->getTitle(),
                         'descr'          => $this->getDescription(),
                         'socket'         => array(
-                                'label'  => $this->tr->_("Sockets"),
-                                'descr'  => $this->tr->_("Total number of socket (inclusing closed) by Apache"),
+                                'label'  => $this->i18n->_("Sockets"),
+                                'descr'  => $this->i18n->_("Total number of socket (inclusing closed) by Apache"),
                                 'socket' => array(
-                                        'label' => $this->tr->_("Sockets"),
-                                        'descr' => $this->tr->_("Network or UNIX domain sockets")
+                                        'label' => $this->i18n->_("Sockets"),
+                                        'descr' => $this->i18n->_("Network or UNIX domain sockets")
                                 ),
                                 'mutex'  => array(
-                                        'label' => $this->tr->_("Mutex"),
-                                        'descr' => $this->tr->_("File system mutex or lock files")
+                                        'label' => $this->i18n->_("Mutex"),
+                                        'descr' => $this->i18n->_("File system mutex or lock files")
                                 ),
                                 'event'  => array(
-                                        'label' => $this->tr->_("Event"),
-                                        'descr' => $this->tr->_("Event poll socket")
+                                        'label' => $this->i18n->_("Event"),
+                                        'descr' => $this->i18n->_("Event poll socket")
                                 ),
                                 'pipe'   => array(
-                                        'label' => $this->tr->_("Pipe"),
-                                        'descr' => $this->tr->_("File system pipe")
+                                        'label' => $this->i18n->_("Pipe"),
+                                        'descr' => $this->i18n->_("File system pipe")
                                 ),
                                 'file'   => array(
-                                        'label' => $this->tr->_("File"),
-                                        'descr' => $this->tr->_("Standard file or device")
+                                        'label' => $this->i18n->_("File"),
+                                        'descr' => $this->i18n->_("Standard file or device")
                                 ),
                                 'total'  => array(
-                                        'label' => $this->tr->_("Total"),
-                                        'descr' => $this->tr->_("Total number of files in used")
+                                        'label' => $this->i18n->_("Total"),
+                                        'descr' => $this->i18n->_("Total number of files in used")
                                 ),
                         ),
                         'connect-state'  => array(
-                                'label'       => $this->tr->_("State"),
-                                'descr'       => $this->tr->_("Socket connection state"),
+                                'label'       => $this->i18n->_("State"),
+                                'descr'       => $this->i18n->_("Socket connection state"),
                                 'established' => array(
-                                        'label' => $this->tr->_("Established"),
-                                        'descr' => $this->tr->_("The socket has an established connection.")
+                                        'label' => $this->i18n->_("Established"),
+                                        'descr' => $this->i18n->_("The socket has an established connection.")
                                 ),
                                 'syn-sent'    => array(
-                                        'label' => $this->tr->_("Syn Sent"),
-                                        'descr' => $this->tr->_("The socket is actively attempting to establish a connection.")
+                                        'label' => $this->i18n->_("Syn Sent"),
+                                        'descr' => $this->i18n->_("The socket is actively attempting to establish a connection.")
                                 ),
                                 'syn-recv'    => array(
-                                        'label' => $this->tr->_("Syn Recv"),
-                                        'descr' => $this->tr->_("A connection request has been received from the network.")
+                                        'label' => $this->i18n->_("Syn Recv"),
+                                        'descr' => $this->i18n->_("A connection request has been received from the network.")
                                 ),
                                 'fin-wait-1'  => array(
-                                        'label' => $this->tr->_("Fin Wait 1"),
-                                        'descr' => $this->tr->_("The socket is closed, and the connection is shutting down.")
+                                        'label' => $this->i18n->_("Fin Wait 1"),
+                                        'descr' => $this->i18n->_("The socket is closed, and the connection is shutting down.")
                                 ),
                                 'fin-wait-2'  => array(
-                                        'label' => $this->tr->_("Fin Wait 2"),
-                                        'descr' => $this->tr->_("Connection is closed, and the socket is waiting for a shutdown from the remote end.")
+                                        'label' => $this->i18n->_("Fin Wait 2"),
+                                        'descr' => $this->i18n->_("Connection is closed, and the socket is waiting for a shutdown from the remote end.")
                                 ),
                                 'time-wait'   => array(
-                                        'label' => $this->tr->_("Time Wait"),
-                                        'descr' => $this->tr->_("The socket is waiting after close to handle packets still in the network.")
+                                        'label' => $this->i18n->_("Time Wait"),
+                                        'descr' => $this->i18n->_("The socket is waiting after close to handle packets still in the network.")
                                 ),
                                 'closed'      => array(
-                                        'label' => $this->tr->_("Closed"),
-                                        'descr' => $this->tr->_("The socket is not being used.")
+                                        'label' => $this->i18n->_("Closed"),
+                                        'descr' => $this->i18n->_("The socket is not being used.")
                                 ),
                                 'close-wait'  => array(
-                                        'label' => $this->tr->_("Close Wait"),
-                                        'descr' => $this->tr->_("The remote end has shut down, waiting for the socket to close.")
+                                        'label' => $this->i18n->_("Close Wait"),
+                                        'descr' => $this->i18n->_("The remote end has shut down, waiting for the socket to close.")
                                 ),
                                 'last-ack'    => array(
-                                        'label' => $this->tr->_("Last Ack"),
-                                        'descr' => $this->tr->_("The remote end has shut down, and the socket is closed. Waiting for acknowledgement.")
+                                        'label' => $this->i18n->_("Last Ack"),
+                                        'descr' => $this->i18n->_("The remote end has shut down, and the socket is closed. Waiting for acknowledgement.")
                                 ),
                                 'listen'      => array(
-                                        'label' => $this->tr->_("Listen"),
-                                        'descr' => $this->tr->_("The socket is listening for incoming connections.")
+                                        'label' => $this->i18n->_("Listen"),
+                                        'descr' => $this->i18n->_("The socket is listening for incoming connections.")
                                 ),
                                 'closing'     => array(
-                                        'label' => $this->tr->_("Closing"),
-                                        'descr' => $this->tr->_("Both sockets are shut down but we still don't have all our data sent.")
+                                        'label' => $this->i18n->_("Closing"),
+                                        'descr' => $this->i18n->_("Both sockets are shut down but we still don't have all our data sent.")
                                 ),
                         ),
                         'connect-queue'  => array(
-                                'label'      => $this->tr->_("Queue"),
-                                'descr'      => $this->tr->_("Socket I/O pending read/write"),
+                                'label'      => $this->i18n->_("Queue"),
+                                'descr'      => $this->i18n->_("Socket I/O pending read/write"),
                                 'send-bytes' => array(
-                                        'label' => $this->tr->_("Send"),
-                                        'descr' => $this->tr->_("The number of bytes waiting in output buffers to be sent")
+                                        'label' => $this->i18n->_("Send"),
+                                        'descr' => $this->i18n->_("The number of bytes waiting in output buffers to be sent")
                                 ),
                                 'recv-bytes' => array(
-                                        'label' => $this->tr->_("Receive"),
-                                        'descr' => $this->tr->_("The number of bytes in input buffers waiting to be received")
+                                        'label' => $this->i18n->_("Receive"),
+                                        'descr' => $this->i18n->_("The number of bytes in input buffers waiting to be received")
                                 ),
                         ),
                         'status-load'    => array(
-                                'label' => $this->tr->_("Load"),
-                                'descr' => $this->tr->_("Apache process load"),
+                                'label' => $this->i18n->_("Load"),
+                                'descr' => $this->i18n->_("Apache process load"),
                                 '1min'  => array(
-                                        'label' => $this->tr->_("Last Minute"),
-                                        'descr' => $this->tr->_("Load since last minute")
+                                        'label' => $this->i18n->_("Last Minute"),
+                                        'descr' => $this->i18n->_("Load since last minute")
                                 ),
                                 '5min'  => array(
-                                        'label' => $this->tr->_("5 Minutes"),
-                                        'descr' => $this->tr->_("Load during last 5 minutes")
+                                        'label' => $this->i18n->_("5 Minutes"),
+                                        'descr' => $this->i18n->_("Load during last 5 minutes")
                                 ),
                                 '15min' => array(
-                                        'label' => $this->tr->_("15 Minutes"),
-                                        'descr' => $this->tr->_("Load during last 15 minutes")
+                                        'label' => $this->i18n->_("15 Minutes"),
+                                        'descr' => $this->i18n->_("Load during last 15 minutes")
                                 ),
                         ),
                         'status-total'   => array(
-                                'label'  => $this->tr->_("Total"),
-                                'descr'  => $this->tr->_("Overall transfer and request statistics"),
+                                'label'  => $this->i18n->_("Total"),
+                                'descr'  => $this->i18n->_("Overall transfer and request statistics"),
                                 'access' => array(
-                                        'label' => $this->tr->_("Access"),
-                                        'descr' => $this->tr->_("The number of requests made since last restart")
+                                        'label' => $this->i18n->_("Access"),
+                                        'descr' => $this->i18n->_("The number of requests made since last restart")
                                 ),
                                 'kbytes' => array(
-                                        'label' => $this->tr->_("kBytes"),
-                                        'descr' => $this->tr->_("The number of kilo bytes transfered since last restart")
+                                        'label' => $this->i18n->_("kBytes"),
+                                        'descr' => $this->i18n->_("The number of kilo bytes transfered since last restart")
                                 ),
                         ),
                         'status-cpu'     => array(
-                                'label'  => $this->tr->_("CPU"),
-                                'descr'  => $this->tr->_("CPU time consumed by the Apache process"),
+                                'label'  => $this->i18n->_("CPU"),
+                                'descr'  => $this->i18n->_("CPU time consumed by the Apache process"),
                                 'user'   => array(
-                                        'label' => $this->tr->_("User"),
-                                        'descr' => $this->tr->_("User space CPU time")
+                                        'label' => $this->i18n->_("User"),
+                                        'descr' => $this->i18n->_("User space CPU time")
                                 ),
                                 'system' => array(
-                                        'label' => $this->tr->_("System"),
-                                        'descr' => $this->tr->_("Kernel space CPU time")
+                                        'label' => $this->i18n->_("System"),
+                                        'descr' => $this->i18n->_("Kernel space CPU time")
                                 ),
                                 'load'   => array(
-                                        'label' => $this->tr->_("Load"),
-                                        'descr' => $this->tr->_("Avarage system load")
+                                        'label' => $this->i18n->_("Load"),
+                                        'descr' => $this->i18n->_("Avarage system load")
                                 ),
                         ),
                         'status-request' => array(
-                                'label'     => $this->tr->_("Requests"),
-                                'descr'     => $this->tr->_("Current request footprint"),
+                                'label'     => $this->i18n->_("Requests"),
+                                'descr'     => $this->i18n->_("Current request footprint"),
                                 'num-sec'   => array(
-                                        'label' => $this->tr->_("#/sec"),
-                                        'descr' => $this->tr->_("Requests per second")
+                                        'label' => $this->i18n->_("#/sec"),
+                                        'descr' => $this->i18n->_("Requests per second")
                                 ),
                                 'bytes-sec' => array(
-                                        'label' => $this->tr->_("kB/sec"),
-                                        'descr' => $this->tr->_("Bytes transfered per second")
+                                        'label' => $this->i18n->_("kB/sec"),
+                                        'descr' => $this->i18n->_("Bytes transfered per second")
                                 ),
                                 'bytes-req' => array(
-                                        'label' => $this->tr->_("kB/req"),
-                                        'descr' => $this->tr->_("Bytes per request in avarage")
+                                        'label' => $this->i18n->_("kB/req"),
+                                        'descr' => $this->i18n->_("Bytes per request in avarage")
                                 ),
                         ),
                         'status-workers' => array(
-                                'label' => $this->tr->_("Workers"),
-                                'descr' => $this->tr->_("Number of workers handling incoming connections"),
+                                'label' => $this->i18n->_("Workers"),
+                                'descr' => $this->i18n->_("Number of workers handling incoming connections"),
                                 'busy'  => array(
-                                        'label' => $this->tr->_("Busy"),
-                                        'descr' => $this->tr->_("Number of busy workers (in use)")
+                                        'label' => $this->i18n->_("Busy"),
+                                        'descr' => $this->i18n->_("Number of busy workers (in use)")
                                 ),
                                 'idle'  => array(
-                                        'label' => $this->tr->_("Idle"),
-                                        'descr' => $this->tr->_("Number of idle workers (waiting)")
+                                        'label' => $this->i18n->_("Idle"),
+                                        'descr' => $this->i18n->_("Number of idle workers (waiting)")
                                 ),
                         ),
                 );

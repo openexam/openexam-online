@@ -55,7 +55,7 @@ class GuiController extends ControllerBase
         public function initialize()
         {
                 parent::initialize();
-
+                
                 // 
                 // Set translation object. Observe that all core components 
                 // uses the tr service or _() wrapper.

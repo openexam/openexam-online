@@ -62,7 +62,7 @@ class FileSystem extends CounterBase implements Counter
          */
         public function getName()
         {
-                return $this->tr->_("File System");
+                return $this->i18n->_("File System");
         }
 
         /**
@@ -71,7 +71,7 @@ class FileSystem extends CounterBase implements Counter
          */
         public function getTitle()
         {
-                return $this->tr->_("File System %name%", array(
+                return $this->i18n->_("File System %name%", array(
                             'name' => $this->_performance->getSource()
                 ));
         }
@@ -82,7 +82,7 @@ class FileSystem extends CounterBase implements Counter
          */
         public function getDescription()
         {
-                return $this->tr->_("Usage information for mounted file system.");
+                return $this->i18n->_("Usage information for mounted file system.");
         }
 
         /**
@@ -95,19 +95,19 @@ class FileSystem extends CounterBase implements Counter
                         'label' => $this->getTitle(),
                         'descr' => $this->getDescription(),
                         'usage' => array(
-                                'label' => $this->tr->_("Usage"),
-                                'descr' => $this->tr->_("Total size and used space of file system."),
+                                'label' => $this->i18n->_("Usage"),
+                                'descr' => $this->i18n->_("Total size and used space of file system."),
                                 'total' => array(
-                                        'label' => $this->tr->_("Total"),
-                                        'descr' => $this->tr->_("The total size of file system (MB).")
+                                        'label' => $this->i18n->_("Total"),
+                                        'descr' => $this->i18n->_("The total size of file system (MB).")
                                 ),
                                 'used'  => array(
-                                        'label' => $this->tr->_("Used"),
-                                        'descr' => $this->tr->_("The used space in file system (MB).")
+                                        'label' => $this->i18n->_("Used"),
+                                        'descr' => $this->i18n->_("The used space in file system (MB).")
                                 ),
                                 'free'  => array(
-                                        'label' => $this->tr->_("Free"),
-                                        'descr' => $this->tr->_("Teh free space in file system (MB).")
+                                        'label' => $this->i18n->_("Free"),
+                                        'descr' => $this->i18n->_("The free space in file system (MB).")
                                 )
                         )
                 );

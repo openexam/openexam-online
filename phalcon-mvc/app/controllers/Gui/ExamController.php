@@ -34,6 +34,7 @@ use OpenExam\Library\Core\Error;
 use OpenExam\Library\Core\Exam\Archive;
 use OpenExam\Library\Core\Exam\Staff;
 use OpenExam\Library\Core\Exam\State;
+use OpenExam\Library\Globalization\Translate\Gettext\Translate;
 use OpenExam\Library\Gui\Component\DateTime\Range as DateTime;
 use OpenExam\Library\Gui\Component\Exam\Check;
 use OpenExam\Library\Gui\Component\Exam\Phase;
@@ -1047,6 +1048,9 @@ class ExamController extends GuiController
                 $this->view->setVar('role', $this->user->getPrimaryRole());
                 $this->view->setVar('check', new Check($exam));
                 $this->view->setVar('exam', $exam);
+
+                $translate = new Translate('exam');
+                $this->view->setVar('tr', $translate);
         }
 
         /**
@@ -1099,7 +1103,7 @@ class ExamController extends GuiController
                 if ($this->request->has('correct')) {
                         $correct = $this->request->get('correct') === 'true';
                 }
-                
+
                 // 
                 // Cleanup any existing PDF:
                 // 

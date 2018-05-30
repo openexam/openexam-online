@@ -103,23 +103,23 @@ class Progress extends PhalconComponent implements Component
                 // Check from backward:
                 // 
                 if ($this->_state->has(State::DECODED)) {
-                        $output("grey", "battery-4", "decoded", false, $this->tr->_("Decoded"));
+                        $output("grey", "battery-4", "decoded", false, $this->i18n->_("Decoded"));
                 } elseif ($this->_state->has(State::ENQUIRY)) {
-                        $output("red", "battery-4", "enquiry", true, $this->tr->_("Enquiry"));
+                        $output("red", "battery-4", "enquiry", true, $this->i18n->_("Enquiry"));
                 } elseif ($this->_state->has(State::CORRECTED)) {
-                        $output("orange", "battery-3", "corrected", true, $this->tr->_("Corrected"));
+                        $output("orange", "battery-3", "corrected", true, $this->i18n->_("Corrected"));
                 } elseif ($this->_state->has(State::FINISHED)) {
-                        $output("orange", "battery-2", "finished", true, $this->tr->_("Finished"));
+                        $output("orange", "battery-2", "finished", true, $this->i18n->_("Finished"));
                 } elseif ($this->_state->has(State::ANSWERED)) {
-                        $output("light-green", "battery-1", "answered", false, $this->tr->_("Answered"));
+                        $output("light-green", "battery-1", "answered", false, $this->i18n->_("Answered"));
                 } elseif ($this->_state->has(State::RUNNING) && $this->_state->has(State::PUBLISHED) == true) {
-                        $output("light-green", "battery-0", "published", false, $this->tr->_("Ongoing"));
+                        $output("light-green", "battery-0", "published", false, $this->i18n->_("Ongoing"));
                 } elseif ($this->_state->has(State::RUNNING) && $this->_state->has(State::PUBLISHED) == false) {
-                        $output("red", "battery-0", "upcoming", true, $this->tr->_("Started"));
+                        $output("red", "battery-0", "upcoming", true, $this->i18n->_("Started"));
                 } elseif ($this->_state->has(State::PUBLISHED)) {
-                        $output("blue", "battery-0", "published", true, $this->tr->_("Published"));
+                        $output("blue", "battery-0", "published", true, $this->i18n->_("Published"));
                 } elseif ($this->_state->has(State::UPCOMING)) {
-                        $output("blue", "battery-0", "upcoming", true, $this->tr->_("Upcoming"));
+                        $output("blue", "battery-0", "upcoming", true, $this->i18n->_("Upcoming"));
                 }
         }
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 04:49+0200\n"
+"POT-Creation-Date: 2018-05-30 19:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,15 +82,15 @@ msgid "Other formats and translations..."
 msgstr ""
 
 #: phalcon-mvc/app/views/help/index.phtml:60
-#: phalcon-mvc/app/views/help/manual.phtml:61
+#: phalcon-mvc/app/views/help/manual.phtml:63
 msgid "If you see this page, then you might have ended up on this page by misstake."
 msgstr ""
 
 #: phalcon-mvc/app/views/help/index.phtml:61
-#: phalcon-mvc/app/views/help/manual.phtml:62
+#: phalcon-mvc/app/views/help/manual.phtml:64
 msgid "Please follow one of the links above to access desired content."
 msgstr ""
 
-#: phalcon-mvc/app/views/help/manual.phtml:30
+#: phalcon-mvc/app/views/help/manual.phtml:32
 msgid "Manuals"
 msgstr ""

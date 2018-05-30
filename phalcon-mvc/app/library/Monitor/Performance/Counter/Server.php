@@ -82,7 +82,7 @@ class Server extends CounterBase implements Counter
          */
         public function getName()
         {
-                return $this->tr->_("Server");
+                return $this->i18n->_("Server");
         }
 
         /**
@@ -91,7 +91,7 @@ class Server extends CounterBase implements Counter
          */
         public function getTitle()
         {
-                return $this->tr->_("Virtual Memory Counters");
+                return $this->i18n->_("Virtual Memory Counters");
         }
 
         /**
@@ -100,7 +100,7 @@ class Server extends CounterBase implements Counter
          */
         public function getDescription()
         {
-                return $this->tr->_("Information about processes, memory, paging, block I/O and CPU activity.");
+                return $this->i18n->_("Information about processes, memory, paging, block I/O and CPU activity.");
         }
 
         /**
@@ -113,95 +113,95 @@ class Server extends CounterBase implements Counter
                         'label'   => $this->getTitle(),
                         'descr'   => $this->getDescription(),
                         'cpu'     => array(
-                                'label'  => $this->tr->_("Processor (CPU)"),
-                                'descr'  => $this->tr->_("These are percentages of total CPU time."),
+                                'label'  => $this->i18n->_("Processor (CPU)"),
+                                'descr'  => $this->i18n->_("These are percentages of total CPU time."),
                                 'user'   => array(
-                                        'label' => $this->tr->_("User Mode"),
-                                        'descr' => $this->tr->_("Time spent running non-kernel code."),
+                                        'label' => $this->i18n->_("User Mode"),
+                                        'descr' => $this->i18n->_("Time spent running non-kernel code."),
                                 ),
                                 'system' => array(
-                                        'label' => $this->tr->_("Kernel Mode"),
-                                        'descr' => $this->tr->_("Time spent running kernel code."),
+                                        'label' => $this->i18n->_("Kernel Mode"),
+                                        'descr' => $this->i18n->_("Time spent running kernel code."),
                                 ),
                                 'idle'   => array(
-                                        'label' => $this->tr->_("Idle"),
-                                        'descr' => $this->tr->_("Time spent idle."),
+                                        'label' => $this->i18n->_("Idle"),
+                                        'descr' => $this->i18n->_("Time spent idle."),
                                 ),
                                 'wait'   => array(
-                                        'label' => $this->tr->_("I/O Wait"),
-                                        'descr' => $this->tr->_("Time spent waiting for IO."),
+                                        'label' => $this->i18n->_("I/O Wait"),
+                                        'descr' => $this->i18n->_("Time spent waiting for IO."),
                                 ),
                                 'stolen' => array(
-                                        'label' => $this->tr->_("Stolen"),
-                                        'descr' => $this->tr->_("Time stolen from a virtual machine."),
+                                        'label' => $this->i18n->_("Stolen"),
+                                        'descr' => $this->i18n->_("Time stolen from a virtual machine."),
                                 )
                         ),
                         'memory'  => array(
-                                'label'  => $this->tr->_("Memory"),
-                                'descr'  => $this->tr->_("RAM and swap used, including disk cache and buffers."),
+                                'label'  => $this->i18n->_("Memory"),
+                                'descr'  => $this->i18n->_("RAM and swap used, including disk cache and buffers."),
                                 'swap'   => array(
-                                        'label' => $this->tr->_("Swap"),
-                                        'descr' => $this->tr->_("The amount of virtual memory used."),
+                                        'label' => $this->i18n->_("Swap"),
+                                        'descr' => $this->i18n->_("The amount of virtual memory used."),
                                 ),
                                 'free'   => array(
-                                        'label' => $this->tr->_("Free Memory"),
-                                        'descr' => $this->tr->_("The amount of idle (unused) memory."),
+                                        'label' => $this->i18n->_("Free Memory"),
+                                        'descr' => $this->i18n->_("The amount of idle (unused) memory."),
                                 ),
                                 'buffer' => array(
-                                        'label' => $this->tr->_("Buffered"),
-                                        'descr' => $this->tr->_("The amount of memory used as buffers."),
+                                        'label' => $this->i18n->_("Buffered"),
+                                        'descr' => $this->i18n->_("The amount of memory used as buffers."),
                                 ),
                                 'cached' => array(
-                                        'label' => $this->tr->_("Cached"),
-                                        'descr' => $this->tr->_("The amount of memory used as cache."),
+                                        'label' => $this->i18n->_("Cached"),
+                                        'descr' => $this->i18n->_("The amount of memory used as cache."),
                                 )
                         ),
                         'swap'    => array(
-                                'label' => $this->tr->_("Swap"),
-                                'descr' => $this->tr->_("Usage of disk paging."),
+                                'label' => $this->i18n->_("Swap"),
+                                'descr' => $this->i18n->_("Usage of disk paging."),
                                 'in'    => array(
-                                        'label' => $this->tr->_("Pages In"),
-                                        'descr' => $this->tr->_("Amount of memory swapped in from disk (/s)."),
+                                        'label' => $this->i18n->_("Pages In"),
+                                        'descr' => $this->i18n->_("Amount of memory swapped in from disk (/s)."),
                                 ),
                                 'out'   => array(
-                                        'label' => $this->tr->_("Pages Out"),
-                                        'descr' => $this->tr->_("Amount of memory swapped to disk (/s)."),
+                                        'label' => $this->i18n->_("Pages Out"),
+                                        'descr' => $this->i18n->_("Amount of memory swapped to disk (/s)."),
                                 )
                         ),
                         'process' => array(
-                                'label'    => $this->tr->_("Processes"),
-                                'descr'    => $this->tr->_("Information about running processes."),
+                                'label'    => $this->i18n->_("Processes"),
+                                'descr'    => $this->i18n->_("Information about running processes."),
                                 'runnable' => array(
-                                        'label' => $this->tr->_("Runnable"),
-                                        'descr' => $this->tr->_("The number of runnable processes (running or waiting for run time)."),
+                                        'label' => $this->i18n->_("Runnable"),
+                                        'descr' => $this->i18n->_("The number of runnable processes (running or waiting for run time)."),
                                 ),
                                 'sleeping' => array(
-                                        'label' => $this->tr->_("Sleeping"),
-                                        'descr' => $this->tr->_("The number of processes in uninterruptible sleep."),
+                                        'label' => $this->i18n->_("Sleeping"),
+                                        'descr' => $this->i18n->_("The number of processes in uninterruptible sleep."),
                                 )
                         ),
                         'io'      => array(
-                                'label' => $this->tr->_("Block I/O"),
-                                'descr' => $this->tr->_("Read/write for block devices."),
+                                'label' => $this->i18n->_("Block I/O"),
+                                'descr' => $this->i18n->_("Read/write for block devices."),
                                 'in'    => array(
-                                        'label' => $this->tr->_("Block In"),
-                                        'descr' => $this->tr->_("Blocks received from a block device (blocks/s)."),
+                                        'label' => $this->i18n->_("Block In"),
+                                        'descr' => $this->i18n->_("Blocks received from a block device (blocks/s)."),
                                 ),
                                 'out'   => array(
-                                        'label' => $this->tr->_("Block Out"),
-                                        'descr' => $this->tr->_("Blocks sent to a block device (blocks/s)."),
+                                        'label' => $this->i18n->_("Block Out"),
+                                        'descr' => $this->i18n->_("Blocks sent to a block device (blocks/s)."),
                                 )
                         ),
                         'system'  => array(
-                                'label'      => $this->tr->_("System"),
-                                'descr'      => $this->tr->_("IRQ and context switches."),
+                                'label'      => $this->i18n->_("System"),
+                                'descr'      => $this->i18n->_("IRQ and context switches."),
                                 'interrupts' => array(
-                                        'label' => $this->tr->_("Interrupts"),
-                                        'descr' => $this->tr->_("The number of interrupts per second, including the clock."),
+                                        'label' => $this->i18n->_("Interrupts"),
+                                        'descr' => $this->i18n->_("The number of interrupts per second, including the clock."),
                                 ),
                                 'context'    => array(
-                                        'label' => $this->tr->_("Context Switches"),
-                                        'descr' => $this->tr->_("The number of context switches per second."),
+                                        'label' => $this->i18n->_("Context Switches"),
+                                        'descr' => $this->i18n->_("The number of context switches per second."),
                                 )
                         )
                 );
