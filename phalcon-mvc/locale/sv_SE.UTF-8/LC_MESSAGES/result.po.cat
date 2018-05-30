@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "#-#-#-#-#  result.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 00:37+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -19,11 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 "#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 04:46+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:19+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -35,155 +36,157 @@ msgstr ""
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 77
 msgid "Exam held on:"
-msgstr ""
+msgstr "Tentan genomförd:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 100
 msgid "Exam description"
-msgstr ""
+msgstr "Tentabeskrivning"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 117
 msgid "Examination result"
-msgstr ""
+msgstr "Tentaresultat"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 121
 msgid "Summary"
-msgstr ""
+msgstr "Summering"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 125
 msgid "You scored total <strong>%score%</strong> of maximum <strong>%maximum%</strong> points (<strong>%percent%%</strong>) on this examination."
-msgstr ""
+msgstr "Du fick totalt <strong>%score%</strong> av maximalt <strong>%maximum%</strong> poäng (<strong>%percent%%</strong>) på denna tenta."
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 137
 msgid "Graduation"
-msgstr ""
+msgstr "Betyg"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 140
 msgid "Your graduation on this examination is: <strong>%grade%</strong>"
-msgstr ""
+msgstr "Ditt betyg på denna tenta är: <strong>%grade%</strong>"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 145
 msgid "Score Table"
-msgstr ""
+msgstr "Poängtabell"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 149
 msgid "This table shows a summary of your score versus the maximum scores."
-msgstr ""
+msgstr "Denna tabell visar en summering av dina poäng jämfört med maximalt utfall."
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 150
 msgid "Questions without answer are marked with an '-' in the table."
-msgstr ""
+msgstr "Frågor utan svar är markerade med '-' i tabellen."
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 156
 # File: phalcon-mvc/app/views/result/view.phtml, line: 217
 # File: phalcon-mvc/app/views/result/view.phtml, line: 446
 msgid "Question"
-msgstr ""
+msgstr "Fråga"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 157
 msgid "Score"
-msgstr ""
+msgstr "Poäng"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 158
 msgid "Max score"
-msgstr ""
+msgstr "Max poäng"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 159
 # File: phalcon-mvc/app/views/result/view.phtml, line: 369
 msgid "Percent"
-msgstr ""
+msgstr "Procent"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 160
 msgid "Notice"
-msgstr ""
+msgstr "Notera"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 195
 # File: phalcon-mvc/app/views/result/view.phtml, line: 382
 msgid "Summary:"
-msgstr ""
+msgstr "Summering:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 278
 msgid "Your answer:"
-msgstr ""
+msgstr "Ditt svar:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 309
 msgid "No answer was provided for this part."
-msgstr ""
+msgstr "Inget svar har givits för denna del."
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 318
 msgid "Teacher's comments:"
-msgstr ""
+msgstr "Kommentar från lärare:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 327
 msgid "Your score:"
-msgstr ""
+msgstr "Din poäng:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 330
 msgid "Max score:"
-msgstr ""
+msgstr "Max poäng:"
 #
+# File: phalcon-mvc/app/views/result/view.phtml, line: 351
 # File: phalcon-mvc/app/views/layouts/main.phtml, line: 238
 msgid "Statistics"
 msgstr "Statistik"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 354
 msgid "This section shows overall statistics for all participants of this examination."
-msgstr ""
+msgstr "Denna sektion visar översiktlig statistik för alla deltagare på denna tenta."
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 358
 msgid "Distribution"
-msgstr ""
+msgstr "Fördelning"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 361
 msgid "This table shows the distribution by grades. The number of student allotted for each grade are:"
-msgstr ""
+msgstr "Denna tabell visar fördelningen per betyg. Antalet studenter tilldelade varje betyg är:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 366
 msgid "Grade"
-msgstr ""
+msgstr "Betyg"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 367
 msgid "Threshold"
-msgstr ""
+msgstr "Gräns"
 #
+# File: phalcon-mvc/app/views/result/view.phtml, line: 368
 # File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 110
 msgid "Students"
 msgstr "Studenter"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 399
 msgid "Reference"
-msgstr ""
+msgstr "Referens"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 403
 msgid "Information about this examination."
-msgstr ""
+msgstr "Information om denna tenta."
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 409
 msgid "Contact Information"
-msgstr ""
+msgstr "Kontaktinformation"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 412
 msgid "This section lists those people who have been involved in this examination."
-msgstr ""
+msgstr "Denna sektion visar vilka personer som har varit inblandade i denna tenta."
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 416
 msgid "Responsable for examination:"
-msgstr ""
+msgstr "Ansvarig för tentan:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 420
 msgid "Main responsible person for the examination is"
-msgstr ""
+msgstr "Huvudansvarig person för tentan är"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 432
 msgid "Correction of answers:"
-msgstr ""
+msgstr "Rättning av svar:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 435
 msgid "Following persons have contributed in this exam and have corrected answers:"
-msgstr ""
+msgstr "Dessa personer bidragit till denna tenta och rättat svar:"
 #
 # File: phalcon-mvc/app/views/result/view.phtml, line: 442
 msgid "Corrected questions:"
-msgstr ""
+msgstr "Rättade frågor:"
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"
@@ -453,7 +456,7 @@ msgstr "Ladda ner arkivfil"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 115
 msgid "The media content has been hidden on request from teacher"
-msgstr "Mediainnehållet har dolts på begäran från läraren"
+msgstr "Media-innehållet har dolts på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 133
 msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
@@ -465,7 +468,7 @@ msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på at
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 171
 msgid "The media content has been blurred on request from teacher"
-msgstr ""
+msgstr "Media-innehållet har gjorts suddigt på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/layouts/main.phtml, line: 156
 msgid "Home"

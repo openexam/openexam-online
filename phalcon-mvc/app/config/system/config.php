@@ -146,7 +146,7 @@ $config = new Config(
                         'name'    => 'openexam-online',
                         'version' => '2.0',
                         'copying' => 'The OpenExam project',
-                        'address' => 'i18n@openexam.io'
+                        'address' => 'andlov@nowise.se'
                 )
         ),
         /**

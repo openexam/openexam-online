@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
 "PO-Revision-Date: 2018-05-28 03:25+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -430,8 +430,8 @@ msgid "Students: %students%"
 msgstr "Students: %students%"
 
 #: phalcon-mvc/app/views/exam/details.phtml:275
-#, php-format
-msgid "Locations: %locations"
+#, fuzzy
+msgid "Locations: %locations%"
 msgstr "Locations: %locations"
 
 #: phalcon-mvc/app/views/exam/details.phtml:281

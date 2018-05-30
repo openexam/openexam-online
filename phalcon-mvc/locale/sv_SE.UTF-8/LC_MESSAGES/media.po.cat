@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "#-#-#-#-#  media.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:17+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -19,11 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 "#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 04:46+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:19+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -35,71 +36,72 @@ msgstr ""
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 151
 msgid "Select resource files from the media library containing your personal files from previous uploads or files shared by other people."
-msgstr ""
+msgstr "Välj resurs-filer från media-biblioteket som innehåller dina tidigare uppladdade personliga filer eller filer utdelade av andra användare."
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 152
 msgid "You can choose to share your personal files with others if you like or keep them private."
-msgstr ""
+msgstr "Du kan välja att dela dina personliga filer med andra om du vill eller behålla dom privata."
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 159
 msgid "Resource name"
-msgstr ""
+msgstr "Resursnamn"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 165
 msgid "This resource can be used"
-msgstr ""
+msgstr "Denna resurs kan användas"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 168
 msgid "Only by me"
-msgstr ""
+msgstr "Endast av mig"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 171
 msgid "By co-workers on this exam"
-msgstr ""
+msgstr "Av medarbetare på denna tenta"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 174
 msgid "For anyone in my department or group"
-msgstr ""
+msgstr "Av alla på min avdelning eller grupp"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 177
 msgid "By everyone else"
-msgstr ""
+msgstr "Av alla andra"
 #
+# File: phalcon-mvc/app/views/media/library.phtml, line: 184
 # File: phalcon-mvc/app/views/partials/students-list.phtml, line: 142
 msgid "Save"
 msgstr "Spara"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 221
 msgid "Media library"
-msgstr ""
+msgstr "Mediabibliotek"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 233
 msgid "Show personal files"
-msgstr ""
+msgstr "Visa personliga filer"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 236
 msgid "Expand current display"
-msgstr ""
+msgstr "Expandera aktuell vy"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 248
 msgid "No shared %type% resources was found."
-msgstr ""
+msgstr "Inga delade resurser av typ %type% hittades."
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 288
 msgid "No personal %type% resources was found."
-msgstr ""
+msgstr "Inga personliga resurser av typ %type% hittades."
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 331
 msgid "Selected files"
-msgstr ""
+msgstr "Valda filer"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 339
 msgid "Drag and drop or click to upload files from your computer"
-msgstr ""
+msgstr "Dra och släpp eller klicka för att ladda upp filer från din dator"
 #
 # File: phalcon-mvc/app/views/media/library.phtml, line: 349
 msgid "No files have been uploaded or selected yet."
-msgstr ""
+msgstr "Inga filer har laddats upp eller valts än."
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"
@@ -369,7 +371,7 @@ msgstr "Ladda ner arkivfil"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 115
 msgid "The media content has been hidden on request from teacher"
-msgstr "Mediainnehållet har dolts på begäran från läraren"
+msgstr "Media-innehållet har dolts på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 133
 msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
@@ -381,7 +383,7 @@ msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på at
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 171
 msgid "The media content has been blurred on request from teacher"
-msgstr ""
+msgstr "Media-innehållet har gjorts suddigt på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/layouts/main.phtml, line: 156
 msgid "Home"

@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "#-#-#-#-#  exam.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 02:36+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -19,11 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 "#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 04:46+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:19+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -35,448 +36,447 @@ msgstr ""
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 39
 msgid "Decode wizard for exam %name%"
-msgstr ""
+msgstr "Avkodningsguide för tentan %name%"
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 47
 msgid "This dialog is for decoding the exam. Click cancel button to stop this wizard at any time or next to advance to next step."
-msgstr ""
+msgstr "Använd denna dialog för att avkoda tentan. Klicka på avbryt-knappen för att stoppa guiden vid vilken tidpunkt som helst och nästa- för att gå vidare till nästa steg."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 52
 msgid "Step 1"
-msgstr ""
+msgstr "Steg 1"
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 55
 msgid "You should only run this wizard when correction is completed."
-msgstr ""
+msgstr "Du ska bara köra denna guide när rättningen är avslutad."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 56
 msgid "Each step will provide enough information and no changes will be done without your confirmation."
-msgstr ""
+msgstr "Varje steg kommer att presentera nödvändig information och inga ändringar kommer att göras utan ditt medgivande."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 59
 msgid "Skip this wizard and decode this exam."
-msgstr ""
+msgstr "Avsluta guiden och avkoda tentan."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 65
 msgid "Step 2"
-msgstr ""
+msgstr "Steg 2"
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 68
 msgid "Continue with next step will enquiry your exam."
-msgstr ""
+msgstr "Fortsätt med nästa steg för att flagga tentan som under utredning."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 69
 msgid "Doing so will lock further correction and reveal students identities."
-msgstr ""
+msgstr "Detta kommer att låsa fortsatt rättning och synliggöra studenterna identiteter."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 70
 msgid "This state is useful for investigation."
-msgstr ""
+msgstr "Detta tillstånd är användbart för undersökning."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 71
 msgid "As the exam is not yet decoded, students can't access their results on this exam."
-msgstr ""
+msgstr "Eftersom tentan ännu inte är avkodad, så kan studenterna inte komma åt resultaten på denna tenta."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 74
 msgid "I understand and like to enquiry this exam."
-msgstr ""
+msgstr "Jag förstår och vill markera tentan som under utredning."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 80
 msgid "Step 3"
-msgstr ""
+msgstr "Steg 3"
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 83
 msgid "Continue with next step will decode your exam."
-msgstr ""
+msgstr "Fortsätt med detta steg för att avkoda tentan."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 84
 msgid "Once the exam has been decoded, students can access it to download their result."
-msgstr ""
+msgstr "Studenterna får tillgång att ladda ner sina resultat så snart tentan är avkodad."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 85
 msgid "Consider if you like to change some settings for result generation before continue."
-msgstr ""
+msgstr "Tänk igenom om du vill ändra några inställningar för generering av resultat innan du går vidare."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 88
 msgid "I understand and like to decode this exam."
-msgstr ""
+msgstr "Jag förstår och vill avkoda denna tenta."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 94
 msgid "Step 4"
-msgstr ""
+msgstr "Steg 4"
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 98
 msgid "Your exam has now been decoded. Click on the close button to finish this wizard."
-msgstr ""
+msgstr "Din tenta är nu avkodad. Klicka på stäng-knappen för att avsluta guiden."
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 110
 # File: phalcon-mvc/app/views/exam/security.phtml, line: 188
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 #
 # File: phalcon-mvc/app/views/exam/decode.phtml, line: 116
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 73
 msgid "Information"
-msgstr ""
+msgstr "Information"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 74
 msgid "General"
-msgstr ""
+msgstr "Allmänt"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 75
 msgid "Schedule"
-msgstr ""
+msgstr "Schemalägg"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 76
 msgid "Grades"
-msgstr ""
+msgstr "Gradering"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 77
 msgid "Instructions"
-msgstr ""
+msgstr "Instruktioner"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 78
 msgid "Result"
-msgstr ""
+msgstr "Resultat"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 79
 msgid "Correction"
-msgstr ""
+msgstr "Rättning"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 84
 msgid "Please note that you may return at anytime to complete the exam settings."
-msgstr ""
+msgstr "Notera att du kan återvända hit när som helst för att ändra i tentainställningarna."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 85
 msgid "Remember to press the 'Save settings' button."
-msgstr ""
+msgstr "Kom ihåg att trycka på knappen för att 'spara inställningarna'."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 86
 msgid "Use 'Check exam' to detect missing tasks to complete."
-msgstr ""
+msgstr "Använd 'kontrollera tentan' för att hitta saknade uppgifter som behöver genomföras."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 94
 msgid "Please fill up all required fields (marked with <span style=\"color:#F02222\">*</span>) on each separate tab."
-msgstr ""
+msgstr "Var vänlig och fyll i nödvändiga fält (markerade med <span style=\"color:#F02222\">*</span>) på separata flikar."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 100
 msgid "Some questions are empty: %missing%"
-msgstr ""
+msgstr "Några frågor är tomma: %missing%"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 110
 msgid "Some questions don't have any credits: %missing%"
-msgstr ""
+msgstr "Några frågor saknar poäng: %missing%"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 121
 msgid "Total number of students in exam: %students%"
-msgstr ""
+msgstr "Totalt antal studenter på tentan: %students%"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 123
 msgid "Total exam points: %score%"
-msgstr ""
+msgstr "Totalt antal tentapoäng: %score%"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 125
 msgid "Created: %created%"
-msgstr ""
+msgstr "Skapad: %created%"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 133
 msgid "The exam title will be shown for students when selecting exam."
-msgstr ""
+msgstr "Titeln på tentan kommer att visas för studenter då dom väljer tenta att genomföra."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 134
 msgid "The organization should not be edited in normal cases as it affects grouping of exams in statistics."
-msgstr ""
+msgstr "Organisation ska i allmänhet inte ändras då den används för att gruppera tentor i statistiken."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 140
 msgid "Exam title:"
-msgstr ""
+msgstr "Titel på tentan:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 145
 msgid "The exam name"
-msgstr ""
+msgstr "Tentanamn"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 159
 msgid "Course code:"
-msgstr ""
+msgstr "Kurskod:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 163
 msgid "Course code of this exam (i.e. 3FK726)"
-msgstr ""
+msgstr "Kurskod för denna tenta (t.ex. 3FK726)"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 175
 msgid "Institution code:"
-msgstr ""
+msgstr "Institutionskod:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 179
 msgid "The institition, department or division code from the directory service (i.e. LDAP)"
-msgstr ""
+msgstr "Institution, avdelning och fakultetskod från katalogtjänsten (t.ex. LDAP)"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 200
 msgid "Organization:"
-msgstr ""
+msgstr "Organisation:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 204
 msgid "The organization name from directory service (don't edit unless told so)"
-msgstr ""
+msgstr "Namn på organisationen från katalogtjänsten (låt vara om du inte blivit tillsagd att ändra):"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 217
 msgid "The exam will remain as draft until the start time is set."
-msgstr ""
+msgstr "Tentan kommer att betraktas som ett utkast tills starttid är satt."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 218
 msgid "An exam without end time is treated as an forever ongoing exam (mostly useful for self-diagnostic tests)."
-msgstr ""
+msgstr "En tenta utan sluttid betraktas som för evigt pågående (mest användbart för själv-diagnostiska test)."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 226
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 228
 msgid "Exam starts:"
-msgstr ""
+msgstr "Tentan startar:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 243
 # File: phalcon-mvc/app/views/exam/index.phtml, line: 245
 msgid "Exam ends:"
-msgstr ""
+msgstr "Tentan slutar:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 260
 msgid "Input grade:value pairs on separate lines defining the graduation levels in percent for this examination."
-msgstr ""
+msgstr "Skriv in par med betyg:värde på separata rader som definierar betygsgränser i procent för denna tenta."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 261
 msgid "The first line must be on form name:0, denoting the failed grade."
-msgstr ""
+msgstr "Den första raden måste vara namn:0 och representerar betyget underkänt."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 268
 msgid "The newline separated grades"
-msgstr ""
+msgstr "Betygsgränser separerade med redbrytning"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 277
 msgid "Student instructions for this exam. Typical information on grades, allowed tools and teacher question time during the exam."
-msgstr ""
+msgstr "Instruktioner för studenter. Innehåller typiskt information om betygsgränser, tillåtna hjälpmedel och tid då lärare finns närvarande för att svara på frågor."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 283
 msgid "Exam instructions for students:"
-msgstr ""
+msgstr "Instruktioner för studenter:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 290
 msgid "Write exam description here"
-msgstr ""
+msgstr "Skriv tentabeskrivning här"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 299
 msgid "Controls the details to expose in student result file. For example, whether to include statistics or correcting teacher."
-msgstr ""
+msgstr "Kontrollerar nivån på detaljer som synliggörs i studenternas resultatfil. Till exempel ifall rättande lärare ska visas i statistikdelen."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 305
 msgid "Student results:"
-msgstr ""
+msgstr "Resultat för student:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 313
 msgid "Expose names and contact information for people involved in the creation and correction process in the result PDF seen by the student."
-msgstr ""
+msgstr "Exponera namn och kontaktinformation för personer involverade i skapandet och rättning i den resultat-PDF som syns för studenter."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 315
 msgid "Show correcting teachers."
-msgstr ""
+msgstr "Visa rättande lärare."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 323
 msgid "Include statistics like avarage/mean values and score distribution compared to other students in the result PDF seen by the student."
-msgstr ""
+msgstr "Inkludera statistik såsom genomsnitt och fördelning jämfört med andra studenter i den resultat-PDF som syns för studenter."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 325
 msgid "Include section with statistics."
-msgstr ""
+msgstr "Inkludera avdelning med statistik."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 333
 msgid "Don't include student grade calculated by the system. This option is useful when the actual grading is finalized outside of the system."
-msgstr ""
+msgstr "Uteslut betyg uträknade av systemet. Denna inställning är användbar då den slutgiltiga betygssättningen hanteras utanför systemet."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 335
 msgid "Hide student grade section."
-msgstr ""
+msgstr "Dölj sektion med studenters betyg."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 343
 msgid "Forge (blur/hide) media content like images when rendering the PDF with student results. Select this option if media content should only be viewable by students during the exam."
-msgstr ""
+msgstr "Gör media-innehåll suddigt/dolt i den PDF som renderas med studentens resultat. Välj denna inställning om media-filer bara ska vara fullt synliga av studenter under tentan."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 345
 msgid "Hide rendered media content (i.e. images)."
-msgstr ""
+msgstr "Dölj media-filer i renderingen (t.ex. bilder)."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 353
 msgid "Controls the details to expose in score board during correction. Affects users having the corrector role."
-msgstr ""
+msgstr "Kontrollerar detaljer som exponeras i poängtabellen under rättning. Påverkar användare med rollen rättande lärare."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 359
 msgid "Exam correction:"
-msgstr ""
+msgstr "Rättning av tentan:"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 368
 msgid "Display student statistics like scoring percentage during correction. Might have an influence on correcting teacher."
-msgstr ""
+msgstr "Visa statistik för studenter såsom procent av max-poäng under rättning. Kan ha en viss inverkan på rättande lärare."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 370
 msgid "Show student's accumulated points in score board."
-msgstr ""
+msgstr "Visa studenters ackumulerade poäng i poängtabellen."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 378
 msgid "Display students anonymous code during correction. Leave disabled if same persons that registered students are going to participate in the answer correction."
-msgstr ""
+msgstr "Visa studenters anonyma kod under rättning. Lämna avstängd ifall samma person som registrerade studenterna kommer att delta i rättningen av svar."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 380
 msgid "Show student's anonymous code in score board."
-msgstr ""
+msgstr "Visa studenters anonyma kod i poängtabellen."
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 393
 msgid "Save settings"
-msgstr ""
+msgstr "Spara inställningar"
 #
 # File: phalcon-mvc/app/views/exam/settings.phtml, line: 399
 msgid "Check exam"
-msgstr ""
+msgstr "Kontrollera tentan"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 99
 msgid "State"
-msgstr ""
+msgstr "Tillstång"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 104
 msgid "Grade"
-msgstr ""
+msgstr "Betyg"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 109
 msgid "Staff"
-msgstr ""
+msgstr "Personal"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 114
 msgid "Roles"
-msgstr ""
+msgstr "Roller"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 119
 msgid "Other"
-msgstr ""
+msgstr "Annat"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 140
 msgid "This exam is an draft (not yet scheduled)"
-msgstr ""
+msgstr "Denna tenta är ett utkast (ännu ej schemalagd)"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 144
 msgid "This exam is scheduled, but has not yet started"
-msgstr ""
+msgstr "Denna tenta är schemalagd, men har ännu inte startat"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 146
 msgid "This exam is currently ongoing"
-msgstr ""
+msgstr "Denna tenta är startad och pågående"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 148
 msgid "This exam has been finished"
-msgstr ""
+msgstr "Denna tenta har avslutats"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 152
 msgid "This exam has answers from students"
-msgstr ""
+msgstr "Denna tenta har svar från studenter"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 155
 msgid "Questions can still be contributed"
-msgstr ""
+msgstr "Frågor kan fortfarande läggas till"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 158
 msgid "Answers can still be corrected on this exam"
-msgstr ""
+msgstr "Svar kan fortfarande rättas på denna tenta"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 161
 msgid "All answers has been fully corrected"
-msgstr ""
+msgstr "Alla svar har rättats fullt ut"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 165
 msgid "This exam is under investigation"
-msgstr ""
+msgstr "Denna tenta är under utredning"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 169
 msgid "This exam has been decoded"
-msgstr ""
+msgstr "Denna tenta har avkodats"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 171
 msgid "This exam can be decoded"
-msgstr ""
+msgstr "Denna tenta kan avkodas"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 175
 msgid "Can be deleted (no answers exist or exam is flagged as testcase)"
-msgstr ""
+msgstr "Kan tas bort (svar saknas eller tentan är flaggas som test)"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 178
 msgid "The exam can still be edited"
-msgstr ""
+msgstr "Tentan kan fortfarande ändras"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 181
 msgid "Student can be registered and start/endtime can be changed"
-msgstr ""
+msgstr "Studenter kan registreras och start-/sluttid kan ändras"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 184
 msgid "Lockdown mode is enabled on this exam"
-msgstr ""
+msgstr "Nerlåsning är aktiverad på denna tenta"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 187
 # File: phalcon-mvc/app/views/exam/check.phtml, line: 168
 msgid "Exam has been published"
-msgstr ""
+msgstr "Tentan har publicerats"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 190
 msgid "Can be reused as new exam"
-msgstr ""
+msgstr "Kan återanvändas som en ny tenta"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 193
 msgid "Marked as testcase (always deletable)"
-msgstr ""
+msgstr "Markerad som testtenta (kan alltid raderas)"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 207
 msgid "This exam uses points instead of percent"
-msgstr ""
+msgstr "Denna tenta använder poäng istället för procent"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 213
 msgid "Maximum score is %score%p on this exam"
-msgstr ""
+msgstr "Maximal poäng är %score% på denna tenta"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 269
 msgid "Questions: %questions%"
-msgstr ""
+msgstr "Frågor: %questions%"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 272
 msgid "Students: %students%"
-msgstr ""
+msgstr "Studenter: %students%"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 275
-#, php-format
-msgid "Locations: %locations"
-msgstr ""
+msgid "Locations: %locations%"
+msgstr "Platser: %locations%"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 281
 msgid "Security: None"
-msgstr ""
+msgstr "Säkerhet: Ingen"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 285
 msgid "Security: Full"
-msgstr ""
+msgstr "Säkerhet: Full"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 289
 msgid "Security: Partial (lockdown missing)"
-msgstr ""
+msgstr "Säkerhet: Delvis (nerlåsning saknas)"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 293
 msgid "Security: Partial (no locations defined)"
-msgstr ""
+msgstr "Säkerhet: Delvis (inga platser definierade)"
 #
 # File: phalcon-mvc/app/views/exam/details.phtml, line: 297
 msgid "Security: Partial"
-msgstr ""
+msgstr "Säkerhet: Delvis"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 54
 msgid "Welcome to OpenExam Online!"
-msgstr ""
+msgstr "Välkommen till OpenExam Online!"
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 58
 msgid "Use the buttons in the heading to minimize the left pane or increase the text size."
-msgstr ""
+msgstr "Använd knapparna i sidhuvudet för att minimera vänstra sidan eller förstora textstorleken."
 #
 # File: phalcon-mvc/app/views/exam/instruction.phtml, line: 59
 msgid "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."
@@ -1381,7 +1381,7 @@ msgstr "Ladda ner arkivfil"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 115
 msgid "The media content has been hidden on request from teacher"
-msgstr "Mediainnehållet har dolts på begäran från läraren"
+msgstr "Media-innehållet har dolts på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 133
 msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
@@ -1393,7 +1393,7 @@ msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på at
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 171
 msgid "The media content has been blurred on request from teacher"
-msgstr ""
+msgstr "Media-innehållet har gjorts suddigt på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/layouts/main.phtml, line: 156
 msgid "Home"

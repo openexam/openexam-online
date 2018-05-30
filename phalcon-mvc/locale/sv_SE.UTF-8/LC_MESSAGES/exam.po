@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-30 02:23+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 02:36+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -432,8 +432,7 @@ msgid "Students: %students%"
 msgstr "Studenter: %students%"
 
 #: phalcon-mvc/app/views/exam/details.phtml:275
-#, php-format
-msgid "Locations: %locations"
+msgid "Locations: %locations%"
 msgstr "Platser: %locations%"
 
 #: phalcon-mvc/app/views/exam/details.phtml:281
@@ -462,7 +461,7 @@ msgstr "Välkommen till OpenExam Online!"
 
 #: phalcon-mvc/app/views/exam/instruction.phtml:58
 msgid "Use the buttons in the heading to minimize the left pane or increase the text size."
-msgstr "Använd knapparna i sidhuvudet för att minimera vänstra sidan eller förstora textstorleken"
+msgstr "Använd knapparna i sidhuvudet för att minimera vänstra sidan eller förstora textstorleken."
 
 #: phalcon-mvc/app/views/exam/instruction.phtml:59
 msgid "Zoom in on content (in supplementary material) by hover over images or click on the media files to see them in full size."

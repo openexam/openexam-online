@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "#-#-#-#-#  render.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:05+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -19,11 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 "#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 04:46+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:19+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -35,72 +36,75 @@ msgstr ""
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 65
 msgid "Download result"
-msgstr ""
+msgstr "Ladda ner resultat"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 70
 msgid "Select student results for download."
-msgstr ""
+msgstr "Välj studenter att ladda ner resultat för."
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 71
 msgid "Only those students visible in the list below will be part of the download archive."
-msgstr ""
+msgstr "Endast dom studenter som syns i listan nedan kommer att ingå i arkivet för nerladdning."
 #
+# File: phalcon-mvc/app/views/render/decoder.phtml, line: 77
+# File: phalcon-mvc/app/views/render/decoder.phtml, line: 139
+# File: phalcon-mvc/app/views/render/student.phtml, line: 166
 # File: phalcon-mvc/app/views/partials/students-list.phtml, line: 74
 msgid "Download"
 msgstr "Ladda ner"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 81
 msgid "Select"
-msgstr ""
+msgstr "Välj"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 92
 msgid "ready for download"
-msgstr ""
+msgstr "redo för nerladdning"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 116
 msgid "Render status:"
-msgstr ""
+msgstr "Renderingsstatus:"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 120
 msgid "Queued:"
-msgstr ""
+msgstr "Köade:"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 124
 msgid "Finish:"
-msgstr ""
+msgstr "Avslutad:"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 128
 msgid "Position:"
-msgstr ""
+msgstr "Position:"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 133
 msgid "Remove"
-msgstr ""
+msgstr "Ta bort"
 #
 # File: phalcon-mvc/app/views/render/decoder.phtml, line: 136
 # File: phalcon-mvc/app/views/render/student.phtml, line: 50
 msgid "Status"
-msgstr ""
+msgstr "Status"
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 44
 msgid "This dialog let you download your exam result in PDF-file format."
-msgstr ""
+msgstr "Denna dialog låter dig ladda ner ditt tentaresultat som en PDF-fil."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 45
 msgid "Generated files are kept online for a limited period of time, but can be re-created from here on-demand."
-msgstr ""
+msgstr "Genererade filer ligger tillgängliga online under en begränsad tidsperiod, men kan återskapas härifrån när som helst."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 53
 msgid "Error message."
-msgstr ""
+msgstr "Felmeddelande."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 60
 msgid "Checking for ready to download file on server."
-msgstr ""
+msgstr "Kontrollerar om filen finns tillgänglig för nerladdning från servern."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 61
 msgid "Plase wait for this step to finish."
-msgstr ""
+msgstr "Vänta på att detta steg avslutas."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 69
 # File: phalcon-mvc/app/views/render/student.phtml, line: 87
@@ -108,83 +112,83 @@ msgstr ""
 # File: phalcon-mvc/app/views/render/student.phtml, line: 139
 # File: phalcon-mvc/app/views/render/student.phtml, line: 211
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 78
 msgid "The PDF-file with you result for this exam is missing."
-msgstr ""
+msgstr "PDF-filen med ditt tentaresultat saknas."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 79
 msgid "Click on the generate button to create the file for download."
-msgstr ""
+msgstr "Klicka på knappen för att generera filen att ladda ner."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 93
 msgid "Generate"
-msgstr ""
+msgstr "Generara"
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 102
 msgid "The result file generation has been submitted and is queued for rendering."
-msgstr ""
+msgstr "Generering av resultat-filen har skickats och har köats för rendering."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 103
 msgid "You can keep this dialog open and wait for the rendition to start or come back later."
-msgstr ""
+msgstr "Du kan behålla denna dialog öppen och vänta på att renderingen avslutas eller komma tillbaks senare."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 104
 msgid "Your request is being processed in the background even if you close this dialog."
-msgstr ""
+msgstr "Din förfrågan behandlas i bakgrunden även om du väljer att stänga denna dialog."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 107
 msgid "Your job is at position <span id=\"queue-position\"></span> in the render queue."
-msgstr ""
+msgstr "Ditt jobb befinner sig på position <span id=\"queue-position\"></span> i renderings-kön."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 121
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 130
 msgid "The result file is currently being rendered."
-msgstr ""
+msgstr "Resultat-filen håller just nu på att renderas."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 131
 msgid "You can keep this dialog open and wait for the rendering to complete or come back later when the file is ready for download."
-msgstr ""
+msgstr "Du kan behålla denna dialog öppen och vänta på att renderingen avslutas eller komma tillbaka senare då filen finns tillgänglig för nerladdning."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 148
 msgid "The render job has finished and ready for download."
-msgstr ""
+msgstr "Renderingsjobbet har avslutats och filen är redo att laddas ner."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 149
 msgid "Click on regenerate button to render the result again in case formatting or images is missing in the PDF."
-msgstr ""
+msgstr "Klicka på knappen återskapa för att rendera resultatet igen ifall formatering eller bilder saknas i PDF:en."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 152
 msgid "Problem with download? Try click on the <a href=\"\" id=\"%id%\">result file</a> link."
-msgstr ""
+msgstr "Problem med nerladdning? Prova att klicka på länken till <a href=\"\" id=\"%id%\">resultat-filen</a>."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 160
 msgid "Regenerate"
-msgstr ""
+msgstr "Återskapa"
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 175
 msgid "The render job has failed. You can chose to retry it in case it was a temporary failiure."
-msgstr ""
+msgstr "Renderingsjobbet har fallerat. Du kan välja att försöka igen ifall det är ett tillfälligt fel."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 177
 msgid "If the problem persist, please report it to <a href=\"mailto:%addr%\">%name%</a>"
-msgstr ""
+msgstr "Om problemet kvarstår, rapportera detta till <a href=\"mailto:%addr%\">%name%</a>"
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 193
 msgid "Report"
-msgstr ""
+msgstr "Rapportera"
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 203
 msgid "Your render job has been cancelled."
-msgstr ""
+msgstr "Ditt renderingsjobb har avbrutits."
 #
 # File: phalcon-mvc/app/views/render/student.phtml, line: 221
 msgid "Status message."
-msgstr ""
+msgstr "Statusmeddelande."
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"
@@ -454,7 +458,7 @@ msgstr "Ladda ner arkivfil"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 115
 msgid "The media content has been hidden on request from teacher"
-msgstr "Mediainnehållet har dolts på begäran från läraren"
+msgstr "Media-innehållet har dolts på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 133
 msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
@@ -466,7 +470,7 @@ msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på at
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 171
 msgid "The media content has been blurred on request from teacher"
-msgstr ""
+msgstr "Media-innehållet har gjorts suddigt på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/layouts/main.phtml, line: 156
 msgid "Home"

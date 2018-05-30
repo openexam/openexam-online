@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "#-#-#-#-#  signup.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 00:26+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -19,11 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 "#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 04:46+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:19+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -35,191 +36,191 @@ msgstr ""
 #
 # File: phalcon-mvc/app/views/signup/finished.phtml, line: 40
 msgid "Signup finished!"
-msgstr ""
+msgstr "Registrering avslutad!"
 #
 # File: phalcon-mvc/app/views/signup/finished.phtml, line: 43
 msgid "Your signup request is now completed. Click on the button below to start use the system."
-msgstr ""
+msgstr "Din registrering är nu genomförd. Klicka på knappen nedan för att börja använda systemet."
 #
 # File: phalcon-mvc/app/views/signup/finished.phtml, line: 50
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 123
 msgid "Continue"
-msgstr ""
+msgstr "Fortsätt"
 #
 # File: phalcon-mvc/app/views/signup/finished.phtml, line: 52
 msgid "Click on this button to start using the system."
-msgstr ""
+msgstr "Klicka på denna knapp för att börja använda systemet."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 54
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 136
 msgid "Signup"
-msgstr ""
+msgstr "Registrering"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 57
 msgid "The signup service allows you as student or employee to signup yourself for using the system."
-msgstr ""
+msgstr "Tjänsten för registrering ger dig möjlighet att som student eller anställd att registrera dig för att använda systemet."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 58
 msgid "You will be requested to logon to continue whenever its required."
-msgstr ""
+msgstr "Du kommer att anmodas att logga in för att fortsätta då det är nödvändigt."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 63
 msgid "Teacher"
-msgstr ""
+msgstr "Lärare"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 66
 msgid "By continuing, you will be granted the teacher role in the system giving you permission to create your own exam."
-msgstr ""
+msgstr "Genom att fortsätta kommer du att delges rollen som lärare vilket ger dig möjligheter att skapa dina egna tentor."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 67
 msgid "You will also get some example exams copied to your account."
-msgstr ""
+msgstr "Du kommer att få några exempeltentor kopierade till ditt konto."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 70
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 99
 msgid "Details"
-msgstr ""
+msgstr "Detaljer"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 74
 msgid "These example exams will be copied and associated with your account:"
-msgstr ""
+msgstr "Dessa exempeltentor kommer att kopieras och kopplas ihop med ditt konto:"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 79
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 108
 msgid "Description is missing"
-msgstr ""
+msgstr "Beskrivning saknas"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 93
 msgid "Student"
-msgstr ""
+msgstr "Student"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 96
 msgid "By continuing, you will be registered as a student in the system with access to some example exams."
-msgstr ""
+msgstr "Genom att fortsätta kommer du att registreras som student i systemet med åtkomst till några testtentor."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 103
 msgid "These example exams will be available for you to test:"
-msgstr ""
+msgstr "Dessa exempeltentor kommer att finnas tillgängliga för dig att testa:"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 126
 msgid "By continuing, depending on you affiliation you will either be subscribed as a employee or student in the system."
-msgstr ""
+msgstr "Beroende på din tillhörighet kommer du att bli inlagd som antingen anställd eller student i systemet."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 127
 msgid "You can also chose to click on the 'Reload' button to review this page in authenticated mode."
-msgstr ""
+msgstr "Du kan också välja att klicka på 'Ladda om' knappen för att visa denna sida i inloggat läge."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 138
 msgid "Click on this button signup as a system user."
-msgstr ""
+msgstr "Klicka på denna knapp för att registrera dig som en systemanvändare."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 144
 msgid "Reload"
-msgstr ""
+msgstr "Ladda om"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 146
 msgid "Click on this button authenticate and reload page."
-msgstr ""
+msgstr "Klicka på denna knapp för att logga in och ladda om sidan."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 151
 msgid "Unsubscribe"
-msgstr ""
+msgstr "Avregistrera"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 154
 msgid "Click on the button below to remove yourself as a system user."
-msgstr ""
+msgstr "Klicka på knappen nedan för att ta bort dig själv som en systemanvändare."
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 160
 msgid "Remove"
-msgstr ""
+msgstr "Ta bort"
 #
 # File: phalcon-mvc/app/views/signup/index.phtml, line: 162
 msgid "Click on this button remove yourself as a system user."
-msgstr ""
+msgstr "Klicka på denna knapp för att ta bort dig själv som en systemanvändare."
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 56
 msgid "Processing signup request..."
-msgstr ""
+msgstr "Behandlar registrering..."
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 61
 msgid "The following teacher tasks are being performed:"
-msgstr ""
+msgstr "Följande läraruppgifter genomförs:"
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 64
 msgid "Insert teacher role:"
-msgstr ""
+msgstr "Lägg till lärarroll:"
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 69
 msgid "Copy exam %name%"
-msgstr ""
+msgstr "Kopiera tenta %name%"
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 79
 msgid "The following student tasks are being performed:"
-msgstr ""
+msgstr "Följande studentuppgifter genomförs:"
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 83
 msgid "Register on exam %name%"
-msgstr ""
+msgstr "Registrering på tenta %name%"
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 99
 msgid "Finish"
-msgstr ""
+msgstr "Avsluta"
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 101
 msgid "Click on this button to finish the signup wizard."
-msgstr ""
+msgstr "Klicka på denna knapp för att avsluta registreringsguiden."
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 108
 msgid "Start"
-msgstr ""
+msgstr "Starta"
 #
 # File: phalcon-mvc/app/views/signup/process.phtml, line: 110
 msgid "Signup completed. Start using the system."
-msgstr ""
+msgstr "Registrering genomförd. Börja använda systemet."
 #
 # File: phalcon-mvc/app/views/signup/remove.phtml, line: 40
 msgid "Removed!"
-msgstr ""
+msgstr "Borttagen!"
 #
 # File: phalcon-mvc/app/views/signup/remove.phtml, line: 44
 msgid "Your role as a teacher in the system have now been removed."
-msgstr ""
+msgstr "Din roll som lärare i systemet är nu borttagen."
 #
 # File: phalcon-mvc/app/views/signup/remove.phtml, line: 45
 msgid "You will still have access to the exams you are or have been participating in, e.g. as a corrector."
-msgstr ""
+msgstr "Du kommer fortfarande att ha åtkomst till dom tentor du har medverkat i, t.ex. som rättande lärare."
 #
 # File: phalcon-mvc/app/views/signup/remove.phtml, line: 48
 msgid "You have now been removed as a student from the example examinations."
-msgstr ""
+msgstr "Du har nu tagits bort som student från exempeltentorna."
 #
 # File: phalcon-mvc/app/views/signup/remove.phtml, line: 49
 msgid "You will still have access to your real examinations."
-msgstr ""
+msgstr "Du kommer fortfarande att ha åtkomst till dina riktiga tentor."
 #
 # File: phalcon-mvc/app/views/signup/disabled.phtml, line: 40
 msgid "Disabled"
-msgstr ""
+msgstr "Avstängd"
 #
 # File: phalcon-mvc/app/views/signup/disabled.phtml, line: 43
 msgid "Sorry, but the user signup service has been disabled by the system administrator."
-msgstr ""
+msgstr "Vi ber om ursäkt, men tjänsten för registrering har stängts ifrån av systemadministratören."
 #
 # File: phalcon-mvc/app/views/signup/missing.phtml, line: 40
 msgid "Missing affiliation"
-msgstr ""
+msgstr "Tillhörighet saknas"
 #
 # File: phalcon-mvc/app/views/signup/missing.phtml, line: 43
 msgid "It appears like you are neither an employee or student."
-msgstr ""
+msgstr "Det verkar som du varken är anställd eller student."
 #
 # File: phalcon-mvc/app/views/signup/missing.phtml, line: 44
 msgid "Your affiliation is queried from the catalog service that might be missing this information."
-msgstr ""
+msgstr "Din tillhörighet hämtas från katalogtjänsten som kanske saknar denna information."
 #
 # File: phalcon-mvc/app/views/signup/missing.phtml, line: 47
 msgid "If you think this is a bug, please contact the system administrator for further assistants in solving this issue."
-msgstr ""
+msgstr "Om du anser att detta är en bugg, kontakta systemadministratören för fortsatt assistans i att lösa problemet."
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"
@@ -493,7 +494,7 @@ msgstr "Ladda ner arkivfil"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 115
 msgid "The media content has been hidden on request from teacher"
-msgstr "Mediainnehållet har dolts på begäran från läraren"
+msgstr "Media-innehållet har dolts på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 133
 msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
@@ -505,7 +506,7 @@ msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på at
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 171
 msgid "The media content has been blurred on request from teacher"
-msgstr ""
+msgstr "Media-innehållet har gjorts suddigt på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/layouts/main.phtml, line: 156
 msgid "Home"

@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "#-#-#-#-#  help.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:44+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -19,11 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 "#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
-"Report-Msgid-Bugs-To: i18n@openexam.io\n"
-"POT-Creation-Date: 2018-05-28 03:25+0200\n"
-"PO-Revision-Date: 2018-05-28 04:46+0200\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 02:39+0200\n"
+"PO-Revision-Date: 2018-05-30 01:19+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -35,77 +36,78 @@ msgstr ""
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 31
 msgid "General"
-msgstr ""
+msgstr "Allmänt"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 32
 msgid "Authors"
-msgstr ""
+msgstr "Författare"
 #
+# File: phalcon-mvc/app/views/help/about.phtml, line: 33
 # File: phalcon-mvc/app/views/partials/left-menu.phtml, line: 28
 msgid "Contributors"
 msgstr "Bidragare"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 34
 msgid "License"
-msgstr ""
+msgstr "Licens"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 35
 msgid "Project"
-msgstr ""
+msgstr "Projekt"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 43
 msgid "OpenExam Online v%version%"
-msgstr ""
+msgstr "OpenExam Online v%version%"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 61
 msgid "The following organizations has contributed to the project:"
-msgstr ""
+msgstr "Dessa organisationer har bidragit till projektet:"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 75
 msgid "Released under %license% license."
-msgstr ""
+msgstr "Släppt under %license% licens."
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 78
 msgid "Details"
-msgstr ""
+msgstr "Detaljer"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 84
 msgid "More information is available on the <a href=\"%homepage%\">project homepage</a>."
-msgstr ""
+msgstr "Mer information finns tillgänglig på <a href=\"%homepage%\">projektets hemsida</a>."
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 85
 msgid "Source code can be downloaded from <a href=\"%projpage%\">GitHub</a>."
-msgstr ""
+msgstr "Källkod kan laddas ner ifrån <a href=\"%projpage%\">GitHub</a>."
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 101
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 #
 # File: phalcon-mvc/app/views/help/about.phtml, line: 140
 msgid "Project license"
-msgstr ""
+msgstr "Licens för projektet"
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 30
 msgid "Help sections"
-msgstr ""
+msgstr "Avdelningar för hjälp"
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 36
 msgid "Click to display more manuals in various formats and translations"
-msgstr ""
+msgstr "Klicka för att visa fler manualer i olika format och översättningar"
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 51
 msgid "Other formats and translations..."
-msgstr ""
+msgstr "Andra format och översättningar..."
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 60
 # File: phalcon-mvc/app/views/help/manual.phtml, line: 59
 msgid "If you see this page, then you might have ended up on this page by misstake."
-msgstr ""
+msgstr "Om du kan se denna sida, så kan du ha hamnat här av misstag."
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 61
 # File: phalcon-mvc/app/views/help/manual.phtml, line: 60
 msgid "Please follow one of the links above to access desired content."
-msgstr ""
+msgstr "Följ något av länkarna ovan för att visa önskat innehåll."
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"
@@ -375,7 +377,7 @@ msgstr "Ladda ner arkivfil"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 115
 msgid "The media content has been hidden on request from teacher"
-msgstr "Mediainnehållet har dolts på begäran från läraren"
+msgstr "Media-innehållet har dolts på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 133
 msgid "To view this video file please enable JavaScript, and consider upgrading to a web browser that <a href=\"%link%\" target=\"%target%\">supports HTML5 video/audio</a>"
@@ -387,7 +389,7 @@ msgstr "Slå på javascript för att lyssna på denna ljudfil och fundera på at
 #
 # File: phalcon-mvc/app/views/partials/resource-file-viewer.phtml, line: 171
 msgid "The media content has been blurred on request from teacher"
-msgstr ""
+msgstr "Media-innehållet har gjorts suddigt på begäran från läraren"
 #
 # File: phalcon-mvc/app/views/layouts/main.phtml, line: 156
 msgid "Home"
