@@ -23,8 +23,8 @@ msgstr ""
 "#-#-#-#-#  core.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 19:04+0200\n"
-"PO-Revision-Date: 2018-05-30 19:03+0200\n"
+"POT-Creation-Date: 2018-05-30 23:50+0200\n"
+"PO-Revision-Date: 2018-05-30 23:51+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -131,35 +131,35 @@ msgstr "Engelska (GB)"
 msgid "Browser Default"
 msgstr "Webbläsarens Förvalda"
 #
-# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 540
-msgid "Student (Code: %code%)"
-msgstr "Student (Kod: %code%)"
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 544
+msgid "student (code: %code%)"
+msgstr "student (kod: %code%)"
 #
-# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 548
-msgid "Student (ID: %id%)"
-msgstr "Student (ID: %id%)"
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 552
+msgid "student (ID: %id%)"
+msgstr "student (ID: %id%)"
 #
-# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 593
-msgid "Question (Q%slot%) answered by student (Code: %code%)"
-msgstr "Fråga (Q%slot) besvarad av student (Kod: %code%)"
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 597
+msgid "question (Q%slot%) answered by student (code: %code%)"
+msgstr "fråga (Q%slot) besvarad av student (kod: %code%)"
 #
-# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 602
-msgid "Question (Q%slot%) answered by student (ID: %id%)"
-msgstr "Fråga (Q%slot) besvarad av student (ID: %id%)"
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 606
+msgid "question (Q%slot%) answered by student (ID: %id%)"
+msgstr "fråga (Q%slot) besvarad av student (ID: %id%)"
 #
-# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 643
-msgid "Question (Q%slot%)"
-msgstr "Fråga (Q%slot%)"
+# File: phalcon-mvc/app/controllers/Gui/QuestionController.php, line: 647
+msgid "question (Q%slot%)"
+msgstr "fråga (Q%slot%)"
 #
-# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 63
+# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 65
 msgid "User Manuals"
 msgstr "Användarmanualer"
 #
-# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 66
+# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 68
 msgid "The OpenExam Teacher Manual"
 msgstr "Lärarmanual för OpenExam"
 #
-# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 74
+# File: phalcon-mvc/app/controllers/Gui/HelpController.php, line: 76
 msgid "The OpenExam Student Manual"
 msgstr "Studentmanual för OpenExam"
 #
@@ -685,9 +685,8 @@ msgid "Free"
 msgstr "Free"
 #
 # File: phalcon-mvc/app/library/Monitor/Performance/Counter/FileSystem.php, line: 110
-#, fuzzy
 msgid "The free space in file system (MB)."
-msgstr "Teh free space in file system (MB)."
+msgstr "The free space in file system (MB)."
 #
 # File: phalcon-mvc/app/library/Monitor/Performance/Counter/MySQL.php, line: 85
 msgid "MySQL"

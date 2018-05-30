@@ -34,6 +34,7 @@ use OpenExam\Library\Core\Error;
 use OpenExam\Library\Core\Exam\Staff;
 use OpenExam\Library\Core\Exam\State;
 use OpenExam\Library\Core\Exam\Student\Access;
+use OpenExam\Library\Globalization\Translate\Gettext\Translate;
 use OpenExam\Library\Security\Roles;
 use OpenExam\Models\Answer;
 use OpenExam\Models\Exam;
@@ -437,6 +438,9 @@ class QuestionController extends GuiController
                 } else {
                         $this->showCorrectionTable($exam);
                 }
+
+                $translate = new Translate('question');
+                $this->view->setVar('tr', $translate);
         }
 
         /**
@@ -537,7 +541,7 @@ class QuestionController extends GuiController
                 if ($exam->show_code) {
                         $this->view->setVars(array(
                                 'heading' => $this->i18n->_(
-                                    "Student (Code: %code%)", array(
+                                    "student (code: %code%)", array(
                                         'code' => $student->code
                                 )),
                                 'loading' => 'student'
@@ -545,7 +549,7 @@ class QuestionController extends GuiController
                 } else {
                         $this->view->setVars(array(
                                 'heading' => $this->i18n->_(
-                                    "Student (ID: %id%)", array(
+                                    "student (ID: %id%)", array(
                                         'id' => $student->id
                                 )),
                                 'loading' => 'student'
@@ -590,7 +594,7 @@ class QuestionController extends GuiController
                 if ($exam->show_code) {
                         $this->view->setVars(array(
                                 'heading' => $this->i18n->_(
-                                    "Question (Q%slot%) answered by student (Code: %code%)", array(
+                                    "question (Q%slot%) answered by student (code: %code%)", array(
                                         'slot' => $question->slot,
                                         'code' => $student->code
                                 )),
@@ -599,7 +603,7 @@ class QuestionController extends GuiController
                 } else {
                         $this->view->setVars(array(
                                 'heading' => $this->i18n->_(
-                                    "Question (Q%slot%) answered by student (ID: %id%)", array(
+                                    "question (Q%slot%) answered by student (ID: %id%)", array(
                                         'slot' => $question->slot,
                                         'id'   => $answer->student_id
                                 )),
@@ -640,7 +644,7 @@ class QuestionController extends GuiController
                 //                 
                 $this->view->setVars(array(
                         'heading' => $this->i18n->_(
-                            "Question (Q%slot%)", array(
+                            "question (Q%slot%)", array(
                                 'slot' => $question->slot
                         )),
                         'loading' => 'question'

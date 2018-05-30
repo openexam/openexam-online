@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 19:04+0200\n"
+"POT-Creation-Date: 2018-05-30 23:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,35 +33,35 @@ msgstr ""
 msgid "Browser Default"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:540
-msgid "Student (Code: %code%)"
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:544
+msgid "student (code: %code%)"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:548
-msgid "Student (ID: %id%)"
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:552
+msgid "student (ID: %id%)"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:593
-msgid "Question (Q%slot%) answered by student (Code: %code%)"
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:597
+msgid "question (Q%slot%) answered by student (code: %code%)"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:602
-msgid "Question (Q%slot%) answered by student (ID: %id%)"
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:606
+msgid "question (Q%slot%) answered by student (ID: %id%)"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:643
-msgid "Question (Q%slot%)"
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:647
+msgid "question (Q%slot%)"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/HelpController.php:63
+#: phalcon-mvc/app/controllers/Gui/HelpController.php:65
 msgid "User Manuals"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/HelpController.php:66
+#: phalcon-mvc/app/controllers/Gui/HelpController.php:68
 msgid "The OpenExam Teacher Manual"
 msgstr ""
 
-#: phalcon-mvc/app/controllers/Gui/HelpController.php:74
+#: phalcon-mvc/app/controllers/Gui/HelpController.php:76
 msgid "The OpenExam Student Manual"
 msgstr ""
 

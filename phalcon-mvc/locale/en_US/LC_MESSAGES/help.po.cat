@@ -9,7 +9,7 @@ msgstr ""
 "#-#-#-#-#  help.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 18:49+0200\n"
+"POT-Creation-Date: 2018-05-30 23:35+0200\n"
 "PO-Revision-Date: 2018-05-30 04:33+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -98,16 +98,16 @@ msgid "Other formats and translations..."
 msgstr "Other formats and translations..."
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 60
-# File: phalcon-mvc/app/views/help/manual.phtml, line: 63
+# File: phalcon-mvc/app/views/help/manual.phtml, line: 71
 msgid "If you see this page, then you might have ended up on this page by misstake."
 msgstr "If you see this page, then you might have ended up on this page by misstake."
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 61
-# File: phalcon-mvc/app/views/help/manual.phtml, line: 64
+# File: phalcon-mvc/app/views/help/manual.phtml, line: 72
 msgid "Please follow one of the links above to access desired content."
 msgstr "Please follow one of the links above to access desired content."
 #
-# File: phalcon-mvc/app/views/help/manual.phtml, line: 32
+# File: phalcon-mvc/app/views/help/manual.phtml, line: 40
 msgid "Manuals"
 msgstr "Manuals"
 #

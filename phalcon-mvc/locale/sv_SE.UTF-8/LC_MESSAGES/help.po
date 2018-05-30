@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 18:49+0200\n"
+"POT-Creation-Date: 2018-05-30 23:35+0200\n"
 "PO-Revision-Date: 2018-05-30 04:32+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -84,15 +84,15 @@ msgid "Other formats and translations..."
 msgstr "Andra format och översättningar..."
 
 #: phalcon-mvc/app/views/help/index.phtml:60
-#: phalcon-mvc/app/views/help/manual.phtml:63
+#: phalcon-mvc/app/views/help/manual.phtml:71
 msgid "If you see this page, then you might have ended up on this page by misstake."
 msgstr "Om du kan se denna sida, så kan du ha hamnat här av misstag."
 
 #: phalcon-mvc/app/views/help/index.phtml:61
-#: phalcon-mvc/app/views/help/manual.phtml:64
+#: phalcon-mvc/app/views/help/manual.phtml:72
 msgid "Please follow one of the links above to access desired content."
 msgstr "Följ något av länkarna ovan för att visa önskat innehåll."
 
-#: phalcon-mvc/app/views/help/manual.phtml:32
+#: phalcon-mvc/app/views/help/manual.phtml:40
 msgid "Manuals"
 msgstr "Manualer"
