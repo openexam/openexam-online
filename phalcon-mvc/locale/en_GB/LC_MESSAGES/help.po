@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-28 03:25+0200\n"
+"POT-Creation-Date: 2018-05-30 04:32+0200\n"
+"PO-Revision-Date: 2018-05-30 04:33+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en_GB\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: phalcon-mvc/app/views/help/about.phtml:31
 msgid "General"
@@ -82,11 +83,15 @@ msgid "Other formats and translations..."
 msgstr "Other formats and translations..."
 
 #: phalcon-mvc/app/views/help/index.phtml:60
-#: phalcon-mvc/app/views/help/manual.phtml:59
+#: phalcon-mvc/app/views/help/manual.phtml:61
 msgid "If you see this page, then you might have ended up on this page by misstake."
 msgstr "If you see this page, then you might have ended up on this page by misstake."
 
 #: phalcon-mvc/app/views/help/index.phtml:61
-#: phalcon-mvc/app/views/help/manual.phtml:60
+#: phalcon-mvc/app/views/help/manual.phtml:62
 msgid "Please follow one of the links above to access desired content."
 msgstr "Please follow one of the links above to access desired content."
+
+#: phalcon-mvc/app/views/help/manual.phtml:30
+msgid "Manuals"
+msgstr "Manuals"

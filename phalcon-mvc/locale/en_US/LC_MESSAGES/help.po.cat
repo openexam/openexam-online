@@ -3,8 +3,23 @@
 # This file is distributed under the same license as the openexam-online package.
 # Automatically generated, 2018.
 #
+#, fuzzy
 msgid ""
 msgstr ""
+"#-#-#-#-#  help.po (openexam-online 2.0)  #-#-#-#-#\n"
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-05-30 04:32+0200\n"
+"PO-Revision-Date: 2018-05-30 04:33+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"#-#-#-#-#  main.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
 "POT-Creation-Date: 2018-05-30 02:39+0200\n"
@@ -83,14 +98,18 @@ msgid "Other formats and translations..."
 msgstr "Other formats and translations..."
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 60
-# File: phalcon-mvc/app/views/help/manual.phtml, line: 59
+# File: phalcon-mvc/app/views/help/manual.phtml, line: 61
 msgid "If you see this page, then you might have ended up on this page by misstake."
 msgstr "If you see this page, then you might have ended up on this page by misstake."
 #
 # File: phalcon-mvc/app/views/help/index.phtml, line: 61
-# File: phalcon-mvc/app/views/help/manual.phtml, line: 60
+# File: phalcon-mvc/app/views/help/manual.phtml, line: 62
 msgid "Please follow one of the links above to access desired content."
 msgstr "Please follow one of the links above to access desired content."
+#
+# File: phalcon-mvc/app/views/help/manual.phtml, line: 30
+msgid "Manuals"
+msgstr "Manuals"
 #
 # File: phalcon-mvc/app/views/partials/question-info.phtml, line: 41
 msgid "Corrected:"

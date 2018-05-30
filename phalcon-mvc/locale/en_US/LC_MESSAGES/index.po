@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-28 03:53+0200\n"
+"POT-Creation-Date: 2018-05-30 04:27+0200\n"
+"PO-Revision-Date: 2018-05-30 04:29+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en_US\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: phalcon-mvc/app/views/index/index.phtml:32
 msgid "Welcome!"
@@ -44,6 +45,10 @@ msgstr "Through the links below, teachers and course providers can log in and cr
 #: phalcon-mvc/app/views/index/index.phtml:42
 msgid "Students can also log in and get access to their completed exams and find information about upcoming exams."
 msgstr "Students can also log in and get access to their completed exams and find information about upcoming exams."
+
+#: phalcon-mvc/app/views/index/index.phtml:43
+msgid "Read more.."
+msgstr "Read more.."
 
 #: phalcon-mvc/app/views/index/index.phtml:50
 msgid "Are you a Teacher?"
@@ -76,3 +81,7 @@ msgstr "Getting started"
 #: phalcon-mvc/app/views/index/index.phtml:86
 msgid "If this is your first use of the system, please take some time to read the student or teacher manual."
 msgstr "If this is your first use of the system, please take some time to read the student or teacher manual."
+
+#: phalcon-mvc/app/views/index/index.phtml:89
+msgid "Read the manuals"
+msgstr "Read the manuals"

@@ -10,8 +10,8 @@ msgstr ""
 "#-#-#-#-#  index.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 02:39+0200\n"
-"PO-Revision-Date: 2018-05-30 01:33+0200\n"
+"POT-Creation-Date: 2018-05-30 04:27+0200\n"
+"PO-Revision-Date: 2018-05-30 04:28+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -75,6 +75,10 @@ msgstr "Genom länkarna nedan kan lärare och kursadministratörer logga in och 
 msgid "Students can also log in and get access to their completed exams and find information about upcoming exams."
 msgstr "Studenter kan också logga in och få access till deras avslutade tentor och hitta information om kommande tentor."
 #
+# File: phalcon-mvc/app/views/index/index.phtml, line: 43
+msgid "Read more.."
+msgstr "Läs mer..."
+#
 # File: phalcon-mvc/app/views/index/index.phtml, line: 50
 msgid "Are you a Teacher?"
 msgstr "Är du lärare?"
@@ -106,6 +110,10 @@ msgstr "Kom igång"
 # File: phalcon-mvc/app/views/index/index.phtml, line: 86
 msgid "If this is your first use of the system, please take some time to read the student or teacher manual."
 msgstr "Om detta är första gången du använder systemet ägna lite tid åt att läsa igenom student- eller lärarmanualen."
+#
+# File: phalcon-mvc/app/views/index/index.phtml, line: 89
+msgid "Read the manuals"
+msgstr "Läs manualerna"
 #
 # File: phalcon-mvc/app/config/system/services.php, line: 266
 msgid "Swedish"

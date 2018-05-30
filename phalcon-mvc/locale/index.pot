@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 04:21+0200\n"
+"POT-Creation-Date: 2018-05-30 04:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +45,10 @@ msgstr ""
 msgid "Students can also log in and get access to their completed exams and find information about upcoming exams."
 msgstr ""
 
+#: phalcon-mvc/app/views/index/index.phtml:43
+msgid "Read more.."
+msgstr ""
+
 #: phalcon-mvc/app/views/index/index.phtml:50
 msgid "Are you a Teacher?"
 msgstr ""
@@ -75,4 +79,8 @@ msgstr ""
 
 #: phalcon-mvc/app/views/index/index.phtml:86
 msgid "If this is your first use of the system, please take some time to read the student or teacher manual."
+msgstr ""
+
+#: phalcon-mvc/app/views/index/index.phtml:89
+msgid "Read the manuals"
 msgstr ""

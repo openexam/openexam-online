@@ -40,7 +40,7 @@ use Phalcon\Tag;
     <div style="padding-bottom:10px">
         <?= $tr->_("Through the links below, teachers and course providers can log in and create an exam, assign different roles to teachers contributing to the exam.") ?>
         <?= $tr->_("Students can also log in and get access to their completed exams and find information about upcoming exams.") ?>
-        <?= Tag::linkTo('help/manual', 'Read more..') ?>
+        <?= Tag::linkTo('help/manual', $tr->_('Read more..')) ?>
     </div>
 </div>
 
@@ -86,7 +86,7 @@ use Phalcon\Tag;
                 <?= $tr->_("If this is your first use of the system, please take some time to read the student or teacher manual.") ?>
             </p>
             <p>
-                <?= Tag::linkTo('help/manual', 'Read the manuals') ?>
+                <?= Tag::linkTo('help/manual', $tr->_('Read the manuals')) ?>
             </p>
         </div>
     </div>
