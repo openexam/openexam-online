@@ -29,6 +29,7 @@ namespace OpenExam\Controllers\Gui;
 
 use OpenExam\Controllers\GuiController;
 use OpenExam\Library\Core\Exam\State;
+use OpenExam\Library\Globalization\Translate\Gettext\Translate;
 use OpenExam\Library\Security\Roles;
 
 /**
@@ -38,6 +39,14 @@ use OpenExam\Library\Security\Roles;
  */
 class TaskController extends GuiController
 {
+
+        public function initialize()
+        {
+                parent::initialize();
+
+                $translator = new Translate('exam');
+                $this->view->setVar('tr', $translator);
+        }
 
         /**
          * Exam manage task.

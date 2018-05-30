@@ -217,11 +217,9 @@ $config = new Config(
                         'directories' => array('phalcon-mvc/app/views/signup'),
                         'merge'       => array('main')
                 ),
-//                'task'       => array(),
                 /**
                  * Utility controller translation units:
                  */
-//                'cache'      => array(),
                 'export'     => array(
                         'directories' => array('phalcon-mvc/app/views/export'),
                         'merge'       => array('main')
