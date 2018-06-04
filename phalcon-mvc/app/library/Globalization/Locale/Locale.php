@@ -207,8 +207,10 @@ class Locale extends Component
         }
 
         /**
-         * Get language code. For example, if locale is 'en_GB', then the
-         * language code is 'en'.
+         * Get language region. 
+         * 
+         * For example, if locale is 'en_GB', then region is 'GB' while 
+         * language is 'en'.
          * 
          * @param string $locale The locale name.
          * @return string
@@ -223,8 +225,9 @@ class Locale extends Component
         }
 
         /**
-         * Get language region. For example, if locale is 'en_GB', then region
-         * is 'GB' while language is 'en'.
+         * Get language code. 
+         * 
+         * For example, if locale is 'en_GB', then the language code is 'en'.
          * 
          * @param string $locale The locale name.
          * @return string
@@ -236,6 +239,70 @@ class Locale extends Component
                 } else {
                         return substr($locale, 0, 2);
                 }
+        }
+
+        /**
+         * Gets the script for the input locale.
+         * 
+         * @param string $locale The locale name.
+         * @return string
+         */
+        public function getScript($locale)
+        {
+                if (extension_loaded('intl')) {
+                        return SystemLocale::getScript($locale);
+                }
+        }
+
+        /**
+         * Gets the variants for the input locale.
+         * 
+         * @param string $locale The locale name.
+         * @return array
+         */
+        public function getVariants($locale)
+        {
+                if (extension_loaded('intl')) {
+                        return SystemLocale::getAllVariants($locale);
+                }
+        }
+
+        /**
+         * Get string for document lang.
+         * 
+         * This method returns a string that is compliant with the tags for 
+         * identifying languages RCF (BCP 47) to be used in the lang attribute 
+         * for HTML documents. The string returned is composed of the languange 
+         * and region code separated with '-'.
+         * 
+         * @param boolean $simple Return simple language (i.e. sv or en).
+         * @return string
+         */
+        public function getIndentifier($simple = false)
+        {
+                if ($simple) {
+                        return $this->getLanguage($this->getLocale());
+                }
+
+                $locale = $this->getLocale();
+                $params = array();
+
+                if (($string = $this->getLanguage($locale))) {
+                        $params[] = strtolower($string);
+                }
+                if (($string = $this->getScript($locale))) {
+                        $params[] = strtolower($string);
+                }
+                if (($string = $this->getRegion($locale))) {
+                        $params[] = strtolower($string);
+                }
+                if (($array = $this->getVariants($locale))) {
+                        foreach ($array as $string) {
+                                $params[] = strtolower($string);
+                        }
+                }
+
+                return implode("-", $params);
         }
 
         /**
