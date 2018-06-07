@@ -156,4 +156,15 @@ Notice that xgettext will fail to create the message catalog template unless at
 least one translation string (in current module) is found. By default, only *.php
 and *.phtml-files are scanned.
 
+----------------------
+
+Use i18n.gettext(...) inside javascript. The POT-file and PO-files can be updated using
+the gettext.php command (a task), but target the js-module and override default php lang:
+
+    bash$> php phalcon-mvc/script/gettext.php --all --module=js --lang=javascript
+
+The updated JSON-files should be detected as modified automatic by browsers. Increment the
+rev-number (in index.php template) to force update.
+
+
 // Anders Lövgren, 2014-09-23
