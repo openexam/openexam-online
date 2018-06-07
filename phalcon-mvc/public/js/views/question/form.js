@@ -185,43 +185,49 @@ $(document).ready(function () {
                     width: "75%",
                     height: 650,
                     modal: true,
-                    buttons: {
-                        OK: function () {
-                            $('#lib-selected-list > .lib-item').each(function (index, item) {
-                                // 
-                                // Get name and link from selected item:
-                                // 
-                                var name = $(item).find('.text').text().trim();
-                                var path = $(item).find('.select-resource').attr('href');
-                                var form = $('#question-form');
+                    buttons: [
+                        {
+                            text: i18n.gettext("OK"),
+                            click: function () {
+                                $('#lib-selected-list > .lib-item').each(function (index, item) {
+                                    // 
+                                    // Get name and link from selected item:
+                                    // 
+                                    var name = $(item).find('.text').text().trim();
+                                    var path = $(item).find('.select-resource').attr('href');
+                                    var form = $('#question-form');
 
-                                // 
-                                // Prefix URL if relative:
-                                // 
-                                if (path[0] !== '/') {
-                                    path = baseURL + path;
-                                }
+                                    // 
+                                    // Prefix URL if relative:
+                                    // 
+                                    if (path[0] !== '/') {
+                                        path = baseURL + path;
+                                    }
 
-                                // 
-                                // Append selected resources to list in question editor:
-                                // 
-                                $('#' + form.find('.ui-tabs-active').attr("aria-controls"))
-                                        .find('.lib_resources_list')
-                                        .append('\
+                                    // 
+                                    // Append selected resources to list in question editor:
+                                    // 
+                                    $('#' + form.find('.ui-tabs-active').attr("aria-controls"))
+                                            .find('.lib_resources_list')
+                                            .append('\
                                                     <li>\
                                                             <i class="fa fa-close resource-item-remove"></i>\
                                                             <i class="fa fa-pencil resource-item-edit"></i>\
                                                             <a href="' + path + '" file-path="' + path + '" target="_blank">' + name + '</a>\
                                                     </li>'
-                                                );
-                            });
-                            $(this).dialog('destroy');
+                                                    );
+                                });
+                                $(this).dialog('destroy');
+                            }
                         },
-                        Cancel: function () {
-                            closeToolTips();
-                            $(this).dialog('destroy');
+                        {
+                            text: i18n.gettext("Cancel"),
+                            click: function () {
+                                closeToolTips();
+                                $(this).dialog('destroy');
+                            }
                         }
-                    },
+                    ],
                     close: function () {
                         closeToolTips();
                     }
@@ -246,41 +252,47 @@ $(document).ready(function () {
                     autoOpen: true,
                     width: "55%",
                     modal: true,
-                    buttons: {
-                        OK: function () {
-                            $('#lib-selected-list > .lib-item').each(function (index, item) {
-                                // 
-                                // Get name and link from selected item:
-                                // 
-                                var name = $(item).find('.text').text().trim();
-                                var path = $(item).find('.select-resource').attr('href');
-                                var form = $('#question-form');
+                    buttons: [
+                        {
+                            text: i18n.gettext("OK"),
+                            click: function () {
+                                $('#lib-selected-list > .lib-item').each(function (index, item) {
+                                    // 
+                                    // Get name and link from selected item:
+                                    // 
+                                    var name = $(item).find('.text').text().trim();
+                                    var path = $(item).find('.select-resource').attr('href');
+                                    var form = $('#question-form');
 
-                                // 
-                                // Prefix URL if relative:
-                                // 
-                                if (path[0] !== '/') {
-                                    path = baseURL + path;
-                                }
+                                    // 
+                                    // Prefix URL if relative:
+                                    // 
+                                    if (path[0] !== '/') {
+                                        path = baseURL + path;
+                                    }
 
-                                $('#' + form.find('.ui-tabs-active').attr("aria-controls"))
-                                        .find('.lib_canvas_background')
-                                        .empty()
-                                        .append('\
+                                    $('#' + form.find('.ui-tabs-active').attr("aria-controls"))
+                                            .find('.lib_canvas_background')
+                                            .empty()
+                                            .append('\
                                                     <li>\
                                                             <i class="fa fa-close resource-item-remove"></i>\
                                                             <i class="fa fa-pencil resource-item-edit"></i>\
                                                             <a href="' + path + '" file-path="' + path + '" target="_blank">' + name + '</a>\
                                                     </li>'
-                                                );
-                            });
-                            $(this).dialog('destroy');
+                                                    );
+                                });
+                                $(this).dialog('destroy');
+                            }
                         },
-                        Cancel: function () {
-                            closeToolTips();
-                            $(this).dialog('destroy');
+                        {
+                            text: i18n.gettext("Cancel"),
+                            click: function () {
+                                closeToolTips();
+                                $(this).dialog('destroy');
+                            }
                         }
-                    },
+                    ],
                     close: function () {
                         closeToolTips();
                     }

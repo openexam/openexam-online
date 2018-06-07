@@ -570,15 +570,21 @@ $(document).ready(function () {
                     width: "60%",
                     minWidth: 400,
                     modal: true,
-                    buttons: {
-                        "Add new question part": function () {
-                            addQuestPartTab();
+                    buttons: [
+                        {
+                            text: i18n.gettext("Add new question part"),
+                            click: function () {
+                                addQuestPartTab();
+                            }
                         },
-                        "Save this question": function () {
-                            saveQuestion(pos, qid);
-                            $(this).dialog('destroy');
+                        {
+                            text: i18n.gettext("Save this question"),
+                            click: function () {
+                                saveQuestion(pos, qid);
+                                $(this).dialog('destroy');
+                            }
                         }
-                    },
+                    ],
                     beforeClose: function () {
                         var close = true;
 

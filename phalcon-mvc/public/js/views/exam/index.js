@@ -68,37 +68,43 @@ $(document).ready(function () {
                             autoOpen: true,
                             modal: true,
                             width: 550,
-                            buttons: {
-                                OK: function () {
+                            buttons: [
+                                {
+                                    text: i18n.gettext("OK"),
+                                    click: function () {
 
-                                    stime = changer.find("#exam-starttime").val();
-                                    etime = changer.find("#exam-endtime").val();
+                                        stime = changer.find("#exam-starttime").val();
+                                        etime = changer.find("#exam-endtime").val();
 
-                                    if (stime.length === 0) {
-                                        stime = null;
+                                        if (stime.length === 0) {
+                                            stime = null;
+                                        }
+                                        if (etime.length === 0) {
+                                            etime = null;
+                                        }
+
+                                        ajax(
+                                                baseURL + 'ajax/core/invigilator/exam/update',
+                                                {
+                                                    id: exam,
+                                                    starttime: stime,
+                                                    endtime: etime
+                                                },
+                                                function (status) {
+                                                    if (status) {
+                                                        changer.dialog('close');
+                                                        readSectionIndex();
+                                                    }
+                                                });
                                     }
-                                    if (etime.length === 0) {
-                                        etime = null;
-                                    }
-
-                                    ajax(
-                                            baseURL + 'ajax/core/invigilator/exam/update',
-                                            {
-                                                id: exam,
-                                                starttime: stime,
-                                                endtime: etime
-                                            },
-                                            function (status) {
-                                                if (status) {
-                                                    changer.dialog('close');
-                                                    readSectionIndex();
-                                                }
-                                            });
                                 },
-                                Cancel: function () {
-                                    changer.dialog('destroy');
+                                {
+                                    text: i18n("Cancel"),
+                                    click: function () {
+                                        changer.dialog('destroy');
+                                    }
                                 }
-                            },
+                            ],
                             close: function () {
                                 changer.dialog('destroy');
                             }
@@ -319,35 +325,41 @@ $(document).ready(function () {
         var dialog = $("#reuse-exam-dialog").dialog({
             autoOpen: true,
             modal: true,
-            buttons: {
-                "OK": function () {
+            buttons: [
+                {
+                    text: i18n.gettext("OK"),
+                    click: function () {
 
-                    var data = {'options[]': []};
-                    $('.exam-reuse-opt').filter(':checked').each(function () {
-                        data['options[]'].push($(this).val());
-                    });
-                    $.ajax({
-                        type: "POST",
-                        data: data,
-                        url: baseURL + 'exam/replicate/' + examId,
-                        success: function (response) {
-                            if (response.status === 'success') {
-                                location.href = baseURL + 'exam/update/' + response.exam_id + '/creator';
-                            } else {
-                                alert(response.message);
+                        var data = {'options[]': []};
+                        $('.exam-reuse-opt').filter(':checked').each(function () {
+                            data['options[]'].push($(this).val());
+                        });
+                        $.ajax({
+                            type: "POST",
+                            data: data,
+                            url: baseURL + 'exam/replicate/' + examId,
+                            success: function (response) {
+                                if (response.status === 'success') {
+                                    location.href = baseURL + 'exam/update/' + response.exam_id + '/creator';
+                                } else {
+                                    alert(response.message);
+                                }
+                            },
+                            error: function (xhr) {
+                                dialog.dialog("option", "buttons", {});
+                                dialog.html(xhr.responseText);
+                                dialog.show();
                             }
-                        },
-                        error: function (xhr) {
-                            dialog.dialog("option", "buttons", {});
-                            dialog.html(xhr.responseText);
-                            dialog.show();
-                        }
-                    });
+                        });
+                    }
                 },
-                Cancel: function () {
-                    $(this).dialog('destroy');
+                {
+                    text: i18n.gettext("Cancel"),
+                    click: function () {
+                        $(this).dialog('destroy');
+                    }
                 }
-            },
+            ],
             close: function () {
                 $(this).dialog('destroy');
             }
