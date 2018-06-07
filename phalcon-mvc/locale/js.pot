@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-06-07 04:58+0200\n"
+"POT-Creation-Date: 2018-06-07 05:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,50 +127,63 @@ msgstr ""
 msgid "Already subscribed on this exam"
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:117
+#: phalcon-mvc/public/js/views/exam/index.js:73
+#: phalcon-mvc/public/js/views/exam/index.js:330
+#: phalcon-mvc/public/js/views/question/form.js:190
+#: phalcon-mvc/public/js/views/question/form.js:257
+msgid "OK"
+msgstr ""
+
+#: phalcon-mvc/public/js/views/exam/index.js:123
 msgid "This exam is not yet published. "
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:118
+#: phalcon-mvc/public/js/views/exam/index.js:124
 msgid ""
 "If you chose to publish it now, then it will \n"
 "show up as an upcoming exam for student but can't be opened by them \n"
 "before the exam actually starts."
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:119
+#: phalcon-mvc/public/js/views/exam/index.js:125
 msgid "Do you want to publish it?"
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:141
+#: phalcon-mvc/public/js/views/exam/index.js:147
 msgid "This exam has been published. "
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:142
+#: phalcon-mvc/public/js/views/exam/index.js:148
 msgid ""
 "If you chose to revoke the publishing, then it will \n"
 "no longer show up as an upcoming exam for students."
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:143
+#: phalcon-mvc/public/js/views/exam/index.js:149
 msgid "Do you want to unpublish it?"
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:165
+#: phalcon-mvc/public/js/views/exam/index.js:171
 msgid "All answers has been corrected on this exam. "
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:166
+#: phalcon-mvc/public/js/views/exam/index.js:172
 msgid ""
 "If you chose to continue and \n"
 "decode the exam, then no more correction can be done."
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:167
+#: phalcon-mvc/public/js/views/exam/index.js:173
 msgid "Do you want to continue and decode it?"
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/index.js:367
+#: phalcon-mvc/public/js/views/exam/index.js:357
+#: phalcon-mvc/public/js/views/question/form.js:224
+#: phalcon-mvc/public/js/views/question/form.js:289
+msgid "Cancel"
+msgstr ""
+
+#: phalcon-mvc/public/js/views/exam/index.js:379
 msgid "Are you sure you want to delete exam: '%exam%'"
 msgstr ""
 
@@ -219,7 +232,15 @@ msgstr ""
 msgid "Edit question"
 msgstr ""
 
-#: phalcon-mvc/public/js/views/exam/create.js:586
+#: phalcon-mvc/public/js/views/exam/create.js:575
+msgid "Add new question part"
+msgstr ""
+
+#: phalcon-mvc/public/js/views/exam/create.js:581
+msgid "Save this question"
+msgstr ""
+
+#: phalcon-mvc/public/js/views/exam/create.js:592
 msgid "Question has not yet been saved. Close this dialog anyway?"
 msgstr ""
 
@@ -232,11 +253,11 @@ msgstr ""
 msgid "Choose a corrector for question"
 msgstr ""
 
-#: phalcon-mvc/public/js/views/question/form.js:306
+#: phalcon-mvc/public/js/views/question/form.js:318
 msgid "Option - click to edit"
 msgstr ""
 
-#: phalcon-mvc/public/js/views/question/form.js:365
+#: phalcon-mvc/public/js/views/question/form.js:377
 msgid "A question must have at least one corrector"
 msgstr ""
 

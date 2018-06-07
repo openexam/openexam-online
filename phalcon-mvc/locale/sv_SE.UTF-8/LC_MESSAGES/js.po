@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-06-07 04:58+0200\n"
-"PO-Revision-Date: 2018-06-07 04:58+0200\n"
+"POT-Creation-Date: 2018-06-07 05:44+0200\n"
+"PO-Revision-Date: 2018-06-07 05:46+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -129,11 +129,18 @@ msgstr "Denna tenta har redan kopierats"
 msgid "Already subscribed on this exam"
 msgstr "Redan inskriven på denna tenta"
 
-#: phalcon-mvc/public/js/views/exam/index.js:117
+#: phalcon-mvc/public/js/views/exam/index.js:73
+#: phalcon-mvc/public/js/views/exam/index.js:330
+#: phalcon-mvc/public/js/views/question/form.js:190
+#: phalcon-mvc/public/js/views/question/form.js:257
+msgid "OK"
+msgstr "OK"
+
+#: phalcon-mvc/public/js/views/exam/index.js:123
 msgid "This exam is not yet published. "
 msgstr "Denna tenta är inte publicerad än. "
 
-#: phalcon-mvc/public/js/views/exam/index.js:118
+#: phalcon-mvc/public/js/views/exam/index.js:124
 msgid ""
 "If you chose to publish it now, then it will \n"
 "show up as an upcoming exam for student but can't be opened by them \n"
@@ -143,15 +150,15 @@ msgstr ""
 "att visas upp som en kommande tenta för studenter, men kan inte öppnas av dom \n"
 "innan tentan faktiskt har startat."
 
-#: phalcon-mvc/public/js/views/exam/index.js:119
+#: phalcon-mvc/public/js/views/exam/index.js:125
 msgid "Do you want to publish it?"
 msgstr "Vill du publicera den?"
 
-#: phalcon-mvc/public/js/views/exam/index.js:141
+#: phalcon-mvc/public/js/views/exam/index.js:147
 msgid "This exam has been published. "
 msgstr "Denna tenta har publicerats. "
 
-#: phalcon-mvc/public/js/views/exam/index.js:142
+#: phalcon-mvc/public/js/views/exam/index.js:148
 msgid ""
 "If you chose to revoke the publishing, then it will \n"
 "no longer show up as an upcoming exam for students."
@@ -159,15 +166,15 @@ msgstr ""
 "Om du väljer att återta publiceringen så kommer den inte \n"
 "att visas upp längre som en kommande tenta för studenterna."
 
-#: phalcon-mvc/public/js/views/exam/index.js:143
+#: phalcon-mvc/public/js/views/exam/index.js:149
 msgid "Do you want to unpublish it?"
 msgstr "Vill du av-publicera den?"
 
-#: phalcon-mvc/public/js/views/exam/index.js:165
+#: phalcon-mvc/public/js/views/exam/index.js:171
 msgid "All answers has been corrected on this exam. "
 msgstr "Alla svar har rättats på denna tenta. "
 
-#: phalcon-mvc/public/js/views/exam/index.js:166
+#: phalcon-mvc/public/js/views/exam/index.js:172
 msgid ""
 "If you chose to continue and \n"
 "decode the exam, then no more correction can be done."
@@ -175,11 +182,17 @@ msgstr ""
 "Om du väljer att fortsätta med \n"
 "avkodningen av tentan så kommer ingen mer rättning av kunna ske."
 
-#: phalcon-mvc/public/js/views/exam/index.js:167
+#: phalcon-mvc/public/js/views/exam/index.js:173
 msgid "Do you want to continue and decode it?"
 msgstr "Vill du fortsätta och avkoda den?"
 
-#: phalcon-mvc/public/js/views/exam/index.js:367
+#: phalcon-mvc/public/js/views/exam/index.js:357
+#: phalcon-mvc/public/js/views/question/form.js:224
+#: phalcon-mvc/public/js/views/question/form.js:289
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: phalcon-mvc/public/js/views/exam/index.js:379
 msgid "Are you sure you want to delete exam: '%exam%'"
 msgstr "Är du säker på att du vill radera tentan: '%exam%'"
 
@@ -217,7 +230,6 @@ msgid "Do you want to insert this question back on the exam?"
 msgstr "Vill du lägga tillbaks denna fråga igen på tentan?"
 
 #: phalcon-mvc/public/js/views/exam/create.js:305
-#, fuzzy
 msgid "If you insert this question, then it will become visible for students during the exam. Any already saved answers will be accessable and this question will be included in grading during correction."
 msgstr "Om du lägger till denna fråga så kommer den att bli synlig för studenter under tentan. Redan sparade svar kommer att bli tillgängliga och denna fråga kommer att ingå i betygssättning vid rättning."
 
@@ -229,7 +241,15 @@ msgstr "Är du säker på att du vill radera fråga nummer %question%?"
 msgid "Edit question"
 msgstr "Ändra frågan"
 
-#: phalcon-mvc/public/js/views/exam/create.js:586
+#: phalcon-mvc/public/js/views/exam/create.js:575
+msgid "Add new question part"
+msgstr "Lägg till ny delfråga"
+
+#: phalcon-mvc/public/js/views/exam/create.js:581
+msgid "Save this question"
+msgstr "Spara denna fråga"
+
+#: phalcon-mvc/public/js/views/exam/create.js:592
 msgid "Question has not yet been saved. Close this dialog anyway?"
 msgstr "Frågan har ännu inte sparats. Vill du stänga dialogen trots det?"
 
@@ -242,11 +262,11 @@ msgstr "Del %title%"
 msgid "Choose a corrector for question"
 msgstr "Välj en rättande lärare för frågan"
 
-#: phalcon-mvc/public/js/views/question/form.js:306
+#: phalcon-mvc/public/js/views/question/form.js:318
 msgid "Option - click to edit"
 msgstr "Alternativ - klicka för att ändra"
 
-#: phalcon-mvc/public/js/views/question/form.js:365
+#: phalcon-mvc/public/js/views/question/form.js:377
 msgid "A question must have at least one corrector"
 msgstr "En fråga måste ha minst en rättande lärare"
 
