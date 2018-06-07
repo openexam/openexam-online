@@ -1,4 +1,4 @@
-/* global tabCounter, tabId, CKEDITOR, qIsEditable, baseURL, examId, qId */
+/* global tabCounter, tabId, CKEDITOR, qIsEditable, baseURL, examId, qId, i18n */
 
 /*
  * Copyright (C) 2014-2018 The OpenExam Project
@@ -54,7 +54,11 @@ var addQuestPartTab = function () {
     var title = String.fromCharCode(96 + tabCounter);
 
     template.find('a').attr('href', '#' + id);
-    template.find('a').text("Part " + title);
+    template.find('a').text(
+            i18n.gettext("Part %title%", {
+                title: title
+            })
+            );
     template.removeAttr('id').show();
 
     var tabContentHtml = qPartTabs.find("#q-parts-wrapper > .ui-tabs-panel")
@@ -124,7 +128,7 @@ $(document).ready(function () {
     // 
     // Prepare correctors list:
     // 
-    var tmp = '<option value="">Choose a corrector for question</option>';
+    var tmp = '<option value="">' + i18n.gettext("Choose a corrector for question") + '</option>';
     $('.left-col-user').each(function (index, element) {
         if ($(element).html().replace(/\s/g, '') !== '' && tmp.replace(/\s/g, '').indexOf($(element).html().replace(/\s/g, '')) < 0) {
             tmp += '<option value="' + $(element).attr('data-user') + '">' + $(element).html() + '</option>';
@@ -140,7 +144,11 @@ $(document).ready(function () {
         qPartTabs.tabs("refresh");
 
         qPartTabs.find(".ui-tabs-nav > li").each(function (index, element) {
-            $(element).find('a').html("Part " + String.fromCharCode(96 + (index + 1)));
+            $(element).find('a').html(
+                    i18n.gettext("Part %title%", {
+                        title: String.fromCharCode(96 + (index + 1))
+                    })
+                    );
         });
         tabCounter--;
         if (tabCounter === 2) {
@@ -295,7 +303,7 @@ $(document).ready(function () {
                         <i class="fa fa-minus-circle" aria-hidden="true" style="color: red"></i> \
                     </span>\n\
                     <input type="checkbox"> \
-                    <div class="editabletext" ckeditor="choice" contenteditable="true" style="display: inline" id="' + editor + '">Option - click to edit</div> \
+                    <div class="editabletext" ckeditor="choice" contenteditable="true" style="display: inline" id="' + editor + '">' + i18n.gettext("Option - click to edit") + '</div> \
                 </div>');
         CKEDITOR.inline(editor);
     });
@@ -354,7 +362,7 @@ $(document).ready(function () {
                 });
             }
         } else {
-            alert("A question must have at least one corrector");
+            alert(i18n.gettext("A question must have at least one corrector"));
         }
     });
 

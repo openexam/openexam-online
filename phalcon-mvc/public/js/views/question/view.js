@@ -1,4 +1,4 @@
-/* global ansId, CKEDITOR, baseURL, qName */
+/* global ansId, CKEDITOR, baseURL, qName, i18n */
 
 /*
  * Copyright (C) 2014-2018 The OpenExam Project
@@ -124,7 +124,11 @@ function syncAnswers(async, redirectToAfterSync)
                     }
                 }
             } else {
-                throw new Error("Unknown answer type " + ansType);
+                throw new Error(
+                        i18n.gettext("Unknown answer type %type%", {
+                            type: ansType
+                        })
+                        );
             }
 
         });
@@ -147,19 +151,29 @@ function syncAnswers(async, redirectToAfterSync)
             timeout: 5000,
             error: function (x, t, m) {
                 if (t === "timeout") {
-                    alert("Seems like you lost your internet connection. Please make sure that internet cable is properly connected with computer. \r\n");
+                    alert(i18n.gettext("Seems like you lost your internet connection. Please make sure that internet cable is properly connected with computer.") + "\r\n");
                 } else {
                     if (m !== '' && m !== null) {
-                        alert("Error occured! System was'nt able to save your answer during last 10 seconds. Please ignore if you see this message for the first time and review you answer again. Otherwise, please inform it to invigilator." + "\r\n\r\n >>>" + JSON.stringify(x) + "--" + t + "--" + m);
+                        alert(
+                                i18n.gettext("Error occured!") + " " +
+                                i18n.gettext("System wasn't able to save your answer during last 10 seconds. Please ignore if you see this message for the first time and review you answer again. Otherwise, please inform it to invigilator.") +
+                                "\r\n\r\n >>>" +
+                                JSON.stringify(x) + "--" + t + "--" + m);
                     }
                 }
             }
         }).done(function (respJson) {
             if (typeof respJson.success === "undefined") {
-                var failMsg = "Failed to save your answer!\r\n\Please report to invigilator immediately. Don't refresh or close this page or you may loose your latest changes!\r\n";
+                var failMsg =
+                        i18n.gettext("Failed to save your answer!") + "\r\n" +
+                        i18n.gettext("Please report to invigilator immediately. Don't refresh or close this page or you may loose your latest changes!") + "\r\n";
                 if (async) {
-                    failMsg += "Error source:   \n------------------\n" + JSON.stringify(respJson) + "\r\n";
-                    failMsg += "Answer recovery:\n------------------\nHit Ctrl+A and Ctrl+C in the text editor to copy your answer. Paste copied text into another text editor (i.e. notepad) and save to disk before reloading the page.";
+                    failMsg +=
+                            i18n.gettext("Error source:") + "   \n------------------\n" + JSON.stringify(respJson) + "\r\n";
+                    failMsg +=
+                            i18n.gettext("Answer recovery:") + "\n------------------\n" +
+                            i18n.gettext("Hit Ctrl+A and Ctrl+C in the text editor to copy your answer. ") +
+                            i18n.gettext("Paste copied text into another text editor (i.e. notepad) and save to disk before reloading the page.");
                     alert(failMsg);
                 } else {
                     return failMsg;
@@ -175,7 +189,9 @@ function syncAnswers(async, redirectToAfterSync)
     } catch (err) {
         console.log(err);
 
-        var failMsg = "Something went wrong!\r\nPlease don't refresh/close web page window and contact your invigilator immediately.\r\n";
+        var failMsg =
+                i18n.gettext("Something went wrong!") + "\r\n" +
+                i18n.gettext("Please don't refresh/close web page window and contact your invigilator immediately.") + "\r\n";
         failMsg += err.stack;
 
         if (async) {
@@ -340,7 +356,8 @@ $(function () {
     });
 
     $(document).on('click', '.logout-me', function () {
-        if (confirm("Are you sure you want to logout from OpenExam?")) {
+        var prompt = i18n.gettext("Are you sure you want to logout from OpenExam?");
+        if (confirm(prompt)) {
             syncAnswers(true, $(this).attr('hlink'));
         }
         return false;
@@ -406,8 +423,21 @@ $(function () {
             // 
             CKEDITOR.dialog.add('nativespellcheck', function (api) {
 
+                var pluginDescription = 
+                        "<p>" +
+                        i18n.gettext("This addon uses the native spell check in the browser. ") +
+                        i18n.gettext("Use '%shortcut%' to <br/> access browser dictionaries and spelling suggestions.", {
+                            shortcut: "&lt;ctrl&gt; + &lt;right click&gt;"
+                        }) +
+                        "</p><br/><p>" +
+                        i18n.gettext("Click OK to toggle spell check as you type on/off for this text area. ") +
+                        i18n.gettext("You can also use the <br/> keyboard shortcut '%shortcut%'.", {
+                            shortcut: "&lt;ctrl&gt; + &lt;alt&gt; + s"
+                        }) +
+                        "</p>";
+
                 var dialogDefinition = {
-                    title: 'Native Spell Check',
+                    title: i18n.gettext('Native Spell Check'),
                     minWidth: 390,
                     minHeight: 130,
                     contents: [
@@ -421,16 +451,7 @@ $(function () {
                             elements: [
                                 {
                                     type: 'html',
-                                    html: '\
-<p>\n\
-This addon uses the native spell check in the browser. Use \'&lt;ctrl&gt; + &lt;right click&gt;\' to <br/>\n\
-access browser dictionaries and spelling suggestions.\n\
-</p>\n\
-<br/>\n\
-<p>\n\
-Click OK to toggle spell check as you type on/off for this text area. You can also the <br/>\n\
-keyboard shortcut \'&lt;ctrl&gt; + &lt;alt&gt; + s\'.\n\
-</p>'
+                                    html: pluginDescription
                                 }
                             ]
                         }
@@ -480,9 +501,9 @@ keyboard shortcut \'&lt;ctrl&gt; + &lt;alt&gt; + s\'.\n\
                     // Display auto-hiding notification:
                     // 
                     if (!enabled) {
-                        edt.showNotification('Spellchecking is now enabled', 'success');
+                        edt.showNotification(i18n.gettext('Spellchecking is now enabled'), 'success');
                     } else {
-                        edt.showNotification('Spellchecking is now disabled', 'info');
+                        edt.showNotification(i18n.gettext('Spellchecking is now disabled'), 'info');
 
                     }
                 }
@@ -566,10 +587,10 @@ keyboard shortcut \'&lt;ctrl&gt; + &lt;alt&gt; + s\'.\n\
         $('.resource-file-box').toggle();
         if ($('.resource-file-box').is(':visible')) {
             $('.q-part-ans-area').addClass("col-sm-7").removeClass("col-sm-11");
-            $(this).attr("title", "Hide resource files");
+            $(this).attr("title", i18n.gettext("Hide resource files"));
         } else {
             $('.q-part-ans-area').addClass("col-sm-11").removeClass("col-sm-7");
-            $(this).attr("title", "Display resource files");
+            $(this).attr("title", i18n.gettext("Display resource files"));
         }
     });
 });

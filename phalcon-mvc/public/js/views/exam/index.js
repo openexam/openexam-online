@@ -1,4 +1,4 @@
-/* global filter, expand, baseURL */
+/* global filter, expand, baseURL, i18n */
 
 /*
  * Copyright (C) 2014-2018 The OpenExam Project
@@ -113,7 +113,11 @@ $(document).ready(function () {
     $(document).on('click', '.exam-progress', function () {
 
         if ($(this).hasClass('creator') && $(this).hasClass('upcoming') || $(this).hasClass('running')) {
-            var prompt = "This exam is not yet published. If you chose to publish it now, then it will \nshow up as an upcoming exam for student but can't be opened by them \nbefore the exam actually starts.\n\nDo you want to publish it?";
+            var prompt =
+                    i18n.gettext("This exam is not yet published. ") +
+                    i18n.gettext("If you chose to publish it now, then it will \nshow up as an upcoming exam for student but can't be opened by them \nbefore the exam actually starts.") + "\n\n" +
+                    i18n.gettext("Do you want to publish it?");
+
             var result = confirm(prompt);
 
             if (result) {
@@ -133,7 +137,11 @@ $(document).ready(function () {
         }
 
         if ($(this).hasClass('creator') && $(this).hasClass('published')) {
-            var prompt = "This exam has been published. If you chose to revoke the publishing, then it will \nno longer show up as an upcoming exam for students.\n\nDo you want to unpublish it?";
+            var prompt =
+                    i18n.gettext("This exam has been published. ") +
+                    i18n.gettext("If you chose to revoke the publishing, then it will \nno longer show up as an upcoming exam for students.") + "\n\n" +
+                    i18n.gettext("Do you want to unpublish it?");
+
             var result = confirm(prompt);
 
             if (result) {
@@ -153,7 +161,11 @@ $(document).ready(function () {
         }
 
         if ($(this).hasClass('decoder') && $(this).hasClass('corrected')) {
-            var prompt = "All answers has been corrected on this exam. If you chose to continue and \ndecode the exam, then no more correction can be done.\n\nDo you want to continue and decode it?";
+            var prompt =
+                    i18n.gettext("All answers has been corrected on this exam. ") +
+                    i18n.gettext("If you chose to continue and \ndecode the exam, then no more correction can be done.") + "\n\n" +
+                    i18n.gettext("Do you want to continue and decode it?");
+
             var result = confirm(prompt);
 
             if (result) {
@@ -351,7 +363,11 @@ $(document).ready(function () {
         var examId = $(examLine).attr('data-id');
         var examName = $(examLine).find('.exam-name').html();
 
-        if (confirm("Are you sure you want to delete exam: '" + jQuery.trim(examName) + "'")) {
+        if (confirm(
+                i18n.gettext("Are you sure you want to delete exam: '%exam%'", {
+                    exam: jQuery.trim(examName)
+                })
+                )) {
 
             ajax(
                     baseURL + 'ajax/core/creator/exam/delete',

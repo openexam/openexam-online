@@ -1,5 +1,5 @@
 
-/* global baseURL */
+/* global baseURL, i18n */
 
 /*
  * Copyright (C) 2016-2018 The OpenExam Project
@@ -33,23 +33,23 @@ var diagnostics = (function () {
     // Show authenticator status details.
     // 
     function auth(parent, content) {
-        var html = "<div class='title'>Authentication</div>";
+        var html = "<div class='title'>" + i18n.gettext("Authentication") + "</div>";
 
         for (var s in content) {
-            html += "<div><span class='head'> Service " + s + "</span></div>";
+            html += "<div><span class='head'> " + i18n.gettext("Service ") + s + "</span></div>";
             for (var p in content[s]) {
-                html += "<div><span class='sect'> Plugin " + p.toUpperCase() + "</span></div>";
+                html += "<div><span class='sect'> " + i18n.gettext("Plugin ") + p.toUpperCase() + "</span></div>";
                 if (content[s][p].working) {
-                    html += "<div><span class='item'> Working: " + content[s][p].working + "</span></div>";
+                    html += "<div><span class='item'> " + i18n.gettext("Working: ") + content[s][p].working + "</span></div>";
                 } else {
-                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Working: " + content[s][p].working + "</span></div>";
+                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Working: ") + content[s][p].working + "</span></div>";
                     failure();
                 }
                 for (var h in content[s][p].online) {
                     if (content[s][p].online[h]) {
-                        html += "<div><span class='item'> Online: " + h + "</span></div>";
+                        html += "<div><span class='item'> " + i18n.gettext("Online: ") + h + "</span></div>";
                     } else {
-                        html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Offline: " + h + "</span></div>";
+                        html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Offline: ") + h + "</span></div>";
                         failure();
                     }
                 }
@@ -63,22 +63,22 @@ var diagnostics = (function () {
     // Show database status details.
     // 
     function database(parent, content) {
-        var html = "<div class='title'>Database</div>";
+        var html = "<div class='title'>" + i18n.gettext("Database") + "</div>";
 
         for (var s in content) {
-            html += "<div><span class='head'> Connection " + s + "</span></div>";
+            html += "<div><span class='head'> " + i18n.gettext("Connection ") + s + "</span></div>";
 
             if (content[s].working) {
-                html += "<div><span class='item'> Working: " + content[s].working + "</span></div>";
+                html += "<div><span class='item'> " + i18n.gettext("Working: ") + content[s].working + "</span></div>";
             } else {
-                html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Working: " + content[s].working + "</span></div>";
+                html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Working: ") + content[s].working + "</span></div>";
                 failure();
             }
             for (var h in content[s].online) {
                 if (content[s].online[h]) {
-                    html += "<div><span class='item'> Online: " + h + "</span></div>";
+                    html += "<div><span class='item'> " + i18n.gettext("Online: ") + h + "</span></div>";
                 } else {
-                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Offline: " + h + "</span></div>";
+                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Offline: ") + h + "</span></div>";
                     failure();
                 }
             }
@@ -91,23 +91,23 @@ var diagnostics = (function () {
     // Show catalog service details.
     // 
     function catalog(parent, content) {
-        var html = "<div class='title'>Catalog</div>";
+        var html = "<div class='title'>" + i18n.gettext("Catalog") + "</div>";
 
         for (var d in content) {
-            html += "<div><span class='head'> User domain " + d + "</span></div>";
+            html += "<div><span class='head'> " + i18n.gettext("User domain ") + d + "</span></div>";
             for (var s in content[d]) {
-                html += "<div><span class='sect'> Service " + s.toUpperCase() + "</span></div>";
+                html += "<div><span class='sect'> " + i18n.gettext("Service ") + s.toUpperCase() + "</span></div>";
                 if (content[d][s].working) {
-                    html += "<div><span class='item'> Working: " + content[d][s].working + "</span></div>";
+                    html += "<div><span class='item'> " + i18n.gettext("Working: ") + content[d][s].working + "</span></div>";
                 } else {
-                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Working: " + content[d][s].working + "</span></div>";
+                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Working: ") + content[d][s].working + "</span></div>";
                     failure();
                 }
                 for (var h in content[d][s].online) {
                     if (content[d][s].online[h]) {
-                        html += "<div><span class='item'> Online: " + h + "</span></div>";
+                        html += "<div><span class='item'> " + i18n.gettext("Online: ") + h + "</span></div>";
                     } else {
-                        html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Offline: " + h + "</span></div>";
+                        html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Offline: ") + h + "</span></div>";
                         failure();
                     }
                 }
@@ -121,23 +121,27 @@ var diagnostics = (function () {
     // Show web server status details.
     // 
     function web(parent, content) {
-        var html = "<div class='title'>Web Server</div>";
-        var head = {frontend: "Frontend", backend: "Backend", balancer: "Load Balancer"};
+        var html = "<div class='title'>" + i18n.gettext("Web Server") + "</div>";
+        var head = {
+            frontend: i18n.gettext("Frontend"),
+            backend: i18n.gettext("Backend"),
+            balancer: i18n.gettext("Load Balancer")
+        };
 
         for (var s in content) {
             html += "<div><span class='head'>" + head[s] + "</span></div>";
 
             if (content[s].working) {
-                html += "<div><span class='item'> Working: " + content[s].working + "</span></div>";
+                html += "<div><span class='item'> " + i18n.gettext("Working: ") + content[s].working + "</span></div>";
             } else {
-                html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Working: " + content[s].working + "</span></div>";
+                html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Working: ") + content[s].working + "</span></div>";
                 failure();
             }
             for (var h in content[s].online) {
                 if (content[s].online[h]) {
-                    html += "<div><span class='item'> Online: " + h + "</span></div>";
+                    html += "<div><span class='item'> " + i18n.gettext("Online: ") + h + "</span></div>";
                 } else {
-                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> Offline: " + h + "</span></div>";
+                    html += "<div><span class='item failed'><i class='fa fa-arrow-right'></i> " + i18n.gettext("Offline: ") + h + "</span></div>";
                     failure();
                 }
             }
@@ -163,7 +167,7 @@ var diagnostics = (function () {
         $("#summary").show();
 
         if (success) {
-            $("button.details").html("Show Details");
+            $("button.details").html(i18n.gettext("Show Details"));
             $("#status-success").show();
             $("#status-failure").hide();
         } else {
@@ -178,7 +182,7 @@ var diagnostics = (function () {
     // 
     function details(content) {
         var context = $("#details").removeClass('hide');
-        $("button.details").html("Hide Details");
+        $("button.details").html(i18n.gettext("Hide Details"));
 
         context.empty();        // Cleanup any child elements
 
@@ -233,7 +237,7 @@ var diagnostics = (function () {
     // 
     function start_update() {
         fetch(0);
-        $("button.timer").html("Pause Update");
+        $("button.timer").html(i18n.gettext("Pause Update"));
         _timer = setInterval(function () {
             fetch();
         }, _interval * 1000);
@@ -244,7 +248,7 @@ var diagnostics = (function () {
     // 
     function stop_update() {
         clearInterval(_timer);
-        $("button.timer").html("Resume Update");
+        $("button.timer").html(i18n.gettext("Resume Update"));
         _timer = null;
     }
 

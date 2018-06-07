@@ -1,0 +1,378 @@
+# English translations for openexam-online package.
+# Copyright (C) 2018 The OpenExam project
+# This file is distributed under the same license as the openexam-online package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openexam-online 2.0\n"
+"Report-Msgid-Bugs-To: andlov@nowise.se\n"
+"POT-Creation-Date: 2018-06-07 04:58+0200\n"
+"PO-Revision-Date: 2018-06-07 04:16+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: phalcon-mvc/public/js/views/statistics/roles.js:132
+msgid "Contact"
+msgstr "Contact"
+
+#: phalcon-mvc/public/js/views/statistics/roles.js:154
+msgid "Staff"
+msgstr "Staff"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:36
+msgid "Authentication"
+msgstr "Authentication"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:39
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:99
+msgid "Service "
+msgstr "Service "
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:41
+msgid "Plugin "
+msgstr "Plugin "
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:43
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:45
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:72
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:74
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:101
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:103
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:135
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:137
+msgid "Working: "
+msgstr "Working: "
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:50
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:79
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:108
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:142
+msgid "Online: "
+msgstr "Online: "
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:52
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:81
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:110
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:144
+msgid "Offline: "
+msgstr "Offline: "
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:66
+msgid "Database"
+msgstr "Database"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:69
+msgid "Connection "
+msgstr "Connection "
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:94
+msgid "Catalog"
+msgstr "Catalog"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:97
+msgid "User domain "
+msgstr "User domain "
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:124
+msgid "Web Server"
+msgstr "Web Server"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:126
+msgid "Frontend"
+msgstr "Frontend"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:127
+msgid "Backend"
+msgstr "Backend"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:128
+msgid "Load Balancer"
+msgstr "Load Balancer"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:170
+msgid "Show Details"
+msgstr "Show Details"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:185
+msgid "Hide Details"
+msgstr "Hide Details"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:240
+msgid "Pause Update"
+msgstr "Pause Update"
+
+#: phalcon-mvc/public/js/views/monitor/diagnostics.js:251
+msgid "Resume Update"
+msgstr "Resume Update"
+
+#: phalcon-mvc/public/js/views/signup/process.js:43
+msgid "Success!"
+msgstr "Success!"
+
+#: phalcon-mvc/public/js/views/signup/process.js:76
+msgid "This role has already been granted"
+msgstr "This role has already been granted"
+
+#: phalcon-mvc/public/js/views/signup/process.js:89
+msgid "This exam has already been copied"
+msgstr "This exam has already been copied"
+
+#: phalcon-mvc/public/js/views/signup/process.js:102
+msgid "Already subscribed on this exam"
+msgstr "Already subscribed on this exam"
+
+#: phalcon-mvc/public/js/views/exam/index.js:117
+msgid "This exam is not yet published. "
+msgstr "This exam is not yet published. "
+
+#: phalcon-mvc/public/js/views/exam/index.js:118
+msgid ""
+"If you chose to publish it now, then it will \n"
+"show up as an upcoming exam for student but can't be opened by them \n"
+"before the exam actually starts."
+msgstr ""
+"If you chose to publish it now, then it will \n"
+"show up as an upcoming exam for student but can't be opened by them \n"
+"before the exam actually starts."
+
+#: phalcon-mvc/public/js/views/exam/index.js:119
+msgid "Do you want to publish it?"
+msgstr "Do you want to publish it?"
+
+#: phalcon-mvc/public/js/views/exam/index.js:141
+msgid "This exam has been published. "
+msgstr "This exam has been published. "
+
+#: phalcon-mvc/public/js/views/exam/index.js:142
+msgid ""
+"If you chose to revoke the publishing, then it will \n"
+"no longer show up as an upcoming exam for students."
+msgstr ""
+"If you chose to revoke the publishing, then it will \n"
+"no longer show up as an upcoming exam for students."
+
+#: phalcon-mvc/public/js/views/exam/index.js:143
+msgid "Do you want to unpublish it?"
+msgstr "Do you want to unpublish it?"
+
+#: phalcon-mvc/public/js/views/exam/index.js:165
+msgid "All answers has been corrected on this exam. "
+msgstr "All answers has been corrected on this exam. "
+
+#: phalcon-mvc/public/js/views/exam/index.js:166
+msgid ""
+"If you chose to continue and \n"
+"decode the exam, then no more correction can be done."
+msgstr ""
+"If you chose to continue and \n"
+"decode the exam, then no more correction can be done."
+
+#: phalcon-mvc/public/js/views/exam/index.js:167
+msgid "Do you want to continue and decode it?"
+msgstr "Do you want to continue and decode it?"
+
+#: phalcon-mvc/public/js/views/exam/index.js:367
+msgid "Are you sure you want to delete exam: '%exam%'"
+msgstr "Are you sure you want to delete exam: '%exam%'"
+
+#: phalcon-mvc/public/js/views/exam/security.js:76
+#: phalcon-mvc/public/js/views/exam/security.js:85
+msgid "Remove"
+msgstr "Remove"
+
+#: phalcon-mvc/public/js/views/exam/security.js:86
+msgid "Write location name"
+msgstr "Write location name"
+
+#: phalcon-mvc/public/js/views/exam/security.js:86
+msgid "Replace with IP-address"
+msgstr "Replace with IP-address"
+
+#: phalcon-mvc/public/js/views/exam/security.js:174
+msgid "Security settings updated successful"
+msgstr "Security settings updated successful"
+
+#: phalcon-mvc/public/js/views/exam/create.js:273
+msgid "Do you want to remove this question from the exam?"
+msgstr "Do you want to remove this question from the exam?"
+
+#: phalcon-mvc/public/js/views/exam/create.js:274
+msgid "You can insert the question back at any time. If you remove the question, then it will no longer be visable and answarable during the exam for students."
+msgstr "You can insert the question back at any time. If you remove the question, then it will no longer be visable and answarable during the exam for students."
+
+#: phalcon-mvc/public/js/views/exam/create.js:275
+msgid "Removed questions will no longer affect grades as calculated by the correction. It's safe to remove questions as related answers are never deleted, only the question itself is flagged as being removed."
+msgstr "Removed questions will no longer affect grades as calculated by the correction. It's safe to remove questions as related answers are never deleted, only the question itself is flagged as being removed."
+
+#: phalcon-mvc/public/js/views/exam/create.js:304
+msgid "Do you want to insert this question back on the exam?"
+msgstr "Do you want to insert this question back on the exam?"
+
+#: phalcon-mvc/public/js/views/exam/create.js:305
+#, fuzzy
+msgid "If you insert this question, then it will become visible for students during the exam. Any already saved answers will be accessable and this question will be included in grading during correction."
+msgstr "If you insert this question, then it will become visible for students during the exam. Any already saved answers will be accessable and during the correction this question will be included in grading during correction."
+
+#: phalcon-mvc/public/js/views/exam/create.js:335
+msgid "Are you sure you want to delete question no. %question%?"
+msgstr "Are you sure you want to delete question no. %question%?"
+
+#: phalcon-mvc/public/js/views/exam/create.js:538
+msgid "Edit question"
+msgstr "Edit question"
+
+#: phalcon-mvc/public/js/views/exam/create.js:586
+msgid "Question has not yet been saved. Close this dialog anyway?"
+msgstr "Question has not yet been saved. Close this dialog anyway?"
+
+#: phalcon-mvc/public/js/views/question/form.js:58
+#: phalcon-mvc/public/js/views/question/form.js:148
+msgid "Part %title%"
+msgstr "Part %title%"
+
+#: phalcon-mvc/public/js/views/question/form.js:131
+msgid "Choose a corrector for question"
+msgstr "Choose a corrector for question"
+
+#: phalcon-mvc/public/js/views/question/form.js:306
+msgid "Option - click to edit"
+msgstr "Option - click to edit"
+
+#: phalcon-mvc/public/js/views/question/form.js:365
+msgid "A question must have at least one corrector"
+msgstr "A question must have at least one corrector"
+
+#: phalcon-mvc/public/js/views/question/view.js:128
+msgid "Unknown answer type %type%"
+msgstr "Unknown answer type %type%"
+
+#: phalcon-mvc/public/js/views/question/view.js:154
+msgid "Seems like you lost your internet connection. Please make sure that internet cable is properly connected with computer."
+msgstr "Seems like you lost your internet connection. Please make sure that internet cable is properly connected with computer."
+
+#: phalcon-mvc/public/js/views/question/view.js:158
+msgid "Error occured!"
+msgstr "Error occured!"
+
+#: phalcon-mvc/public/js/views/question/view.js:159
+msgid "System wasn't able to save your answer during last 10 seconds. Please ignore if you see this message for the first time and review you answer again. Otherwise, please inform it to invigilator."
+msgstr "System wasn't able to save your answer during last 10 seconds. Please ignore if you see this message for the first time and review you answer again. Otherwise, please inform it to invigilator."
+
+#: phalcon-mvc/public/js/views/question/view.js:168
+msgid "Failed to save your answer!"
+msgstr "Failed to save your answer!"
+
+#: phalcon-mvc/public/js/views/question/view.js:169
+msgid "Please report to invigilator immediately. Don't refresh or close this page or you may loose your latest changes!"
+msgstr "Please report to invigilator immediately. Don't refresh or close this page or you may loose your latest changes!"
+
+#: phalcon-mvc/public/js/views/question/view.js:172
+msgid "Error source:"
+msgstr "Error source:"
+
+#: phalcon-mvc/public/js/views/question/view.js:174
+msgid "Answer recovery:"
+msgstr "Answer recovery:"
+
+#: phalcon-mvc/public/js/views/question/view.js:175
+msgid "Hit Ctrl+A and Ctrl+C in the text editor to copy your answer. "
+msgstr "Hit Ctrl+A and Ctrl+C in the text editor to copy your answer. "
+
+#: phalcon-mvc/public/js/views/question/view.js:176
+msgid "Paste copied text into another text editor (i.e. notepad) and save to disk before reloading the page."
+msgstr "Paste copied text into another text editor (i.e. notepad) and save to disk before reloading the page."
+
+#: phalcon-mvc/public/js/views/question/view.js:193
+msgid "Something went wrong!"
+msgstr "Something went wrong!"
+
+#: phalcon-mvc/public/js/views/question/view.js:194
+msgid "Please don't refresh/close web page window and contact your invigilator immediately."
+msgstr "Please don't refresh/close web page window and contact your invigilator immediately."
+
+#: phalcon-mvc/public/js/views/question/view.js:359
+msgid "Are you sure you want to logout from OpenExam?"
+msgstr "Are you sure you want to logout from OpenExam?"
+
+#: phalcon-mvc/public/js/views/question/view.js:428
+msgid "This addon uses the native spell check in the browser. "
+msgstr "This addon uses the native spell check in the browser. "
+
+#: phalcon-mvc/public/js/views/question/view.js:429
+msgid "Use '%shortcut%' to <br/> access browser dictionaries and spelling suggestions."
+msgstr "Use '%shortcut%' to <br/> access browser dictionaries and spelling suggestions."
+
+#: phalcon-mvc/public/js/views/question/view.js:433
+msgid "Click OK to toggle spell check as you type on/off for this text area. "
+msgstr "Click OK to toggle spell check as you type on/off for this text area. "
+
+#: phalcon-mvc/public/js/views/question/view.js:434
+msgid "You can also use the <br/> keyboard shortcut '%shortcut%'."
+msgstr "You can also use the <br/> keyboard shortcut '%shortcut%'."
+
+#: phalcon-mvc/public/js/views/question/view.js:440
+msgid "Native Spell Check"
+msgstr "Native Spell Check"
+
+#: phalcon-mvc/public/js/views/question/view.js:504
+msgid "Spellchecking is now enabled"
+msgstr "Spellchecking is now enabled"
+
+#: phalcon-mvc/public/js/views/question/view.js:506
+msgid "Spellchecking is now disabled"
+msgstr "Spellchecking is now disabled"
+
+#: phalcon-mvc/public/js/views/question/view.js:590
+msgid "Hide resource files"
+msgstr "Hide resource files"
+
+#: phalcon-mvc/public/js/views/question/view.js:593
+msgid "Display resource files"
+msgstr "Display resource files"
+
+#: phalcon-mvc/public/js/views/user-search.js:159
+msgid "Failed lookup associated data model"
+msgstr "Failed lookup associated data model"
+
+#: phalcon-mvc/public/js/views/media/library.js:58
+msgid "Unable to upload file '%file%': %error%"
+msgstr "Unable to upload file '%file%': %error%"
+
+#: phalcon-mvc/public/js/views/media/library.js:103
+msgid "File '%file%' was successful uploaded."
+msgstr "File '%file%' was successful uploaded."
+
+#: phalcon-mvc/public/js/views/media/library.js:104
+msgid "Do you want to save this file in the media file library for future use?"
+msgstr "Do you want to save this file in the media file library for future use?"
+
+#: phalcon-mvc/public/js/views/media/library.js:226
+msgid "Are you sure you want to delete resource %name%?"
+msgstr "Are you sure you want to delete resource %name%?"
+
+#: phalcon-mvc/public/js/utils.js:66
+msgid "Data has been inserted."
+msgstr "Data has been inserted."
+
+#: phalcon-mvc/public/js/utils.js:68
+msgid "Updated successfully."
+msgstr "Updated successfully."
+
+#: phalcon-mvc/public/js/utils.js:70
+msgid "Record has been successfully deleted."
+msgstr "Record has been successfully deleted."
+
+#: phalcon-mvc/public/js/utils.js:74 phalcon-mvc/public/js/utils.js:79
+msgid "Request failed. Please contact the system administrator"
+msgstr "Request failed. Please contact the system administrator"
+
+#, fuzzy
+#~ msgid "Request failed. Please contact the system administrator: "
+#~ msgstr "Request failed. Please contact system administrators: "

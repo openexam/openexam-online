@@ -1,4 +1,4 @@
-/* global baseURL, examId, user */
+/* global baseURL, examId, user, i18n */
 
 /*
  * Copyright (C) 2015-2018 The OpenExam Project
@@ -55,7 +55,11 @@ $(function () {
                 if (typeof file.url !== 'undefined') {
                     onUploadComplete(file);
                 } else {
-                    alert("Unable to upload file '" + file.name + "': " + file.error);
+                    var message = i18n.gettext("Unable to upload file '%file%': %error%", {
+                        file: file.name,
+                        error: file.error
+                    });
+                    alert(message);
                 }
             });
         },
@@ -95,7 +99,9 @@ $(function () {
             file.src = file.url;
         }
 
-        var question = "File '" + file.name + "' was successful uploaded. \n\r Do you want to save this file in the media file library for future use? ";
+        var question =
+                i18n.gettext("File '%file%' was successful uploaded.", {file: file.name}) + "\n\r" +
+                i18n.gettext("Do you want to save this file in the media file library for future use?");
 
         if (confirm(question) === false) {
             insertResourceFile(file);
@@ -216,7 +222,9 @@ $(function () {
         if (item.attr('media-id') === 0) {
             return;
         }
-        if (confirm('Are you sure you want to delete resource ' + name + '?') === false) {
+        if (confirm(
+                i18n.gettext('Are you sure you want to delete resource %name%?', {name: name})
+                ) === false) {
             return;
         }
 

@@ -1,4 +1,4 @@
-/* global baseURL */
+/* global baseURL, i18n */
 
 /*
  * Copyright (C) 2015-2018 The OpenExam Project
@@ -40,7 +40,7 @@ $(document).ready(function () {
             if (msg !== undefined) {
                 status.append(" [" + msg + "]");
             } else {
-                status.append(" Success!");
+                status.append(" " + i18n.gettext("Success!"));
             }
             status.removeClass('wait');
             status.addClass('done');
@@ -55,7 +55,7 @@ $(document).ready(function () {
                 }, 3000);
             }
         };
-        
+
         var _starting = function (obj) {
             var status = obj.find("div.exam-status");
             status.removeClass('none');
@@ -73,7 +73,7 @@ $(document).ready(function () {
                 _starting(obj);
                 ajax(baseURL + 'ajax/signup/insert', {id: ''}, function (data) {
                     if (data === false) {
-                        _finished(obj, "This role has already been granted");
+                        _finished(obj, i18n.gettext("This role has already been granted"));
                     } else {
                         _finished(obj);
                     }
@@ -86,7 +86,7 @@ $(document).ready(function () {
                 _starting(obj);
                 ajax(baseURL + 'ajax/signup/teacher', {id: exam}, function (data) {
                     if (data === false) {
-                        _finished(obj, 'This exam has already been copied');
+                        _finished(obj, i18n.gettext("This exam has already been copied"));
                     } else {
                         _finished(obj);
                     }
@@ -99,7 +99,7 @@ $(document).ready(function () {
                 _starting(obj);
                 ajax(baseURL + 'ajax/signup/student', {id: exam}, function (data) {
                     if (data === false) {
-                        _finished(obj, 'Already subscribed on this exam');
+                        _finished(obj, i18n.gettext("Already subscribed on this exam"));
                     } else {
                         _finished(obj);
                     }

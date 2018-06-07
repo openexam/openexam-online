@@ -1,4 +1,4 @@
-/* global examId, baseURL */
+/* global examId, baseURL, i18n */
 
 /*
  * Copyright (C) 2015-2018 The OpenExam Project
@@ -73,7 +73,7 @@ $(document).ready(function () {
     // Add (insert) location entry in list from popup:
     // 
     $('body').on('click', '#location-add', function () {
-        var button = "<span id='location-remove' class='btn btn-success' style='padding:2px; font-size:11px; min-width: 6em'><i class='fa fa-cut'></i><span>Remove</span></span>";
+        var button = "<span id='location-remove' class='btn btn-success' style='padding:2px; font-size:11px; min-width: 6em'><i class='fa fa-cut'></i><span>" + i18n.gettext("Remove") + "</span></span>";
         var item = $(this).closest('li');
         $('body').find('#locations-table').append("<tr entry='new'><td contenteditable='true'>" + item.attr('disp') + "</td><td contenteditable='true'>" + item.attr('addr').replace(';', '<br/>') + "</td><td>" + button + "</td></tr>");
     });
@@ -82,8 +82,8 @@ $(document).ready(function () {
     // Create new empty location entry in list:
     // 
     $('body').on('click', '#location-new', function () {
-        var button = "<span id='location-remove' class='btn btn-success' style='padding:2px; font-size:11px; min-width: 6em'><i class='fa fa-cut'></i><span>Remove</span></span>";
-        $('body').find('#locations-table').append("<tr entry='new'><td contenteditable='true' placeholder='Write location name'></td><td contenteditable='true' placeholder='Replace with IP-address'></td><td>" + button + "</td></tr>");
+        var button = "<span id='location-remove' class='btn btn-success' style='padding:2px; font-size:11px; min-width: 6em'><i class='fa fa-cut'></i><span>" + i18n.gettext("Remove") + "</span></span>";
+        $('body').find('#locations-table').append("<tr entry='new'><td contenteditable='true' placeholder='" + i18n.gettext("Write location name") + "'></td><td contenteditable='true' placeholder='" + i18n.gettext("Replace with IP-address") + "'></td><td>" + button + "</td></tr>");
     });
 
     // 
@@ -171,7 +171,7 @@ $(document).ready(function () {
                 }, 'POST', true, false);
             }
 
-            showMessage('Security settings updated successful', 'success');
+            showMessage(i18n.gettext('Security settings updated successful'), 'success');
         }
 
         closeDialogWindow("#exam-security-box");

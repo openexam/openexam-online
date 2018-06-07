@@ -1,4 +1,4 @@
-/* global baseURL */
+/* global baseURL, i18n */
 
 /*
  * Copyright (C) 2016-2018 The OpenExam Project
@@ -129,7 +129,7 @@ $(document).ready(function () {
                     data[r].mail = "#";
                 }
                 dest.append("<tr>");
-                dest.append("<td><a href='mailto:" + data[r].mail + "'><span class='btn btn-success btn-sm'><i class='fa fa-envelope'></i><span> Contact</span></span></a></td>");
+                dest.append("<td><a href='mailto:" + data[r].mail + "'><span class='btn btn-success btn-sm'><i class='fa fa-envelope'></i><span> " + i18n.gettext("Contact") + "</span></span></a></td>");
                 dest.append("<td class=\"name\">" + data[r].name + "</td>");
                 dest.append("<td class=\"user\">" + data[r].user + "</td>");
                 dest.append("<td class=\"type\">" + data[r].type + "</td>");
@@ -151,7 +151,7 @@ $(document).ready(function () {
                     continue;
                 }
                 dest.append("<tr>");
-                dest.append("<td><span class='btn btn-success' style='padding:10px; font-size:11px'><i class='fa fa-users'></i><span> Staff</span></span></td>");
+                dest.append("<td><span class='btn btn-success' style='padding:10px; font-size:11px'><i class='fa fa-users'></i><span> " + i18n.gettext("Staff") + "</span></span></td>");
                 dest.append("<td class=\"name\">" + data[r].name + "<br/>");
                 dest.append("<td class=\"datetime\">" + data[r].starttime + "</td>");
                 dest.append("<td class=\"datetime\">" + data[r].endtime + "</td>");

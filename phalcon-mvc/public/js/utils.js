@@ -1,4 +1,4 @@
-/* global Opentip, Function */
+/* global Opentip, Function, i18n */
 
 /*
  * Copyright (C) 2014-2018 The OpenExam Project
@@ -63,20 +63,20 @@ var ajax = function (url, data, callback, type, async, showSuccessMsg) {
 
             if (showSuccessMsg) {
                 if (response.success.action === 'create') {
-                    showMessage("Data has been inserted.", 'success');
+                    showMessage(i18n.gettext("Data has been inserted."), 'success');
                 } else if (response.success.action === 'update') {
-                    showMessage("Updated successfully.", 'success');
+                    showMessage(i18n.gettext("Updated successfully."), 'success');
                 } else if (response.success.action === 'delete') {
-                    showMessage("Record has been successfully deleted.", 'success');
+                    showMessage(i18n.gettext("Record has been successfully deleted."), 'success');
                 }
             }
         } else {
-            showMessage('Request failed. Please contact system administrators.', 'error');
+            showMessage(i18n.gettext('Request failed. Please contact the system administrator'), 'error');
         }
     });
 
     request.fail(function (jqXHR, textStatus) {
-        showMessage('Request failed. Please contact system administrators: ' + textStatus, 'error');
+        showMessage(i18n.gettext('Request failed. Please contact the system administrator') + ': ' + textStatus, 'error');
         $("#ajax-loader").hide();
     });
 };
@@ -172,7 +172,6 @@ var showDialogWindow = function (target, content, options) {
     } else {
         $(target).attr('dialog-type', 'fancybox');
         $(target).css('min-height', $(window).height() - 88);
-//        $(target).find('.oe-dialog-buttons').addClass('oe-center-bottom');
         $.fancybox.open({
             src: target,
             type: 'inline'

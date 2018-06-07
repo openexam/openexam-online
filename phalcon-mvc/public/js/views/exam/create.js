@@ -1,4 +1,4 @@
-/* global mode, baseURL, role, showAddQuestionView, examId, isNewExam, CKEDITOR, qId */
+/* global mode, baseURL, role, showAddQuestionView, examId, isNewExam, CKEDITOR, qId, i18n */
 
 /*
  * Copyright (C) 2014-2018 The OpenExam Project
@@ -269,11 +269,12 @@ $(document).ready(function () {
     // Remove question (set status removed):
     // 
     $(document).on('click', '.remove-q', function () {
-        if (confirm("Do you want to remove this question from the exam?\r\n"
-                + "You can insert the question back at any time. If you remove the question, then "
-                + "it will no longer be visable and answarable during the exam for students.\r\n"
-                + "Removed questions are no longer included in grading during correction, but any already "
-                + "saved answers are not deleted.")) {
+        var message =
+                i18n.gettext("Do you want to remove this question from the exam?") + "\r\n" +
+                i18n.gettext("You can insert the question back at any time. If you remove the question, then it will no longer be visable and answarable during the exam for students.") + "\r\n" +
+                i18n.gettext("Removed questions will no longer affect grades as calculated by the correction. It's safe to remove questions as related answers are never deleted, only the question itself is flagged as being removed.");
+
+        if (confirm(message)) {
             var question = $(this).closest('.qs_area_line');
             var qid = question.attr('q-id');
             var qbody = question.find('.qs_area_line_q_parts');
@@ -299,10 +300,11 @@ $(document).ready(function () {
     // Insert question (set status active):
     // 
     $(document).on('click', '.insert-q', function () {
-        if (confirm("Do you want to insert this question back on the exam?\r\n"
-                + "If you insert this question, then it will become visible for students during "
-                + "the exam. Any already saved answers will be accessable and during the correction "
-                + "this question will be included in grading during correction.")) {
+        var message =
+                i18n.gettext("Do you want to insert this question back on the exam?") + "\r\n" +
+                i18n.gettext("If you insert this question, then it will become visible for students during the exam. Any already saved answers will be accessable and this question will be included in grading during correction.");
+
+        if (confirm(message)) {
             var question = $(this).closest('.qs_area_line');
             var qid = question.attr('q-id');
             var qbody = question.find('.qs_area_line_q_parts');
@@ -330,8 +332,11 @@ $(document).ready(function () {
     // 
     $(document).on('click', '.del-q', function () {
         var qNo = $(this).closest('.qs_area_line').attr('q-no');
+        var message = i18n.gettext("Are you sure you want to delete question no. %question%?", {
+            question: qNo
+        });
 
-        if (confirm("Are you sure you want to delete question no. " + qNo + "?")) {
+        if (confirm(message)) {
             deleteQuestion(qsJson[qNo]["questId"], function () {
                 location.reload();
                 $(this).closest('.qs_area_line').slideUp('500');
@@ -530,7 +535,7 @@ $(document).ready(function () {
     var loadQuestion = function (pos, action, qid)
     {
         var target = $("#question-form-dialog-wrap");
-        var title = 'Edit question';
+        var title = i18n.gettext('Edit question');
 
         $.ajax({
             type: "POST",
@@ -578,7 +583,7 @@ $(document).ready(function () {
                         var close = true;
 
                         if (action === 'create') {
-                            close = confirm("Question has not yet been saved. Close this dialog anyway?");
+                            close = confirm(i18n.gettext("Question has not yet been saved. Close this dialog anyway?"));
                         }
 
                         return close;

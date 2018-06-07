@@ -1,4 +1,4 @@
-/* global baseURL, role, examId */
+/* global baseURL, role, examId, i18n */
 
 /*
  * Copyright (C) 2017-2018 The OpenExam Project
@@ -156,7 +156,7 @@ function insertCatalogUser(item, element)
     var model = anchor.attr('data-model');
 
     if (model === undefined) {
-        alert("Failed lookup associated data model");
+        alert(i18n.gettext("Failed lookup associated data model"));
     } else if (model === 'corrector') {
         if (!hasCorrector(item, anchor)) {
             addCorrector(item, anchor, model);
