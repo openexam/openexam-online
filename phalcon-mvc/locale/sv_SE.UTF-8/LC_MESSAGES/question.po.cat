@@ -10,8 +10,8 @@ msgstr ""
 "#-#-#-#-#  question.po (openexam-online 2.0)  #-#-#-#-#\n"
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-31 01:05+0200\n"
-"PO-Revision-Date: 2018-05-31 01:40+0200\n"
+"POT-Creation-Date: 2018-06-07 23:11+0200\n"
+"PO-Revision-Date: 2018-06-07 23:18+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -47,138 +47,151 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.0.6\n"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 120
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 134
+msgid "Upcoming exam"
+msgstr "Kommande tenta"
+#
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 135
+#, php-format
+msgid "Following table will show answers from students for the examination <strong>\"%s\"</strong> once it has started"
+msgstr "Tabellen kommer att visa svar från studenter för tentan <strong>\"%s\"</strong> så snart den har startat"
+#
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 136
+msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This is an upcoming exam and you seems to be missing the required roles for showing questions before the exam has started. Please reload the page when the exam has started to monitor student progress."
+msgstr "Du kan visa studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Detta är en kommande tenta och du verkar sakna någon av dom nödvändiga rollerna för att visa frågor innan tentan har startat. Ladda om sidan då tentan startat för att övervaka studenternas framsteg med att besvara frågorna."
+#
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 140
 msgid "Exam status"
 msgstr "Tentastatus"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 121
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 139
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 141
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 159
 #, php-format
 msgid "Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>"
 msgstr "Tabellen visar alla svar från studenter på frågor för tentan <strong>\"%s\"</strong>"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 122
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 142
 msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is not yet finished, so you can only monitor the answering progress for students on this exam."
 msgstr "Du kan visa studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Denna tenta är inte avslutad än, så du kan bara monitorera inkommande svar från studenter."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 126
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 146
 msgid "Exam investigation"
 msgstr "Undersökning av tenta"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 127
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 133
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 147
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 153
 #, php-format
 msgid "Following table shows the final result of all students for the examination <strong>\"%s\"</strong>"
 msgstr "Tabeller visar dom slutgiltiga resultaten för alla studenter på tentan <strong>\"%s\"</strong>"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 128
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 148
 msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam is in enquiry state (correction has finished, but decoding is on hold). In this phase its no longer possible to change student results."
 msgstr "Du kan visa studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Denna tenta är under utredning (rättningen är avslutad, men avkodning väntar). I detta tillstånd är det inte längre möjligt att ändra på studenternas resultat."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 132
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 152
 msgid "Exam score board"
 msgstr "Poängtabell"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 134
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 154
 msgid "You can view the student's answers by student (rows), by question (column) or individual (by index). This exam has been decoded, so it's no longer possible to change student results."
 msgstr "Du kan visa studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Denna tenta hart avkodats, så det är inte längre möjligt att ändra på studenternas resultat."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 138
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 158
 msgid "Exam correction"
 msgstr "Rättning"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 140
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 160
 msgid "Correct answers by student (rows), by question (column) or individual (by index). You can only correct answers for questions published by yourself or those you have been assigned the role as corrector for."
 msgstr "Rätta studenternas svar per student (rader), per fråga (kolumn) eller enstaka (index). Du kan bara rätta svaren för dom frågor som publicerats av dig själv eller dom som du blivit tilldelad rollen som rättande lärare för."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 328
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 348
 msgid "Run wizard for enquiry or decoding this exam."
 msgstr "Kör guiden för att utreda eller avkoda tentan."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 334
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 354
 msgid "Download score board in spreadsheet format"
 msgstr "Ladda ner poängtabellen som ett kalkylblad"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 340
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 360
 msgid "Open dialog for downloading all or selected students as zip-file"
 msgstr "Öppna dialog för att ladda ner alla eller valda students resultat som en zip-fil"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 363
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 383
 msgid "Correctors: "
 msgstr "Rättande lärare: "
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 386
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 544
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 410
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 583
 msgid "Student"
 msgstr "Student"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 390
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 414
 # File: phalcon-mvc/app/views/partials/students-list.phtml, line: 98
 msgid "Code"
 msgstr "Kod"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 395
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 419
 msgid "F. name"
 msgstr "F. namn"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 398
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 422
 msgid "L. name"
 msgstr "E. namn"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 401
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 425
 msgid "P No."
 msgstr "P-nr."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 406
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 430
 msgid "Total score"
 msgstr "Total poäng"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 415
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 439
 msgid "Grade"
 msgstr "Betyg"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 456
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 480
 msgid "Failed decode JSON data"
 msgstr "Gick inte av avkoda data som JSON"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 522
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 552
 msgid "Download student result in PDF-file format"
 msgstr "Ladda ner students resultat i PDF-filformat"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 530
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 560
 msgid "Toggle enquiry flag on this student"
 msgstr "Koppla om flaggning för utredning på denna student"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 686
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 725
 msgid "Color codes used in the score board:"
 msgstr "Färgkoder använda i poängtabellen:"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 692
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 731
 msgid "Answer has been corrected."
 msgstr "Detta svar har rättats klart."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 697
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 736
 msgid "This answer should be corrected by another person."
 msgstr "Detta svar ska rättas av en annan person."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 702
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 741
 msgid "No answer was given for this question."
 msgstr "Svar saknas för denna fråga."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 706
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 745
 msgid "The answer is uncorrected or partially corrected."
 msgstr "Svaret har inte rättats eller är delvis färdigrättat."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 710
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 749
 msgid "Student can pass with some grace marks."
 msgstr "Studenten kan godkännas efter en viss justering."
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 717
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 756
 msgid "Exam decode wizard"
 msgstr "Guide för avkodning av tenta"
 #
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 719
-# File: phalcon-mvc/app/views/question/correction.phtml, line: 720
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 758
+# File: phalcon-mvc/app/views/question/correction.phtml, line: 759
 msgid "Download exam result"
 msgstr "Ladda ner tentaresultat"
 #

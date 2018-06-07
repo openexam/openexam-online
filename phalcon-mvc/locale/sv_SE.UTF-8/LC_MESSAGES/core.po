@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openexam-online 2.0\n"
 "Report-Msgid-Bugs-To: andlov@nowise.se\n"
-"POT-Creation-Date: 2018-05-30 23:50+0200\n"
+"POT-Creation-Date: 2018-06-07 23:11+0200\n"
 "PO-Revision-Date: 2018-05-31 01:21+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -35,23 +35,23 @@ msgstr "Engelska (GB)"
 msgid "Browser Default"
 msgstr "Webbläsarens Förvalda"
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:544
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:545
 msgid "student (code: %code%)"
 msgstr "student (kod: %code%)"
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:552
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:553
 msgid "student (ID: %id%)"
 msgstr "student (ID: %id%)"
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:597
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:598
 msgid "question (Q%slot%) answered by student (code: %code%)"
 msgstr "fråga (Q%slot%) besvarad av student (kod: %code%)"
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:606
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:607
 msgid "question (Q%slot%) answered by student (ID: %id%)"
 msgstr "fråga (Q%slot%) besvarad av student (ID: %id%)"
 
-#: phalcon-mvc/app/controllers/Gui/QuestionController.php:647
+#: phalcon-mvc/app/controllers/Gui/QuestionController.php:648
 msgid "question (Q%slot%)"
 msgstr "fråga (Q%slot%)"
 
