@@ -237,7 +237,7 @@ class State extends Component
         }
 
         /**
-         * Check correction status.
+         * All answers has been corrected.
          * @return bool True if exam is fully corrected.
          */
         public function isCorrected()
@@ -246,12 +246,259 @@ class State extends Component
         }
 
         /**
-         * Check answer status
+         * This exam has answers.
          * @return bool True if examination has answers.
          */
         public function isAnswered()
         {
                 return $this->has(self::ANSWERED);
+        }
+
+        /**
+         * Questions can be contributed.
+         * @return bool
+         */
+        public function isContributable()
+        {
+                return $this->has(self::CONTRIBUTABLE);
+        }
+
+        /**
+         * Students can be added.
+         * 
+         * In general, students can be added until the exam endtime. Some 
+         * exams has no start/endtime. This flag is takes these corner cases
+         * into account too.
+         * 
+         * @return bool
+         */
+        public function isExaminatable()
+        {
+                return $this->has(self::EXAMINATABLE);
+        }
+
+        /**
+         * Answer correction can be done.
+         * 
+         * An exam is correctable if finished and not decoded. We also has the
+         * enquiry state to take notes off.
+         * 
+         * @return bool
+         */
+        public function isCorrectable()
+        {
+                return $this->has(self::CORRECTABLE);
+        }
+
+        /**
+         * This exam can be decoded.
+         * 
+         * An exam can be decoded if correction has been finished. It's also
+         * possible to decode and already decoded exam.
+         * 
+         * @return bool
+         */
+        public function isDecodable()
+        {
+                return $this->has(self::DECODABLE);
+        }
+
+        /**
+         * This exam is decoded.
+         * 
+         * When decoded, the stundent identities can be revealed for result
+         * report. Theres also the enquiry state that is an intermediate state
+         * between corrected and decoeded.
+         * 
+         * @return bool
+         */
+        public function isDecoded()
+        {
+                return $this->has(self::DECODED);
+        }
+
+        /**
+         * This exam can be fully edited.
+         * 
+         * An exam not yet started or without answers can be fully edited.
+         * This includes modifying questions or information.
+         * 
+         * @return bool
+         */
+        public function isEditable()
+        {
+                return $this->has(self::EDITABLE);
+        }
+
+        /**
+         * This exam can be deleted.
+         * 
+         * In general, an exam not yet published and without answers can be
+         * deleted. It the exam is flagged as a testcase then it can also be
+         * deleted even though its published and/or has answers.
+         * 
+         * @return bool
+         */
+        public function isDeletable()
+        {
+                return $this->has(self::DELETABLE);
+        }
+
+        /**
+         * This exam can be reused (duplicated).
+         * 
+         * An exam without answers (not seen) can always be reused. This flag
+         * is also influenced by the exam->reusable system config setting that 
+         * can have either always or never.
+         * 
+         * @return bool
+         */
+        public function isReusable()
+        {
+                return $this->has(self::REUSABLE);
+        }
+
+        /**
+         * This exam is upcoming.
+         * 
+         * An scheduled exam not yet started is upcoming.
+         * 
+         * @return bool
+         */
+        public function isUpcoming()
+        {
+                return $this->has(self::UPCOMING);
+        }
+
+        /**
+         * Alias for isUpcoming().
+         * @return bool
+         */
+        public function isPending()
+        {
+                return $this->isUpcoming();
+        }
+
+        /**
+         * This exam is running (ongoing).
+         * 
+         * An scheduled exam that has been started is running if either the
+         * endtime is missing or in the future.
+         * 
+         * @return bool
+         */
+        public function isRunning()
+        {
+                return $this->has(self::RUNNING);
+        }
+
+        /**
+         * Alias for isStarted().
+         * @return bool
+         */
+        public function isStarted()
+        {
+                return $this->isRunning();
+        }
+
+        /**
+         * This exam is finished.
+         * 
+         * In addition to what can be considered obvious, an exam is flagged as
+         * finished if endtime is passed and answers are missing.
+         * 
+         * @return bool
+         */
+        public function isFinished()
+        {
+                return $this->has(self::FINISHED);
+        }
+
+        /**
+         * This exam is a testcase.
+         * 
+         * The testcase flag is used to signal that this exam can be discarded
+         * without loosing precious data.
+         * 
+         * @return bool
+         */
+        public function isTestcase()
+        {
+                return $this->has(self::TESTCASE);
+        }
+
+        /**
+         * This exam has lockdown.
+         * 
+         * The lockdown option is set on this exam. Ranges are from simple 
+         * lockdown of student/computer/exam-tripples to more complex cases of 
+         * remote agants and proxy-solutions. In essence, the latter case is 
+         * implementation dependent.
+         * 
+         * @return bool
+         */
+        public function isSecured()
+        {
+                return $this->has(self::LOCKDOWN);
+        }
+
+        /**
+         * This exam is a draft.
+         * 
+         * An exam is considered as an draft until scheduled (start time is set).
+         * 
+         * @return bool
+         */
+        public function isDraft()
+        {
+                return $this->has(self::DRAFT);
+        }
+
+        /**
+         * This exam is published.
+         * 
+         * Once published the exam is considered as ready for use. A number of
+         * quality checks should be performed before accepting publication. It's
+         * no longer possible to contribute questions on an published exam.
+         * 
+         * @return bool
+         */
+        public function isPublished()
+        {
+                return $this->has(self::PUBLISHED);
+        }
+
+        /**
+         * Alias for isPublished().
+         * @return bool
+         */
+        public function isReady()
+        {
+                return $this->isPublished();
+        }
+
+        /**
+         * This exam is under enquiry.
+         * 
+         * Exam is in a intermediate state between corrected and decoded. In
+         * this case, the student identities can be revealed but correction 
+         * can't be altered. This case if for investigation before moving on
+         * to the final decoded state.
+         * 
+         * @return bool
+         */
+        public function isEnquiring()
+        {
+                return $this->has(self::ENQUIRY);
+        }
+
+        /**
+         * Alias for isEnquiring().
+         * @return bool
+         */
+        public function isInvestigated()
+        {
+                return $this->isEnquiring();
         }
 
         /**
