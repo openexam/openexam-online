@@ -135,7 +135,7 @@ $config = new Config(
                         'msginit'  => '/usr/bin/msginit'
                 ),
                 'options' => array(
-                        'xgettext' => '--language=PHP --package-name="@name@" --package-version="@version@" --msgid-bugs-address="@address@" --copyright-holder="@copying@" --add-comments=\'//{tr}\' --from-code=UTF-8 --no-wrap --output=@template@',
+                        'xgettext' => '--language=@lang@ --package-name="@name@" --package-version="@version@" --msgid-bugs-address="@address@" --copyright-holder="@copying@" --add-comments=\'//{tr}\' --from-code=UTF-8 --no-wrap --output=@template@',
                         'msgmerge' => '--no-wrap --update',
                         'msgfmt'   => '--strict --statistics --check --output-file=@output@',
                         'msgcat'   => '--strict --no-wrap --to-code=UTF-8 --output-file=@output@',
@@ -243,6 +243,11 @@ $config = new Config(
                 'statistics' => array(
                         'directories' => array('phalcon-mvc/app/views/statistics'),
                         'merge'       => array('main')
+                ),
+                'js'         => array(
+                        'directories' => array('phalcon-mvc/public/js/views'),
+                        'files'       => array('phalcon-mvc/public/js/utils.js'),
+                        'filter'      => array('js')
                 )
         ),
         /**

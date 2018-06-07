@@ -33,6 +33,7 @@ use OpenExam\Library\Globalization\Translate\Gettext\Command\Compile as CompileC
 use OpenExam\Library\Globalization\Translate\Gettext\Command\Initialize as InitializeCommand;
 use OpenExam\Library\Globalization\Translate\Gettext\Command\Merge as MergeCommand;
 use OpenExam\Library\Globalization\Translate\Gettext\Command\Update as UpdateCommand;
+use OpenExam\Library\Globalization\Translate\Gettext\Command\Generate as GenerateCommand;
 use OpenExam\Library\Globalization\Translate\Setup as SetupInterface;
 use Phalcon\Mvc\User\Component;
 
@@ -101,6 +102,13 @@ class Setup extends Component implements SetupInterface
         public function update()
         {
                 $command = new UpdateCommand($this->_consumer, $this->_options);
+                $command->process();
+        }
+
+        public function generate()
+        {
+                $command = new GenerateCommand($this->_consumer, $this->_options);
+                $command->registerBinding("js", new Generator\JavaScript());
                 $command->process();
         }
 

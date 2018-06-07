@@ -177,7 +177,8 @@ abstract class Command
                 $search = array();
                 $replace = array();
 
-                $subst = array_merge($this->_config->gettext->package->toArray(), $search, $extra);
+                $subst = array_merge($this->_options, $search, $extra);
+                $subst = array_merge($this->_config->gettext->package->toArray(), $subst);
 
                 foreach ($subst as $key => $val) {
                         $search[] = "@$key@";
@@ -221,8 +222,11 @@ abstract class Command
                 $files = array();
                 $input = $this->_config->translate->get($this->_options['module'])->toArray();
 
+                if (!isset($input['filter'])) {
+                        $input['filter'] = array('php', 'phtml');
+                }
                 if (isset($input['directories'])) {
-                        $files = $this->findFiles($input['directories']);
+                        $files = $this->findFiles($input['directories'], $input['filter']);
                 }
                 if (isset($input['files'])) {
                         $files = array_merge($files, $input['files']);

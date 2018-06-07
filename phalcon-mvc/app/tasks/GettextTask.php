@@ -64,8 +64,8 @@ class GettextTask extends MainTask implements TaskInterface
                         'header'   => 'GNU gettext task (I18N).',
                         'action'   => '--gettext',
                         'usage'    => array(
-                                '[--update] [--merge] [--compile] | [--all] [--module=name]',
-                                '--initialize --locale=name [--module=name]',
+                                '[--update] [--merge] [--compile] [--generate] | [--all] [--module=name]',
+                                '--initialize --locale=name [--module=name] [--lang=str]',
                                 '--list',
                                 '--clean'
                         ),
@@ -75,9 +75,11 @@ class GettextTask extends MainTask implements TaskInterface
                                 '--compile'     => 'Compile message catalog to binary format.',
                                 '--clean'       => 'Clean compiled binary files.',
                                 '--initialize'  => 'Initialize new locale directory.',
+                                '--generate'    => 'Generate language bindings.',
                                 '--list'        => 'Show modules defined in configuration.',
                                 '--locale=name' => 'The locale name (e.g. sv_SE).',
                                 '--module=name' => 'Set module for current task.',
+                                '--lang=str'    => 'Parse files as this language (default to PHP).',
                                 '--force'       => 'Force action even if already applied.',
                                 '--verbose'     => 'Be more verbose.',
                                 '--dry-run'     => 'Just print whats going to be done.'
@@ -97,6 +99,10 @@ class GettextTask extends MainTask implements TaskInterface
                                 array(
                                         'descr'   => 'Initialize swedish locale for the student module',
                                         'command' => '--initialize --module=student --locale=sv_SE.UTF-8'
+                                ),
+                                array(
+                                        'descr'   => 'Initialize english (US) locale for the js module',
+                                        'command' => '--initialize --module=js --locale=en_US --lang=javascript'
                                 )
                         )
                 );
@@ -116,6 +122,7 @@ class GettextTask extends MainTask implements TaskInterface
                 $this->_options['update'] = true;
                 $this->_options['merge'] = true;
                 $this->_options['compile'] = true;
+                $this->_options['generate'] = true;
                 $this->perform();
         }
 
@@ -152,6 +159,12 @@ class GettextTask extends MainTask implements TaskInterface
         public function updateAction($params = array())
         {
                 $this->setOptions($params, 'update');
+                $this->perform();
+        }
+
+        public function generateAction($params = array())
+        {
+                $this->setOptions($params, 'generate');
                 $this->perform();
         }
 
@@ -203,6 +216,9 @@ class GettextTask extends MainTask implements TaskInterface
                 if ($this->_options['compile']) {
                         $commands[] = 'compile';
                 }
+                if ($this->_options['generate']) {
+                        $commands[] = 'generate';
+                }
 
                 if ($this->_options['module']) {
                         $modules[] = $this->_options['module'];
@@ -237,7 +253,7 @@ class GettextTask extends MainTask implements TaskInterface
                 // 
                 // Supported options.
                 // 
-                $options = array('verbose', 'force', 'dry-run', 'all', 'clean', 'compile', 'merge', 'update', 'initialize', 'list', 'locale', 'module');
+                $options = array('verbose', 'force', 'dry-run', 'lang', 'all', 'clean', 'compile', 'merge', 'update', 'initialize', 'list', 'locale', 'module');
                 $current = $action;
 
                 // 
@@ -266,6 +282,16 @@ class GettextTask extends MainTask implements TaskInterface
                         } else {
                                 throw new Exception("Unknown task action/parameters '$option'");
                         }
+                }
+
+                // 
+                // Set language if missing or implicit defined by module:
+                // 
+                if ($this->_options['module'] == 'js') {
+                        $this->_options['lang'] = 'javascript';
+                }
+                if (!$this->_options['lang']) {
+                        $this->_options['lang'] = 'php';
                 }
         }
 

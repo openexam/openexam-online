@@ -112,7 +112,7 @@ namespace OpenExam\Library\Globalization\Translate\Gettext {
                         if (!extension_loaded('gettext')) {
                                 throw new Exception('The gettext extension is not loaded.');
                         }
-
+                        
                         if ($this->_incubator == false) {
                                 $this->_gettext = new Gettext(array(
                                         'locale'        => $this->locale->getLocale(),

@@ -276,16 +276,19 @@ class Locale extends Component
          * and region code separated with '-'.
          * 
          * @param boolean $simple Return simple language (i.e. sv or en).
+         * @param string $locale The locale name (use currrent by default).
          * @return string
          */
-        public function getIndentifier($simple = false)
+        public function getIdentifier($simple = false, $locale = null)
         {
-                if ($simple) {
-                        return $this->getLanguage($this->getLocale());
-                }
-
-                $locale = $this->getLocale();
                 $params = array();
+
+                if (!isset($locale)) {
+                        $locale = $this->getLocale();
+                }
+                if ($simple) {
+                        return $this->getLanguage($locale);
+                }
 
                 if (($string = $this->getLanguage($locale))) {
                         $params[] = strtolower($string);
