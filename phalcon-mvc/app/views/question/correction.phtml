@@ -2,7 +2,6 @@
 
 use OpenExam\Library\Security\Roles;
 use OpenExam\Models\Exam;
-use OpenExam\Models\Student;
 use Phalcon\Tag;
 
 /*
@@ -47,6 +46,18 @@ if (($exam->details & Exam::SHOW_SUMMARY_DURING_CORRECTION) != 0) {
 }
 if (($exam->details & Exam::SHOW_CODE_DURING_CORRECTION) != 0) {
         $exam->show_code = true;
+}
+
+// 
+// Hide questions for invigilators for upcoming exams:
+// 
+if ($role == Roles::INVIGILATOR) {
+        if ($exam->getState()->isPublished() == false ||
+            $exam->getState()->isUpcoming()) {
+                $exam->show_links = false;
+        } else {
+                $exam->show_links = true;
+        }
 }
 
 if ($exam->decoded ||
@@ -104,6 +115,9 @@ if (!isset($exam->show_grades)) {
 if (!isset($exam->show_code)) {
         $exam->show_code = $this->config->result->show->code;
 }
+if (!isset($exam->show_links)) {
+        $exam->show_links = true;
+}
 
 // 
 // Don't display separate column with code if already decoded:
@@ -115,7 +129,13 @@ if ($exam->decoded | $exam->enquiry) {
         $exam->show_user = false;
 }
 
-if (!$exam->show_save) {
+if (!$exam->show_links) {
+        $header = array(
+                'head' => $tr->_("Upcoming exam"),
+                'text' => $tr->_("Following table will show answers from students for the examination <strong>\"%s\"</strong> once it has started"),
+                'note' => $tr->_("You can view the student's answers by student (rows), by question (column) or individual (by index). This is an upcoming exam and you seems to be missing the required roles for showing questions before the exam has started. Please reload the page when the exam has started to monitor student progress.")
+        );
+} elseif (!$exam->show_save) {
         $header = array(
                 'head' => $tr->_("Exam status"),
                 'text' => $tr->_("Following table shows all answers from students to questions for the examination <strong>\"%s\"</strong>"),
@@ -368,6 +388,10 @@ if ($exam->decoded || $exam->enquiry) {
                                 }
                                 $desc .= implode(", ", $correctors);
 
+                                if ($exam->show_links == false) {
+                                        $href = "";
+                                }
+
                                 ?>
                                 <th>
                                     <a data-fancybox="ajax" 
@@ -498,12 +522,18 @@ if ($exam->decoded || $exam->enquiry) {
                                                 $cc = 'nc';
                                         }
 
+                                        if ($exam->show_links) {
+                                                $href = $this->url->get('exam/' . $exam->id . '/correction/answer/' . $answer->id);
+                                        } else {
+                                                $href = "";
+                                        }
+
                                         ?>
                                         <td class="score cc <?= $cc ?>">
                                             <?php if ($cLink): ?>
                                                     <a data-fancybox="ajax" 
                                                        data-caption="<?= $exam->name ?>"
-                                                       data-src="<?= $this->url->get('exam/' . $exam->id . '/correction/answer/' . $answer->id) ?>" 
+                                                       data-src="<?= $href ?>" 
                                                        data-type="ajax" 
                                                        href="javascript:;" 
                                                        ans-id="<?= $answer->id ?>"
@@ -532,10 +562,19 @@ if ($exam->decoded || $exam->enquiry) {
                                                 <i class="fa fa-ban" aria-hidden="true"></i>
                                             </a>    
                                     <?php endif; ?> 
+
+                                    <?php
+                                    if ($exam->show_links) {
+                                            $href = $this->url->get('exam/' . $exam->id . '/correction/student/' . $student->id);
+                                    } else {
+                                            $href = "";
+                                    }
+
+                                    ?>
                                     <a class="icon"
                                        data-fancybox="ajax" 
                                        data-caption="<?= $exam->name ?>"
-                                       data-src="<?= $this->url->get('exam/' . $exam->id . '/correction/student/' . $student->id) ?>" 
+                                       data-src="<?= $href ?>" 
                                        data-type="ajax" 
                                        href="javascript:;" 
                                        stud-id="<?= $student->id ?>">

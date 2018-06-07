@@ -441,6 +441,7 @@ class QuestionController extends GuiController
 
                 $translate = new Translate('question');
                 $this->view->setVar('tr', $translate);
+                $this->view->setVar('role', $this->user->getPrimaryRole());
         }
 
         /**
