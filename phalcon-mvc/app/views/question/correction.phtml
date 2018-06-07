@@ -49,7 +49,7 @@ if (($exam->details & Exam::SHOW_CODE_DURING_CORRECTION) != 0) {
 }
 
 // 
-// Hide questions for invigilators for upcoming exams:
+// Hide questions for invigilators on upcoming exams:
 // 
 if ($role == Roles::INVIGILATOR) {
         if ($exam->getState()->isPublished() == false ||
