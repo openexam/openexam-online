@@ -39,15 +39,8 @@ class Update extends Command
          */
         public function process()
         {
-                foreach ($this->getLocales() as $locale) {
-                        $this->processLocale($locale);
-                }
-        }
-
-        private function processLocale($locale)
-        {
                 foreach ($this->getModules() as $module) {
-                        $this->processModule($locale, $module);
+                        $this->processModule(null, $module);
                 }
         }
 
