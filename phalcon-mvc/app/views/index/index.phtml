@@ -23,20 +23,94 @@ use Phalcon\Tag;
 // 
 // File:    index.phtml
 // 
-// Author:  Ahsan Shahzad (MedfarmDoIT)
+// Author:  Ahsan Shahzad (Medfarm DoIT)
+//          Anders Lövgren (Nowise Systems)
 // 
 
 ?>
 
+<style>
+    .task-button-group {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .task-button {
+        margin: 5px;
+        padding-top: 20px;
+        min-height: 120px; 
+        min-width: 160px;
+        text-align:center;
+        line-height:40px;
+    }
+    .task-button a {
+        color: white;
+        min-height: 120px;
+        display: inline-table;
+        background: red;
+    }
+</style>
+
 <div class="jumbotron box-shadow" style="padding:20px">
     <h1 class="main"><?= $tr->_("Welcome!") ?></h1>
     <br />
-    <div style="padding-bottom:15px">
+    <div>
         <?= $tr->_("OpenExam is an on line examination system that allows different types of computer-based tests and exams.") ?>
         <?= $tr->_("It replaces traditional paper-based exams if performed in exam halls equipped with computers or in computer class rooms where restricted interned can be controlled.") ?>
         <?= $tr->_("It may also be used for home exams and diagnostic tests on student’s personal devices.") ?>
         <?= $tr->_("The front end of the system is entirely web based, from creating the exam to providing the students with the corrected exams.") ?>
     </div>
+
+    <div class="task-button-group">
+        <?php if ($this->user->roles->hasRole('teacher')) : ?>
+                <a href="<?= $this->url->get('exam/create') ?>">
+                    <span class="btn btn-success task-button">
+                        <i class="fa fa-plus-circle fa-2x"></i><br>
+                        <?= $tr->_('Create Exam...') ?>
+                    </span>
+                </a>
+        <?php endif; ?>
+        <?php if ($this->user->roles->hasRole('contributor')) : ?>
+                <a href="<?= $this->url->get('task/contribute') ?>">
+                    <span class="btn btn-success task-button">
+                        <i class="fa fa-share-alt-square fa-2x"></i><br>
+                        <?= $tr->_('Contribute Questions') ?>
+                    </span>
+                </a>
+        <?php endif; ?>
+        <?php if ($this->user->roles->hasRole('corrector')) : ?>
+                <a href="<?= $this->url->get('task/correct') ?>">
+                    <span class="btn btn-success task-button">
+                        <i class="fa fa-save fa-2x"></i><br>
+                        <?= $tr->_('Correct Answers') ?>
+                    </span>
+                </a>
+        <?php endif; ?>
+        <?php if ($this->user->roles->hasRole('invigilator')) : ?>
+                <a href="<?= $this->url->get('task/invigilate') ?>">
+                    <span class="btn btn-success task-button">
+                        <i class="fa fa-paperclip fa-2x"></i><br>
+                        <?= $tr->_('Invigilate Exam') ?>
+                    </span>
+                </a>
+        <?php endif; ?>
+        <?php if ($this->user->roles->hasRole('decoder')) : ?>
+                <a href="<?= $this->url->get('task/decode') ?>">
+                    <span class="btn btn-success task-button">
+                        <i class="fa fa-flag fa-2x"></i><br>
+                        <?= $tr->_('Decode Exam') ?>
+                    </span>
+                </a>
+        <?php endif; ?>
+        <?php if ($this->user->roles->hasRole('student')) : ?>
+                <a href="<?= $this->url->get('task/result') ?>">
+                    <span class="btn btn-success task-button">
+                        <i class="fa fa-list-alt fa-2x"></i><br>
+                        <?= $tr->_('Download Results') ?>
+                    </span>
+                </a>
+        <?php endif; ?>
+    </div>
+
     <div style="padding-bottom:10px">
         <?= $tr->_("Through the links below, teachers and course providers can log in and create an exam, assign different roles to teachers contributing to the exam.") ?>
         <?= $tr->_("Students can also log in and get access to their completed exams and find information about upcoming exams.") ?>
