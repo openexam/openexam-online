@@ -48,15 +48,21 @@ class Question extends ModelBehavior
         public function notify($type, ModelInterface $model)
         {
                 if ($type == 'afterCreate') {
-                        $this->trustedContextCall(function($user, $role) use($model) {
+                        $insert = $this->getOptions($type)['insert'];
+                        
+                        $this->trustedContextCall(function($user, $role) use($model, $insert) {
                                 // 
                                 // Add caller as question corrector:
                                 // 
-                                $corrector = new Corrector();
-                                $corrector->user = $model->user;
-                                $corrector->question_id = $model->id;
-                                if ($corrector->save() == false) {
-                                        throw new Exception("Failed add corrector by behavior (" . $corrector->getMessages()[0] . ")");
+                                if (in_array('corrector', $insert)) {
+                                        $corrector = new Corrector();
+                                        
+                                        $corrector->user = $model->user;
+                                        $corrector->question_id = $model->id;
+                                        
+                                        if ($corrector->save() == false) {
+                                                throw new Exception("Failed add corrector by behavior (" . $corrector->getMessages()[0] . ")");
+                                        }
                                 }
                         }, $model->getDI());
                 }

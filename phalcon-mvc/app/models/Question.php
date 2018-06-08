@@ -229,7 +229,13 @@ class Question extends ModelBase
                     )
                 ));
 
-                $this->addBehavior(new QuestionBehavior());
+                $this->addBehavior(new QuestionBehavior(array(
+                        'afterCreate' => array(
+                                'insert' => array(
+                                        'corrector'
+                                )
+                        )
+                )));
         }
 
         /**

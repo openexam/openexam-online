@@ -55,6 +55,7 @@ class Exam extends ModelBehavior
                 // 
                 if ($type == 'afterCreate') {
                         $insert = $this->getOptions($type)['insert'];
+                        
                         $this->trustedContextCall(function() use($exam, $insert) {
 
                                 // 
