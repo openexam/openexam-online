@@ -28,11 +28,12 @@
 namespace OpenExam\Models;
 
 use OpenExam\Library\Model\Behavior\Transform\FilterText;
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Guard\Question as QuestionModelGuard;
 use OpenExam\Library\Model\Guard\Student as StudentModelGuard;
+use OpenExam\Library\Model\Validation\Newer as NewerValidator;
 use Phalcon\Validation;
 use Phalcon\Validation\Validator\Uniqueness;
-use \OpenExam\Library\Model\Validation\Newer as NewerValidator;
 
 /**
  * The answer model.
@@ -108,15 +109,9 @@ class Answer extends ModelBase
                         'alias'      => 'student'
                 ));
 
-                // 
-                // TODO: better do filtering on client side.
-                // 
-                $this->addBehavior(new FilterText(array(
-                        'beforeValidationOnCreate' => array(
-                                'fields' => array('answer', 'comment')
-                        ),
-                        'beforeValidationOnUpdate' => array(
-                                'fields' => array('answer', 'comment')
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
                         )
                     )
                 ));

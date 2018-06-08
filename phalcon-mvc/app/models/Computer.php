@@ -27,6 +27,7 @@
 
 namespace OpenExam\Models;
 
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Behavior\Transform\Trim;
 use OpenExam\Library\Model\Guard\Room as RoomModelGuard;
 use Phalcon\Mvc\Model\Behavior\Timestampable;
@@ -133,6 +134,13 @@ class Computer extends ModelBase
                                 'value' => null
                         )
                 )));
+
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
+                        )
+                    )
+                ));
         }
 
         /**

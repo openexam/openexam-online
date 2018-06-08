@@ -27,6 +27,7 @@
 
 namespace OpenExam\Models;
 
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Guard\Computer as ComputerModelGuard;
 use OpenExam\Library\Model\Guard\Exam as ExamModelGuard;
 use OpenExam\Library\Model\Guard\Student as StudentModelGuard;
@@ -120,6 +121,13 @@ class Lock extends ModelBase
                                 'format' => 'Y-m-d H:i:s'
                         )
                 )));
+                
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
+                        )
+                    )
+                ));
         }
 
         /**

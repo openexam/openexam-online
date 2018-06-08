@@ -30,6 +30,7 @@ namespace OpenExam\Models;
 use OpenExam\Library\Catalog\DirectoryService;
 use OpenExam\Library\Catalog\Principal;
 use OpenExam\Library\Core\Pattern;
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Behavior\Transform\Trim;
 use OpenExam\Models\ModelBase;
 use Phalcon\Validation;
@@ -84,6 +85,13 @@ class Role extends ModelBase
                                 'value' => null
                         )
                 )));
+                
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
+                        )
+                    )
+                ));
         }
 
         public function validation()

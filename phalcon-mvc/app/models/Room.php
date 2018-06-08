@@ -27,7 +27,7 @@
 
 namespace OpenExam\Models;
 
-use OpenExam\Library\Model\Behavior\Transform\FilterText;
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Behavior\Transform\Trim;
 use Phalcon\Validation;
 use Phalcon\Validation\Validator\Uniqueness;
@@ -77,15 +77,9 @@ class Room extends ModelBase
                         )
                 )));
 
-                // 
-                // TODO: better do filtering on client side.
-                // 
-                $this->addBehavior(new FilterText(array(
-                        'beforeValidationOnCreate' => array(
-                                'fields' => 'description'
-                        ),
-                        'beforeValidationOnUpdate' => array(
-                                'fields' => 'description'
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
                         )
                     )
                 ));

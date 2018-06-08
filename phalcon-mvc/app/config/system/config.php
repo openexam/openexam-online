@@ -429,7 +429,14 @@ $config = new Config(
         /**
          * Performance monitoring is disabled by default.
          */
-        'monitor'     => false
+        'monitor'     => false,
+        /**
+         * The HTML purify. Safe to disable for non-web applications.
+         */
+        'purify'      => array(
+                'enable' => true,
+                'cache'  => BASE_DIR . '/cache/purify'
+        )
     )
 );
 

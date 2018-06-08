@@ -30,6 +30,7 @@ namespace OpenExam\Models;
 use OpenExam\Library\Model\Behavior\Generate\Maximum;
 use OpenExam\Library\Model\Behavior\Generate\Unique;
 use OpenExam\Library\Model\Behavior\Generate\UUID;
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Behavior\Transform\Trim;
 use OpenExam\Library\Model\Guard\Exam as ExamModelGuard;
 use Phalcon\Validation;
@@ -155,6 +156,13 @@ class Topic extends ModelBase
                                 'value' => null
                         )
                 )));
+                
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
+                        )
+                    )
+                ));
         }
 
         public function validation()

@@ -28,6 +28,7 @@
 namespace OpenExam\Models;
 
 use OpenExam\Library\Model\Behavior\Generate\Ownership;
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Behavior\Transform\Remove;
 use OpenExam\Library\Model\Behavior\Transform\Trim;
 use OpenExam\Library\Model\Guard\Exam as ExamModelGuard;
@@ -156,6 +157,13 @@ class Resource extends ModelBase
                                 'value' => null
                         )
                 )));
+                
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
+                        )
+                    )
+                ));
         }
 
         /**

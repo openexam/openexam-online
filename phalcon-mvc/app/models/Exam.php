@@ -35,7 +35,7 @@ use OpenExam\Library\Core\Pattern;
 use OpenExam\Library\Model\Behavior\Exam as ExamBehavior;
 use OpenExam\Library\Model\Behavior\Generate\Ownership;
 use OpenExam\Library\Model\Behavior\Transform\DateTimeNull;
-use OpenExam\Library\Model\Behavior\Transform\FilterText;
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Behavior\Transform\Trim;
 use OpenExam\Library\Model\Exception;
 use OpenExam\Library\Model\Filter;
@@ -345,15 +345,9 @@ class Exam extends ModelBase
                         )
                 )));
 
-                // 
-                // TODO: better do filtering on client side.
-                // 
-                $this->addBehavior(new FilterText(array(
-                        'beforeValidationOnCreate' => array(
-                                'fields' => 'descr'
-                        ),
-                        'beforeValidationOnUpdate' => array(
-                                'fields' => 'descr'
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
                         )
                     )
                 ));

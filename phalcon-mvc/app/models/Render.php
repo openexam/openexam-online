@@ -27,6 +27,7 @@
 
 namespace OpenExam\Models;
 
+use OpenExam\Library\Model\Behavior\Transform\Purifier;
 use OpenExam\Library\Model\Guard\Exam as ExamModelGuard;
 use Phalcon\Validation;
 use Phalcon\Validation\Validator\InclusionIn;
@@ -146,6 +147,13 @@ class Render extends ModelBase
                         'foreignKey' => true,
                         'alias'      => 'exam',
                         'reusable'   => true
+                ));
+                
+                $this->addBehavior(new Purifier(array(
+                        'beforeSave' => array(
+                                'config' => $this->getDI()->get('config')->get('purify')
+                        )
+                    )
                 ));
         }
 
