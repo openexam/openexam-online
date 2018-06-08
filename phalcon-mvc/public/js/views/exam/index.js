@@ -99,7 +99,7 @@ $(document).ready(function () {
                                     }
                                 },
                                 {
-                                    text: i18n("Cancel"),
+                                    text: i18n.gettext("Cancel"),
                                     click: function () {
                                         changer.dialog('destroy');
                                     }
