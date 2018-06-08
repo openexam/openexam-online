@@ -54,61 +54,71 @@ class Exam extends ModelBehavior
                 // Delegate contributor, invigilator and decoder roles:
                 // 
                 if ($type == 'afterCreate') {
-                        $this->trustedContextCall(function() use($exam) {
+                        $insert = $this->getOptions($type)['insert'];
+                        $this->trustedContextCall(function() use($exam, $insert) {
+
                                 // 
                                 // Add contributor role by behavior:
                                 // 
-                                $model = new Contributor();
-                                if (($transaction = $exam->getTransaction())) {
-                                        $model->setTransaction($transaction);
-                                }
+                                if (in_array('contributor', $insert)) {
+                                        $model = new Contributor();
+                                        if (($transaction = $exam->getTransaction())) {
+                                                $model->setTransaction($transaction);
+                                        }
 
-                                $model->user = $exam->creator;
-                                $model->exam_id = $exam->id;
-                                if ($model->save() == false) {
-                                        throw new Exception("Failed add contributor by behavior (" . $model->getMessages()[0] . ")");
+                                        $model->user = $exam->creator;
+                                        $model->exam_id = $exam->id;
+                                        if ($model->save() == false) {
+                                                throw new Exception("Failed add contributor by behavior (" . $model->getMessages()[0] . ")");
+                                        }
                                 }
 
                                 // 
                                 // Add invigilator role by behavior:
                                 // 
-                                $model = new Invigilator();
-                                if (($transaction = $exam->getTransaction())) {
-                                        $model->setTransaction($transaction);
-                                }
+                                if (in_array('invigilator', $insert)) {
+                                        $model = new Invigilator();
+                                        if (($transaction = $exam->getTransaction())) {
+                                                $model->setTransaction($transaction);
+                                        }
 
-                                $model->user = $exam->creator;
-                                $model->exam_id = $exam->id;
-                                if ($model->save() == false) {
-                                        throw new Exception("Failed add invigilator by behavior (" . $model->getMessages()[0] . ")");
+                                        $model->user = $exam->creator;
+                                        $model->exam_id = $exam->id;
+                                        if ($model->save() == false) {
+                                                throw new Exception("Failed add invigilator by behavior (" . $model->getMessages()[0] . ")");
+                                        }
                                 }
 
                                 // 
                                 // Add decoder role by behavior:
                                 // 
-                                $model = new Decoder();
-                                if (($transaction = $exam->getTransaction())) {
-                                        $model->setTransaction($transaction);
-                                }
+                                if (in_array('decoder', $insert)) {
+                                        $model = new Decoder();
+                                        if (($transaction = $exam->getTransaction())) {
+                                                $model->setTransaction($transaction);
+                                        }
 
-                                $model->user = $exam->creator;
-                                $model->exam_id = $exam->id;
-                                if ($model->save() == false) {
-                                        throw new Exception("Failed add decoder by behavior (" . $model->getMessages()[0] . ")");
+                                        $model->user = $exam->creator;
+                                        $model->exam_id = $exam->id;
+                                        if ($model->save() == false) {
+                                                throw new Exception("Failed add decoder by behavior (" . $model->getMessages()[0] . ")");
+                                        }
                                 }
 
                                 // 
                                 // Add default topic by behavior:
                                 // 
-                                $model = new Topic();
-                                if (($transaction = $exam->getTransaction())) {
-                                        $model->setTransaction($transaction);
-                                }
+                                if (in_array('topic', $insert)) {
+                                        $model = new Topic();
+                                        if (($transaction = $exam->getTransaction())) {
+                                                $model->setTransaction($transaction);
+                                        }
 
-                                $model->name = 'default';
-                                $model->exam_id = $exam->id;
-                                if ($model->save() == false) {
-                                        throw new Exception("Failed add default topic by behavior (" . $model->getMessages()[0] . ")");
+                                        $model->name = 'default';
+                                        $model->exam_id = $exam->id;
+                                        if ($model->save() == false) {
+                                                throw new Exception("Failed add default topic by behavior (" . $model->getMessages()[0] . ")");
+                                        }
                                 }
                         }, $exam->getDI());
                 }

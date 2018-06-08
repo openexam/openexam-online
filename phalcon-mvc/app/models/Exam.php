@@ -352,7 +352,13 @@ class Exam extends ModelBase
                     )
                 ));
 
-                $this->addBehavior(new ExamBehavior());
+                $this->addBehavior(new ExamBehavior(array(
+                        'afterCreate' => array(
+                                'insert' => array(
+                                        'contributor', 'invigilator', 'decoder', 'topic'
+                                )
+                        )
+                )));
 
                 // 
                 // Required for datetime validator:
