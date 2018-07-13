@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Driver for the phalcon/zephir compiler.
+# 
+# Author: Anders Lövgren
+# Date:   2014-02-21
+
+ZEPHIRDIR=${ZEPHIRDIR:-/usr/share/php/phalcon-zephir}
+
+export ZEPHIRDIR
+php ${ZEPHIRDIR}/compiler.php $*
