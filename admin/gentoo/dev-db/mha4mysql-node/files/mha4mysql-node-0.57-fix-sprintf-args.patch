@@ -1,0 +1,16 @@
+# Fixes redundant sprintf argument fatal error.
+# 
+# Author: Anders Lövgren
+# Date:   2016-10-11
+
+--- mha4mysql-node-0.57/lib/MHA/NodeUtil.pm.orig	2015-05-31 08:33:36.000000000 +0200
++++ mha4mysql-node-0.57/lib/MHA/NodeUtil.pm	2016-10-11 12:43:15.267619591 +0200
+@@ -187,7 +187,7 @@
+ 
+ sub parse_mysql_major_version($) {
+   my $str = shift;
+-  my $result = sprintf( '%03d%03d', $str =~ m/(\d+)/g );
++  my $result = sprintf( '%03d%03d', $str =~ m/^(\d+).(\d+)/g );
+   return $result;
+ }
+ 
