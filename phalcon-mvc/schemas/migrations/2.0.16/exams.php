@@ -202,7 +202,7 @@ class ExamsMigration_216 extends Migration
                         'lockdown',
                         [
                             'type' => Column::TYPE_VARCHAR,
-                            'default' => "{"enable":true}",
+                            'default' => '{"enable":true}',
                             'notNull' => true,
                             'size' => 500,
                             'after' => 'testcase'
