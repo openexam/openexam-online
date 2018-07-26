@@ -31,9 +31,9 @@ namespace Phalcon\Queue {
 
 		const DEFAULT_TTR = 86400;
 
-		const DEFAULT_TUBE = default;
+		const DEFAULT_TUBE = 'default';
 
-		const DEFAULT_HOST = 127.0.0.1;
+		const DEFAULT_HOST = '127.0.0.1';
 
 		const DEFAULT_PORT = 11300;
 

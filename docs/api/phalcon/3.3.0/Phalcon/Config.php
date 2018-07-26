@@ -31,7 +31,7 @@ namespace Phalcon {
 	
 	class Config implements \ArrayAccess, \Countable {
 
-		const DEFAULT_PATH_DELIMITER = .;
+		const DEFAULT_PATH_DELIMITER = ':';
 
 		protected static $_pathDelimiter;
 

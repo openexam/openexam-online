@@ -39,9 +39,9 @@ namespace Phalcon\Mvc\Model\Query {
 	
 	class Builder implements \Phalcon\Mvc\Model\Query\BuilderInterface, \Phalcon\Di\InjectionAwareInterface {
 
-		const OPERATOR_OR = or;
+		const OPERATOR_OR = 'or';
 
-		const OPERATOR_AND = and;
+		const OPERATOR_AND = 'and';
 
 		protected $_dependencyInjector;
 

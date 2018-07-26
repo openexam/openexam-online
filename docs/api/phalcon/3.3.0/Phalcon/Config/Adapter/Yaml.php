@@ -42,7 +42,7 @@ namespace Phalcon\Config\Adapter {
 	
 	class Yaml extends \Phalcon\Config implements \Countable, \ArrayAccess {
 
-		const DEFAULT_PATH_DELIMITER = .;
+		const DEFAULT_PATH_DELIMITER = ':';
 
 		/**
 		 * \Phalcon\Config\Adapter\Yaml constructor
