@@ -42,7 +42,7 @@
 // 
 
 if (filter_has_var(INPUT_GET, 'lang')) {
-        $filename = sprintf("gettext/%s.json", filter_input(INPUT_GET, 'lang'));
+        $filename = sprintf("gettext/%s.json", filter_input(INPUT_GET, 'lang', FILTER_SANITIZE_STRING));
 } else {
         $filename = sprintf("gettext/%s.json", "en");
 }

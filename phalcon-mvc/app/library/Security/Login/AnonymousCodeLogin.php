@@ -239,7 +239,7 @@ class AnonymousCodeValidator implements Validator
         public function __construct($login)
         {
                 $this->_login = $login;
-                $this->_secret = filter_input(INPUT_POST, 'secret');
+                $this->_secret = filter_input(INPUT_POST, 'secret', FILTER_SANITIZE_STRING);
         }
 
         /**
